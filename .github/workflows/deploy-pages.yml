@@ -48,12 +48,35 @@ jobs:
                   archive.extract(member)
           PY
           fi
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
       - name: Build and check static Pages directory
         run: |
-          node scripts/build-pages.mjs
-          node tests/feeds.test.cjs
-          node tests/news.test.cjs
-          node tests/pages.test.cjs
+          npm run build:pages
+          npm run test:data
+          npm run test:feeds
+          npm run test:pages
+          npm run typecheck
+          npm run lint
+          npm run build:pages
+      - name: Real browser regression of generated static artifact
+        shell: bash
+        run: |
+          node scripts/create-browser-regression.mjs
+          CHROME_BIN=$(command -v google-chrome || command -v chromium || true)
+          if [ -z "$CHROME_BIN" ]; then
+            echo 'A real Chrome browser is required for this regression test'
+            exit 1
+          fi
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=3000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/check-browser-result.cjs
+      - name: Upload browser regression diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-regression-${{ github.run_id }}
+          path: artifacts/browser-regression*.html
+          if-no-files-found: warn
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -69,3 +92,32 @@ jobs:
       - name: Publish static page
         id: deployment
         uses: actions/deploy-pages@v4
+
+  verify-live:
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_ref || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Compare published runtime and click all views in Chrome
+        shell: bash
+        run: |
+          node scripts/build-pages.mjs
+          mkdir -p artifacts
+          curl --fail --location --retry 3 --retry-delay 5 --max-time 30 "https://jasper231.github.io/ai-frontier-dashboard/?verification=${{ github.run_id }}" -o artifacts/live-pages.html
+          node scripts/verify-live-pages.cjs
+          CHROME_BIN=$(command -v google-chrome || command -v chromium)
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=3000 --dump-dom "file://$PWD/artifacts/live-browser-check.html" > artifacts/live-browser-dom.html
+          node scripts/check-live-result.cjs
+      - name: Save live verification evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-pages-verification-${{ github.run_id }}
+          path: artifacts/live-*
+          if-no-files-found: warn

@@ -22,9 +22,9 @@ test('Latest is chronological; Today is UTC snapshot day; Long-term uses 3–10 
  assert.equal(core.selectItems([edge],'Today',batch.asOf).length,1);
  assert.equal(core.selectItems([{...edge,publishedAt:'2026-10-04T00:00:00Z'}],'Latest',batch.asOf).length,0);
 });
-test('Top Signals come from all published records, ranked by importance, with deterministic ties',()=>{
+test('Top Signals follow filtered records and view-specific priority, ranked by importance, with deterministic ties',()=>{
  assert.deepEqual(core.createView(batch,definitions,'Latest',batch.asOf).signals.map(i=>i.id),['ai-1','chips-1','robotics-1']);
- assert.deepEqual(core.createView(batch,definitions,'Today',batch.asOf).signals.map(i=>i.id),['ai-1','chips-1','robotics-1']);
+ assert.deepEqual(core.createView(batch,definitions,'Today',batch.asOf).signals.map(i=>i.id),['ai-1','chips-1','agents-1']);
  const changed={...batch,items:batch.items.map(i=>i.id==='crypto-3'?{...i,importance:100}:i)};
  assert.equal(core.createView(changed,definitions,'Latest',batch.asOf).signals[0].id,'crypto-3');
  const ties=[{...batch.items[0],importance:90,id:'b'},{...batch.items[0],importance:90,id:'a'}];assert.equal(core.topSignals(ties)[0].id,'a');
@@ -32,7 +32,7 @@ test('Top Signals come from all published records, ranked by importance, with de
 });
 test('empty views are handled, counts follow filters, external text is escaped',()=>{
  const empty=core.createView(batch,definitions,'Today','2026-10-03T23:59:59Z');
- assert.equal(empty.signals.length,3);assert.equal(empty.featuredCount,0);assert.equal(empty.categories.length,5);
+ assert.equal(empty.signals.length,0);assert.equal(empty.featuredCount,0);assert.equal(empty.categories.length,5);
  const html=renderDashboard(empty);assert.equal((html.match(/当前筛选暂无内容/g)||[]).length,5);assert.ok(!html.includes('<details'));
  const hostile={...batch,items:[{...batch.items[0],title:'<img src=x onerror=alert(1)>',source:'<script>',signalBrief:undefined}]};
  const escaped=renderDashboard(core.createView(hostile,definitions,'Latest',batch.asOf));assert.ok(!escaped.includes('<img src=x'));assert.ok(escaped.includes('&lt;img'));

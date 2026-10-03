@@ -67,3 +67,10 @@
   }
   .signal-impact{padding-top:8px}
 }
+
+/* Native official-source links shared by Next.js and static Pages. */
+.article-title-link{display:block;min-height:44px;padding:2px 0;color:inherit;text-decoration:none;cursor:pointer}
+.article-title-link:hover{text-decoration:underline;text-underline-offset:4px}
+.article-source-link{display:inline-flex;align-items:center;min-height:44px;max-width:100%;margin-top:12px;padding:8px 0;color:#8e9eac;font-size:13px;line-height:1.7;overflow-wrap:anywhere;text-decoration:none}
+.article-source-link:hover{color:#c8d5df}
+@media(max-width:767px){.article-source-link{font-size:14px}}

@@ -35,12 +35,12 @@
     if(view==='Long-term')return eligible.filter(item=>item.horizonYears>=3&&item.horizonYears<=10).sort((a,b)=>b.longTermImportance-a.longTermImportance||byImportance(a,b));
     return eligible.sort(byLatest);
   }
-  function topSignals(items){return [...items].sort(byImportance).slice(0,3);}
+  function topSignals(items,view='Latest'){return [...items].sort(view==='Long-term'?(a,b)=>b.longTermImportance-a.longTermImportance||byImportance(a,b):byImportance).slice(0,3);}
   function createView(batch,definitions,view,referenceTime=new Date().toISOString()){
     validateBatch(batch);
     const items=selectItems(batch.items,view,referenceTime);
     const categories=definitions.map(c=>({...c,entries:items.filter(item=>item.category===c.id)}));
-    return {view,asOf:referenceTime,snapshotAt:batch.asOf,isDemo:batch.isDemo,items,signals:topSignals(selectItems(batch.items,'Latest',referenceTime)),categories,featuredCount:categories.reduce((n,c)=>n+Math.min(2,c.entries.length),0)};
+    return {view,asOf:referenceTime,snapshotAt:batch.asOf,isDemo:batch.isDemo,items,signals:topSignals(items,view),categories,featuredCount:categories.reduce((n,c)=>n+Math.min(2,c.entries.length),0)};
   }
   function signalText(item){return {title:item.signalBrief?.title||item.title,happened:item.signalBrief?.happened||item.summary,matters:item.signalBrief?.matters||item.whyItMatters,impact:item.signalBrief?.impact||item.longTermImpact,domain:item.category==='chips'?'Chips':item.category==='ai'?'AI':item.category[0].toUpperCase()+item.category.slice(1)};}
   function formatDate(value){return new Date(value).toISOString().slice(0,10).replace(/-/g,'.');}

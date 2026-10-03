@@ -1,9 +1,22 @@
 /* Presentation only. Receives a view model; performs no fetching, filtering or ranking. */
 (function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('./core.cjs'));else root.FrontierRender=factory(root.FrontierData);})(typeof globalThis!=='undefined'?globalThis:this,function(core){
   const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function articleUrl(item,isDemo){
+    if(isDemo||typeof item.sourceUrl!=='string')return null;
+    const value=item.sourceUrl.trim();if(!/^https?:\/\//i.test(value))return null;
+    try{const url=new URL(value);if(!url.hostname||url.username||url.password)return null;return value;}catch{return null;}
+  }
+  function titleLink(item,title,isDemo){
+    const href=articleUrl(item,isDemo);
+    return href?`<a class="article-title-link" href="${escape(href)}" target="_blank" rel="noopener noreferrer">${escape(title)}</a>`:escape(title);
+  }
+  function sourceLink(item,isDemo){
+    const href=articleUrl(item,isDemo);
+    return href?`<a class="article-source-link" href="${escape(href)}" target="_blank" rel="noopener noreferrer">${escape(item.source)} · 查看原文 ↗</a>`:'';
+  }
   function renderCard(item,isDemo){
-    const source=isDemo?escape(item.source):`<a href="${escape(item.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escape(item.source)}</a>`;
-    return `<article class="card" data-item-id="${escape(item.id)}"><div class="card-meta"><span class="tag">${escape(item.tags.join(' · '))}</span><time datetime="${escape(item.publishedAt)}">${core.formatDate(item.publishedAt)}</time><span>${source}</span></div><h3>${escape(item.title)}</h3><p class="summary">${escape(item.summary)}</p><div class="importance"><span class="importance-label">为什么重要 <span> / IMPLICATION</span></span><p>${escape(item.whyItMatters)}</p></div></article>`;
+    const source=escape(item.source);
+    return `<article class="card" data-item-id="${escape(item.id)}"><div class="card-meta"><span class="tag">${escape(item.tags.join(' · '))}</span><time datetime="${escape(item.publishedAt)}">${core.formatDate(item.publishedAt)}</time><span>${source}</span></div><h3>${titleLink(item,item.title,isDemo)}</h3><p class="summary">${escape(item.summary)}</p><div class="importance"><span class="importance-label">为什么重要 <span> / IMPLICATION</span></span><p>${escape(item.whyItMatters)}</p></div>${sourceLink(item,isDemo)}</article>`;
   }
   function renderSection(category,index,isDemo){
     const total=category.entries.length,featured=Math.min(2,total);
@@ -11,7 +24,7 @@
   }
   function renderSignals(vm){
     
-    return `<section class="top-signals" aria-labelledby="top-signals-title"><header class="signals-heading"><div><h2 id="top-signals-title">Top Signals</h2><p>全部内容中最值得关注的 ${vm.signals.length} 件事${vm.isDemo?' · 示例精选':''}</p></div><span class="signals-edition">${String(vm.signals.length).padStart(2,'0')} / PRIORITY</span></header><div class="signals-grid">${vm.signals.map(item=>{const s=core.signalText(item);return `<article class="signal" data-item-id="${escape(item.id)}"><div class="signal-title"><h3>${escape(s.title)}</h3><span class="signal-domain">${escape(s.domain)}</span></div><dl><div><dt>What happened</dt><dd>${escape(s.happened)}</dd></div><div><dt>Why it matters</dt><dd>${escape(s.matters)}</dd></div><div class="signal-impact"><dt>Long-term impact</dt><dd>${escape(s.impact)}</dd></div></dl></article>`;}).join('')||'<p class="summary">当前筛选暂无信号。</p>'}</div></section>`;
+    return `<section class="top-signals" aria-labelledby="top-signals-title"><header class="signals-heading"><div><h2 id="top-signals-title">Top Signals</h2><p>${vm.view==='Today'?'当天':vm.view==='Long-term'?'长期':'最近'}最值得关注的 ${vm.signals.length} 件事${vm.isDemo?' · 示例精选':''}</p></div><span class="signals-edition">${String(vm.signals.length).padStart(2,'0')} / PRIORITY</span></header><div class="signals-grid">${vm.signals.map(item=>{const s=core.signalText(item);return `<article class="signal" data-item-id="${escape(item.id)}"><div class="signal-title"><h3>${titleLink(item,s.title,vm.isDemo)}</h3><span class="signal-domain">${escape(s.domain)}</span></div><dl><div><dt>What happened</dt><dd>${escape(s.happened)}</dd></div><div><dt>Why it matters</dt><dd>${escape(s.matters)}</dd></div><div class="signal-impact"><dt>Long-term impact</dt><dd>${escape(s.impact)}</dd></div></dl>${sourceLink(item,vm.isDemo)}</article>`;}).join('')||'<p class="summary">当前筛选暂无信号。</p>'}</div></section>`;
   }
   function renderDashboard(vm){
     const note=vm.isDemo?'最后更新：尚无真实更新 · 本地示例':`最后更新：${new Date(vm.snapshotAt).toISOString().slice(0,16).replace('T',' ')} UTC`;
