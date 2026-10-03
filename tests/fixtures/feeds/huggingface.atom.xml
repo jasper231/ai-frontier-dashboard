@@ -1,0 +1,5 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://huggingface.co/">
+<title>SYNTHETIC Hugging Face fixture</title>
+<entry><title>Fixture: Introducing a reasoning language model</title><link rel="alternate" href="/__fixture__/syndicated"/><published>2026-10-02T08:00:00Z</published><summary type="html">&lt;p&gt;Synthetic cross-feed duplicate.&lt;/p&gt;</summary></entry>
+<entry><title>Fixture: Open-source multimodal research</title><link rel="self" href="/__fixture__/atom"/><link rel="alternate" href="/__fixture__/multimodal"/><published>2026-10-01T11:00:00+00:00</published><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><p>Synthetic multimodal test content.</p></div></content></entry>
+</feed>

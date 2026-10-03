@@ -1,0 +1,87 @@
+name: Refresh official news
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */3 * * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: news-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      deploy_ref: ${{ steps.persist.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Unpack phone upload if source is not present
+        shell: bash
+        run: |
+          if [ ! -f scripts/refresh-news.cjs ]; then
+            python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          with zipfile.ZipFile('project-source.zip') as archive:
+              for member in archive.infolist():
+                  target = Path(member.filename)
+                  if target.is_absolute() or '..' in target.parts:
+                      raise ValueError('Invalid archive path')
+                  if target.parts and target.parts[0] in ('.git', '.github'):
+                      continue
+                  archive.extract(member)
+          PY
+          fi
+      - name: Fetch official feeds and preserve last successful snapshot
+        run: node scripts/refresh-news.cjs --live
+      - name: Generate static page with generated or fallback data
+        run: node scripts/build-pages.mjs
+      - name: Test data selection, parsing, classification, dedup and fallback
+        run: |
+          node tests/feeds.test.cjs
+          node tests/news.test.cjs
+          node tests/pages.test.cjs
+      - name: Save refresh diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: feed-refresh-report-${{ github.run_id }}
+          path: |
+            artifacts/feeds.live.report.json
+            src/data/news-status.json
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Persist data and any first phone upload sources
+        id: persist
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- src public scripts tests docs versions package.json tsconfig.json next.config.ts eslint.config.mjs next-env.d.ts README.md .gitignore
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update official feed snapshot and refresh status'
+            git push origin HEAD:${{ github.event.repository.default_branch }}
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: refresh
+    uses: ./.github/workflows/deploy-pages.yml
+    with:
+      source_ref: ${{ needs.refresh.outputs.deploy_ref }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

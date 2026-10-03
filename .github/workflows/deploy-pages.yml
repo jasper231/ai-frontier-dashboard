@@ -1,0 +1,71 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      source_ref:
+        required: false
+        type: string
+        default: ''
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.source_ref || github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Unpack phone upload if source is not present
+        shell: bash
+        run: |
+          if [ ! -f scripts/build-pages.mjs ]; then
+            python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          with zipfile.ZipFile('project-source.zip') as archive:
+              for member in archive.infolist():
+                  target = Path(member.filename)
+                  if target.is_absolute() or '..' in target.parts:
+                      raise ValueError('Invalid archive path')
+                  if target.parts and target.parts[0] in ('.git', '.github'):
+                      continue
+                  archive.extract(member)
+          PY
+          fi
+      - name: Build and check static Pages directory
+        run: |
+          node scripts/build-pages.mjs
+          node tests/feeds.test.cjs
+          node tests/news.test.cjs
+          node tests/pages.test.cjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish static page
+        id: deployment
+        uses: actions/deploy-pages@v4

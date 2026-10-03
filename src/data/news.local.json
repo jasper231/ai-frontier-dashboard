@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-02T23:59:59Z",
+  "timeZone": "UTC",
+  "isDemo": true,
+  "items": [
+    {
+      "id": "ai-1",
+      "title": "推理模型：从快速回答到深度思考",
+      "category": "ai",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/ai/1",
+      "publishedAt": "2026-10-02T08:00:00Z",
+      "summary": "模型通过更多推理步骤处理数学、代码与复杂规划任务。",
+      "whyItMatters": "评估模型时，准确率、响应时间和成本需要放在一起比较。",
+      "longTermImpact": "3–10 年：AI 参与决策。",
+      "tags": [
+        "推理能力"
+      ],
+      "importance": 95,
+      "horizonYears": 5,
+      "signalBrief": {
+        "title": "推理深化",
+        "domain": "AI",
+        "happened": "模型增加复杂任务推理。",
+        "matters": "准确率与成本同样关键。",
+        "impact": "3–10 年：AI 参与决策。"
+      },
+      "longTermImportance": 84
+    },
+    {
+      "id": "ai-2",
+      "title": "多模态模型走向统一交互",
+      "category": "ai",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/ai/2",
+      "publishedAt": "2026-10-01T08:00:00Z",
+      "summary": "文本、图像和语音在同一个工作流中协同，减少输入切换。",
+      "whyItMatters": "产品可以围绕真实场景设计交互，让输入方式更自然。",
+      "longTermImpact": "3–10 年：AI 参与决策。",
+      "tags": [
+        "多模态"
+      ],
+      "importance": 80,
+      "horizonYears": 1,
+      "longTermImportance": 42
+    },
+    {
+      "id": "ai-3",
+      "title": "小模型的本地部署机会",
+      "category": "ai",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/ai/3",
+      "publishedAt": "2026-09-30T08:00:00Z",
+      "summary": "量化和蒸馏让轻量模型在个人设备上执行特定任务。",
+      "whyItMatters": "本地处理有助于降低延迟，并让敏感数据保留在设备内。",
+      "longTermImpact": "3–10 年：AI 参与决策。",
+      "tags": [
+        "端侧 AI"
+      ],
+      "importance": 72,
+      "horizonYears": 7,
+      "longTermImportance": 94
+    },
+    {
+      "id": "agents-1",
+      "title": "让智能体接入可验证的工具",
+      "category": "agents",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/agents/1",
+      "publishedAt": "2026-10-02T08:00:00Z",
+      "summary": "智能体通过结构化接口读取文件、执行任务并返回结果。",
+      "whyItMatters": "明确权限与结果验证，是把演示变成可靠工作流的关键。",
+      "longTermImpact": "3–10 年：可验证的任务自动化。",
+      "tags": [
+        "工具调用"
+      ],
+      "importance": 88,
+      "horizonYears": 5,
+      "longTermImportance": 84
+    },
+    {
+      "id": "agents-2",
+      "title": "长任务需要记忆与检查点",
+      "category": "agents",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/agents/2",
+      "publishedAt": "2026-10-01T08:00:00Z",
+      "summary": "保存任务状态，让智能体能够中断、恢复和追踪进度。",
+      "whyItMatters": "可恢复的执行过程减少重复工作，也更容易定位失败原因。",
+      "longTermImpact": "3–10 年：可验证的任务自动化。",
+      "tags": [
+        "任务规划"
+      ],
+      "importance": 78,
+      "horizonYears": 1,
+      "longTermImportance": 42
+    },
+    {
+      "id": "agents-3",
+      "title": "多智能体协作的边界",
+      "category": "agents",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/agents/3",
+      "publishedAt": "2026-09-29T08:00:00Z",
+      "summary": "不同智能体分工研究、执行和审查，并交换任务结果。",
+      "whyItMatters": "分工可能提升效率，但通信成本和责任划分同样需要评估。",
+      "longTermImpact": "3–10 年：可验证的任务自动化。",
+      "tags": [
+        "协作系统"
+      ],
+      "importance": 67,
+      "horizonYears": 7,
+      "longTermImportance": 94
+    },
+    {
+      "id": "chips-1",
+      "title": "推理效率成为算力新指标",
+      "category": "chips",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/chips/1",
+      "publishedAt": "2026-10-02T08:00:00Z",
+      "summary": "部署侧更关注单位成本下的吞吐量、延迟和能耗。",
+      "whyItMatters": "选硬件需要结合实际模型的服务成本衡量整体收益。",
+      "longTermImpact": "3–10 年：专用芯片演进。",
+      "tags": [
+        "推理算力"
+      ],
+      "importance": 92,
+      "horizonYears": 5,
+      "signalBrief": {
+        "title": "算力提效",
+        "domain": "Chips",
+        "happened": "推理更重视能效与延迟。",
+        "matters": "任务成本决定规模化。",
+        "impact": "3–10 年：专用芯片演进。"
+      },
+      "longTermImportance": 84
+    },
+    {
+      "id": "chips-2",
+      "title": "高带宽内存影响模型吞吐",
+      "category": "chips",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/chips/2",
+      "publishedAt": "2026-09-30T08:00:00Z",
+      "summary": "大模型的数据搬运速度可能成为系统性能瓶颈。",
+      "whyItMatters": "内存容量与带宽决定可部署模型规模和并发服务能力。",
+      "longTermImpact": "3–10 年：专用芯片演进。",
+      "tags": [
+        "HBM"
+      ],
+      "importance": 77,
+      "horizonYears": 1,
+      "longTermImportance": 42
+    },
+    {
+      "id": "chips-3",
+      "title": "互联技术决定集群扩展效率",
+      "category": "chips",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/chips/3",
+      "publishedAt": "2026-09-28T08:00:00Z",
+      "summary": "多卡训练与推理需要在节点间频繁交换数据。",
+      "whyItMatters": "扩容收益取决于通信效率，更多 GPU 不一定带来线性提升。",
+      "longTermImpact": "3–10 年：专用芯片演进。",
+      "tags": [
+        "高速互联"
+      ],
+      "importance": 65,
+      "horizonYears": 7,
+      "longTermImportance": 94
+    },
+    {
+      "id": "robotics-1",
+      "title": "视觉语言动作模型连接感知与执行",
+      "category": "robotics",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/robotics/1",
+      "publishedAt": "2026-10-01T08:00:00Z",
+      "summary": "机器人把视觉输入与自然语言指令转换为动作计划。",
+      "whyItMatters": "通用指令理解有机会降低机器人适配新任务的成本。",
+      "longTermImpact": "3–10 年：通用机器人。",
+      "tags": [
+        "具身智能"
+      ],
+      "importance": 90,
+      "horizonYears": 5,
+      "signalBrief": {
+        "title": "智能具身化",
+        "domain": "Robotics",
+        "happened": "视觉与语言驱动动作。",
+        "matters": "新任务适配有望更便宜。",
+        "impact": "3–10 年：通用机器人。"
+      },
+      "longTermImportance": 84
+    },
+    {
+      "id": "robotics-2",
+      "title": "仿真训练如何迁移到真实世界",
+      "category": "robotics",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/robotics/2",
+      "publishedAt": "2026-09-30T08:00:00Z",
+      "summary": "在仿真中训练策略，再通过真实测试校准行为。",
+      "whyItMatters": "缩小仿真与现实的差距，影响训练成本和部署可靠性。",
+      "longTermImpact": "3–10 年：通用机器人。",
+      "tags": [
+        "仿真训练"
+      ],
+      "importance": 76,
+      "horizonYears": 1,
+      "longTermImportance": 42
+    },
+    {
+      "id": "robotics-3",
+      "title": "灵巧操作仍是落地难点",
+      "category": "robotics",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/robotics/3",
+      "publishedAt": "2026-09-27T08:00:00Z",
+      "summary": "抓取、装配和接触控制需要细致感知与即时反馈。",
+      "whyItMatters": "稳定完成重复任务，比单次成功的演示更能体现实用价值。",
+      "longTermImpact": "3–10 年：通用机器人。",
+      "tags": [
+        "操作控制"
+      ],
+      "importance": 70,
+      "horizonYears": 7,
+      "longTermImportance": 94
+    },
+    {
+      "id": "crypto-1",
+      "title": "零知识证明探索可验证计算",
+      "category": "crypto",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/crypto/1",
+      "publishedAt": "2026-10-01T08:00:00Z",
+      "summary": "证明系统尝试验证计算结果，而不公开全部原始数据。",
+      "whyItMatters": "隐私与可验证性可能同时满足，但证明成本仍需要衡量。",
+      "longTermImpact": "3–10 年：可信计算与结算网络。",
+      "tags": [
+        "ZK"
+      ],
+      "importance": 81,
+      "horizonYears": 5,
+      "longTermImportance": 84
+    },
+    {
+      "id": "crypto-2",
+      "title": "稳定币支付关注结算体验",
+      "category": "crypto",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/crypto/2",
+      "publishedAt": "2026-09-29T08:00:00Z",
+      "summary": "链上支付研究更快结算、跨境流转与系统集成。",
+      "whyItMatters": "实际采用取决于费用、合规、资产风险和用户使用门槛。",
+      "longTermImpact": "3–10 年：可信计算与结算网络。",
+      "tags": [
+        "支付基础设施"
+      ],
+      "importance": 74,
+      "horizonYears": 1,
+      "longTermImportance": 42
+    },
+    {
+      "id": "crypto-3",
+      "title": "去中心化算力如何验证服务质量",
+      "category": "crypto",
+      "source": "本地示例",
+      "sourceUrl": "https://example.com/frontier/crypto/3",
+      "publishedAt": "2026-09-26T08:00:00Z",
+      "summary": "分布式算力市场尝试连接闲置资源与计算需求。",
+      "whyItMatters": "可靠性、数据保护和结果验证决定这些资源能否服务真实任务。",
+      "longTermImpact": "3–10 年：可信计算与结算网络。",
+      "tags": [
+        "计算网络"
+      ],
+      "importance": 68,
+      "horizonYears": 7,
+      "longTermImportance": 94
+    }
+  ]
+}

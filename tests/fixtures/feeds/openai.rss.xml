@@ -1,0 +1,5 @@
+<?xml version="1.0"?><rss version="2.0"><channel><title>SYNTHETIC OpenAI fixture</title>
+<item><title>Fixture: Introducing a reasoning language model</title><link>https://openai.com/__fixture__/reasoning</link><pubDate>Fri, 02 Oct 2026 08:00:00 GMT</pubDate><description><![CDATA[<p>Synthetic reasoning model test. Not a real announcement.</p>]]></description></item>
+<item><title>Fixture: Agent tool-calling release</title><link>https://openai.com/__fixture__/agents</link><pubDate>Fri, 02 Oct 2026 09:00:00 GMT</pubDate><description>Synthetic agent tools example.</description></item>
+<item><title>Fixture: Introducing a reasoning language model</title><link>https://openai.com/__fixture__/reasoning?utm_source=test</link><pubDate>Fri, 02 Oct 2026 08:00:00 GMT</pubDate><description>Duplicate URL tracking test.</description></item>
+</channel></rss>

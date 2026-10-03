@@ -1,0 +1,126 @@
+[
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "url": "https://openai.com/news/rss.xml",
+    "category": "ai",
+    "hosts": [
+      "openai.com"
+    ],
+    "enabled": true,
+    "endpointStatus": "unverified-network-blocked"
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "url": null,
+    "category": "ai",
+    "hosts": [
+      "anthropic.com"
+    ],
+    "enabled": false,
+    "reason": "尚未确认稳定的官方 RSS/Atom 地址，不使用第三方转制 feed",
+    "endpointStatus": "awaiting-official-feed"
+  },
+  {
+    "id": "google-ai",
+    "name": "Google AI",
+    "url": "https://blog.google/technology/ai/rss/",
+    "category": "ai",
+    "hosts": [
+      "blog.google"
+    ],
+    "enabled": true,
+    "endpointStatus": "unverified-network-blocked"
+  },
+  {
+    "id": "deepmind",
+    "name": "Google DeepMind",
+    "url": "https://deepmind.google/blog/rss.xml",
+    "category": "ai",
+    "hosts": [
+      "deepmind.google"
+    ],
+    "enabled": true,
+    "endpointStatus": "unverified-network-blocked"
+  },
+  {
+    "id": "nvidia",
+    "name": "NVIDIA",
+    "url": "https://blogs.nvidia.com/feed/",
+    "category": "chips",
+    "hosts": [
+      "blogs.nvidia.com",
+      "nvidia.com"
+    ],
+    "enabled": true,
+    "endpointStatus": "unverified-network-blocked"
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face",
+    "url": "https://huggingface.co/blog/feed.xml",
+    "category": "ai",
+    "hosts": [
+      "huggingface.co"
+    ],
+    "enabled": true,
+    "endpointStatus": "unverified-network-blocked"
+  },
+  {
+    "id": "arxiv-ai",
+    "name": "arXiv cs.AI",
+    "url": "https://rss.arxiv.org/rss/cs.AI",
+    "category": "ai",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "enabled": true,
+    "endpointStatus": "unverified-network-blocked"
+  },
+  {
+    "id": "arxiv-robotics",
+    "name": "arXiv cs.RO",
+    "url": "https://rss.arxiv.org/rss/cs.RO",
+    "category": "robotics",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "enabled": true,
+    "endpointStatus": "unverified-network-blocked"
+  },
+  {
+    "id": "ethereum",
+    "name": "Ethereum",
+    "url": "https://blog.ethereum.org/feed.xml",
+    "category": "crypto",
+    "hosts": [
+      "blog.ethereum.org",
+      "ethereum.org"
+    ],
+    "enabled": true,
+    "endpointStatus": "unverified-network-blocked"
+  },
+  {
+    "id": "coinbase",
+    "name": "Coinbase",
+    "url": "https://www.coinbase.com/blog/rss.xml",
+    "category": "crypto",
+    "hosts": [
+      "coinbase.com"
+    ],
+    "enabled": true,
+    "endpointStatus": "unverified-network-blocked"
+  },
+  {
+    "id": "circle",
+    "name": "Circle",
+    "url": "https://www.circle.com/blog/rss.xml",
+    "category": "crypto",
+    "hosts": [
+      "circle.com"
+    ],
+    "enabled": true,
+    "endpointStatus": "unverified-network-blocked"
+  }
+]

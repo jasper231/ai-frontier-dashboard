@@ -1,0 +1,5 @@
+[
+  {"title":"推理深化","domain":"AI","happened":"模型增加复杂任务推理。","matters":"准确率与成本同样关键。","impact":"3–10 年：AI 参与决策。"},
+  {"title":"算力提效","domain":"Chips","happened":"推理更重视能效与延迟。","matters":"任务成本决定规模化。","impact":"3–10 年：专用芯片演进。"},
+  {"title":"智能具身化","domain":"Robotics","happened":"视觉与语言驱动动作。","matters":"新任务适配有望更便宜。","impact":"3–10 年：通用机器人。"}
+]

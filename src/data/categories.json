@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ai",
+    "title": "AI",
+    "subtitle": "理解模型能力的边界与新的应用机会。"
+  },
+  {
+    "id": "agents",
+    "title": "Agents",
+    "subtitle": "关注智能体如何可靠地完成真实任务。"
+  },
+  {
+    "id": "chips",
+    "title": "GPU & Chips",
+    "subtitle": "从算力效率看 AI 基础设施的演进。"
+  },
+  {
+    "id": "robotics",
+    "title": "Robotics",
+    "subtitle": "追踪智能从数字世界走向物理世界。"
+  },
+  {
+    "id": "crypto",
+    "title": "Crypto",
+    "subtitle": "观察可信计算与价值流转的新基础设施。"
+  }
+]
