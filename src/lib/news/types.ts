@@ -5,6 +5,7 @@ export interface NewsItem {
   publishedAt: string; summary: string; whyItMatters: string; longTermImpact: string;
   tags: string[]; importance: number; horizonYears: number; longTermImportance: number;
   signalBrief?: { title: string; happened: string; matters: string; impact: string };
+  intelligence?: StoryIntelligence;
 }
 export interface NewsBatch { schemaVersion: 1; asOf: string; timeZone: 'UTC'; isDemo: boolean; items: NewsItem[] }
 export interface CategoryDefinition { id: CategoryId; title: string; subtitle: string }
@@ -17,3 +18,21 @@ export interface SourceAdapter { fetch(): Promise<RawStory[]> }
 export interface StoryNormalizer { normalize(story: RawStory): Promise<NewsItem> }
 /** Optional AI enrichment replaces summaries/analysis before publishing the snapshot. */
 export interface NewsEnricher { enrich(item: NewsItem): Promise<NewsItem> }
+/** Additive metadata; frozen UI continues reading the existing scores and text. */
+export interface StoryIntelligence {
+  schemaVersion: 1; origin: 'ai' | 'mock'; provider: string; model: string | null;
+  promptVersion: string; analyzedAt: string; opportunity: string; risk: string;
+  credibility: { score: number; sourceQuality: 'official-primary' | 'research-preprint' | 'unknown'; assessment: string };
+  confidence: number; evidenceIds: string[]; relatedNewsIds: string[]; duplicateOf: string | null;
+}
+export interface AnalysisRecord {
+  id: string; title: string; whatHappened: string; whyItMatters: string; longTermImpact: string;
+  importance: number; longTermImportance: number; horizonYears: number; opportunity: string; risk: string;
+  credibility: StoryIntelligence['credibility']; confidence: number; evidenceIds: string[];
+  relatedNewsIds: string[]; duplicateOf: string | null;
+}
+export interface FrontierAnalysisProvider {
+  id: string; kind: 'rules' | 'mock' | 'ai'; model?: string | null;
+  analyze?(input: { schemaVersion: 1; promptVersion: string; systemPrompt: string; asOf: string;
+    candidates: (NewsItem & { excerpt: string })[] }, options: { signal: AbortSignal }): Promise<{ schemaVersion: 1; items: AnalysisRecord[] }>;
+}
