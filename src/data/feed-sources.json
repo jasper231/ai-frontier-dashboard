@@ -222,17 +222,17 @@
   },
   {
     "id": "rocm",
-    "name": "AMD ROCm",
-    "url": "https://github.com/ROCm/ROCm/releases.atom",
+    "name": "AMD ROCm Systems",
+    "url": "https://github.com/ROCm/rocm-systems/releases.atom",
     "category": "chips",
     "hosts": [
       "github.com"
     ],
     "enabled": true,
     "sourceKind": "release",
-    "endpointStatus": "verified-empty",
-    "articlePathPrefix": "/ROCm/ROCm/releases/",
-    "publisher": "AMD ROCm",
+    "endpointStatus": "verified-feed",
+    "articlePathPrefix": "/ROCm/rocm-systems/releases/",
+    "publisher": "AMD",
     "verifiedAt": "2026-10-04"
   },
   {

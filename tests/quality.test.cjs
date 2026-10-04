@@ -20,6 +20,8 @@ test('ordinary release patches rank below material/security releases and reposit
  const a=assess(raw('v1.2.3'),repo,{asOf}),b=assess(raw('v2.0.0'),repo,{asOf}),c=assess(raw('v1.2.3 critical security fix'),repo,{asOf});assert.ok(a.importance<b.importance);assert.ok(a.importance<c.importance);
  assert.throws(()=>normalize({...raw('v2.0.0'),sourceUrl:'https://github.com/attacker/repo/releases/tag/v2'},repo),/repository/);
  assert.equal(normalize({...raw('v2.0.0'),sourceUrl:'https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/v2'},repo,{asOf}).sourceUrl,'https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/v2');
+ assert.equal(normalize({...raw('v2.0.0'),sourceUrl:'https://github.com/MODELCONTEXTPROTOCOL/TypeScript-SDK/releases/tag/v2'},repo,{asOf}).category,'agents');
+ assert.throws(()=>normalize({...raw('v2.0.0'),sourceUrl:'https://github.com/modelcontextprotocol/typescript-sdk-evil/releases/tag/v2'},repo,{asOf}),/repository/);
  const mit=sources.find(s=>s.id==='mit-robotics');assert.throws(()=>normalize({...raw('Astronomy observation'),content:'Stars and galaxies',sourceUrl:'https://news.mit.edu/test'},mit,{asOf}),/topic scope/);assert.equal(normalize({...raw('Humanoid robotics research'),sourceUrl:'https://news.mit.edu/test'},mit,{asOf}).category,'robotics');
 });
 test('updated-only Atom dates are opt-in, explicit, and never silently presented as publication dates',()=>{
