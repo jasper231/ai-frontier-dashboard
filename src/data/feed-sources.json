@@ -222,8 +222,8 @@
   },
   {
     "id": "rocm",
-    "name": "AMD ROCm",
-    "url": "https://github.com/ROCm/ROCm/releases.atom",
+    "name": "AMD ROCm Systems",
+    "url": "https://github.com/ROCm/rocm-systems/releases.atom",
     "category": "chips",
     "hosts": [
       "github.com"
@@ -231,8 +231,8 @@
     "enabled": true,
     "sourceKind": "release",
     "endpointStatus": "pending-runner-verification",
-    "articlePathPrefix": "/ROCm/ROCm/releases/",
-    "publisher": "AMD ROCm"
+    "articlePathPrefix": "/ROCm/rocm-systems/releases/",
+    "publisher": "AMD"
   },
   {
     "id": "geth",
