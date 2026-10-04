@@ -4,16 +4,17 @@ const {parseFeed}=require('./parser.cjs');
 const {normalize,deduplicate}=require('./normalizer.cjs');
 const {validateBatch}=require('../core.cjs');
 const {analyzeBatch}=require('../intelligence/engine.cjs');
+const {associate}=require('../quality/rules.cjs');
 async function collect(sources,fetcher,{isDemo=false,asOf=new Date().toISOString()}={}){
  const normalized=[],rawRecords=[],results=[];
  for(const source of sources){
   if(!source.enabled){results.push({id:source.id,status:'disabled',reason:source.reason});continue;}
   try{
    const xml=await fetcher(source);
-   const parsed=parseFeed(xml,source.url);let valid=0;const errors=[...parsed.errors];
+   const parsed=parseFeed(xml,source.url,{allowUpdatedAsPublished:source.sourceKind==='release'});let valid=0;const errors=[...parsed.errors];
    for(const raw of parsed.records){
     rawRecords.push({sourceId:source.id,...raw});
-    try{const item=normalize(raw,source);if(Date.parse(item.publishedAt)>Date.parse(asOf))throw new Error('Future publication date');if(isDemo){item.source+=' (测试样本)';item.tags.push('测试样本');}normalized.push(item);valid++;}catch(error){errors.push({title:raw.title,reason:error.message});}
+    try{const item=normalize(raw,source,{asOf});if(Date.parse(item.publishedAt)>Date.parse(asOf))throw new Error('Future publication date');if(isDemo){item.source+=' (测试样本)';item.tags.push('测试样本');}normalized.push(item);valid++;}catch(error){errors.push({title:raw.title,reason:error.message});}
    }
    results.push({id:source.id,status:isDemo?'fixture-tested':'fetched',format:parsed.format,rawCount:parsed.rawCount,normalizedCount:valid,errors});
   }catch(error){results.push({id:source.id,status:'failed',reason:error.message});}
@@ -26,8 +27,8 @@ async function collect(sources,fetcher,{isDemo=false,asOf=new Date().toISOString
 function atomicWrite(file,data){fs.mkdirSync(path.dirname(file),{recursive:true});const temp=file+'.tmp';fs.writeFileSync(temp,JSON.stringify(data,null,2)+'\n');fs.renameSync(temp,file);}
 async function prepareSnapshot(result,options){
  const analysis=await analyzeBatch(result.batch,{...options,rawRecords:result.rawRecords});
- const items=analysis.batch.items;
- return {...result,batch:analysis.batch,report:{...result.report,intelligence:analysis.report,deduplicatedCount:items.length,duplicatesRemoved:result.report.normalizedCount-items.length,categories:Object.fromEntries(['ai','agents','chips','robotics','crypto'].map(category=>[category,items.filter(i=>i.category===category).length]))}};
+ const items=associate(analysis.batch.items);
+ return {...result,batch:{...analysis.batch,items},report:{...result.report,intelligence:analysis.report,themeRelations:items.reduce((n,i)=>n+(i.ruleAnalysis?.relatedNews.length||0),0),deduplicatedCount:items.length,duplicatesRemoved:result.report.normalizedCount-items.length,categories:Object.fromEntries(['ai','agents','chips','robotics','crypto'].map(category=>[category,items.filter(i=>i.category===category).length]))}};
 }
 function publishResult(result,file){
  if(result.batch.isDemo)throw new Error('Refuse to publish synthetic fixture data as real news');

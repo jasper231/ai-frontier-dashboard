@@ -5,7 +5,7 @@
 })(typeof globalThis!=='undefined'?globalThis:this,function(){
   'use strict';
   const categoryIds=['ai','agents','chips','robotics','crypto'];
-  const views=['Today','Latest','Long-term'];
+  const views=['Today','Latest','Long-term','Daily Briefing'];
   function validateBatch(batch){
     if(!batch||batch.schemaVersion!==1||!Array.isArray(batch.items)||!Number.isFinite(Date.parse(batch.asOf))||batch.timeZone!=='UTC'||typeof batch.isDemo!=='boolean')throw new Error('Invalid news batch');
     const ids=new Set();
@@ -26,11 +26,30 @@
   }
   function byLatest(a,b){return Date.parse(b.publishedAt)-Date.parse(a.publishedAt)||b.importance-a.importance||a.id.localeCompare(b.id);}
   function byImportance(a,b){return b.importance-a.importance||byLatest(a,b);}
+  function dailyBriefing(items,asOf){
+    const reference=Date.parse(asOf);if(!Number.isFinite(reference))throw new Error('Invalid reference time');
+    const day=new Date(reference).toISOString().slice(0,10),urls=new Set(),titles=new Set();
+    const pool=[...items].filter(i=>Date.parse(i.publishedAt)<=reference&&new Date(i.publishedAt).toISOString().slice(0,10)===day&&i.importance>=50).sort(byImportance).filter(item=>{
+      const url=new URL(item.sourceUrl);url.hash='';for(const key of [...url.searchParams.keys()])if(/^utm_|^(gclid|fbclid)$/i.test(key))url.searchParams.delete(key);url.searchParams.sort();url.pathname=url.pathname.replace(/\/$/,'')||'/';
+      const identity=url.toString(),title=item.title.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
+      if(urls.has(identity)||(title.length>=20&&titles.has(title)))return false;urls.add(identity);if(title.length>=20)titles.add(title);return true;
+    });
+    const selected=[],sourceCounts=new Map(),categoryCounts=new Map(),themeCounts=new Map();
+    const publisher=item=>item.ruleAnalysis?.sourceQuality.publisher||item.source;
+    const merit=item=>item.importance-(sourceCounts.get(publisher(item))||0)*8-(categoryCounts.get(item.category)||0)*4-(item.ruleAnalysis?.themes||[]).reduce((n,t)=>n+(themeCounts.get(t.id)||0)*5,0);
+    while(pool.length&&selected.length<10){
+      pool.sort((a,b)=>merit(b)-merit(a)||byImportance(a,b));const item=pool.shift();selected.push(item);
+      sourceCounts.set(publisher(item),(sourceCounts.get(publisher(item))||0)+1);categoryCounts.set(item.category,(categoryCounts.get(item.category)||0)+1);
+      for(const theme of item.ruleAnalysis?.themes||[])themeCounts.set(theme.id,(themeCounts.get(theme.id)||0)+1);
+    }
+    return selected;
+  }
   function selectItems(items,view,asOf){
     if(!views.includes(view))throw new Error('Unknown view');
     const reference=Date.parse(asOf);if(!Number.isFinite(reference))throw new Error('Invalid reference time');
     const day=new Date(reference).toISOString().slice(0,10);
     const eligible=items.filter(item=>Date.parse(item.publishedAt)<=reference);
+    if(view==='Daily Briefing')return dailyBriefing(eligible,asOf);
     if(view==='Today')return eligible.filter(item=>new Date(item.publishedAt).toISOString().slice(0,10)===day).sort(byImportance);
     if(view==='Long-term')return eligible.filter(item=>item.horizonYears>=3&&item.horizonYears<=10).sort((a,b)=>b.longTermImportance-a.longTermImportance||byImportance(a,b));
     return eligible.sort(byLatest);
@@ -40,9 +59,9 @@
     validateBatch(batch);
     const items=selectItems(batch.items,view,referenceTime);
     const categories=definitions.map(c=>({...c,entries:items.filter(item=>item.category===c.id)}));
-    return {view,asOf:referenceTime,snapshotAt:batch.asOf,isDemo:batch.isDemo,items,signals:topSignals(items,view),categories,featuredCount:categories.reduce((n,c)=>n+Math.min(2,c.entries.length),0)};
+    return {view,asOf:referenceTime,snapshotAt:batch.asOf,isDemo:batch.isDemo,items,relatedItems:batch.items,signals:topSignals(items,view),categories,featuredCount:categories.reduce((n,c)=>n+Math.min(2,c.entries.length),0)};
   }
   function signalText(item){return {title:item.signalBrief?.title||item.title,happened:item.signalBrief?.happened||item.summary,matters:item.signalBrief?.matters||item.whyItMatters,impact:item.signalBrief?.impact||item.longTermImpact,domain:item.category==='chips'?'Chips':item.category==='ai'?'AI':item.category[0].toUpperCase()+item.category.slice(1)};}
   function formatDate(value){return new Date(value).toISOString().slice(0,10).replace(/-/g,'.');}
-  return {validateBatch,selectItems,topSignals,createView,signalText,formatDate};
+  return {validateBatch,selectItems,topSignals,createView,dailyBriefing,signalText,formatDate,views};
 });

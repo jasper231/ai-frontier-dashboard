@@ -74,3 +74,8 @@
 .article-source-link{display:inline-flex;align-items:center;min-height:44px;max-width:100%;margin-top:12px;padding:8px 0;color:#8e9eac;font-size:13px;line-height:1.7;overflow-wrap:anywhere;text-decoration:none}
 .article-source-link:hover{color:#c8d5df}
 @media(max-width:767px){.article-source-link{font-size:14px}}
+
+/* The fourth filter shares the frozen toolbar and remains usable on phones. */
+.view-filters{flex-wrap:wrap}
+@media(max-width:767px){.view-filters button{flex:1 0 calc(50% - 4px);white-space:nowrap}}
+.topic-relations{margin-top:8px;color:#8e9eac;font-size:13px}.topic-relations summary{min-height:44px;padding:10px 0;cursor:pointer}.topic-relations p{margin:4px 0}.topic-relations ul{padding-left:16px;margin:8px 0}.topic-relations a{display:block;min-height:44px;padding:8px 0;overflow-wrap:anywhere}.topic-relations time{font-size:12px;color:#697887}

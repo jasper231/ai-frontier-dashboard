@@ -2,11 +2,12 @@ import fs from 'node:fs';
 import core from '../src/lib/news/core.cjs';
 import renderer from '../src/lib/news/render.cjs';
 import snapshots from '../src/lib/news/snapshot.cjs';
+import quality from '../src/lib/news/quality/rules.cjs';
 const local=JSON.parse(fs.readFileSync('src/data/news.local.json','utf8'));
 let generated;
 try { generated=JSON.parse(fs.readFileSync('src/data/news.generated.json','utf8')); } catch {}
 const selection=snapshots.chooseSnapshot(generated,local);
-const batch=selection.batch;
+const batch=quality.enhanceBatch(selection.batch,JSON.parse(fs.readFileSync('src/data/feed-sources.json','utf8')));
 console.log('Snapshot: '+selection.mode+(selection.reason?' ('+selection.reason+')':''));
 const definitions=JSON.parse(fs.readFileSync('src/data/categories.json','utf8'));
 const css=fs.readFileSync('src/app/globals.css','utf8');

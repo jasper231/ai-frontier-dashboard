@@ -29,18 +29,18 @@ const find=(node,name)=>children(node).find(c=>local(c)===name);
 function rawText(node){return node.children.map(c=>typeof c==='string'?c:['script','style'].includes(local(c))?'':' '+rawText(c)+' ').join('');}
 function plain(value){return decode(value.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi,'').replace(/<[^>]*>/g,' ')).replace(/\s+/g,' ').trim();}
 function text(node,name){const c=find(node,name);return c?plain(rawText(c)):'';}
-function parseFeed(xml,baseUrl){
+function parseFeed(xml,baseUrl,{allowUpdatedAsPublished=false}={}){
  const root=tree(xml);if(!['rss','rdf','feed'].includes(local(root)))throw new Error('Not an RSS/Atom feed');
  const atom=local(root)==='feed';const entries=[];
  function walk(node,base){const nextBase=new URL(node.attrs['xml:base']||'',base).href;if(local(node)===(atom?'entry':'item'))entries.push({node,base:nextBase});else for(const c of children(node))walk(c,nextBase);}
  walk(root,baseUrl);const records=[],errors=[];
  entries.slice(0,100).forEach(({node,base},index)=>{
   try{
-   const title=text(node,'title'),publishedAt=atom?text(node,'published'):text(node,'pubdate')||text(node,'date');let link='';
+   const title=text(node,'title'),original=atom?text(node,'published'):text(node,'pubdate')||text(node,'date'),publishedAt=original||(atom&&allowUpdatedAsPublished?text(node,'updated'):'');let link='';
    if(atom){const e=children(node).find(c=>local(c)==='link'&&(c.attrs.rel||'alternate')==='alternate'&&c.attrs.href);if(e)link=new URL(e.attrs.href,new URL(e.attrs['xml:base']||'',base)).href;}
    else{link=text(node,'link');const guid=find(node,'guid');if(!link&&guid&&(guid.attrs.isPermaLink||'true').toLowerCase()!=='false')link=text(node,'guid');if(link)link=new URL(link,base).href;}
    if(!title||!link||!publishedAt)throw new Error('Missing title, URL or original publication date');
-   records.push({title,sourceUrl:link,publishedAt,content:atom?text(node,'summary')||text(node,'content'):text(node,'description')||text(node,'encoded')});
+   records.push({title,sourceUrl:link,publishedAt,...(!original?{publishedAtBasis:'updated'}:{}),content:atom?text(node,'summary')||text(node,'content'):text(node,'description')||text(node,'encoded')});
   }catch(error){errors.push({index,reason:error.message});}
  });
  return {format:atom?'atom':'rss',rawCount:entries.length,parsedCount:records.length,records,errors};

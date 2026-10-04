@@ -12,6 +12,6 @@ export function Dashboard({ batch, definitions }: { batch: NewsBatch; definition
     if(!(target instanceof Element))return;
     const button=target.closest<HTMLButtonElement>('button[data-view]');
     const value=button?.dataset.view;
-    if(value==='Today'||value==='Latest'||value==='Long-term'){setReferenceTime(new Date().toISOString());setView(value);}
+    if(value==='Today'||value==='Latest'||value==='Long-term'||value==='Daily Briefing'){setReferenceTime(new Date().toISOString());setView(value);}
   }} dangerouslySetInnerHTML={{__html:renderDashboard(model)}}/>;
 }
