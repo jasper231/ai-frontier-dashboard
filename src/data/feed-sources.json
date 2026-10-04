@@ -156,13 +156,14 @@
     ],
     "enabled": true,
     "sourceKind": "research",
-    "endpointStatus": "pending-runner-verification",
-    "publisher": "Microsoft"
+    "endpointStatus": "verified-feed",
+    "publisher": "Microsoft",
+    "verifiedAt": "2026-10-04"
   },
   {
     "id": "github-ai",
     "name": "GitHub AI Engineering",
-    "url": "https://github.blog/ai-and-ml/feed/",
+    "url": "https://github.blog/feed/",
     "category": "agents",
     "hosts": [
       "github.blog"
@@ -170,12 +171,13 @@
     "enabled": true,
     "sourceKind": "official",
     "endpointStatus": "pending-runner-verification",
-    "publisher": "Microsoft"
+    "publisher": "Microsoft",
+    "topicFilter": "frontier"
   },
   {
     "id": "mit-robotics",
     "name": "MIT Robotics",
-    "url": "https://news.mit.edu/rss/topic/robotics",
+    "url": "https://news.mit.edu/rss/feed",
     "category": "robotics",
     "hosts": [
       "news.mit.edu"
@@ -183,7 +185,8 @@
     "enabled": true,
     "sourceKind": "research",
     "endpointStatus": "pending-runner-verification",
-    "publisher": "MIT Robotics"
+    "publisher": "MIT Robotics",
+    "topicFilter": "robotics"
   },
   {
     "id": "arxiv-ml",
@@ -195,8 +198,9 @@
     ],
     "enabled": true,
     "sourceKind": "preprint",
-    "endpointStatus": "pending-runner-verification",
-    "publisher": "arXiv"
+    "endpointStatus": "verified-empty",
+    "publisher": "arXiv",
+    "verifiedAt": "2026-10-04"
   },
   {
     "id": "mcp-sdk",
@@ -208,9 +212,10 @@
     ],
     "enabled": true,
     "sourceKind": "release",
-    "endpointStatus": "pending-runner-verification",
+    "endpointStatus": "verified-feed",
     "articlePathPrefix": "/modelcontextprotocol/typescript-sdk/releases/",
-    "publisher": "MCP TypeScript SDK"
+    "publisher": "MCP TypeScript SDK",
+    "verifiedAt": "2026-10-04"
   },
   {
     "id": "rocm",
@@ -222,9 +227,10 @@
     ],
     "enabled": true,
     "sourceKind": "release",
-    "endpointStatus": "pending-runner-verification",
+    "endpointStatus": "verified-empty",
     "articlePathPrefix": "/ROCm/ROCm/releases/",
-    "publisher": "AMD ROCm"
+    "publisher": "AMD ROCm",
+    "verifiedAt": "2026-10-04"
   },
   {
     "id": "geth",
@@ -236,8 +242,9 @@
     ],
     "enabled": true,
     "sourceKind": "release",
-    "endpointStatus": "pending-runner-verification",
+    "endpointStatus": "verified-feed",
     "articlePathPrefix": "/ethereum/go-ethereum/releases/",
-    "publisher": "Ethereum"
+    "publisher": "Ethereum",
+    "verifiedAt": "2026-10-04"
   }
 ]

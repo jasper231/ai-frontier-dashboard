@@ -1,6 +1,6 @@
 const {createHash}=require('node:crypto');
 const core=require('../core.cjs');
-const {assess}=require('../quality/rules.cjs');
+const {assess,themesFor}=require('../quality/rules.cjs');
 const rules=[
  ['crypto',/\b(ethereum|stablecoin|usdc|usdt|blockchain|onchain|on-chain|coinbase|tokenization|defi)\b/i,'稳定币与可信基础设施', '结算与可信基础设施可能受影响。','3–10 年：数字结算与可信计算。'],
  ['robotics',/\b(robot(?:s|ics|ic)?|embodied|humanoid|manipulation|autonomous vehicles?)\b/i,'具身智能','物理任务自动化能力值得验证。','3–10 年：具身智能与机器人。'],
@@ -14,6 +14,7 @@ function normalize(raw,source,options={}){
  if(!['http:','https:'].includes(url.protocol)||!source.hosts.some(h=>url.hostname===h||url.hostname.endsWith('.'+h)))throw new Error('Non-official article URL');
  if(url.username||url.password)throw new Error('Credentials in article URL');
  if(source.articlePathPrefix&&!url.pathname.startsWith(source.articlePathPrefix))throw new Error('Non-official repository path');
+ if(source.topicFilter){const themes=themesFor(raw.title,raw.content);if(source.topicFilter==='robotics'?!themes.some(t=>t.id==='physical-automation'):!themes.length)throw new Error('Outside configured frontier topic scope');}
  const timestamp=Date.parse(raw.publishedAt);if(!Number.isFinite(timestamp))throw new Error('Invalid publication date');
  // Prefer the headline when classifying; body keyword matches are secondary.
  const rule=rules.find(r=>r[1].test(raw.title))||(source.sourceKind==='release'?rules.find(r=>r[0]===source.category):null)||rules.find(r=>r[1].test(raw.content))||rules.find(r=>r[0]===source.category);
