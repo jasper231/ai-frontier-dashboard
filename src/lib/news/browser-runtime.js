@@ -17,7 +17,7 @@
       const button = target && typeof target.closest === 'function' ? target.closest('[data-view]') : null;
       if (!button) return; // Native title/source links keep their default navigation.
       const view = button.getAttribute('data-view');
-      if (!['Today', 'Latest', 'Long-term'].includes(view)) return;
+      if (!globalThis.FrontierData.views.includes(view)) return;
       selectedView = view;
       render();
       const selectedButton = root.querySelector('[data-view="' + selectedView + '"]');

@@ -1,6 +1,13 @@
 name: Refresh official news
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/data/feed-sources.json'
+      - 'src/lib/news/quality/**'
+      - 'src/lib/news/feeds/**'
+      - '.github/workflows/refresh-news.yml'
   workflow_dispatch:
   schedule:
     - cron: '0 */3 * * *'
@@ -48,7 +55,6 @@ jobs:
         env:
           # Phase one: no paid transport exists. Mock is never published as real news.
           AI_PROVIDER: rules
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: node scripts/refresh-news.cjs --live
       - name: Generate static page with generated or fallback data
         run: node scripts/build-pages.mjs
@@ -58,6 +64,7 @@ jobs:
           node tests/news.test.cjs
           node tests/pages.test.cjs
           node tests/intelligence.test.cjs
+          node tests/quality.test.cjs
       - name: Save refresh diagnostics
         if: always()
         uses: actions/upload-artifact@v4

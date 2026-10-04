@@ -17,7 +17,8 @@
     "build:pages": "node scripts/build-pages.mjs",
     "test:pages": "node tests/pages.test.cjs",
     "test:ai": "node tests/intelligence.test.cjs",
-    "news:mock": "node scripts/refresh-news.cjs --fixtures --ai-mock"
+    "news:mock": "node scripts/refresh-news.cjs --fixtures --ai-mock",
+    "test:quality": "node tests/quality.test.cjs"
   },
   "dependencies": {
     "next": "^16.0.0",

@@ -8,7 +8,9 @@
       "openai.com"
     ],
     "enabled": true,
-    "endpointStatus": "unverified-network-blocked"
+    "endpointStatus": "unverified-network-blocked",
+    "sourceKind": "official",
+    "publisher": "OpenAI"
   },
   {
     "id": "anthropic",
@@ -20,7 +22,9 @@
     ],
     "enabled": false,
     "reason": "尚未确认稳定的官方 RSS/Atom 地址，不使用第三方转制 feed",
-    "endpointStatus": "awaiting-official-feed"
+    "endpointStatus": "awaiting-official-feed",
+    "sourceKind": "official",
+    "publisher": "Anthropic"
   },
   {
     "id": "google-ai",
@@ -31,7 +35,9 @@
       "blog.google"
     ],
     "enabled": true,
-    "endpointStatus": "unverified-network-blocked"
+    "endpointStatus": "unverified-network-blocked",
+    "sourceKind": "official",
+    "publisher": "Google"
   },
   {
     "id": "deepmind",
@@ -42,7 +48,9 @@
       "deepmind.google"
     ],
     "enabled": true,
-    "endpointStatus": "unverified-network-blocked"
+    "endpointStatus": "unverified-network-blocked",
+    "sourceKind": "official",
+    "publisher": "Google"
   },
   {
     "id": "nvidia",
@@ -54,7 +62,9 @@
       "nvidia.com"
     ],
     "enabled": true,
-    "endpointStatus": "unverified-network-blocked"
+    "endpointStatus": "unverified-network-blocked",
+    "sourceKind": "official",
+    "publisher": "NVIDIA"
   },
   {
     "id": "huggingface",
@@ -65,7 +75,9 @@
       "huggingface.co"
     ],
     "enabled": true,
-    "endpointStatus": "unverified-network-blocked"
+    "endpointStatus": "unverified-network-blocked",
+    "sourceKind": "official",
+    "publisher": "Hugging Face"
   },
   {
     "id": "arxiv-ai",
@@ -76,7 +88,9 @@
       "arxiv.org"
     ],
     "enabled": true,
-    "endpointStatus": "unverified-network-blocked"
+    "endpointStatus": "unverified-network-blocked",
+    "sourceKind": "preprint",
+    "publisher": "arXiv"
   },
   {
     "id": "arxiv-robotics",
@@ -87,7 +101,9 @@
       "arxiv.org"
     ],
     "enabled": true,
-    "endpointStatus": "unverified-network-blocked"
+    "endpointStatus": "unverified-network-blocked",
+    "sourceKind": "preprint",
+    "publisher": "arXiv"
   },
   {
     "id": "ethereum",
@@ -99,7 +115,9 @@
       "ethereum.org"
     ],
     "enabled": true,
-    "endpointStatus": "unverified-network-blocked"
+    "endpointStatus": "unverified-network-blocked",
+    "sourceKind": "official",
+    "publisher": "Ethereum"
   },
   {
     "id": "coinbase",
@@ -110,7 +128,9 @@
       "coinbase.com"
     ],
     "enabled": true,
-    "endpointStatus": "unverified-network-blocked"
+    "endpointStatus": "unverified-network-blocked",
+    "sourceKind": "official",
+    "publisher": "Coinbase"
   },
   {
     "id": "circle",
@@ -121,6 +141,113 @@
       "circle.com"
     ],
     "enabled": true,
-    "endpointStatus": "unverified-network-blocked"
+    "endpointStatus": "unverified-network-blocked",
+    "sourceKind": "official",
+    "publisher": "Circle"
+  },
+  {
+    "id": "microsoft-research",
+    "name": "Microsoft Research",
+    "url": "https://www.microsoft.com/en-us/research/feed/",
+    "category": "ai",
+    "hosts": [
+      "www.microsoft.com",
+      "microsoft.com"
+    ],
+    "enabled": true,
+    "sourceKind": "research",
+    "endpointStatus": "verified-feed",
+    "publisher": "Microsoft",
+    "verifiedAt": "2026-10-04"
+  },
+  {
+    "id": "github-ai",
+    "name": "GitHub AI Engineering",
+    "url": "https://github.blog/feed/",
+    "category": "agents",
+    "hosts": [
+      "github.blog"
+    ],
+    "enabled": false,
+    "sourceKind": "official",
+    "endpointStatus": "unavailable-non-feed-response",
+    "publisher": "Microsoft",
+    "topicFilter": "frontier",
+    "reason": "2026-10-04: both topic and root feed returned a non-accepted DTD/HTML response; disabled without weakening XML safety.",
+    "verifiedAt": "2026-10-04"
+  },
+  {
+    "id": "mit-robotics",
+    "name": "MIT Robotics",
+    "url": "https://news.mit.edu/rss/feed",
+    "category": "robotics",
+    "hosts": [
+      "news.mit.edu"
+    ],
+    "enabled": true,
+    "sourceKind": "research",
+    "endpointStatus": "verified-feed-topic-filtered",
+    "publisher": "MIT Robotics",
+    "topicFilter": "robotics",
+    "verifiedAt": "2026-10-04"
+  },
+  {
+    "id": "arxiv-ml",
+    "name": "arXiv cs.LG",
+    "url": "https://rss.arxiv.org/rss/cs.LG",
+    "category": "ai",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "enabled": true,
+    "sourceKind": "preprint",
+    "endpointStatus": "verified-empty",
+    "publisher": "arXiv",
+    "verifiedAt": "2026-10-04"
+  },
+  {
+    "id": "mcp-sdk",
+    "name": "MCP TypeScript SDK",
+    "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases.atom",
+    "category": "agents",
+    "hosts": [
+      "github.com"
+    ],
+    "enabled": true,
+    "sourceKind": "release",
+    "endpointStatus": "verified-feed",
+    "articlePathPrefix": "/modelcontextprotocol/typescript-sdk/releases/",
+    "publisher": "MCP TypeScript SDK",
+    "verifiedAt": "2026-10-04"
+  },
+  {
+    "id": "rocm",
+    "name": "AMD ROCm",
+    "url": "https://github.com/ROCm/ROCm/releases.atom",
+    "category": "chips",
+    "hosts": [
+      "github.com"
+    ],
+    "enabled": true,
+    "sourceKind": "release",
+    "endpointStatus": "verified-empty",
+    "articlePathPrefix": "/ROCm/ROCm/releases/",
+    "publisher": "AMD ROCm",
+    "verifiedAt": "2026-10-04"
+  },
+  {
+    "id": "geth",
+    "name": "Ethereum Geth",
+    "url": "https://github.com/ethereum/go-ethereum/releases.atom",
+    "category": "crypto",
+    "hosts": [
+      "github.com"
+    ],
+    "enabled": true,
+    "sourceKind": "release",
+    "endpointStatus": "verified-feed",
+    "articlePathPrefix": "/ethereum/go-ethereum/releases/",
+    "publisher": "Ethereum",
+    "verifiedAt": "2026-10-04"
   }
 ]
