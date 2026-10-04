@@ -1,0 +1,32 @@
+name: Validate Frontier Intelligence
+on:
+  push:
+    branches: [engine-validation-20261004]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci --no-audit --no-fund
+      - name: All data, feed, Pages and intelligence checks
+        run: |
+          npm run build:pages
+          npm run test:data
+          npm run test:feeds
+          npm run test:pages
+          npm run test:ai
+          npm run typecheck
+          npm run lint
+          npm run news:mock
+          npm run build:pages
+      - name: Real Chrome regression
+        run: |
+          node scripts/create-browser-regression.mjs
+          google-chrome --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=3000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/check-browser-result.cjs

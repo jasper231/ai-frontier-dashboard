@@ -3,6 +3,7 @@ const path=require('node:path');
 const {parseFeed}=require('./parser.cjs');
 const {normalize,deduplicate}=require('./normalizer.cjs');
 const {validateBatch}=require('../core.cjs');
+const {analyzeBatch}=require('../intelligence/engine.cjs');
 async function collect(sources,fetcher,{isDemo=false,asOf=new Date().toISOString()}={}){
  const normalized=[],rawRecords=[],results=[];
  for(const source of sources){
@@ -23,9 +24,15 @@ async function collect(sources,fetcher,{isDemo=false,asOf=new Date().toISOString
  return {batch,rawRecords,report:{mode:isDemo?'fixtures':'live',asOf,sources:results,rawCount:results.reduce((n,s)=>n+(s.rawCount||0),0),normalizedCount:normalized.length,deduplicatedCount:items.length,duplicatesRemoved:normalized.length-items.length,categories}};
 }
 function atomicWrite(file,data){fs.mkdirSync(path.dirname(file),{recursive:true});const temp=file+'.tmp';fs.writeFileSync(temp,JSON.stringify(data,null,2)+'\n');fs.renameSync(temp,file);}
+async function prepareSnapshot(result,options){
+ const analysis=await analyzeBatch(result.batch,{...options,rawRecords:result.rawRecords});
+ const items=analysis.batch.items;
+ return {...result,batch:analysis.batch,report:{...result.report,intelligence:analysis.report,deduplicatedCount:items.length,duplicatesRemoved:result.report.normalizedCount-items.length,categories:Object.fromEntries(['ai','agents','chips','robotics','crypto'].map(category=>[category,items.filter(i=>i.category===category).length]))}};
+}
 function publishResult(result,file){
  if(result.batch.isDemo)throw new Error('Refuse to publish synthetic fixture data as real news');
+ if(result.batch.items.some(item=>item.intelligence?.origin==='mock'))throw new Error('Refuse to publish mock analysis as real news');
  if(!result.batch.items.length)return {written:false,reason:'No valid articles; existing generated snapshot preserved'};
  validateBatch(result.batch);atomicWrite(file,result.batch);return {written:true};
 }
-module.exports={collect,atomicWrite,publishResult};
+module.exports={collect,prepareSnapshot,atomicWrite,publishResult};

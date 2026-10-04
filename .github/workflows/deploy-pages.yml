@@ -56,6 +56,7 @@ jobs:
           npm run test:data
           npm run test:feeds
           npm run test:pages
+          npm run test:ai
           npm run typecheck
           npm run lint
           npm run build:pages
