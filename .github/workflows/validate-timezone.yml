@@ -1,0 +1,35 @@
+name: Validate Shanghai timezone
+on:
+  push:
+    branches: [timezone-validation-20261004]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci --no-audit --no-fund
+      - run: |
+          npm run build:pages
+          npm run test:data
+          npm run test:feeds
+          npm run test:pages
+          npm run test:ai
+          npm run test:quality
+          npm run typecheck
+          npm run lint
+          npm run build:pages
+      - name: Browser and mobile UTC-boundary regression
+        run: |
+          node scripts/create-browser-regression.mjs
+          CHROME_BIN=$(command -v google-chrome || command -v chromium)
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=3000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/check-browser-result.cjs
+      - name: Preserve news snapshot
+        run: |
+          git diff --exit-code -- src/data/news.generated.json src/data/news.local.json src/data/news-status.json .github/workflows/refresh-news.yml
+          node -e "const b=require('./src/data/news.generated.json');console.log('Preserved UTC snapshot:',b.items.length,'items;',b.timeZone,b.asOf)"

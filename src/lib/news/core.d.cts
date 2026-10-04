@@ -7,3 +7,5 @@ export function topSignals(items: NewsItem[], view?: View): NewsItem[];
 export function createView(batch: NewsBatch, definitions: CategoryDefinition[], view: View, referenceTime?: string): DashboardView;
 export function signalText(item: NewsItem): {title:string;happened:string;matters:string;impact:string;domain:string};
 export function formatDate(value: string): string;
+export function shanghaiDay(value: string | number): string;
+export function formatUpdated(value: string): string;

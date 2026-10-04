@@ -33,7 +33,7 @@
   function renderDashboard(vm){
     const byId=new Map((vm.relatedItems||vm.items).map(item=>[item.id,item]));
     const editionNote=vm.view==='Daily Briefing'?` · Daily Briefing：${vm.items.length} 条当天精选${vm.items.length<5?'（当天合格内容不足 5 条，不补旧闻）':''}`:'';
-    const note=vm.isDemo?'最后更新：尚无真实更新 · 本地示例':`最后更新：${new Date(vm.snapshotAt).toISOString().slice(0,16).replace('T',' ')} UTC`;
+    const note=vm.isDemo?'最后更新：尚无真实更新 · 本地示例':`最后更新：${core.formatUpdated(vm.snapshotAt)}`;
     return `<a class="skip-link" href="#main">跳转到内容</a><header class="topbar"><a class="brand" href="#">FRONTIER <span>/ PERSONAL INTELLIGENCE</span></a><span class="edition">LOCAL EDITION</span></header><div class="shell"><aside class="sidebar"><div class="nav-label">观察领域 / 05</div><nav aria-label="栏目导航">${vm.categories.map((c,i)=>`<a href="#${c.id}"><span class="nav-index">0${i+1}</span>${escape(c.title)}</a>`).join('')}</nav><p class="sidebar-note">独立观察。<br>持续形成判断。</p></aside><main id="main"><div class="intro"><div class="eyebrow">个人前沿科技情报终端</div><h1>AI Frontier</h1><p>Track what matters. Understand why it matters.</p></div><div class="brief-toolbar"><div class="view-filters" role="group" aria-label="浏览视角">${core.views.map(label=>`<button type="button" data-view="${label}" aria-pressed="${vm.view===label}">${label}</button>`).join('')}</div><span class="demo-note">${note}${editionNote}</span></div>${renderSignals(vm)}<div class="feed-title"><span>FIELD NOTES / 详细浏览</span><span>05 领域 · ${vm.featuredCount} 条精选</span></div>${vm.categories.map((c,i)=>renderSection(c,i,vm.isDemo,byId)).join('')}<footer><span>FRONTIER / 独立观察，持续思考。</span><span>${vm.isDemo?'本地示例内容与日期 · 非实时新闻':'本地新闻快照'}</span></footer></main></div>`;
   }
   return {renderDashboard};

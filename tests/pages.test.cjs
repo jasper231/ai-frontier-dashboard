@@ -3,7 +3,7 @@ const {renderDashboard}=require('../src/lib/news/render.cjs');const {createView}
 const local=require('../src/data/news.local.json');const definitions=require('../src/data/categories.json');
 test('last update displays snapshot time and fallback never pretends to be a successful refresh',()=>{
  const real={...local,isDemo:false,asOf:'2026-10-03T12:34:56Z'};
- assert.match(renderDashboard(createView(real,definitions,'Latest',real.asOf)),/最后更新：2026-10-03 12:34 UTC/);
+ assert.match(renderDashboard(createView(real,definitions,'Latest',real.asOf)),/最后更新：2026-10-03 20:34 北京时间（2026-10-03 12:34 UTC）/);
  assert.match(renderDashboard(createView(local,definitions,'Latest',local.asOf)),/最后更新：尚无真实更新 · 本地示例/);
 });
 test('Pages output is a complete offline page without absolute local assets',()=>{
@@ -24,7 +24,7 @@ test('lastUpdated remains the last successful fetch after failures, not the late
 });
 
 test('real cards and Top Signals have native official title and footer links in all views',()=>{
- const real={...local,isDemo:false,items:local.items.map((item,i)=>({...item,source:'Official Source',sourceUrl:`https://openai.com/news/article-${i}?a=1&b=2`}))};
+ const real={...local,isDemo:false,asOf:'2026-10-02T15:59:59Z',items:local.items.map((item,i)=>({...item,source:'Official Source',sourceUrl:`https://openai.com/news/article-${i}?a=1&b=2`}))};
  for(const view of ['Today','Latest','Long-term']){
   const model=createView(real,definitions,view,real.asOf),html=renderDashboard(model);
   const articles=[...html.matchAll(/<article class="(card|signal)" data-item-id="([^"]+)">([\s\S]*?)<\/article>/g)];
@@ -52,7 +52,7 @@ test('static generator embeds working real links and filtering preserves them wi
  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'frontier-real-link-test-'));
  try{
   for(const folder of ['src','scripts','public'])fs.cpSync(folder,path.join(tmp,folder),{recursive:true});
-  const real={...local,isDemo:false,items:local.items.map((item,i)=>({...item,source:'Official Test',sourceUrl:`https://openai.com/news/official-${i}`}))};
+  const real={...local,isDemo:false,asOf:'2026-10-02T15:59:59Z',items:local.items.map((item,i)=>({...item,source:'Official Test',sourceUrl:`https://openai.com/news/official-${i}`}))};
   fs.writeFileSync(path.join(tmp,'src/data/news.generated.json'),JSON.stringify(real));
   const previous=process.cwd();process.chdir(tmp);
   try{await import('file://'+path.resolve(previous,'scripts/build-pages.mjs')+'?link-test');}finally{process.chdir(previous);}

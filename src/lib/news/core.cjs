@@ -6,6 +6,16 @@
   'use strict';
   const categoryIds=['ai','agents','chips','robotics','crypto'];
   const views=['Today','Latest','Long-term','Daily Briefing'];
+  // Display-day conversion only; stored timestamps and chronological ranking stay UTC.
+  const shanghaiFormatter=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
+  function shanghaiParts(value){
+    return Object.fromEntries(shanghaiFormatter.formatToParts(new Date(value)).map(part=>[part.type,part.value]));
+  }
+  function shanghaiDay(value){const p=shanghaiParts(value);return `${p.year}-${p.month}-${p.day}`;}
+  function formatUpdated(value){
+    const p=shanghaiParts(value),utc=new Date(value).toISOString().slice(0,16).replace('T',' ');
+    return `${p.year}-${p.month}-${p.day} ${p.hour}:${p.minute} 北京时间（${utc} UTC）`;
+  }
   function validateBatch(batch){
     if(!batch||batch.schemaVersion!==1||!Array.isArray(batch.items)||!Number.isFinite(Date.parse(batch.asOf))||batch.timeZone!=='UTC'||typeof batch.isDemo!=='boolean')throw new Error('Invalid news batch');
     const ids=new Set();
@@ -28,8 +38,8 @@
   function byImportance(a,b){return b.importance-a.importance||byLatest(a,b);}
   function dailyBriefing(items,asOf){
     const reference=Date.parse(asOf);if(!Number.isFinite(reference))throw new Error('Invalid reference time');
-    const day=new Date(reference).toISOString().slice(0,10),urls=new Set(),titles=new Set();
-    const pool=[...items].filter(i=>Date.parse(i.publishedAt)<=reference&&new Date(i.publishedAt).toISOString().slice(0,10)===day&&i.importance>=50).sort(byImportance).filter(item=>{
+    const day=shanghaiDay(reference),urls=new Set(),titles=new Set();
+    const pool=[...items].filter(i=>Date.parse(i.publishedAt)<=reference&&shanghaiDay(i.publishedAt)===day&&i.importance>=50).sort(byImportance).filter(item=>{
       const url=new URL(item.sourceUrl);url.hash='';for(const key of [...url.searchParams.keys()])if(/^utm_|^(gclid|fbclid)$/i.test(key))url.searchParams.delete(key);url.searchParams.sort();url.pathname=url.pathname.replace(/\/$/,'')||'/';
       const identity=url.toString(),title=item.title.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
       if(urls.has(identity)||(title.length>=20&&titles.has(title)))return false;urls.add(identity);if(title.length>=20)titles.add(title);return true;
@@ -47,10 +57,10 @@
   function selectItems(items,view,asOf){
     if(!views.includes(view))throw new Error('Unknown view');
     const reference=Date.parse(asOf);if(!Number.isFinite(reference))throw new Error('Invalid reference time');
-    const day=new Date(reference).toISOString().slice(0,10);
+    const day=shanghaiDay(reference);
     const eligible=items.filter(item=>Date.parse(item.publishedAt)<=reference);
     if(view==='Daily Briefing')return dailyBriefing(eligible,asOf);
-    if(view==='Today')return eligible.filter(item=>new Date(item.publishedAt).toISOString().slice(0,10)===day).sort(byImportance);
+    if(view==='Today')return eligible.filter(item=>shanghaiDay(item.publishedAt)===day).sort(byImportance);
     if(view==='Long-term')return eligible.filter(item=>item.horizonYears>=3&&item.horizonYears<=10).sort((a,b)=>b.longTermImportance-a.longTermImportance||byImportance(a,b));
     return eligible.sort(byLatest);
   }
@@ -63,5 +73,5 @@
   }
   function signalText(item){return {title:item.signalBrief?.title||item.title,happened:item.signalBrief?.happened||item.summary,matters:item.signalBrief?.matters||item.whyItMatters,impact:item.signalBrief?.impact||item.longTermImpact,domain:item.category==='chips'?'Chips':item.category==='ai'?'AI':item.category[0].toUpperCase()+item.category.slice(1)};}
   function formatDate(value){return new Date(value).toISOString().slice(0,10).replace(/-/g,'.');}
-  return {validateBatch,selectItems,topSignals,createView,dailyBriefing,signalText,formatDate,views};
+  return {validateBatch,selectItems,topSignals,createView,dailyBriefing,signalText,formatDate,shanghaiDay,formatUpdated,views};
 });
