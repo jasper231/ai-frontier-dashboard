@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-04T20:47:16.375Z",
+  "asOf": "2026-10-04T23:46:42.536Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -26,8 +26,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
