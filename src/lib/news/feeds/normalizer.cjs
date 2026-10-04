@@ -13,7 +13,8 @@ function normalize(raw,source,options={}){
  const url=new URL(raw.sourceUrl);
  if(!['http:','https:'].includes(url.protocol)||!source.hosts.some(h=>url.hostname===h||url.hostname.endsWith('.'+h)))throw new Error('Non-official article URL');
  if(url.username||url.password)throw new Error('Credentials in article URL');
- if(source.articlePathPrefix&&!url.pathname.startsWith(source.articlePathPrefix))throw new Error('Non-official repository path');
+ // GitHub owner/repository names are case-insensitive; keep the same scoped prefix.
+ if(source.articlePathPrefix&&!(url.hostname==='github.com'?url.pathname.toLowerCase().startsWith(source.articlePathPrefix.toLowerCase()):url.pathname.startsWith(source.articlePathPrefix)))throw new Error('Non-official repository path');
  if(source.topicFilter){const themes=themesFor(raw.title,raw.content);if(source.topicFilter==='robotics'?!themes.some(t=>t.id==='physical-automation'):!themes.length)throw new Error('Outside configured frontier topic scope');}
  const timestamp=Date.parse(raw.publishedAt);if(!Number.isFinite(timestamp))throw new Error('Invalid publication date');
  // Prefer the headline when classifying; body keyword matches are secondary.

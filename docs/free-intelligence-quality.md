@@ -8,7 +8,7 @@ Production uses `AI_PROVIDER: rules`. This phase changes no AI provider interfac
 
 Each normalized item records `ruleAnalysis.scoring` with reasons/points, `sourceQuality`, themes and timestamp basis. Implications and conditional 3–10 year scenarios depend on the detected theme. These are heuristics, not GPT analysis or investment advice. The system cannot establish truth from a headline or short feed excerpt.
 
-`enhanceBatch` also upgrades older official snapshots at the data-provider/static-build boundary, preserving their actual refresh time and article provenance. Demo and AI/mock analyses are left intact. RSS refreshes persist the new rule metadata into `news.generated.json` normally; the last-good/local fallback policy remains unchanged.
+`enhanceBatch` also upgrades older official snapshots at the data-provider/static-build boundary, preserving their actual refresh time and article provenance. Demo and AI/mock analyses are left intact. RSS refreshes persist the new rule metadata into `news.generated.json` normally; the last-good/local fallback policy remains unchanged. Source/rule configuration pushes also trigger the existing refresh workflow, in addition to the retained three-hour schedule; generated-data-only commits do not match that push filter.
 
 ## Shared themes
 
@@ -24,7 +24,7 @@ Top Signals are recomputed from the selected briefing. Latest, Today and Long-te
 
 Seven candidate feeds: Microsoft Research, GitHub AI Engineering, MIT Robotics, arXiv cs.LG, the official MCP TypeScript SDK, AMD ROCm and Ethereum Geth release feeds. Official GitHub repo feeds are restricted by both host and repository release-path prefix. GitHub release Atom often supplies `updated` instead of `published`; only explicitly configured release feeds may use that timestamp, with `publishedAtBasis: updated` and the visible “来源更新时间” tag. Other feeds continue rejecting records without original publication dates.
 
-`scripts/check-public-sources.cjs` performs read-only endpoint/parse/normalization probes and saves `artifacts/public-source-check.json`. Source configuration records verification results. A failed feed remains isolated and cannot erase the last successful snapshot. No keys or logins are used.
+`scripts/check-public-sources.cjs` performs read-only endpoint/parse/normalization probes and saves `artifacts/public-source-check.json`. Source configuration records verification results. On 2026-10-04 the runner normalized 10 Microsoft Research, 10 MCP SDK, 10 Geth and 2 MIT robotics stories. arXiv cs.LG had a valid empty feed. ROCm release links required GitHub repository-name case normalization, covered by the repository-scope regression tests. GitHub blog topic/root responses were not accepted as safe feed XML and the source is disabled; the DTD guard was not weakened. MIT uses its official general RSS with a robotics topic filter after the topic RSS returned 404. A failed feed remains isolated and cannot erase the last successful snapshot. No keys or logins are used.
 
 ## Verification
 

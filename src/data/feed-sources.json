@@ -168,11 +168,13 @@
     "hosts": [
       "github.blog"
     ],
-    "enabled": true,
+    "enabled": false,
     "sourceKind": "official",
-    "endpointStatus": "pending-runner-verification",
+    "endpointStatus": "unavailable-non-feed-response",
     "publisher": "Microsoft",
-    "topicFilter": "frontier"
+    "topicFilter": "frontier",
+    "reason": "2026-10-04: both topic and root feed returned a non-accepted DTD/HTML response; disabled without weakening XML safety.",
+    "verifiedAt": "2026-10-04"
   },
   {
     "id": "mit-robotics",
@@ -184,9 +186,10 @@
     ],
     "enabled": true,
     "sourceKind": "research",
-    "endpointStatus": "pending-runner-verification",
+    "endpointStatus": "verified-feed-topic-filtered",
     "publisher": "MIT Robotics",
-    "topicFilter": "robotics"
+    "topicFilter": "robotics",
+    "verifiedAt": "2026-10-04"
   },
   {
     "id": "arxiv-ml",
@@ -227,10 +230,9 @@
     ],
     "enabled": true,
     "sourceKind": "release",
-    "endpointStatus": "verified-empty",
+    "endpointStatus": "pending-runner-verification",
     "articlePathPrefix": "/ROCm/ROCm/releases/",
-    "publisher": "AMD ROCm",
-    "verifiedAt": "2026-10-04"
+    "publisher": "AMD ROCm"
   },
   {
     "id": "geth",
