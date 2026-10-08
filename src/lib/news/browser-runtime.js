@@ -4,8 +4,9 @@
  function start(){
   const root=document.getElementById('dashboard-root');if(!root)return;
   const batch=JSON.parse(document.getElementById('news-snapshot').textContent),definitions=JSON.parse(document.getElementById('category-definitions').textContent);
+  const briefing=JSON.parse(document.getElementById('briefing-snapshot').textContent);
   const preferences=globalThis.FrontierPreferences.controller;let selectedView='Latest';
-  function render(){root.innerHTML=globalThis.FrontierRender.renderDashboard(globalThis.FrontierData.createView(batch,definitions,selectedView,new Date().toISOString()),preferences.snapshot());preferences.ready();}
+  function render(){root.innerHTML=globalThis.FrontierRender.renderDashboard(globalThis.FrontierData.createView(batch,definitions,selectedView,new Date().toISOString()),{...preferences.snapshot(),briefing});preferences.ready();}
   preferences.subscribe(render);
   root.addEventListener('click',function(event){
    const target=event.target&&event.target.nodeType===3?event.target.parentElement:event.target;

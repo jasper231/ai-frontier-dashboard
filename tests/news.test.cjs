@@ -94,7 +94,7 @@ test('Daily Briefing uses the Beijing day, caps at ten, and never fills from yes
  assert.equal(core.dailyBriefing(candidates,'2026-10-04T16:00:00Z').length,0);
  const model=core.createView({...batch,isDemo:false,asOf,items:[candidates[0],old]},definitions,'Daily Briefing',asOf);
  assert.equal(model.items.length,1);assert.deepEqual(model.signals.map(i=>i.id),['brief-0']);
- assert.match(renderDashboard(model),/1 条当天精选（当天合格内容不足 5 条，不补旧闻）/);
+ assert.match(renderDashboard(model),/data-briefing-status="unpublished"/);
 });
 test('timezone conversion does not change absolute Latest chronology or Long-term ranking',()=>{
  const items=[

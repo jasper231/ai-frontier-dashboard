@@ -1,0 +1,46 @@
+name: Validate editorial Briefing
+on:
+  push:
+    branches: [briefing-editorial-validation-20261008]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci --no-audit --no-fund
+      - name: Full data, editorial and UI checks
+        run: |
+          npm run build:pages
+          npm run test:data
+          npm run test:feeds
+          npm run test:pages
+          npm run test:ai
+          npm run test:quality
+          npm run typecheck
+          npm run lint
+          npm run build
+          npm run build:pages
+          npm run briefing:prepare
+      - name: Real browser and 390px narrative-reading regression
+        run: |
+          mkdir -p artifacts
+          cp dist/index.html artifacts/live-pages.html
+          node scripts/verify-live-pages.cjs
+          CHROME_BIN=$(command -v google-chrome || command -v chromium)
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=5000 --dump-dom "file://$PWD/artifacts/live-browser-check.html" > artifacts/live-browser-dom.html
+          node scripts/check-live-result.cjs
+          node scripts/create-browser-regression.mjs
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=5000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/check-browser-result.cjs
+          git diff --exit-code -- src/data/news.generated.json src/data/news.local.json src/data/news-status.json .github/workflows/refresh-news.yml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: editorial-briefing-regression
+          path: artifacts/

@@ -1,0 +1,399 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jasper231.github.io/ai-frontier-dashboard/schemas/briefing.schema.json",
+  "title": "Evidence-linked bilingual AI & Frontier Briefing edition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "status",
+    "timeZone",
+    "date",
+    "generatedAt",
+    "sourceSnapshotAt",
+    "provenance",
+    "sources",
+    "executiveOpening",
+    "stories",
+    "watchNext",
+    "keyword"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "status": {
+      "const": "published"
+    },
+    "timeZone": {
+      "const": "Asia/Shanghai"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$"
+    },
+    "sourceSnapshotAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$"
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "author",
+        "evidenceReviewed",
+        "bilingualReviewed"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "human",
+            "agent"
+          ]
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidenceReviewed": {
+          "const": true
+        },
+        "bilingualReviewed": {
+          "const": true
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "executiveOpening": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/narrative"
+          },
+          {
+            "properties": {
+              "kind": {
+                "const": "analysis"
+              }
+            }
+          }
+        ]
+      },
+      "maxItems": 4
+    },
+    "stories": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5,
+      "items": {
+        "$ref": "#/$defs/story"
+      }
+    },
+    "watchNext": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/$defs/narrative"
+          },
+          {
+            "properties": {
+              "kind": {
+                "const": "hypothesis"
+              }
+            }
+          }
+        ]
+      },
+      "maxItems": 3
+    },
+    "keyword": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "term",
+        "explanation"
+      ],
+      "properties": {
+        "term": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "explanation": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/narrative"
+            },
+            {
+              "properties": {
+                "kind": {
+                  "const": "analysis"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "framework": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/narrative"
+        },
+        {
+          "properties": {
+            "kind": {
+              "const": "analysis"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "bilingual": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "zh",
+        "en"
+      ],
+      "properties": {
+        "zh": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "narrative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "evidenceIds",
+        "kind"
+      ],
+      "properties": {
+        "text": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "evidenceIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "kind": {
+          "enum": [
+            "confirmed",
+            "analysis",
+            "hypothesis"
+          ]
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "source",
+        "sourceUrl",
+        "publishedAt",
+        "excerpt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sourceUrl": {
+          "type": "string",
+          "minLength": 1,
+          "format": "uri"
+        },
+        "publishedAt": {
+          "type": "string",
+          "minLength": 1,
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "excerpt": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "story": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "newsIds",
+        "confirmedFacts",
+        "whyItMatters",
+        "yearView",
+        "opportunities",
+        "risks"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "newsIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "confirmedFacts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/narrative"
+              },
+              {
+                "properties": {
+                  "kind": {
+                    "const": "confirmed"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "whyItMatters": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/narrative"
+              },
+              {
+                "properties": {
+                  "kind": {
+                    "const": "analysis"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "yearView": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/narrative"
+              },
+              {
+                "properties": {
+                  "kind": {
+                    "const": "hypothesis"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "opportunities": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/narrative"
+              },
+              {
+                "properties": {
+                  "kind": {
+                    "const": "hypothesis"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "risks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/narrative"
+              },
+              {
+                "properties": {
+                  "kind": {
+                    "const": "hypothesis"
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "crossAnalysis": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "allOf": [
+              {
+                "$ref": "#/$defs/narrative"
+              },
+              {
+                "properties": {
+                  "kind": {
+                    "const": "analysis"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

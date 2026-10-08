@@ -53,7 +53,7 @@ test('Daily Briefing handles fewer than five, empty UTC days, low scores, future
  assert.equal(core.dailyBriefing(items.map(i=>({...i,importance:49})),asOf).length,0);
  assert.equal(core.dailyBriefing(items.map(i=>({...i,publishedAt:'2026-10-04T13:00:00Z'})),asOf).length,0);
  const edge={...items[0],publishedAt:'2026-10-05T00:30:00+02:00'};assert.equal(core.dailyBriefing([edge],'2026-10-04T23:59:59Z').length,1);
- const html=renderDashboard(core.createView({...local,isDemo:false,asOf,items},definitions,'Daily Briefing',asOf));assert.ok(html.includes('不足 5 条'));
+ const html=renderDashboard(core.createView({...local,isDemo:false,asOf,items},definitions,'Daily Briefing',asOf));assert.ok(html.includes('data-briefing-status="unpublished"'));
 });
 test('data-layer upgrades old official snapshots without changing timestamps, demos or AI analysis',()=>{
  const batch={...local,isDemo:false,items:[{...local.items[0],source:'OpenAI'}]},before=JSON.stringify(batch),upgraded=enhanceBatch(batch,sources);
