@@ -9,7 +9,7 @@
   preferences.subscribe(render);
   root.addEventListener('click',function(event){
    const target=event.target&&event.target.nodeType===3?event.target.parentElement:event.target;
-   const button=target&&typeof target.closest==='function'?target.closest('[data-view],[data-theme],[data-language]'):null;if(!button)return;
+   const button=target&&typeof target.closest==='function'?target.closest('button[data-view],button[data-theme],button[data-language]'):null;if(!button)return;
    const view=button.getAttribute('data-view');
    if(globalThis.FrontierData.views.includes(view)){selectedView=view;render();root.querySelector('[data-view="'+view+'"]')?.focus({preventScroll:true});return;}
    const theme=button.getAttribute('data-theme'),language=button.getAttribute('data-language');
