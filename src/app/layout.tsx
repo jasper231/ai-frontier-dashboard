@@ -1,4 +1,9 @@
 import type { Metadata } from 'next';
+import { bootstrapScript } from '@/lib/news/bootstrap.cjs';
+import { dictionary } from '@/lib/news/i18n.cjs';
 import './globals.css';
-export const metadata: Metadata = { title: 'AI Frontier — 个人前沿观察台', description: 'AI、智能体、芯片、机器人与加密技术的个人前沿观察台。包含 15 条本地示例内容。', icons: { icon: '/favicon.svg' } };
-export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) { return <html lang="zh-CN"><body>{children}</body></html>; }
+const copy=dictionary('zh');
+export const metadata: Metadata={title:copy.pageTitle,description:copy.description,icons:{icon:'/favicon.svg'}};
+export default function RootLayout({children}: Readonly<{children: React.ReactNode}>){
+ return <html lang="zh-CN" suppressHydrationWarning><head><script id="frontier-preferences" dangerouslySetInnerHTML={{__html:bootstrapScript()}}/><noscript><style>{'html[data-frontier-pending] #dashboard-root{visibility:visible}'}</style></noscript></head><body>{children}</body></html>;
+}

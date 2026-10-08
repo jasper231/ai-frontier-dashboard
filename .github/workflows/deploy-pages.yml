@@ -60,6 +60,7 @@ jobs:
           npm run test:quality
           npm run typecheck
           npm run lint
+          npm run build
           npm run build:pages
       - name: Real browser regression of generated static artifact
         shell: bash
