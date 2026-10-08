@@ -9,15 +9,16 @@ async function collect(sources,fetcher,{isDemo=false,asOf=new Date().toISOString
  const normalized=[],rawRecords=[],results=[];
  for(const source of sources){
   if(!source.enabled){results.push({id:source.id,status:'disabled',reason:source.reason});continue;}
+  const started=Date.now();
   try{
    const xml=await fetcher(source);
-   const parsed=parseFeed(xml,source.url,{allowUpdatedAsPublished:source.sourceKind==='release'});let valid=0;const errors=[...parsed.errors];
+   const parsed=parseFeed(xml,source.url,{allowUpdatedAsPublished:source.sourceKind==='release'});let valid=0,excludedCount=0,invalidCount=parsed.errors.length;const errors=[...parsed.errors];
    for(const raw of parsed.records){
     rawRecords.push({sourceId:source.id,...raw});
-    try{const item=normalize(raw,source,{asOf});if(Date.parse(item.publishedAt)>Date.parse(asOf))throw new Error('Future publication date');if(isDemo){item.source+=' (测试样本)';item.tags.push('测试样本');}normalized.push(item);valid++;}catch(error){errors.push({title:raw.title,reason:error.message});}
+    try{const item=normalize(raw,source,{asOf});if(Date.parse(item.publishedAt)>Date.parse(asOf))throw new Error('Future publication date');if(isDemo){item.source+=' (测试样本)';item.tags.push('测试样本');}normalized.push(item);valid++;}catch(error){if(error.message==='Outside configured frontier topic scope')excludedCount++;else invalidCount++;errors.push({title:raw.title,reason:error.message});}
    }
-   results.push({id:source.id,status:isDemo?'fixture-tested':'fetched',format:parsed.format,rawCount:parsed.rawCount,normalizedCount:valid,errors});
-  }catch(error){results.push({id:source.id,status:'failed',reason:error.message});}
+   results.push({id:source.id,status:isDemo?'fixture-tested':'fetched',format:parsed.format,rawCount:parsed.rawCount,parsedCount:parsed.parsedCount,normalizedCount:valid,excludedCount,invalidCount,durationMs:Date.now()-started,latestPublishedAt:parsed.records.map(r=>Date.parse(r.publishedAt)).filter(t=>Number.isFinite(t)&&t<=Date.parse(asOf)).sort((a,b)=>b-a).map(t=>new Date(t).toISOString())[0]||null,errors});
+  }catch(error){results.push({id:source.id,status:'failed',reason:error.message,code:error.code||null,httpStatus:error.httpStatus||null,durationMs:Date.now()-started});}
  }
  const items=deduplicate(normalized).sort((a,b)=>Date.parse(b.publishedAt)-Date.parse(a.publishedAt)||b.importance-a.importance||a.id.localeCompare(b.id));
  const batch=validateBatch({schemaVersion:1,asOf,timeZone:'UTC',isDemo,items});
