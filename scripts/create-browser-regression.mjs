@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import vm from 'node:vm';
 import {editionFor} from '../tests/fixtures/briefing/factory.cjs';
 const original=process.cwd();
 const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'frontier-browser-'));
@@ -49,6 +50,7 @@ try{
   }catch(error){const pre=document.createElement('pre');pre.id='browser-regression-result';pre.textContent=JSON.stringify({passed:false,error:error.message});document.body.append(pre);}}
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',check,{once:true});else check();})();`;
  html=html.replace('</body>','<script>'+driver+'</script></body>');
+ for(const script of html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g))if(!script[1].includes('application/json'))new vm.Script(script[2]);
  fs.mkdirSync('artifacts',{recursive:true});fs.writeFileSync('artifacts/browser-regression.html',html);
  console.log('Generated real-DOM regression page from dist/index.html, no server required.');
 }finally{process.chdir(original);fs.rmSync(tmp,{recursive:true,force:true});}
