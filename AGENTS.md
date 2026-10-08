@@ -1,0 +1,5 @@
+# Frontier editorial Agent entrypoint
+
+When asked “生成今天的 Frontier 简报”, follow `docs/briefing-agent-workflow.md`.
+Read the current real news snapshot and prepare a saved evidence bundle. Do not call paid APIs, introduce Secrets, rewrite news.generated.json, or reuse rule templates as research prose. Select important events with no fixed story quota. Verify accessible original sources; enrich through registered lawful adapters only. Never bypass paywalls or invent citations. Separate confirmed facts, analysis and conditional forecasts; explain technical acronyms on first use. Produce a reviewed bilingual schema-v2 edition and import it against the saved snapshot.
+Run all data, feed, Pages, intelligence and quality tests plus typecheck, lint and both builds. Browser-check the standalone Pages artifact at 390px. Commit and push/deploy only when requested by the user; otherwise leave the reviewed change ready. Confirm all Pages jobs including verify-live. No generated report is better than a fabricated one.

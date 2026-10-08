@@ -5,7 +5,7 @@
   const root=document.getElementById('dashboard-root');if(!root)return;
   const batch=JSON.parse(document.getElementById('news-snapshot').textContent),definitions=JSON.parse(document.getElementById('category-definitions').textContent);
   const briefing=JSON.parse(document.getElementById('briefing-snapshot').textContent);
-  const preferences=globalThis.FrontierPreferences.controller;let selectedView='Latest';
+  const preferences=globalThis.FrontierPreferences.controller;let selectedView='Daily Briefing';
   function render(){root.innerHTML=globalThis.FrontierRender.renderDashboard(globalThis.FrontierData.createView(batch,definitions,selectedView,new Date().toISOString()),{...preferences.snapshot(),briefing});preferences.ready();}
   preferences.subscribe(render);
   root.addEventListener('click',function(event){

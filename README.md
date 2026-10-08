@@ -65,3 +65,9 @@ python3 -m http.server 3000 --bind 0.0.0.0 --directory static-preview
 手机部署说明：`docs/github-pages-phone.md`。配置说明：`docs/github-actions-pages.md`。
 
 每 3 小时运行官方 feed 刷新并保留最后成功快照，然后直接调用 Pages 部署；也支持 Actions 页手动运行。静态目录通过 `node scripts/build-pages.mjs` 生成到 `dist/`，不需要 npm 安装或 Next runtime。顶部使用既有次级信息样式显示最后成功更新时间。
+
+## Frontier Briefing v2 / 新闻雷达
+
+默认首页是独立双语长文简报；没有当天经审核的编辑产物时显示“今天的前沿简报尚未生成。”，可进入新闻雷达继续浏览今日/最新/长期趋势。`src/data/briefing.generated.json` 与新闻快照分开，重点数量不设固定配额、不显示评分。事实后立即列原文来源，解释、可选例子、分析与条件式长期观察依次展开。主题与语言偏好保持原有localStorage行为。
+
+Codex入口见 [AGENTS.md](AGENTS.md)，实际生成步骤见 [docs/briefing-agent-workflow.md](docs/briefing-agent-workflow.md)，来源实测与限制见 [docs/source-adapters.md](docs/source-adapters.md)。本轮不生成正式简报、不接付费API或Secret；合成文稿只用于测试，不进入生产provider。

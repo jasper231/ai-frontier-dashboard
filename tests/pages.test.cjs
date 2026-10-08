@@ -57,7 +57,7 @@ test('static generator embeds working real links and filtering preserves them wi
   const previous=process.cwd();process.chdir(tmp);
   try{await import('file://'+path.resolve(previous,'scripts/build-pages.mjs')+'?link-test');}finally{process.chdir(previous);}
   const html=fs.readFileSync(path.join(tmp,'dist/index.html'),'utf8');
-  assert.ok(html.includes('class="article-title-link" href="https://openai.com/news/official-0" target="_blank" rel="noopener noreferrer"'));
+  assert.ok(html.includes('data-view="Daily Briefing" aria-pressed="true"')); assert.ok(html.includes('https://openai.com/news/official-0'));
   const scripts=[...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];const json={};
   for(const script of scripts)if(script[1].includes('application/json'))json[/id="([^"]+)"/.exec(script[1])[1]]={textContent:script[2]};
   let handler;const root={innerHTML:'',addEventListener(name,fn){if(name==='click')handler=fn},querySelector(){return {focus(){}}}};

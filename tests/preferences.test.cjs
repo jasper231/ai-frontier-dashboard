@@ -50,8 +50,8 @@ test('pre-paint bootstrap precedes CSS and body; generated static interaction ch
  const context={...e.env,URL,Date:FixedDate,module:{exports:{}}};vm.createContext(context);
  for(const s of scripts)if(!s[1].includes('application/json'))vm.runInContext(s[2],context);
  const fire=(attr,value)=>click({target:{closest(){return {getAttribute(name){return name===attr?value:null;}};}}});
- assert.equal(e.env.document.documentElement.lang,'zh-CN');assert.match(root.innerHTML,/个人前沿科技情报终端/);
- for(const view of core.views){fire('data-view',view);fire('data-language','en');assert.match(root.innerHTML,new RegExp('data-view="'+view+'" aria-pressed="true"'));assert.match(root.innerHTML,/PERSONAL FRONTIER INTELLIGENCE|AI &amp; Frontier Briefing/);assert.match(root.innerHTML,/Read original|No stories|Local sample|briefing has not been published/);fire('data-language','zh');assert.match(root.innerHTML,/个人前沿科技情报终端|AI &amp; Frontier Briefing/);}
+ assert.equal(e.env.document.documentElement.lang,'zh-CN');assert.match(root.innerHTML,/AI &amp; 前沿简报/);
+ for(const view of core.views){fire('data-view',view);fire('data-language','en');assert.match(root.innerHTML,new RegExp('data-view="'+view+'" aria-pressed="true"'));assert.match(root.innerHTML,/PERSONAL FRONTIER INTELLIGENCE|AI &amp; Frontier Briefing/);assert.match(root.innerHTML,/Read original|No stories|Local sample|Frontier Briefing has not been generated/);fire('data-language','zh');assert.match(root.innerHTML,/个人前沿科技情报终端|AI &amp; 前沿简报/);}
  fire('data-theme','dark');assert.equal(e.env.document.documentElement.dataset.theme,'dark');assert.equal(e.values.get('frontier.theme'),'dark');
  fire('data-language','en');assert.equal(e.env.document.documentElement.lang,'en');assert.equal(e.values.get('frontier.language'),'en');assert.equal(e.env.document.documentElement.dataset.frontierPending,undefined);
 });

@@ -1,0 +1,42 @@
+name: Validate mobile Briefing v2
+on:
+  push:
+    branches: [frontier-briefing-v2-validation-20261008]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci --no-audit --no-fund
+      - name: All tests and both builds
+        run: |
+          npm run build:pages
+          npm run test:data
+          npm run test:feeds
+          npm run test:pages
+          npm run test:ai
+          npm run test:quality
+          npm run typecheck
+          npm run lint
+          npm run build
+          npm run build:pages
+      - name: Chrome mobile and offline Pages regression
+        run: |
+          node scripts/create-browser-regression.mjs
+          google-chrome --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=5000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/check-browser-result.cjs
+          cp dist/index.html artifacts/live-pages.html
+          node scripts/verify-live-pages.cjs
+          google-chrome --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=5000 --dump-dom "file://$PWD/artifacts/live-browser-check.html" > artifacts/live-browser-dom.html
+          node scripts/check-live-result.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: briefing-v2-validation
+          path: artifacts/

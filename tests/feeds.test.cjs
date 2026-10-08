@@ -61,3 +61,10 @@ test('all-feed failure preserves prior snapshot; snapshot policy handles malform
   assert.equal(publishResult(result,file).written,true);assert.equal(JSON.parse(fs.readFileSync(file)).items.length,2);
  }finally{fs.rmSync(dir,{recursive:true,force:true});}
 });
+test('source tiers preserve independent publishers and reserved adapters never silently fetch paid or unregistered content',async()=>{
+ const {registry,metadataFor,createSourceAdapter}=require('../src/lib/news/sources.cjs');
+ assert.equal(metadataFor({source:'The Verge',sourceUrl:'https://www.theverge.com/test'}).type,'news');assert.equal(metadataFor({source:'WIRED',sourceUrl:'https://www.wired.com/test'}).publisher,metadataFor({source:'Ars Technica',sourceUrl:'https://arstechnica.com/test'}).publisher);
+ for(const id of ['reuters','financial-times','bloomberg','wsj','nyt']){const adapter=createSourceAdapter(id);assert.equal((await adapter.load()).status,'requires-lawful-agent-review');assert.equal((await adapter.enrich({url:'https://example.org'})).status,'not-configured');}
+ const adapter=createSourceAdapter('reuters',{agentEnricher:async request=>request.policy});assert.equal((await adapter.enrich({url:'https://www.reuters.com/technology/real'})).bypassPaywalls,false);await assert.rejects(()=>adapter.enrich({url:'https://mirror.invalid/test'}),/Outside registered/);
+ assert.ok(registry.some(s=>s.type==='research'));assert.deepEqual(metadataFor({source:'unknown',sourceUrl:'invalid'}),{adapterId:undefined,type:'official',publisher:'unknown'});
+});
