@@ -60,9 +60,9 @@ test('static generator embeds working real links and filtering preserves them wi
   assert.ok(html.includes('class="article-title-link" href="https://openai.com/news/official-0" target="_blank" rel="noopener noreferrer"'));
   const scripts=[...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];const json={};
   for(const script of scripts)if(script[1].includes('application/json'))json[/id="([^"]+)"/.exec(script[1])[1]]={textContent:script[2]};
-  let handler;const root={innerHTML:'',addEventListener(_,fn){handler=fn},querySelector(){return {focus(){}}}};
+  let handler;const root={innerHTML:'',addEventListener(name,fn){if(name==='click')handler=fn},querySelector(){return {focus(){}}}};
   class FixedDate extends Date{constructor(...args){super(...(args.length?args:[real.asOf]));}}
-  const context={URL,Date:FixedDate,module:{exports:{}},document:{getElementById(id){return id==='dashboard-root'?root:json[id]}}};vm.createContext(context);
+  const context={navigator:{language:'zh-CN'},URL,Date:FixedDate,module:{exports:{}},document:{getElementById(id){return id==='dashboard-root'?root:json[id]}}};vm.createContext(context);
   for(const script of scripts)if(!script[1].includes('application/json'))vm.runInContext(script[2],context);
   const rendered={};
   for(const view of ['Today','Latest','Long-term']){

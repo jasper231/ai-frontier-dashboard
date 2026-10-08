@@ -34,7 +34,7 @@ test('Top Signals follow filtered records and view-specific priority, ranked by 
 test('empty views are handled, counts follow filters, external text is escaped',()=>{
  const empty=core.createView(batch,definitions,'Today','2026-10-03T23:59:59Z');
  assert.equal(empty.signals.length,0);assert.equal(empty.featuredCount,0);assert.equal(empty.categories.length,5);
- const html=renderDashboard(empty);assert.equal((html.match(/当前筛选暂无内容/g)||[]).length,5);assert.ok(!html.includes('<details'));
+ const html=renderDashboard(empty);assert.equal((html.match(/当前筛选暂无内容/g)||[]).length,5);assert.ok(!html.includes('<details class="more-entries"'));
  const hostile={...batch,items:[{...batch.items[0],title:'<img src=x onerror=alert(1)>',source:'<script>',signalBrief:undefined}]};
  const escaped=renderDashboard(core.createView(hostile,definitions,'Latest',batch.asOf));assert.ok(!escaped.includes('<img src=x'));assert.ok(escaped.includes('&lt;img'));
 });
@@ -43,11 +43,11 @@ test('standalone browser scripts perform real filter updates without network or 
  const scripts=[...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];
  const jsonScripts={};for(const s of scripts)if(s[1].includes('application/json'))jsonScripts[/id="([^"]+)"/.exec(s[1])[1]]={textContent:s[2]};
  let callback;let focused=false;
- const root={innerHTML:'',addEventListener(name,fn){callback=fn},querySelector(){return {focus(){focused=true}}}};
+ const root={innerHTML:'',addEventListener(name,fn){if(name==='click')callback=fn},querySelector(){return {focus(){focused=true}}}};
  const embedded=JSON.parse(jsonScripts['news-snapshot'].textContent);
  const embeddedDefinitions=JSON.parse(jsonScripts['category-definitions'].textContent);
  class FixedDate extends Date {constructor(...args){super(...(args.length?args:[embedded.asOf]));}}
- const context={URL,Date:FixedDate,document:{getElementById(id){return id==='dashboard-root'?root:jsonScripts[id]}}};
+ const context={navigator:{language:'zh-CN'},URL,Date:FixedDate,document:{getElementById(id){return id==='dashboard-root'?root:jsonScripts[id]}}};
  vm.createContext(context);for(const s of scripts)if(!s[1].includes('application/json'))vm.runInContext(s[2],context);
  for(const view of ['Today','Long-term','Latest']){
   callback({target:{closest(){return {getAttribute(){return view}}}}});

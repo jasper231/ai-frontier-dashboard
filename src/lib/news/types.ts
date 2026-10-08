@@ -4,7 +4,10 @@ export interface NewsItem {
   id: string; title: string; category: CategoryId; source: string; sourceUrl: string;
   publishedAt: string; summary: string; whyItMatters: string; longTermImpact: string;
   tags: string[]; importance: number; horizonYears: number; longTermImportance: number;
-  signalBrief?: { title: string; happened: string; matters: string; impact: string };
+  titleZh?: string; titleEn?: string; summaryZh?: string; summaryEn?: string;
+  whyItMattersZh?: string; whyItMattersEn?: string; longTermImpactZh?: string; longTermImpactEn?: string;
+  sourceZh?: string; sourceEn?: string; tagsZh?: string[]; tagsEn?: string[];
+  signalBrief?: { title: string; happened: string; matters: string; impact: string; titleZh?: string; titleEn?: string; happenedZh?: string; happenedEn?: string; mattersZh?: string; mattersEn?: string; impactZh?: string; impactEn?: string };
   intelligence?: StoryIntelligence;
   ruleAnalysis?: { version: string; scoring: {reason:string;points:number}[];
     themes: {id:string;label:string;evidence:'headline'|'excerpt'}[];

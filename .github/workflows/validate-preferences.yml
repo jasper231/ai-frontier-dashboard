@@ -1,0 +1,45 @@
+name: Validate product preferences
+on:
+  push:
+    branches: [product-preferences-validation-20261008]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci --no-audit --no-fund
+      - name: Test both UI targets without refreshing news
+        run: |
+          npm run build:pages
+          npm run test:data
+          npm run test:feeds
+          npm run test:pages
+          npm run test:ai
+          npm run test:quality
+          npm run typecheck
+          npm run lint
+          npm run build
+          npm run build:pages
+      - name: Real Chrome preferences, persistence and 390px layout
+        run: |
+          node scripts/create-browser-regression.mjs
+          CHROME_BIN=$(command -v google-chrome || command -v chromium)
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=5000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/check-browser-result.cjs
+      - name: Check Next.js bootstrap and unchanged news
+        run: |
+          node -e "const fs=require('fs');const html=fs.readFileSync('out/index.html','utf8');if(!html.includes('frontier-preferences')||!html.includes('frontier.theme')||!html.includes('frontier.language'))throw Error('Next.js export missing preference bootstrap');console.log('Next.js preference bootstrap verified')"
+          git diff --exit-code -- src/data/news.generated.json src/data/news.local.json src/data/news-status.json .github/workflows/refresh-news.yml
+          node -e "const b=require('./src/data/news.generated.json');console.log('Unchanged UTC snapshot:',b.items.length,'items;',b.timeZone,b.asOf)"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: preference-regression
+          path: artifacts/browser-regression*.html
+          if-no-files-found: warn
