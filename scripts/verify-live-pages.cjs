@@ -21,6 +21,13 @@ try{const batch=JSON.parse(document.getElementById('news-snapshot').textContent)
  const important=(a,b)=>b.importance-a.importance||latest(a,b);
  const long=(a,b)=>b.longTermImportance-a.longTermImportance||important(a,b);
  function checkView(view){const active=document.querySelectorAll('[data-view][aria-pressed="true"]');check(active.length===1&&active[0].getAttribute('data-view')===view,'Wrong active view after '+view);
+  if(view==='Daily Briefing'){
+   const archive=JSON.parse(document.getElementById('briefing-snapshot').textContent),edition=globalThis.FrontierBriefing.selectEdition(archive,new Date(now).toISOString());
+   check(document.querySelectorAll('.category .card,article.signal').length===0,'Briefing still renders news cards');
+   check(document.querySelector('[data-briefing-status]').getAttribute('data-briefing-status')===(edition?'published':'unpublished'),'Briefing publication state mismatch');
+   if(edition){const ids=Array.from(document.querySelectorAll('.brief-story')).map(s=>s.getAttribute('data-story-id'));check(JSON.stringify(ids)===JSON.stringify(edition.stories.map(s=>s.id)),'Briefing editorial story selection differs');check(document.querySelectorAll('#brief-watch li').length===3,'Briefing validation points missing');check(!!document.querySelector('#brief-keyword'),'Briefing keyword missing');}
+   stages.push({view,stories:edition?.stories.length||0,publicationState:edition?'published':'unpublished'});return;
+  }
   let items=view==='Daily Briefing'?globalThis.FrontierData.dailyBriefing(eligible,new Date(now).toISOString()):view==='Today'?eligible.filter(i=>new Date(Date.parse(i.publishedAt)+8*3600000).toISOString().slice(0,10)===day).sort(important):view==='Long-term'?eligible.filter(i=>i.horizonYears>=3&&i.horizonYears<=10).sort(long):[...eligible].sort(latest);
   document.querySelectorAll('section.category').forEach(section=>{const wanted=items.filter(i=>i.category===section.id).map(i=>i.id),found=Array.from(section.querySelectorAll('article.card')).map(e=>e.getAttribute('data-item-id'));check(JSON.stringify(wanted)===JSON.stringify(found),'Wrong card collection/order: '+view+' / '+section.id);});
   const wantedSignals=[...items].sort(view==='Long-term'?long:important).slice(0,3).map(i=>i.id),foundSignals=Array.from(document.querySelectorAll('article.signal')).map(e=>e.getAttribute('data-item-id'));check(JSON.stringify(wantedSignals)===JSON.stringify(foundSignals),'Top Signals do not follow '+view);
