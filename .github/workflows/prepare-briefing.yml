@@ -11,7 +11,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Prepare evidence bundle without AI or external fetching
+      - name: Prepare v2 evidence and editorial task without model calls
         run: node scripts/prepare-briefing.cjs
       - uses: actions/upload-artifact@v4
         with:
