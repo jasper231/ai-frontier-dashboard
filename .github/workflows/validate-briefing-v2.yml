@@ -40,3 +40,4 @@ jobs:
         with:
           name: briefing-v2-validation
           path: artifacts/
+
