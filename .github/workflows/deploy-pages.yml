@@ -73,12 +73,21 @@ jobs:
           fi
           "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=3000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
           node scripts/check-browser-result.cjs
+      - name: Source health mobile browser regression
+        shell: bash
+        run: |
+          node scripts/create-health-browser-regression.mjs
+          CHROME_BIN=$(command -v google-chrome || command -v chromium)
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=3000 --dump-dom "file://$PWD/artifacts/health-browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/check-browser-result.cjs
       - name: Upload browser regression diagnostics
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: browser-regression-${{ github.run_id }}
-          path: artifacts/browser-regression*.html
+          path: |
+            artifacts/browser-regression*.html
+            artifacts/health-browser-regression.html
           if-no-files-found: warn
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

@@ -543,8 +543,8 @@
     "feedNames": [],
     "feedUrl": null,
     "access": "agent-lawful",
-    "status": "manual-public-or-authorized-only",
-    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+    "status": "public-feed-available-fulltext-agent-lawful",
+    "reason": "Publisher-owned technology RSS is now enabled through a scoped feed adapter; full-text access remains subject to public or lawful authorization."
   },
   {
     "id": "bloomberg",
@@ -557,8 +557,8 @@
     "feedNames": [],
     "feedUrl": null,
     "access": "agent-lawful",
-    "status": "manual-public-or-authorized-only",
-    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+    "status": "public-feed-available-fulltext-agent-lawful",
+    "reason": "Publisher-owned technology RSS is now enabled through a scoped feed adapter; full-text access remains subject to public or lawful authorization."
   },
   {
     "id": "wsj",
@@ -571,8 +571,8 @@
     "feedNames": [],
     "feedUrl": null,
     "access": "agent-lawful",
-    "status": "manual-public-or-authorized-only",
-    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+    "status": "public-feed-available-fulltext-agent-lawful",
+    "reason": "Publisher-owned technology RSS is now enabled through a scoped feed adapter; full-text access remains subject to public or lawful authorization."
   },
   {
     "id": "nyt",
@@ -585,8 +585,8 @@
     "feedNames": [],
     "feedUrl": null,
     "access": "agent-lawful",
-    "status": "manual-public-or-authorized-only",
-    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+    "status": "public-feed-available-fulltext-agent-lawful",
+    "reason": "Publisher-owned technology RSS is now enabled through a scoped feed adapter; full-text access remains subject to public or lawful authorization."
   },
   {
     "id": "science",
@@ -616,5 +616,821 @@
     "access": "agent-lawful",
     "status": "manual-public-or-authorized-only",
     "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "nvidia-developer",
+    "name": "NVIDIA Developer",
+    "type": "official",
+    "publisher": "NVIDIA",
+    "hosts": [
+      "developer.nvidia.com",
+      "nvidia.com"
+    ],
+    "feedNames": [
+      "NVIDIA Developer"
+    ],
+    "feedUrl": "https://developer.nvidia.com/blog/feed/",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "google-research",
+    "name": "Google Research",
+    "type": "official",
+    "publisher": "Google",
+    "hosts": [
+      "research.google"
+    ],
+    "feedNames": [
+      "Google Research"
+    ],
+    "feedUrl": "https://research.google/blog/rss/",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "microsoft-ai",
+    "name": "Microsoft AI",
+    "type": "official",
+    "publisher": "Microsoft",
+    "hosts": [
+      "blogs.microsoft.com",
+      "microsoft.com"
+    ],
+    "feedNames": [
+      "Microsoft AI"
+    ],
+    "feedUrl": "https://blogs.microsoft.com/ai/feed/",
+    "access": "agent-lawful",
+    "status": "candidate-unavailable",
+    "reason": "curl: (22) The requested URL returned error: 410"
+  },
+  {
+    "id": "azure-blog",
+    "name": "Microsoft Azure",
+    "type": "official",
+    "publisher": "Microsoft",
+    "hosts": [
+      "azure.microsoft.com",
+      "microsoft.com"
+    ],
+    "feedNames": [
+      "Microsoft Azure"
+    ],
+    "feedUrl": "https://azure.microsoft.com/en-us/blog/feed/",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "meta-engineering",
+    "name": "Meta Engineering",
+    "type": "official",
+    "publisher": "Meta",
+    "hosts": [
+      "engineering.fb.com"
+    ],
+    "feedNames": [
+      "Meta Engineering"
+    ],
+    "feedUrl": "https://engineering.fb.com/feed/",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "amazon-science",
+    "name": "Amazon Science",
+    "type": "research",
+    "publisher": "Amazon",
+    "hosts": [
+      "amazon.science"
+    ],
+    "feedNames": [
+      "Amazon Science"
+    ],
+    "feedUrl": "https://www.amazon.science/index.rss",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "aws-compute",
+    "name": "AWS Compute",
+    "type": "official",
+    "publisher": "Amazon",
+    "hosts": [
+      "aws.amazon.com"
+    ],
+    "feedNames": [
+      "AWS Compute"
+    ],
+    "feedUrl": "https://aws.amazon.com/blogs/compute/feed/",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "apple-ml",
+    "name": "Apple Machine Learning Research",
+    "type": "research",
+    "publisher": "Apple",
+    "hosts": [
+      "machinelearning.apple.com"
+    ],
+    "feedNames": [
+      "Apple Machine Learning Research"
+    ],
+    "feedUrl": "https://machinelearning.apple.com/rss.xml",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "arm-news",
+    "name": "Arm Newsroom",
+    "type": "official",
+    "publisher": "Arm",
+    "hosts": [
+      "newsroom.arm.com",
+      "arm.com"
+    ],
+    "feedNames": [
+      "Arm Newsroom"
+    ],
+    "feedUrl": "https://newsroom.arm.com/feed/",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "intel-news",
+    "name": "Intel Newsroom",
+    "type": "official",
+    "publisher": "Intel",
+    "hosts": [
+      "newsroom.intel.com",
+      "intel.com"
+    ],
+    "feedNames": [
+      "Intel Newsroom"
+    ],
+    "feedUrl": "https://newsroom.intel.com/feed/",
+    "access": "agent-lawful",
+    "status": "candidate-unavailable",
+    "reason": "DTD/entities not allowed"
+  },
+  {
+    "id": "ibm-research",
+    "name": "IBM Research",
+    "type": "research",
+    "publisher": "IBM",
+    "hosts": [
+      "research.ibm.com"
+    ],
+    "feedNames": [
+      "IBM Research"
+    ],
+    "feedUrl": "https://research.ibm.com/blog/rss.xml",
+    "access": "agent-lawful",
+    "status": "candidate-unavailable",
+    "reason": "curl: (22) The requested URL returned error: 404"
+  },
+  {
+    "id": "amd-rocm-blog",
+    "name": "AMD ROCm Blog",
+    "type": "official",
+    "publisher": "AMD",
+    "hosts": [
+      "rocm.blogs.amd.com",
+      "amd.com"
+    ],
+    "feedNames": [
+      "AMD ROCm Blog"
+    ],
+    "feedUrl": "https://rocm.blogs.amd.com/blogs.xml",
+    "access": "agent-lawful",
+    "status": "candidate-unavailable",
+    "reason": "curl: (22) The requested URL returned error: 404"
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "type": "official",
+    "publisher": "Cloudflare",
+    "hosts": [
+      "blog.cloudflare.com"
+    ],
+    "feedNames": [
+      "Cloudflare"
+    ],
+    "feedUrl": "https://blog.cloudflare.com/rss/",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "bair",
+    "name": "Berkeley AI Research",
+    "type": "research",
+    "publisher": "UC Berkeley",
+    "hosts": [
+      "bair.berkeley.edu"
+    ],
+    "feedNames": [
+      "Berkeley AI Research"
+    ],
+    "feedUrl": "https://bair.berkeley.edu/blog/feed.xml",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "cmu-robotics",
+    "name": "CMU Robotics Institute",
+    "type": "research",
+    "publisher": "Carnegie Mellon University",
+    "hosts": [
+      "ri.cmu.edu"
+    ],
+    "feedNames": [
+      "CMU Robotics Institute"
+    ],
+    "feedUrl": "https://www.ri.cmu.edu/feed/",
+    "access": "agent-lawful",
+    "status": "candidate-unavailable",
+    "reason": "curl: (28) Resolving timed out after 5000 milliseconds"
+  },
+  {
+    "id": "nature-machine-intelligence",
+    "name": "Nature Machine Intelligence",
+    "type": "research",
+    "publisher": "Springer Nature",
+    "hosts": [
+      "nature.com"
+    ],
+    "feedNames": [
+      "Nature Machine Intelligence"
+    ],
+    "feedUrl": "https://www.nature.com/natmachintell.rss",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "nature-electronics",
+    "name": "Nature Electronics",
+    "type": "research",
+    "publisher": "Springer Nature",
+    "hosts": [
+      "nature.com"
+    ],
+    "feedNames": [
+      "Nature Electronics"
+    ],
+    "feedUrl": "https://www.nature.com/natelectron.rss",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "arxiv-cs-cl",
+    "name": "arXiv cs.CL",
+    "type": "research",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "feedNames": [
+      "arXiv cs.CL"
+    ],
+    "feedUrl": "https://rss.arxiv.org/rss/cs.CL",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "arxiv-cs-cv",
+    "name": "arXiv cs.CV",
+    "type": "research",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "feedNames": [
+      "arXiv cs.CV"
+    ],
+    "feedUrl": "https://rss.arxiv.org/rss/cs.CV",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "arxiv-cs-ma",
+    "name": "arXiv cs.MA",
+    "type": "research",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "feedNames": [
+      "arXiv cs.MA"
+    ],
+    "feedUrl": "https://rss.arxiv.org/rss/cs.MA",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "arxiv-stat-ml",
+    "name": "arXiv stat.ML",
+    "type": "research",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "feedNames": [
+      "arXiv stat.ML"
+    ],
+    "feedUrl": "https://rss.arxiv.org/rss/stat.ML",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "robot-report",
+    "name": "The Robot Report",
+    "type": "news",
+    "publisher": "WTWH Media",
+    "hosts": [
+      "therobotreport.com"
+    ],
+    "feedNames": [
+      "The Robot Report"
+    ],
+    "feedUrl": "https://www.therobotreport.com/feed/",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "robotics-business-review",
+    "name": "Robotics Business Review",
+    "type": "news",
+    "publisher": "WTWH Media",
+    "hosts": [
+      "roboticsbusinessreview.com"
+    ],
+    "feedNames": [
+      "Robotics Business Review"
+    ],
+    "feedUrl": "https://www.roboticsbusinessreview.com/feed/",
+    "access": "agent-lawful",
+    "status": "candidate-unavailable",
+    "reason": "curl: (1) Protocol \"http\" not supported or disabled in libcurl"
+  },
+  {
+    "id": "ieee-spectrum",
+    "name": "IEEE Spectrum",
+    "type": "news",
+    "publisher": "IEEE",
+    "hosts": [
+      "spectrum.ieee.org"
+    ],
+    "feedNames": [
+      "IEEE Spectrum"
+    ],
+    "feedUrl": "https://spectrum.ieee.org/feeds/feed.rss",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "boston-dynamics",
+    "name": "Boston Dynamics",
+    "type": "official",
+    "publisher": "Boston Dynamics",
+    "hosts": [
+      "bostondynamics.com"
+    ],
+    "feedNames": [
+      "Boston Dynamics"
+    ],
+    "feedUrl": "https://bostondynamics.com/blog/feed/",
+    "access": "agent-lawful",
+    "status": "candidate-unavailable",
+    "reason": "curl: (22) The requested URL returned error: 404"
+  },
+  {
+    "id": "mit-technology-review",
+    "name": "MIT Technology Review",
+    "type": "news",
+    "publisher": "MIT Technology Review",
+    "hosts": [
+      "technologyreview.com"
+    ],
+    "feedNames": [
+      "MIT Technology Review"
+    ],
+    "feedUrl": "https://www.technologyreview.com/feed/",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "nyt-tech",
+    "name": "New York Times Technology",
+    "type": "news",
+    "publisher": "New York Times",
+    "hosts": [
+      "nytimes.com"
+    ],
+    "feedNames": [
+      "New York Times Technology"
+    ],
+    "feedUrl": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "ft-tech",
+    "name": "Financial Times Technology",
+    "type": "news",
+    "publisher": "Financial Times",
+    "hosts": [
+      "ft.com"
+    ],
+    "feedNames": [
+      "Financial Times Technology"
+    ],
+    "feedUrl": "https://www.ft.com/technology?format=rss",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "wsj-tech",
+    "name": "Wall Street Journal Technology",
+    "type": "news",
+    "publisher": "Dow Jones",
+    "hosts": [
+      "wsj.com"
+    ],
+    "feedNames": [
+      "Wall Street Journal Technology"
+    ],
+    "feedUrl": "https://feeds.content.dowjones.io/public/rss/RSSWSJD",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "bloomberg-tech",
+    "name": "Bloomberg Technology",
+    "type": "news",
+    "publisher": "Bloomberg",
+    "hosts": [
+      "bloomberg.com"
+    ],
+    "feedNames": [
+      "Bloomberg Technology"
+    ],
+    "feedUrl": "https://feeds.bloomberg.com/technology/news.rss",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "chainlink",
+    "name": "Chainlink",
+    "type": "official",
+    "publisher": "Chainlink",
+    "hosts": [
+      "blog.chain.link",
+      "chain.link"
+    ],
+    "feedNames": [
+      "Chainlink"
+    ],
+    "feedUrl": "https://blog.chain.link/rss/",
+    "access": "agent-lawful",
+    "status": "candidate-unavailable",
+    "reason": "DTD/entities not allowed"
+  },
+  {
+    "id": "solana",
+    "name": "Solana",
+    "type": "official",
+    "publisher": "Solana Foundation",
+    "hosts": [
+      "solana.com"
+    ],
+    "feedNames": [
+      "Solana"
+    ],
+    "feedUrl": "https://solana.com/news/rss.xml",
+    "access": "rss",
+    "status": "verified-two-public-fetches"
+  },
+  {
+    "id": "paxos",
+    "name": "Paxos",
+    "type": "official",
+    "publisher": "Paxos",
+    "hosts": [
+      "paxos.com"
+    ],
+    "feedNames": [
+      "Paxos"
+    ],
+    "feedUrl": "https://paxos.com/feed/",
+    "access": "agent-lawful",
+    "status": "candidate-unavailable",
+    "reason": "curl: (22) The requested URL returned error: 404"
+  },
+  {
+    "id": "paypal",
+    "name": "PayPal Newsroom",
+    "type": "official",
+    "publisher": "PayPal",
+    "hosts": [
+      "newsroom.paypal-corp.com",
+      "paypal.com"
+    ],
+    "feedNames": [
+      "PayPal Newsroom"
+    ],
+    "feedUrl": "https://newsroom.paypal-corp.com/rss",
+    "access": "agent-lawful",
+    "status": "candidate-unavailable",
+    "reason": "DTD/entities not allowed"
+  },
+  {
+    "id": "vllm",
+    "name": "vLLM",
+    "type": "official",
+    "publisher": "vLLM Project",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "vLLM"
+    ],
+    "feedUrl": "https://github.com/vllm-project/vllm/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/vllm-project/vllm/releases/"
+  },
+  {
+    "id": "pytorch",
+    "name": "PyTorch",
+    "type": "official",
+    "publisher": "PyTorch Foundation",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "PyTorch"
+    ],
+    "feedUrl": "https://github.com/pytorch/pytorch/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/pytorch/pytorch/releases/"
+  },
+  {
+    "id": "transformers",
+    "name": "Hugging Face Transformers",
+    "type": "official",
+    "publisher": "Hugging Face",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "Hugging Face Transformers"
+    ],
+    "feedUrl": "https://github.com/huggingface/transformers/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/huggingface/transformers/releases/"
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "type": "official",
+    "publisher": "Ollama",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "Ollama"
+    ],
+    "feedUrl": "https://github.com/ollama/ollama/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/ollama/ollama/releases/"
+  },
+  {
+    "id": "llama-cpp",
+    "name": "llama.cpp",
+    "type": "official",
+    "publisher": "ggml",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "llama.cpp"
+    ],
+    "feedUrl": "https://github.com/ggml-org/llama.cpp/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/ggml-org/llama.cpp/releases/"
+  },
+  {
+    "id": "langchain",
+    "name": "LangChain",
+    "type": "official",
+    "publisher": "LangChain",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "LangChain"
+    ],
+    "feedUrl": "https://github.com/langchain-ai/langchain/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/langchain-ai/langchain/releases/"
+  },
+  {
+    "id": "langgraph",
+    "name": "LangGraph",
+    "type": "official",
+    "publisher": "LangChain",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "LangGraph"
+    ],
+    "feedUrl": "https://github.com/langchain-ai/langgraph/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/langchain-ai/langgraph/releases/"
+  },
+  {
+    "id": "llama-index",
+    "name": "LlamaIndex",
+    "type": "official",
+    "publisher": "LlamaIndex",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "LlamaIndex"
+    ],
+    "feedUrl": "https://github.com/run-llama/llama_index/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/run-llama/llama_index/releases/"
+  },
+  {
+    "id": "autogen",
+    "name": "Microsoft AutoGen",
+    "type": "official",
+    "publisher": "Microsoft",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "Microsoft AutoGen"
+    ],
+    "feedUrl": "https://github.com/microsoft/autogen/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/microsoft/autogen/releases/"
+  },
+  {
+    "id": "openai-agents",
+    "name": "OpenAI Agents SDK",
+    "type": "official",
+    "publisher": "OpenAI",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "OpenAI Agents SDK"
+    ],
+    "feedUrl": "https://github.com/openai/openai-agents-python/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/openai/openai-agents-python/releases/"
+  },
+  {
+    "id": "anthropic-sdk",
+    "name": "Anthropic Python SDK",
+    "type": "official",
+    "publisher": "Anthropic",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "Anthropic Python SDK"
+    ],
+    "feedUrl": "https://github.com/anthropics/anthropic-sdk-python/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/anthropics/anthropic-sdk-python/releases/"
+  },
+  {
+    "id": "mcp-python",
+    "name": "MCP Python SDK",
+    "type": "official",
+    "publisher": "Model Context Protocol",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "MCP Python SDK"
+    ],
+    "feedUrl": "https://github.com/modelcontextprotocol/python-sdk/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/modelcontextprotocol/python-sdk/releases/"
+  },
+  {
+    "id": "tensorrt-llm",
+    "name": "NVIDIA TensorRT-LLM",
+    "type": "official",
+    "publisher": "NVIDIA",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "NVIDIA TensorRT-LLM"
+    ],
+    "feedUrl": "https://github.com/NVIDIA/TensorRT-LLM/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/NVIDIA/TensorRT-LLM/releases/"
+  },
+  {
+    "id": "isaac-ros",
+    "name": "NVIDIA Isaac ROS",
+    "type": "official",
+    "publisher": "NVIDIA",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "NVIDIA Isaac ROS"
+    ],
+    "feedUrl": "https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_common/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/NVIDIA-ISAAC-ROS/isaac_ros_common/releases/"
+  },
+  {
+    "id": "reth",
+    "name": "Reth",
+    "type": "official",
+    "publisher": "Paradigm",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "Reth"
+    ],
+    "feedUrl": "https://github.com/paradigmxyz/reth/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/paradigmxyz/reth/releases/"
+  },
+  {
+    "id": "agave",
+    "name": "Solana Agave",
+    "type": "official",
+    "publisher": "Anza",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "Solana Agave"
+    ],
+    "feedUrl": "https://github.com/anza-xyz/agave/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/anza-xyz/agave/releases/"
+  },
+  {
+    "id": "lighthouse",
+    "name": "Ethereum Lighthouse",
+    "type": "official",
+    "publisher": "Sigma Prime",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "Ethereum Lighthouse"
+    ],
+    "feedUrl": "https://github.com/sigp/lighthouse/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/sigp/lighthouse/releases/"
+  },
+  {
+    "id": "mistral-sdk",
+    "name": "Mistral Python SDK",
+    "type": "official",
+    "publisher": "Mistral AI",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "Mistral Python SDK"
+    ],
+    "feedUrl": "https://github.com/mistralai/client-python/releases.atom",
+    "access": "rss",
+    "status": "verified-two-public-fetches",
+    "articlePathPrefix": "/mistralai/client-python/releases/"
   }
 ]

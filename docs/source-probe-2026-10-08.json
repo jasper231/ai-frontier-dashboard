@@ -1,0 +1,2099 @@
+{
+  "checkedAt": "2026-10-08T15:44:36.298Z",
+  "sources": [
+    {
+      "id": "openai",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 1255,
+      "parsedCount": 100,
+      "normalizedCount": 100,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 185,
+      "latestPublishedAt": "2026-10-08T00:00:00.000Z",
+      "errors": [],
+      "url": "https://openai.com/news/rss.xml"
+    },
+    {
+      "id": "google-ai",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 20,
+      "parsedCount": 20,
+      "normalizedCount": 20,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 354,
+      "latestPublishedAt": "2026-10-07T12:00:00.000Z",
+      "errors": [],
+      "url": "https://blog.google/technology/ai/rss/"
+    },
+    {
+      "id": "deepmind",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 100,
+      "parsedCount": 100,
+      "normalizedCount": 100,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 326,
+      "latestPublishedAt": "2026-10-06T19:57:04.000Z",
+      "errors": [],
+      "url": "https://deepmind.google/blog/rss.xml"
+    },
+    {
+      "id": "nvidia",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 18,
+      "parsedCount": 18,
+      "normalizedCount": 18,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 380,
+      "latestPublishedAt": "2026-10-08T13:00:46.000Z",
+      "errors": [],
+      "url": "https://blogs.nvidia.com/feed/"
+    },
+    {
+      "id": "huggingface",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 875,
+      "parsedCount": 100,
+      "normalizedCount": 100,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 181,
+      "latestPublishedAt": "2026-10-07T16:54:33.000Z",
+      "errors": [],
+      "url": "https://huggingface.co/blog/feed.xml"
+    },
+    {
+      "id": "arxiv-ai",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 447,
+      "parsedCount": 100,
+      "normalizedCount": 100,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 237,
+      "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+      "errors": [],
+      "url": "https://rss.arxiv.org/rss/cs.AI"
+    },
+    {
+      "id": "arxiv-robotics",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 170,
+      "parsedCount": 100,
+      "normalizedCount": 100,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 178,
+      "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+      "errors": [],
+      "url": "https://rss.arxiv.org/rss/cs.RO"
+    },
+    {
+      "id": "ethereum",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 642,
+      "parsedCount": 100,
+      "normalizedCount": 100,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 380,
+      "latestPublishedAt": "2026-10-05T00:00:00.000Z",
+      "errors": [],
+      "url": "https://blog.ethereum.org/feed.xml"
+    },
+    {
+      "id": "coinbase",
+      "status": "failed",
+      "reason": "curl: (22) The requested URL returned error: 403",
+      "code": 22,
+      "httpStatus": null,
+      "durationMs": 86,
+      "url": "https://www.coinbase.com/blog/rss.xml",
+      "errors": []
+    },
+    {
+      "id": "circle",
+      "status": "failed",
+      "reason": "curl: (22) The requested URL returned error: 404",
+      "code": 22,
+      "httpStatus": null,
+      "durationMs": 341,
+      "url": "https://www.circle.com/blog/rss.xml",
+      "errors": []
+    },
+    {
+      "id": "microsoft-research",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 1385,
+      "latestPublishedAt": "2026-10-07T16:00:00.000Z",
+      "errors": [],
+      "url": "https://www.microsoft.com/en-us/research/feed/"
+    },
+    {
+      "id": "mit-robotics",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 50,
+      "parsedCount": 50,
+      "normalizedCount": 3,
+      "excludedCount": 47,
+      "invalidCount": 0,
+      "durationMs": 159,
+      "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+      "errors": [
+        {
+          "title": "Using AI to mitigate the growing environmental threat of data centers",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Margaret Hamilton, computing pioneer who led software development for the Apollo program, dies at 90",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Discovering the value of humanistic inquiry",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://news.mit.edu/rss/feed"
+    },
+    {
+      "id": "arxiv-ml",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 512,
+      "parsedCount": 100,
+      "normalizedCount": 100,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 182,
+      "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+      "errors": [],
+      "url": "https://rss.arxiv.org/rss/cs.LG"
+    },
+    {
+      "id": "mcp-sdk",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 561,
+      "latestPublishedAt": "2026-10-05T11:54:56.000Z",
+      "errors": [],
+      "url": "https://github.com/modelcontextprotocol/typescript-sdk/releases.atom"
+    },
+    {
+      "id": "rocm",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 343,
+      "latestPublishedAt": "2026-10-08T14:26:56.000Z",
+      "errors": [],
+      "url": "https://github.com/ROCm/rocm-systems/releases.atom"
+    },
+    {
+      "id": "geth",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 1292,
+      "latestPublishedAt": "2026-09-30T11:48:08.000Z",
+      "errors": [],
+      "url": "https://github.com/ethereum/go-ethereum/releases.atom"
+    },
+    {
+      "id": "aws-ml",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 20,
+      "parsedCount": 20,
+      "normalizedCount": 13,
+      "excludedCount": 7,
+      "invalidCount": 0,
+      "durationMs": 145,
+      "latestPublishedAt": "2026-10-07T18:52:10.000Z",
+      "errors": [
+        {
+          "title": "Introducing Claude Haiku 5.5 on AWS",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Rethinking access control for RAG with Amazon Quick and Amazon Bedrock",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Building AI builders: Playbook for closing the AI knowledge-capability gap",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://aws.amazon.com/blogs/machine-learning/feed/"
+    },
+    {
+      "id": "microsoft-blog",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 2,
+      "excludedCount": 8,
+      "invalidCount": 0,
+      "durationMs": 169,
+      "latestPublishedAt": "2026-10-01T15:03:27.000Z",
+      "errors": [
+        {
+          "title": "Microsoft 365 and LinkedIn leadership update",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "New Microsoft data innovations unlock what only your business knows",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://blogs.microsoft.com/feed/"
+    },
+    {
+      "id": "the-verge",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 2,
+      "excludedCount": 8,
+      "invalidCount": 0,
+      "durationMs": 157,
+      "latestPublishedAt": "2026-10-08T15:27:30.000Z",
+      "errors": [
+        {
+          "title": "Google’s AI note-taking app transcribes your meetings completely offline",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "GTA VI will have in-game podcasts and at least six radio stations",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "The Retro Song Bird plays just the music from your favorite Game Boy cartridges",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://www.theverge.com/rss/index.xml"
+    },
+    {
+      "id": "techcrunch",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 20,
+      "parsedCount": 20,
+      "normalizedCount": 6,
+      "excludedCount": 14,
+      "invalidCount": 0,
+      "durationMs": 120,
+      "latestPublishedAt": "2026-10-08T15:42:26.000Z",
+      "errors": [
+        {
+          "title": "US bars Microsoft, Adobe, and major IT firms from green card program for skilled foreign workers",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Elon Musk questions Ambani’s influence as Starlink India launch stalls",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "New York alleges TikTok gave teens, children a placebo safety feature instead of a real one",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://techcrunch.com/feed/"
+    },
+    {
+      "id": "ars-technica",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 20,
+      "parsedCount": 20,
+      "normalizedCount": 2,
+      "excludedCount": 18,
+      "invalidCount": 0,
+      "durationMs": 103,
+      "latestPublishedAt": "2026-10-08T14:04:42.000Z",
+      "errors": [
+        {
+          "title": "Internal files add to evidence of an ExxonMobil climate deception campaign",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "A senator tried to ban gambling on prediction markets—now she's a Kalshi lobbyist",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Microsoft event debuts new AI-friendly hardware and Windows changes",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://feeds.arstechnica.com/arstechnica/index"
+    },
+    {
+      "id": "wired",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 50,
+      "parsedCount": 50,
+      "normalizedCount": 3,
+      "excludedCount": 47,
+      "invalidCount": 0,
+      "durationMs": 99,
+      "latestPublishedAt": "2026-10-08T13:00:00.000Z",
+      "errors": [
+        {
+          "title": "Amazon Alexa Tablet 12 Pro, Alexa Tablet 11, Alexa Tablet 8: Specs, Features, Price",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "The New Alexa Tablets Feel Like a Blueprint for an Amazon Phone",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "How Massive Is Elon Musk’s Trillion-Dollar Fortune? Spend It Yourself",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://www.wired.com/feed/rss"
+    },
+    {
+      "id": "nature",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 75,
+      "parsedCount": 75,
+      "normalizedCount": 6,
+      "excludedCount": 69,
+      "invalidCount": 0,
+      "durationMs": 144,
+      "latestPublishedAt": "2026-10-08T00:00:00.000Z",
+      "errors": [
+        {
+          "title": "Author Correction: Histone readers MLLT1 and MLLT3 concentrate AID to confer locus specificity",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Editorial Expression of Concern: Maternal gut bacteria promote neurodevelopmental abnormalities in mouse offspring",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Woody ‘blankets’ are being deployed on Arctic permafrost to reduce carbon emissions",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://www.nature.com/nature.rss"
+    },
+    {
+      "id": "nvidia-developer",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 100,
+      "parsedCount": 100,
+      "normalizedCount": 79,
+      "excludedCount": 21,
+      "invalidCount": 0,
+      "durationMs": 405,
+      "latestPublishedAt": "2026-10-07T18:21:03.000Z",
+      "errors": [
+        {
+          "title": "Scaling Decision Optimization to 100 Million Variables and Beyond with mPDLP in NVIDIA cuOpt",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://developer.nvidia.com/blog/feed/",
+      "confirmation": {
+        "id": "nvidia-developer",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 100,
+        "parsedCount": 100,
+        "normalizedCount": 79,
+        "excludedCount": 21,
+        "invalidCount": 0,
+        "durationMs": 689,
+        "latestPublishedAt": "2026-10-07T18:21:03.000Z",
+        "errors": [
+          {
+            "title": "Scaling Decision Optimization to 100 Million Variables and Beyond with mPDLP in NVIDIA cuOpt",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "google-research",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 100,
+      "parsedCount": 100,
+      "normalizedCount": 10,
+      "excludedCount": 90,
+      "invalidCount": 0,
+      "durationMs": 308,
+      "latestPublishedAt": "2026-10-07T20:19:57.000Z",
+      "errors": [
+        {
+          "title": "Does better work always mean better workers?",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Unlocking Earth AI’s planetary geospatial foundation models for global public health",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Toward provably private learning from federated data",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://research.google/blog/rss/",
+      "confirmation": {
+        "id": "google-research",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 100,
+        "parsedCount": 100,
+        "normalizedCount": 10,
+        "excludedCount": 90,
+        "invalidCount": 0,
+        "durationMs": 264,
+        "latestPublishedAt": "2026-10-07T20:19:57.000Z",
+        "errors": [
+          {
+            "title": "Does better work always mean better workers?",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Unlocking Earth AI’s planetary geospatial foundation models for global public health",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Toward provably private learning from federated data",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "microsoft-ai",
+      "status": "failed",
+      "reason": "curl: (22) The requested URL returned error: 410",
+      "code": 22,
+      "httpStatus": null,
+      "durationMs": 198,
+      "url": "https://blogs.microsoft.com/ai/feed/",
+      "errors": []
+    },
+    {
+      "id": "azure-blog",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 4,
+      "excludedCount": 6,
+      "invalidCount": 0,
+      "durationMs": 3222,
+      "latestPublishedAt": "2026-10-07T15:00:00.000Z",
+      "errors": [
+        {
+          "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://azure.microsoft.com/en-us/blog/feed/",
+      "confirmation": {
+        "id": "azure-blog",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 4,
+        "excludedCount": 6,
+        "invalidCount": 0,
+        "durationMs": 2214,
+        "latestPublishedAt": "2026-10-07T15:00:00.000Z",
+        "errors": [
+          {
+            "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "meta-engineering",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 9,
+      "parsedCount": 9,
+      "normalizedCount": 3,
+      "excludedCount": 6,
+      "invalidCount": 0,
+      "durationMs": 179,
+      "latestPublishedAt": "2026-10-06T16:00:06.000Z",
+      "errors": [
+        {
+          "title": "NTS: Authenticated Time at Meta",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Bringing Private Processing to Meta AI Glasses",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://engineering.fb.com/feed/",
+      "confirmation": {
+        "id": "meta-engineering",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 9,
+        "parsedCount": 9,
+        "normalizedCount": 3,
+        "excludedCount": 6,
+        "invalidCount": 0,
+        "durationMs": 135,
+        "latestPublishedAt": "2026-10-06T16:00:06.000Z",
+        "errors": [
+          {
+            "title": "NTS: Authenticated Time at Meta",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Bringing Private Processing to Meta AI Glasses",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Open-Sourcing Rebalancer: A Generic, High-Performance Library for Solving Assignment Problems",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "amazon-science",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 25,
+      "parsedCount": 25,
+      "normalizedCount": 10,
+      "excludedCount": 15,
+      "invalidCount": 0,
+      "durationMs": 226,
+      "latestPublishedAt": "2026-10-01T12:54:31.000Z",
+      "errors": [
+        {
+          "title": "A kernel-centric path to real-time video generation on Trainium",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Amazon launches research initiative with Stanford University to advance AI and science",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Advancing AI for biology: Teaching models to design and characterize antibodies",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://www.amazon.science/index.rss",
+      "confirmation": {
+        "id": "amazon-science",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 25,
+        "parsedCount": 25,
+        "normalizedCount": 10,
+        "excludedCount": 15,
+        "invalidCount": 0,
+        "durationMs": 103,
+        "latestPublishedAt": "2026-10-01T12:54:31.000Z",
+        "errors": [
+          {
+            "title": "A kernel-centric path to real-time video generation on Trainium",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Amazon launches research initiative with Stanford University to advance AI and science",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Advancing AI for biology: Teaching models to design and characterize antibodies",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "aws-compute",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 20,
+      "parsedCount": 20,
+      "normalizedCount": 9,
+      "excludedCount": 11,
+      "invalidCount": 0,
+      "durationMs": 131,
+      "latestPublishedAt": "2026-10-06T16:59:51.000Z",
+      "errors": [
+        {
+          "title": "Introducing EC2 AMI Tag Sharing: Share EC2 tags across AWS accounts",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Simplify AMI discovery with Amazon EC2 and SSM Parameter Store",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Frozen package management for air-gapped RHEL-family AMIs",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://aws.amazon.com/blogs/compute/feed/",
+      "confirmation": {
+        "id": "aws-compute",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 20,
+        "parsedCount": 20,
+        "normalizedCount": 9,
+        "excludedCount": 11,
+        "invalidCount": 0,
+        "durationMs": 192,
+        "latestPublishedAt": "2026-10-06T16:59:51.000Z",
+        "errors": [
+          {
+            "title": "Introducing EC2 AMI Tag Sharing: Share EC2 tags across AWS accounts",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Simplify AMI discovery with Amazon EC2 and SSM Parameter Store",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Frozen package management for air-gapped RHEL-family AMIs",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "apple-ml",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 5,
+      "excludedCount": 5,
+      "invalidCount": 0,
+      "durationMs": 204,
+      "latestPublishedAt": "2026-10-08T00:00:00.000Z",
+      "errors": [
+        {
+          "title": "Normalizing Trajectory Models",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Negotiating Ontological Boundaries in User-Authored Personal Sensing Systems",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://machinelearning.apple.com/rss.xml",
+      "confirmation": {
+        "id": "apple-ml",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 5,
+        "excludedCount": 5,
+        "invalidCount": 0,
+        "durationMs": 181,
+        "latestPublishedAt": "2026-10-08T00:00:00.000Z",
+        "errors": [
+          {
+            "title": "Normalizing Trajectory Models",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Negotiating Ontological Boundaries in User-Authored Personal Sensing Systems",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Language Discrimination Improves Linguistic Learning in Multilingual Speech Models",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "arm-news",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 6,
+      "parsedCount": 6,
+      "normalizedCount": 3,
+      "excludedCount": 3,
+      "invalidCount": 0,
+      "durationMs": 506,
+      "latestPublishedAt": "2026-10-06T14:58:57.000Z",
+      "errors": [
+        {
+          "title": "How Arm’s people brought the company’s next chapter to life",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Arm joins EuroCDP to accelerate Europe’s next generation of innovators",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Arm publishes FYE26 Sustainable Business Report",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://newsroom.arm.com/feed/",
+      "confirmation": {
+        "id": "arm-news",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 6,
+        "parsedCount": 6,
+        "normalizedCount": 3,
+        "excludedCount": 3,
+        "invalidCount": 0,
+        "durationMs": 155,
+        "latestPublishedAt": "2026-10-06T14:58:57.000Z",
+        "errors": [
+          {
+            "title": "How Arm’s people brought the company’s next chapter to life",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Arm joins EuroCDP to accelerate Europe’s next generation of innovators",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Arm publishes FYE26 Sustainable Business Report",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "intel-news",
+      "status": "failed",
+      "reason": "DTD/entities not allowed",
+      "code": null,
+      "httpStatus": null,
+      "durationMs": 774,
+      "url": "https://newsroom.intel.com/feed/",
+      "errors": []
+    },
+    {
+      "id": "ibm-research",
+      "status": "failed",
+      "reason": "curl: (22) The requested URL returned error: 404",
+      "code": 22,
+      "httpStatus": null,
+      "durationMs": 322,
+      "url": "https://research.ibm.com/blog/rss.xml",
+      "errors": []
+    },
+    {
+      "id": "amd-rocm-blog",
+      "status": "failed",
+      "reason": "curl: (22) The requested URL returned error: 404",
+      "code": 22,
+      "httpStatus": null,
+      "durationMs": 662,
+      "url": "https://rocm.blogs.amd.com/blogs.xml",
+      "errors": []
+    },
+    {
+      "id": "cloudflare",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 20,
+      "parsedCount": 20,
+      "normalizedCount": 6,
+      "excludedCount": 14,
+      "invalidCount": 0,
+      "durationMs": 107,
+      "latestPublishedAt": "2026-10-08T13:00:00.000Z",
+      "errors": [
+        {
+          "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "The keys to the Internet change on October 11. Are you ready?",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "One year later: the power of 1.1.1.1 interns",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://blog.cloudflare.com/rss/",
+      "confirmation": {
+        "id": "cloudflare",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 20,
+        "parsedCount": 20,
+        "normalizedCount": 6,
+        "excludedCount": 14,
+        "invalidCount": 0,
+        "durationMs": 223,
+        "latestPublishedAt": "2026-10-08T13:00:00.000Z",
+        "errors": [
+          {
+            "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "The keys to the Internet change on October 11. Are you ready?",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "One year later: the power of 1.1.1.1 interns",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bair",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 6,
+      "excludedCount": 4,
+      "invalidCount": 0,
+      "durationMs": 347,
+      "latestPublishedAt": "2026-07-29T09:00:00.000Z",
+      "errors": [
+        {
+          "title": "Gradient-based Planning for World Models at Longer Horizons",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Identifying Interactions at Scale for LLMs",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Information-Driven Design of Imaging Systems",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://bair.berkeley.edu/blog/feed.xml",
+      "confirmation": {
+        "id": "bair",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 6,
+        "excludedCount": 4,
+        "invalidCount": 0,
+        "durationMs": 347,
+        "latestPublishedAt": "2026-07-29T09:00:00.000Z",
+        "errors": [
+          {
+            "title": "Gradient-based Planning for World Models at Longer Horizons",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Identifying Interactions at Scale for LLMs",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Information-Driven Design of Imaging Systems",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cmu-robotics",
+      "status": "failed",
+      "reason": "curl: (28) Resolving timed out after 5000 milliseconds",
+      "code": 28,
+      "httpStatus": null,
+      "durationMs": 5008,
+      "url": "https://www.ri.cmu.edu/feed/",
+      "errors": []
+    },
+    {
+      "id": "nature-machine-intelligence",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 8,
+      "parsedCount": 8,
+      "normalizedCount": 8,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 70,
+      "latestPublishedAt": "2026-10-07T00:00:00.000Z",
+      "errors": [],
+      "url": "https://www.nature.com/natmachintell.rss",
+      "confirmation": {
+        "id": "nature-machine-intelligence",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 8,
+        "parsedCount": 8,
+        "normalizedCount": 8,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 75,
+        "latestPublishedAt": "2026-10-07T00:00:00.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "nature-electronics",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 8,
+      "parsedCount": 8,
+      "normalizedCount": 1,
+      "excludedCount": 7,
+      "invalidCount": 0,
+      "durationMs": 78,
+      "latestPublishedAt": "2026-10-07T00:00:00.000Z",
+      "errors": [
+        {
+          "title": "Horizontal-up microfluidics for embedded chip cooling with a dielectric fluid",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Temperature-stable high- κ oxides for miniaturized capacitors",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Universal selectors from two-dimensional materials",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://www.nature.com/natelectron.rss",
+      "confirmation": {
+        "id": "nature-electronics",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 8,
+        "parsedCount": 8,
+        "normalizedCount": 1,
+        "excludedCount": 7,
+        "invalidCount": 0,
+        "durationMs": 74,
+        "latestPublishedAt": "2026-10-07T00:00:00.000Z",
+        "errors": [
+          {
+            "title": "Horizontal-up microfluidics for embedded chip cooling with a dielectric fluid",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Temperature-stable high- κ oxides for miniaturized capacitors",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Universal selectors from two-dimensional materials",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "arxiv-cs-cl",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 190,
+      "parsedCount": 100,
+      "normalizedCount": 100,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 96,
+      "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+      "errors": [],
+      "url": "https://rss.arxiv.org/rss/cs.CL",
+      "confirmation": {
+        "id": "arxiv-cs-cl",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 190,
+        "parsedCount": 100,
+        "normalizedCount": 100,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 140,
+        "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "arxiv-cs-cv",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 262,
+      "parsedCount": 100,
+      "normalizedCount": 100,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 124,
+      "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+      "errors": [],
+      "url": "https://rss.arxiv.org/rss/cs.CV",
+      "confirmation": {
+        "id": "arxiv-cs-cv",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 262,
+        "parsedCount": 100,
+        "normalizedCount": 100,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 153,
+        "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "arxiv-cs-ma",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 24,
+      "parsedCount": 24,
+      "normalizedCount": 24,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 75,
+      "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+      "errors": [],
+      "url": "https://rss.arxiv.org/rss/cs.MA",
+      "confirmation": {
+        "id": "arxiv-cs-ma",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 24,
+        "parsedCount": 24,
+        "normalizedCount": 24,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 92,
+        "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "arxiv-stat-ml",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 92,
+      "parsedCount": 92,
+      "normalizedCount": 92,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 96,
+      "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+      "errors": [],
+      "url": "https://rss.arxiv.org/rss/stat.ML",
+      "confirmation": {
+        "id": "arxiv-stat-ml",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 92,
+        "parsedCount": 92,
+        "normalizedCount": 92,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 117,
+        "latestPublishedAt": "2026-10-08T04:00:00.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "robot-report",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 15,
+      "parsedCount": 15,
+      "normalizedCount": 15,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 231,
+      "latestPublishedAt": "2026-10-08T13:23:58.000Z",
+      "errors": [],
+      "url": "https://www.therobotreport.com/feed/",
+      "confirmation": {
+        "id": "robot-report",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 15,
+        "parsedCount": 15,
+        "normalizedCount": 15,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 248,
+        "latestPublishedAt": "2026-10-08T13:23:58.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "robotics-business-review",
+      "status": "failed",
+      "reason": "curl: (1) Protocol \"http\" not supported or disabled in libcurl",
+      "code": 1,
+      "httpStatus": null,
+      "durationMs": 279,
+      "url": "https://www.roboticsbusinessreview.com/feed/",
+      "errors": []
+    },
+    {
+      "id": "ieee-spectrum",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 30,
+      "parsedCount": 30,
+      "normalizedCount": 12,
+      "excludedCount": 12,
+      "invalidCount": 6,
+      "durationMs": 219,
+      "latestPublishedAt": "2026-10-07T18:00:02.000Z",
+      "errors": [
+        {
+          "title": "IEEE Report Predicts Tech That Will Transform Lives",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Changing Your Career Isn’t Easy",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "HiPHI: A Large-Scale Benchmark for High-Precision Human Motion and Object Interaction",
+          "reason": "Non-official article URL"
+        }
+      ],
+      "url": "https://spectrum.ieee.org/feeds/feed.rss",
+      "confirmation": {
+        "id": "ieee-spectrum",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 30,
+        "parsedCount": 30,
+        "normalizedCount": 12,
+        "excludedCount": 12,
+        "invalidCount": 6,
+        "durationMs": 134,
+        "latestPublishedAt": "2026-10-07T18:00:02.000Z",
+        "errors": [
+          {
+            "title": "IEEE Report Predicts Tech That Will Transform Lives",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Changing Your Career Isn’t Easy",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "HiPHI: A Large-Scale Benchmark for High-Precision Human Motion and Object Interaction",
+            "reason": "Non-official article URL"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boston-dynamics",
+      "status": "failed",
+      "reason": "curl: (22) The requested URL returned error: 404",
+      "code": 22,
+      "httpStatus": null,
+      "durationMs": 626,
+      "url": "https://bostondynamics.com/blog/feed/",
+      "errors": []
+    },
+    {
+      "id": "mit-technology-review",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 3,
+      "excludedCount": 7,
+      "invalidCount": 0,
+      "durationMs": 151,
+      "latestPublishedAt": "2026-10-08T12:10:00.000Z",
+      "errors": [
+        {
+          "title": "Why we’re watching these climate tech companies",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "The Download: weight-loss drugs slowing aging and carbon dioxide batteries",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Weight-loss drugs show signs of slowing biological aging, say drugmakers",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://www.technologyreview.com/feed/",
+      "confirmation": {
+        "id": "mit-technology-review",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 3,
+        "excludedCount": 7,
+        "invalidCount": 0,
+        "durationMs": 159,
+        "latestPublishedAt": "2026-10-08T12:10:00.000Z",
+        "errors": [
+          {
+            "title": "Why we’re watching these climate tech companies",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "The Download: weight-loss drugs slowing aging and carbon dioxide batteries",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Weight-loss drugs show signs of slowing biological aging, say drugmakers",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nyt-tech",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 20,
+      "parsedCount": 20,
+      "normalizedCount": 4,
+      "excludedCount": 16,
+      "invalidCount": 0,
+      "durationMs": 93,
+      "latestPublishedAt": "2026-10-08T14:40:13.000Z",
+      "errors": [
+        {
+          "title": "Why My Conversations with OpenAI’s ‘ChatGPT for Teens’ Made Me Very Worried",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "A.I. Music Fraudster Who Drew Millions in Royalties Is Sentenced to 18 Months",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Energy Firms Try to Squeeze More Power Out of Old Nuclear Plants",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+      "confirmation": {
+        "id": "nyt-tech",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 20,
+        "parsedCount": 20,
+        "normalizedCount": 4,
+        "excludedCount": 16,
+        "invalidCount": 0,
+        "durationMs": 86,
+        "latestPublishedAt": "2026-10-08T14:40:13.000Z",
+        "errors": [
+          {
+            "title": "Why My Conversations with OpenAI’s ‘ChatGPT for Teens’ Made Me Very Worried",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "A.I. Music Fraudster Who Drew Millions in Royalties Is Sentenced to 18 Months",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Energy Firms Try to Squeeze More Power Out of Old Nuclear Plants",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ft-tech",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 25,
+      "parsedCount": 25,
+      "normalizedCount": 2,
+      "excludedCount": 23,
+      "invalidCount": 0,
+      "durationMs": 381,
+      "latestPublishedAt": "2026-10-08T13:00:03.000Z",
+      "errors": [
+        {
+          "title": "The UK cannot afford to waste its DeepMind dividend",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "On the LLMternet, nobody cares you’re a plant",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "The long-predicted decline in call centre jobs has finally begun",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://www.ft.com/technology?format=rss",
+      "confirmation": {
+        "id": "ft-tech",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 25,
+        "parsedCount": 25,
+        "normalizedCount": 2,
+        "excludedCount": 23,
+        "invalidCount": 0,
+        "durationMs": 285,
+        "latestPublishedAt": "2026-10-08T13:00:03.000Z",
+        "errors": [
+          {
+            "title": "The UK cannot afford to waste its DeepMind dividend",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "On the LLMternet, nobody cares you’re a plant",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "The long-predicted decline in call centre jobs has finally begun",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wsj-tech",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 40,
+      "parsedCount": 40,
+      "normalizedCount": 3,
+      "excludedCount": 37,
+      "invalidCount": 0,
+      "durationMs": 132,
+      "latestPublishedAt": "2026-10-08T13:06:00.000Z",
+      "errors": [
+        {
+          "title": "Quantum Research Races Ahead",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "Quantum Startup Oratomic Now Worth $5.4 Billion After Series-B Funding",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "What Growing Up on a Farm Taught Elanco’s CEO",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://feeds.content.dowjones.io/public/rss/RSSWSJD",
+      "confirmation": {
+        "id": "wsj-tech",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 40,
+        "parsedCount": 40,
+        "normalizedCount": 3,
+        "excludedCount": 37,
+        "invalidCount": 0,
+        "durationMs": 95,
+        "latestPublishedAt": "2026-10-08T13:06:00.000Z",
+        "errors": [
+          {
+            "title": "Quantum Research Races Ahead",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "Quantum Startup Oratomic Now Worth $5.4 Billion After Series-B Funding",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "What Growing Up on a Farm Taught Elanco’s CEO",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bloomberg-tech",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 20,
+      "parsedCount": 20,
+      "normalizedCount": 4,
+      "excludedCount": 16,
+      "invalidCount": 0,
+      "durationMs": 401,
+      "latestPublishedAt": "2026-10-08T15:40:03.000Z",
+      "errors": [
+        {
+          "title": "Nigeria-Founded Moove to Exit Country After Uber Pulled Out",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "CreditSights' Cisar Sees Cracks in AI Credit Boom",
+          "reason": "Outside configured frontier topic scope"
+        },
+        {
+          "title": "What Everyone Gets Wrong About the Economic Problems in Europe",
+          "reason": "Outside configured frontier topic scope"
+        }
+      ],
+      "url": "https://feeds.bloomberg.com/technology/news.rss",
+      "confirmation": {
+        "id": "bloomberg-tech",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 20,
+        "parsedCount": 20,
+        "normalizedCount": 4,
+        "excludedCount": 16,
+        "invalidCount": 0,
+        "durationMs": 232,
+        "latestPublishedAt": "2026-10-08T15:40:03.000Z",
+        "errors": [
+          {
+            "title": "Nigeria-Founded Moove to Exit Country After Uber Pulled Out",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "CreditSights' Cisar Sees Cracks in AI Credit Boom",
+            "reason": "Outside configured frontier topic scope"
+          },
+          {
+            "title": "What Everyone Gets Wrong About the Economic Problems in Europe",
+            "reason": "Outside configured frontier topic scope"
+          }
+        ]
+      }
+    },
+    {
+      "id": "chainlink",
+      "status": "failed",
+      "reason": "DTD/entities not allowed",
+      "code": null,
+      "httpStatus": null,
+      "durationMs": 258,
+      "url": "https://blog.chain.link/rss/",
+      "errors": []
+    },
+    {
+      "id": "solana",
+      "status": "fetched",
+      "format": "rss",
+      "rawCount": 20,
+      "parsedCount": 20,
+      "normalizedCount": 20,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 157,
+      "latestPublishedAt": "2026-10-07T23:30:00.000Z",
+      "errors": [],
+      "url": "https://solana.com/news/rss.xml",
+      "confirmation": {
+        "id": "solana",
+        "status": "fetched",
+        "format": "rss",
+        "rawCount": 20,
+        "parsedCount": 20,
+        "normalizedCount": 20,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 131,
+        "latestPublishedAt": "2026-10-07T23:30:00.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "paxos",
+      "status": "failed",
+      "reason": "curl: (22) The requested URL returned error: 404",
+      "code": 22,
+      "httpStatus": null,
+      "durationMs": 350,
+      "url": "https://paxos.com/feed/",
+      "errors": []
+    },
+    {
+      "id": "paypal",
+      "status": "failed",
+      "reason": "DTD/entities not allowed",
+      "code": null,
+      "httpStatus": null,
+      "durationMs": 292,
+      "url": "https://newsroom.paypal-corp.com/rss",
+      "errors": []
+    },
+    {
+      "id": "vllm",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 1248,
+      "latestPublishedAt": "2026-10-06T18:52:05.000Z",
+      "errors": [],
+      "url": "https://github.com/vllm-project/vllm/releases.atom",
+      "confirmation": {
+        "id": "vllm",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 321,
+        "latestPublishedAt": "2026-10-06T18:52:05.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "pytorch",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 1291,
+      "latestPublishedAt": "2026-10-08T14:55:40.000Z",
+      "errors": [],
+      "url": "https://github.com/pytorch/pytorch/releases.atom",
+      "confirmation": {
+        "id": "pytorch",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 157,
+        "latestPublishedAt": "2026-10-08T14:55:40.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "transformers",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 2221,
+      "latestPublishedAt": "2026-10-06T16:39:23.000Z",
+      "errors": [],
+      "url": "https://github.com/huggingface/transformers/releases.atom",
+      "confirmation": {
+        "id": "transformers",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 397,
+        "latestPublishedAt": "2026-10-06T16:39:23.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "ollama",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 484,
+      "latestPublishedAt": "2026-10-08T02:09:43.000Z",
+      "errors": [],
+      "url": "https://github.com/ollama/ollama/releases.atom",
+      "confirmation": {
+        "id": "ollama",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 154,
+        "latestPublishedAt": "2026-10-08T02:09:43.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "llama-cpp",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 998,
+      "latestPublishedAt": "2026-10-08T15:31:21.000Z",
+      "errors": [],
+      "url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+      "confirmation": {
+        "id": "llama-cpp",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 194,
+        "latestPublishedAt": "2026-10-08T15:31:21.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "langchain",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 990,
+      "latestPublishedAt": "2026-10-08T15:41:25.000Z",
+      "errors": [],
+      "url": "https://github.com/langchain-ai/langchain/releases.atom",
+      "confirmation": {
+        "id": "langchain",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 207,
+        "latestPublishedAt": "2026-10-08T15:41:25.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "langgraph",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 866,
+      "latestPublishedAt": "2026-10-07T13:38:46.000Z",
+      "errors": [],
+      "url": "https://github.com/langchain-ai/langgraph/releases.atom",
+      "confirmation": {
+        "id": "langgraph",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 162,
+        "latestPublishedAt": "2026-10-07T13:38:46.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "llama-index",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 1596,
+      "latestPublishedAt": "2026-09-21T16:22:27.000Z",
+      "errors": [],
+      "url": "https://github.com/run-llama/llama_index/releases.atom",
+      "confirmation": {
+        "id": "llama-index",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 398,
+        "latestPublishedAt": "2026-09-21T16:22:27.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "autogen",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 819,
+      "latestPublishedAt": "2025-09-30T06:18:26.000Z",
+      "errors": [],
+      "url": "https://github.com/microsoft/autogen/releases.atom",
+      "confirmation": {
+        "id": "autogen",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 165,
+        "latestPublishedAt": "2025-09-30T06:18:26.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "openai-agents",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 1209,
+      "latestPublishedAt": "2026-10-02T15:36:24.000Z",
+      "errors": [],
+      "url": "https://github.com/openai/openai-agents-python/releases.atom",
+      "confirmation": {
+        "id": "openai-agents",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 385,
+        "latestPublishedAt": "2026-10-02T15:36:24.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "anthropic-sdk",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 582,
+      "latestPublishedAt": "2026-10-08T03:41:38.000Z",
+      "errors": [],
+      "url": "https://github.com/anthropics/anthropic-sdk-python/releases.atom",
+      "confirmation": {
+        "id": "anthropic-sdk",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 198,
+        "latestPublishedAt": "2026-10-08T03:41:38.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "mcp-python",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 714,
+      "latestPublishedAt": "2026-10-02T22:02:27.000Z",
+      "errors": [],
+      "url": "https://github.com/modelcontextprotocol/python-sdk/releases.atom",
+      "confirmation": {
+        "id": "mcp-python",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 206,
+        "latestPublishedAt": "2026-10-02T22:02:27.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "tensorrt-llm",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 3378,
+      "latestPublishedAt": "2026-09-29T10:56:19.000Z",
+      "errors": [],
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases.atom",
+      "confirmation": {
+        "id": "tensorrt-llm",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 469,
+        "latestPublishedAt": "2026-09-29T10:56:19.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "isaac-ros",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 481,
+      "latestPublishedAt": "2026-09-22T03:29:33.000Z",
+      "errors": [],
+      "url": "https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_common/releases.atom",
+      "confirmation": {
+        "id": "isaac-ros",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 133,
+        "latestPublishedAt": "2026-09-22T03:29:33.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "reth",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 1014,
+      "latestPublishedAt": "2026-09-28T12:45:27.000Z",
+      "errors": [],
+      "url": "https://github.com/paradigmxyz/reth/releases.atom",
+      "confirmation": {
+        "id": "reth",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 200,
+        "latestPublishedAt": "2026-09-28T12:45:27.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "agave",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 1029,
+      "latestPublishedAt": "2026-10-03T16:56:30.000Z",
+      "errors": [],
+      "url": "https://github.com/anza-xyz/agave/releases.atom",
+      "confirmation": {
+        "id": "agave",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 267,
+        "latestPublishedAt": "2026-10-03T16:56:30.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "lighthouse",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 1427,
+      "latestPublishedAt": "2026-10-01T04:49:35.000Z",
+      "errors": [],
+      "url": "https://github.com/sigp/lighthouse/releases.atom",
+      "confirmation": {
+        "id": "lighthouse",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 261,
+        "latestPublishedAt": "2026-10-01T04:49:35.000Z",
+        "errors": []
+      }
+    },
+    {
+      "id": "mistral-sdk",
+      "status": "fetched",
+      "format": "atom",
+      "rawCount": 10,
+      "parsedCount": 10,
+      "normalizedCount": 10,
+      "excludedCount": 0,
+      "invalidCount": 0,
+      "durationMs": 457,
+      "latestPublishedAt": "2026-10-06T15:53:09.000Z",
+      "errors": [],
+      "url": "https://github.com/mistralai/client-python/releases.atom",
+      "confirmation": {
+        "id": "mistral-sdk",
+        "status": "fetched",
+        "format": "atom",
+        "rawCount": 10,
+        "parsedCount": 10,
+        "normalizedCount": 10,
+        "excludedCount": 0,
+        "invalidCount": 0,
+        "durationMs": 155,
+        "latestPublishedAt": "2026-10-06T15:53:09.000Z",
+        "errors": []
+      }
+    }
+  ]
+}

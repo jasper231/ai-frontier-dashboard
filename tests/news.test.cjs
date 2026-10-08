@@ -51,7 +51,7 @@ test('standalone browser scripts perform real filter updates without network or 
  vm.createContext(context);for(const s of scripts)if(!s[1].includes('application/json'))vm.runInContext(s[2],context);
  for(const view of ['Today','Long-term','Latest']){
   callback({target:{closest(){return {getAttribute(){return view}}}}});
-  assert.equal(root.innerHTML,renderDashboard(core.createView(embedded,embeddedDefinitions,view,embedded.asOf)));
+  assert.equal(root.innerHTML,renderDashboard(core.createView(embedded,embeddedDefinitions,view,embedded.asOf),{sourceHealth:JSON.parse(jsonScripts['source-health-snapshot'].textContent)}));
   assert.ok(root.innerHTML.includes(`data-view="${view}" aria-pressed="true"`));
  }
  assert.ok(focused);assert.match(html,/<meta name="viewport" content="width=device-width, initial-scale=1">/);

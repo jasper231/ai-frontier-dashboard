@@ -6,3 +6,6 @@ out/
 
 /dist/
 /artifacts/
+
+/public/source-health.html
+/public/source-health.json

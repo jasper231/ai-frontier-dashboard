@@ -1,0 +1,779 @@
+[
+  {
+    "id": "nvidia-developer",
+    "name": "NVIDIA Developer",
+    "url": "https://developer.nvidia.com/blog/feed/",
+    "category": "chips",
+    "publisher": "NVIDIA",
+    "hosts": [
+      "developer.nvidia.com",
+      "nvidia.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "google-research",
+    "name": "Google Research",
+    "url": "https://research.google/blog/rss/",
+    "category": "ai",
+    "publisher": "Google",
+    "hosts": [
+      "research.google"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "microsoft-ai",
+    "name": "Microsoft AI",
+    "url": "https://blogs.microsoft.com/ai/feed/",
+    "category": "agents",
+    "publisher": "Microsoft",
+    "hosts": [
+      "blogs.microsoft.com",
+      "microsoft.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "azure-blog",
+    "name": "Microsoft Azure",
+    "url": "https://azure.microsoft.com/en-us/blog/feed/",
+    "category": "chips",
+    "publisher": "Microsoft",
+    "hosts": [
+      "azure.microsoft.com",
+      "microsoft.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "meta-engineering",
+    "name": "Meta Engineering",
+    "url": "https://engineering.fb.com/feed/",
+    "category": "ai",
+    "publisher": "Meta",
+    "hosts": [
+      "engineering.fb.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "amazon-science",
+    "name": "Amazon Science",
+    "url": "https://www.amazon.science/index.rss",
+    "category": "ai",
+    "publisher": "Amazon",
+    "hosts": [
+      "amazon.science"
+    ],
+    "sourceKind": "research",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "aws-compute",
+    "name": "AWS Compute",
+    "url": "https://aws.amazon.com/blogs/compute/feed/",
+    "category": "chips",
+    "publisher": "Amazon",
+    "hosts": [
+      "aws.amazon.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "apple-ml",
+    "name": "Apple Machine Learning Research",
+    "url": "https://machinelearning.apple.com/rss.xml",
+    "category": "ai",
+    "publisher": "Apple",
+    "hosts": [
+      "machinelearning.apple.com"
+    ],
+    "sourceKind": "research",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "arm-news",
+    "name": "Arm Newsroom",
+    "url": "https://newsroom.arm.com/feed/",
+    "category": "chips",
+    "publisher": "Arm",
+    "hosts": [
+      "newsroom.arm.com",
+      "arm.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "intel-news",
+    "name": "Intel Newsroom",
+    "url": "https://newsroom.intel.com/feed/",
+    "category": "chips",
+    "publisher": "Intel",
+    "hosts": [
+      "newsroom.intel.com",
+      "intel.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "ibm-research",
+    "name": "IBM Research",
+    "url": "https://research.ibm.com/blog/rss.xml",
+    "category": "ai",
+    "publisher": "IBM",
+    "hosts": [
+      "research.ibm.com"
+    ],
+    "sourceKind": "research",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "amd-rocm-blog",
+    "name": "AMD ROCm Blog",
+    "url": "https://rocm.blogs.amd.com/blogs.xml",
+    "category": "chips",
+    "publisher": "AMD",
+    "hosts": [
+      "rocm.blogs.amd.com",
+      "amd.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "url": "https://blog.cloudflare.com/rss/",
+    "category": "agents",
+    "publisher": "Cloudflare",
+    "hosts": [
+      "blog.cloudflare.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "bair",
+    "name": "Berkeley AI Research",
+    "url": "https://bair.berkeley.edu/blog/feed.xml",
+    "category": "ai",
+    "publisher": "UC Berkeley",
+    "hosts": [
+      "bair.berkeley.edu"
+    ],
+    "sourceKind": "research",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "cmu-robotics",
+    "name": "CMU Robotics Institute",
+    "url": "https://www.ri.cmu.edu/feed/",
+    "category": "robotics",
+    "publisher": "Carnegie Mellon University",
+    "hosts": [
+      "ri.cmu.edu"
+    ],
+    "sourceKind": "research",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "nature-machine-intelligence",
+    "name": "Nature Machine Intelligence",
+    "url": "https://www.nature.com/natmachintell.rss",
+    "category": "ai",
+    "publisher": "Springer Nature",
+    "hosts": [
+      "nature.com"
+    ],
+    "sourceKind": "research",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "nature-electronics",
+    "name": "Nature Electronics",
+    "url": "https://www.nature.com/natelectron.rss",
+    "category": "chips",
+    "publisher": "Springer Nature",
+    "hosts": [
+      "nature.com"
+    ],
+    "sourceKind": "research",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "arxiv-cs-cl",
+    "name": "arXiv cs.CL",
+    "url": "https://rss.arxiv.org/rss/cs.CL",
+    "category": "ai",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "sourceKind": "preprint",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "arxiv-cs-cv",
+    "name": "arXiv cs.CV",
+    "url": "https://rss.arxiv.org/rss/cs.CV",
+    "category": "ai",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "sourceKind": "preprint",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "arxiv-cs-ma",
+    "name": "arXiv cs.MA",
+    "url": "https://rss.arxiv.org/rss/cs.MA",
+    "category": "agents",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "sourceKind": "preprint",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "arxiv-stat-ml",
+    "name": "arXiv stat.ML",
+    "url": "https://rss.arxiv.org/rss/stat.ML",
+    "category": "ai",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "sourceKind": "preprint",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "robot-report",
+    "name": "The Robot Report",
+    "url": "https://www.therobotreport.com/feed/",
+    "category": "robotics",
+    "publisher": "WTWH Media",
+    "hosts": [
+      "therobotreport.com"
+    ],
+    "sourceKind": "news",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "robotics-business-review",
+    "name": "Robotics Business Review",
+    "url": "https://www.roboticsbusinessreview.com/feed/",
+    "category": "robotics",
+    "publisher": "WTWH Media",
+    "hosts": [
+      "roboticsbusinessreview.com"
+    ],
+    "sourceKind": "news",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "ieee-spectrum",
+    "name": "IEEE Spectrum",
+    "url": "https://spectrum.ieee.org/feeds/feed.rss",
+    "category": "ai",
+    "publisher": "IEEE",
+    "hosts": [
+      "spectrum.ieee.org"
+    ],
+    "sourceKind": "news",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "boston-dynamics",
+    "name": "Boston Dynamics",
+    "url": "https://bostondynamics.com/blog/feed/",
+    "category": "robotics",
+    "publisher": "Boston Dynamics",
+    "hosts": [
+      "bostondynamics.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "mit-technology-review",
+    "name": "MIT Technology Review",
+    "url": "https://www.technologyreview.com/feed/",
+    "category": "ai",
+    "publisher": "MIT Technology Review",
+    "hosts": [
+      "technologyreview.com"
+    ],
+    "sourceKind": "news",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "nyt-tech",
+    "name": "New York Times Technology",
+    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+    "category": "ai",
+    "publisher": "New York Times",
+    "hosts": [
+      "nytimes.com"
+    ],
+    "sourceKind": "news",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "ft-tech",
+    "name": "Financial Times Technology",
+    "url": "https://www.ft.com/technology?format=rss",
+    "category": "ai",
+    "publisher": "Financial Times",
+    "hosts": [
+      "ft.com"
+    ],
+    "sourceKind": "news",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "wsj-tech",
+    "name": "Wall Street Journal Technology",
+    "url": "https://feeds.content.dowjones.io/public/rss/RSSWSJD",
+    "category": "ai",
+    "publisher": "Dow Jones",
+    "hosts": [
+      "wsj.com"
+    ],
+    "sourceKind": "news",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "bloomberg-tech",
+    "name": "Bloomberg Technology",
+    "url": "https://feeds.bloomberg.com/technology/news.rss",
+    "category": "ai",
+    "publisher": "Bloomberg",
+    "hosts": [
+      "bloomberg.com"
+    ],
+    "sourceKind": "news",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "chainlink",
+    "name": "Chainlink",
+    "url": "https://blog.chain.link/rss/",
+    "category": "crypto",
+    "publisher": "Chainlink",
+    "hosts": [
+      "blog.chain.link",
+      "chain.link"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "solana",
+    "name": "Solana",
+    "url": "https://solana.com/news/rss.xml",
+    "category": "crypto",
+    "publisher": "Solana Foundation",
+    "hosts": [
+      "solana.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14
+  },
+  {
+    "id": "paxos",
+    "name": "Paxos",
+    "url": "https://paxos.com/feed/",
+    "category": "crypto",
+    "publisher": "Paxos",
+    "hosts": [
+      "paxos.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "paypal",
+    "name": "PayPal Newsroom",
+    "url": "https://newsroom.paypal-corp.com/rss",
+    "category": "crypto",
+    "publisher": "PayPal",
+    "hosts": [
+      "newsroom.paypal-corp.com",
+      "paypal.com"
+    ],
+    "sourceKind": "official",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 14,
+    "topicFilter": "frontier"
+  },
+  {
+    "id": "vllm",
+    "name": "vLLM",
+    "url": "https://github.com/vllm-project/vllm/releases.atom",
+    "category": "ai",
+    "publisher": "vLLM Project",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/vllm-project/vllm/releases/"
+  },
+  {
+    "id": "pytorch",
+    "name": "PyTorch",
+    "url": "https://github.com/pytorch/pytorch/releases.atom",
+    "category": "ai",
+    "publisher": "PyTorch Foundation",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/pytorch/pytorch/releases/"
+  },
+  {
+    "id": "transformers",
+    "name": "Hugging Face Transformers",
+    "url": "https://github.com/huggingface/transformers/releases.atom",
+    "category": "ai",
+    "publisher": "Hugging Face",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/huggingface/transformers/releases/"
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "url": "https://github.com/ollama/ollama/releases.atom",
+    "category": "ai",
+    "publisher": "Ollama",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/ollama/ollama/releases/"
+  },
+  {
+    "id": "llama-cpp",
+    "name": "llama.cpp",
+    "url": "https://github.com/ggml-org/llama.cpp/releases.atom",
+    "category": "ai",
+    "publisher": "ggml",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/ggml-org/llama.cpp/releases/"
+  },
+  {
+    "id": "langchain",
+    "name": "LangChain",
+    "url": "https://github.com/langchain-ai/langchain/releases.atom",
+    "category": "agents",
+    "publisher": "LangChain",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/langchain-ai/langchain/releases/"
+  },
+  {
+    "id": "langgraph",
+    "name": "LangGraph",
+    "url": "https://github.com/langchain-ai/langgraph/releases.atom",
+    "category": "agents",
+    "publisher": "LangChain",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/langchain-ai/langgraph/releases/"
+  },
+  {
+    "id": "llama-index",
+    "name": "LlamaIndex",
+    "url": "https://github.com/run-llama/llama_index/releases.atom",
+    "category": "agents",
+    "publisher": "LlamaIndex",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/run-llama/llama_index/releases/"
+  },
+  {
+    "id": "autogen",
+    "name": "Microsoft AutoGen",
+    "url": "https://github.com/microsoft/autogen/releases.atom",
+    "category": "agents",
+    "publisher": "Microsoft",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/microsoft/autogen/releases/"
+  },
+  {
+    "id": "openai-agents",
+    "name": "OpenAI Agents SDK",
+    "url": "https://github.com/openai/openai-agents-python/releases.atom",
+    "category": "agents",
+    "publisher": "OpenAI",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/openai/openai-agents-python/releases/"
+  },
+  {
+    "id": "anthropic-sdk",
+    "name": "Anthropic Python SDK",
+    "url": "https://github.com/anthropics/anthropic-sdk-python/releases.atom",
+    "category": "agents",
+    "publisher": "Anthropic",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/anthropics/anthropic-sdk-python/releases/"
+  },
+  {
+    "id": "mcp-python",
+    "name": "MCP Python SDK",
+    "url": "https://github.com/modelcontextprotocol/python-sdk/releases.atom",
+    "category": "agents",
+    "publisher": "Model Context Protocol",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/modelcontextprotocol/python-sdk/releases/"
+  },
+  {
+    "id": "tensorrt-llm",
+    "name": "NVIDIA TensorRT-LLM",
+    "url": "https://github.com/NVIDIA/TensorRT-LLM/releases.atom",
+    "category": "chips",
+    "publisher": "NVIDIA",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/NVIDIA/TensorRT-LLM/releases/"
+  },
+  {
+    "id": "isaac-ros",
+    "name": "NVIDIA Isaac ROS",
+    "url": "https://github.com/NVIDIA-ISAAC-ROS/isaac_ros_common/releases.atom",
+    "category": "robotics",
+    "publisher": "NVIDIA",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/NVIDIA-ISAAC-ROS/isaac_ros_common/releases/"
+  },
+  {
+    "id": "reth",
+    "name": "Reth",
+    "url": "https://github.com/paradigmxyz/reth/releases.atom",
+    "category": "crypto",
+    "publisher": "Paradigm",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/paradigmxyz/reth/releases/"
+  },
+  {
+    "id": "agave",
+    "name": "Solana Agave",
+    "url": "https://github.com/anza-xyz/agave/releases.atom",
+    "category": "crypto",
+    "publisher": "Anza",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/anza-xyz/agave/releases/"
+  },
+  {
+    "id": "lighthouse",
+    "name": "Ethereum Lighthouse",
+    "url": "https://github.com/sigp/lighthouse/releases.atom",
+    "category": "crypto",
+    "publisher": "Sigma Prime",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/sigp/lighthouse/releases/"
+  },
+  {
+    "id": "mistral-sdk",
+    "name": "Mistral Python SDK",
+    "url": "https://github.com/mistralai/client-python/releases.atom",
+    "category": "ai",
+    "publisher": "Mistral AI",
+    "hosts": [
+      "github.com"
+    ],
+    "sourceKind": "release",
+    "enabled": true,
+    "endpointStatus": "candidate-probe",
+    "staleAfterDays": 30,
+    "articlePathPrefix": "/mistralai/client-python/releases/"
+  }
+]

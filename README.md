@@ -71,3 +71,7 @@ python3 -m http.server 3000 --bind 0.0.0.0 --directory static-preview
 默认首页是独立双语长文简报；没有当天经审核的编辑产物时显示“今天的前沿简报尚未生成。”，可进入新闻雷达继续浏览今日/最新/长期趋势。`src/data/briefing.generated.json` 与新闻快照分开，重点数量不设固定配额、不显示评分。事实后立即列原文来源，解释、可选例子、分析与条件式长期观察依次展开。主题与语言偏好保持原有localStorage行为。
 
 Codex入口见 [AGENTS.md](AGENTS.md)，实际生成步骤见 [docs/briefing-agent-workflow.md](docs/briefing-agent-workflow.md)，来源实测与限制见 [docs/source-adapters.md](docs/source-adapters.md)。本轮不生成正式简报、不接付费API或Secret；合成文稿只用于测试，不进入生产provider。
+
+## 来源健康监控
+
+目前65个启用公开Feed，逐源健康状态保存到`src/data/source-health.json`。网站页脚“来源健康”可查看失败、部分异常、停更和恢复记录；Actions同步输出warning及检查摘要。详见 [docs/source-health.md](docs/source-health.md)。不使用付费API，不绕过付费墙/反爬，不使用第三方镜像。

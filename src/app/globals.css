@@ -133,3 +133,5 @@ html[data-frontier-pending] #dashboard-root{visibility:hidden}
 .brief-story-sources p{font-size:12px;color:var(--muted);margin-top:4px}
 .brief-story-keywords ul{list-style:none;padding:0;margin:0}.brief-story-keywords li{font-size:15px;line-height:1.9;color:var(--body-text);margin-bottom:8px}
 @media(max-width:767px){.brief-source-link{font-size:14px}.brief-reading h1{font-size:29px}.brief-story-index{font-size:13px;white-space:nowrap}}
+
+.source-health-link{display:inline-flex;align-items:center;min-height:44px;margin-left:12px;color:var(--muted);font-size:12px}.source-health-link:hover{color:var(--text)}

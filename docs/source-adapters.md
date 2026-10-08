@@ -7,3 +7,7 @@ GitHub runner probe on 2026-10-08 verified new AWS ML (13), Microsoft blog (2), 
 Apple Newsroom was reachable, but its Atom entries did not provide the original publication timestamp required by the parser. It stays disabled for automatic ingestion; do not disguise updated time as publication time. Anthropic, Meta corporate, AMD corporate, Tesla, xAI, Reuters, Financial Times, Bloomberg, WSJ, NYT, Science and Stanford have lawful Agent adapter slots where there is no enabled stable feed. Existing AMD ROCm, MIT, arXiv and official feeds remain available. These slots do not fabricate articles or call paid services. An Agent may review public/authorized original material and record an original URL/date/excerpt; inaccessible material remains unavailable.
 
 RSS access does not grant access to paywalled full articles. For Briefing, verify facts against accessible original pages, attribute issuer claims, and set independent confirmation only after an official source plus distinct independent publisher genuinely corroborate the event. Never bypass a paywall/anti-bot restriction, or substitute a third-party feed mirror.
+
+## 后续扩充与健康状态
+
+2026-10-08 后续增加42个经两次抓取验证的公开源，包含NYT/FT/WSJ/Bloomberg的原站科技RSS。上文的初轮手动adapter限制不再代表这些出版商没有公共feed；全文访问限制保持不变。最新覆盖及逐源状态见 [source-health.md](source-health.md) 和网站的 source-health.html。

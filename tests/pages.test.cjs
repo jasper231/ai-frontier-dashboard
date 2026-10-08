@@ -67,7 +67,7 @@ test('static generator embeds working real links and filtering preserves them wi
   const rendered={};
   for(const view of ['Today','Latest','Long-term']){
    handler({target:{closest(){return {getAttribute(){return view}}}}});
-   assert.equal(root.innerHTML,renderDashboard(createView(real,definitions,view,real.asOf)));
+   assert.equal(root.innerHTML,renderDashboard(createView(real,definitions,view,real.asOf),{sourceHealth:JSON.parse(json['source-health-snapshot'].textContent)}));
    assert.ok(root.innerHTML.includes(`data-view="${view}" aria-pressed="true"`));
    rendered[view]=root.innerHTML;
    assert.ok(root.innerHTML.includes('href="https://openai.com/news/official-0" target="_blank" rel="noopener noreferrer"'));

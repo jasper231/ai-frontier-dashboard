@@ -1,0 +1,55 @@
+name: Validate expanded feeds and source health
+on:
+  push:
+    branches: [source-health-validation-20261008]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci --no-audit --no-fund
+      - name: All tests and builds
+        run: |
+          npm run build:pages
+          npm run test:data
+          npm run test:feeds
+          npm run test:pages
+          npm run test:ai
+          npm run test:quality
+          npm run typecheck
+          npm run lint
+          npm run build
+          npm run build:pages
+      - name: Dashboard browser regression
+        run: |
+          node scripts/create-browser-regression.mjs
+          google-chrome --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=5000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/check-browser-result.cjs
+          cp artifacts/browser-regression-dom.html artifacts/dashboard-browser-dom.html
+      - name: Source health browser regression
+        run: |
+          node scripts/create-health-browser-regression.mjs
+          google-chrome --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=5000 --dump-dom "file://$PWD/artifacts/health-browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/check-browser-result.cjs
+      - name: Execute real refresh in isolated copy (no production writes)
+        env:
+          AI_PROVIDER: rules
+        run: |
+          mkdir -p /tmp/frontier-refresh-validation
+          cp -r src scripts tests docs public /tmp/frontier-refresh-validation/
+          cd /tmp/frontier-refresh-validation
+          node scripts/refresh-news.cjs --live
+          node scripts/source-health-summary.cjs
+          cp src/data/source-health.json "$GITHUB_WORKSPACE/artifacts/source-health-live.json"
+          cp artifacts/feeds.live.report.json "$GITHUB_WORKSPACE/artifacts/source-refresh-live-report.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: source-health-validation
+          path: artifacts/

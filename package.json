@@ -13,13 +13,16 @@
     "test:data": "node tests/news.test.cjs",
     "news:refresh": "node scripts/refresh-news.cjs --live",
     "news:fixtures": "node scripts/refresh-news.cjs --fixtures",
-    "test:feeds": "node tests/feeds.test.cjs",
+    "test:feeds": "node tests/feeds.test.cjs && node tests/source-health.test.cjs",
     "build:pages": "node scripts/build-pages.mjs",
     "test:pages": "node tests/pages.test.cjs && node tests/preferences.test.cjs && node tests/live-verification.test.cjs && node tests/briefing.test.cjs",
     "test:ai": "node tests/intelligence.test.cjs",
     "news:mock": "node scripts/refresh-news.cjs --fixtures --ai-mock",
     "test:quality": "node tests/quality.test.cjs",
-    "briefing:prepare": "node scripts/prepare-briefing.cjs"
+    "briefing:prepare": "node scripts/prepare-briefing.cjs",
+    "sources:probe": "node scripts/probe-sources.cjs",
+    "prebuild": "node scripts/build-source-health.mjs",
+    "predev": "node scripts/build-source-health.mjs"
   },
   "dependencies": {
     "next": "^16.0.0",

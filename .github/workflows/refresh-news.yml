@@ -7,6 +7,8 @@ on:
       - 'src/data/feed-sources.json'
       - 'src/lib/news/quality/**'
       - 'src/lib/news/feeds/**'
+      - 'scripts/refresh-news.cjs'
+      - 'scripts/source-health-summary.cjs'
       - '.github/workflows/refresh-news.yml'
   workflow_dispatch:
   schedule:
@@ -51,16 +53,20 @@ jobs:
                   archive.extract(member)
           PY
           fi
-      - name: Fetch official feeds and preserve last successful snapshot
+      - name: Fetch public feeds, record source health and preserve last good snapshot
         env:
           # Phase one: no paid transport exists. Mock is never published as real news.
           AI_PROVIDER: rules
         run: node scripts/refresh-news.cjs --live
+      - name: Surface per-source failures and recovery status
+        if: always()
+        run: node scripts/source-health-summary.cjs
       - name: Generate static page with generated or fallback data
         run: node scripts/build-pages.mjs
       - name: Test data selection, parsing, classification, dedup and fallback
         run: |
           node tests/feeds.test.cjs
+          node tests/source-health.test.cjs
           node tests/news.test.cjs
           node tests/pages.test.cjs
           node tests/intelligence.test.cjs
@@ -73,6 +79,8 @@ jobs:
           path: |
             artifacts/feeds.live.report.json
             src/data/news-status.json
+            src/data/source-health.json
+            artifacts/source-health-summary.md
           if-no-files-found: warn
           retention-days: 14
       - name: Persist data and any first phone upload sources

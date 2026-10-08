@@ -3,9 +3,10 @@ import { useEffect, useState, useRef } from 'react';
 import { createView } from '@/lib/news/core.cjs';
 import { renderDashboard } from '@/lib/news/render.cjs';
 import { initialize, type Preferences, type PreferenceController } from '@/lib/news/preferences.cjs';
+import type { SourceHealth } from '@/lib/news/source-health-provider.cjs';
 import type { BriefingArchive } from '@/lib/briefing/core.cjs';
 import type { CategoryDefinition, NewsBatch, View } from '@/lib/news/types';
-export function Dashboard({batch,definitions,briefing}: {batch: NewsBatch;definitions: CategoryDefinition[];briefing: BriefingArchive}){
+export function Dashboard({batch,definitions,briefing,sourceHealth}: {batch: NewsBatch;definitions: CategoryDefinition[];briefing: BriefingArchive;sourceHealth:SourceHealth}){
  const [view,setView]=useState<View>('Daily Briefing'),[referenceTime,setReferenceTime]=useState(batch.asOf);
  const [preferences,setPreferences]=useState<Preferences>({themePreference:'system',languagePreference:'auto',theme:'light',language:'zh'});
  const controller=useRef<PreferenceController|null>(null),root=useRef<HTMLDivElement>(null);
@@ -28,5 +29,5 @@ export function Dashboard({batch,definitions,briefing}: {batch: NewsBatch;defini
   if(value==='Today'||value==='Latest'||value==='Long-term'||value==='Daily Briefing'){setReferenceTime(new Date().toISOString());setView(value);}
   else if(button.dataset.theme)controller.current?.setTheme(button.dataset.theme);
   else if(button.dataset.language)controller.current?.setLanguage(button.dataset.language);
- }} dangerouslySetInnerHTML={{__html:renderDashboard(model,{...preferences,briefing})}}/>;
+ }} dangerouslySetInnerHTML={{__html:renderDashboard(model,{...preferences,briefing,sourceHealth})}}/>;
 }
