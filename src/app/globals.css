@@ -125,3 +125,11 @@ html[data-frontier-pending] #dashboard-root{visibility:hidden}
 .brief-sources span{font-size:12px;color:var(--muted)}
 .brief-radar-link{min-height:44px;padding:10px 16px;border:0;border-radius:5px;background:var(--button);color:var(--text);font-size:15px;cursor:pointer}
 @media(max-width:767px){.brief-reading{margin-top:16px}.brief-reading h1{font-size:29px}.brief-reading h1 span{font-size:20px}.brief-reading h2{font-size:24px}.brief-reading h3{font-size:24px}.brief-opening p{font-size:18px}.brief-reading p,.brief-reading li{font-size:17px}.brief-story{margin-bottom:48px}.brief-story>header{gap:10px}.brief-reading h4{font-size:14px}}
+/* Event sources and explanatory glossary stay subordinate to the narrative. */
+.brief-story-sources,.brief-story-keywords,.brief-story-related{margin:0 0 24px}
+.brief-story-sources h4,.brief-story-keywords h4,.brief-story-related h4,.brief-closing h4{font-size:14px;color:var(--accent);margin:0 0 8px}
+.brief-source-link{display:inline-flex;align-items:center;min-height:44px;max-width:100%;padding:8px 0;margin-right:18px;font-size:14px;color:var(--muted);line-height:1.8;overflow-wrap:anywhere}
+.brief-source-link:hover{color:var(--text);text-decoration:underline}
+.brief-story-sources p{font-size:12px;color:var(--muted);margin-top:4px}
+.brief-story-keywords ul{list-style:none;padding:0;margin:0}.brief-story-keywords li{font-size:15px;line-height:1.9;color:var(--body-text);margin-bottom:8px}
+@media(max-width:767px){.brief-source-link{font-size:14px}.brief-reading h1{font-size:29px}.brief-story-index{font-size:13px;white-space:nowrap}}

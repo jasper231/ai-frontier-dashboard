@@ -1,0 +1,620 @@
+[
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "type": "official",
+    "publisher": "OpenAI",
+    "hosts": [
+      "openai.com"
+    ],
+    "feedNames": [
+      "OpenAI"
+    ],
+    "feedUrl": "https://openai.com/news/rss.xml",
+    "access": "rss",
+    "status": "unverified-network-blocked",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "type": "official",
+    "publisher": "Anthropic",
+    "hosts": [
+      "anthropic.com"
+    ],
+    "feedNames": [
+      "Anthropic"
+    ],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "awaiting-official-feed",
+    "articlePathPrefix": null,
+    "reason": "尚未确认稳定的官方 RSS/Atom 地址，不使用第三方转制 feed"
+  },
+  {
+    "id": "google-ai",
+    "name": "Google AI",
+    "type": "official",
+    "publisher": "Google",
+    "hosts": [
+      "blog.google"
+    ],
+    "feedNames": [
+      "Google AI"
+    ],
+    "feedUrl": "https://blog.google/technology/ai/rss/",
+    "access": "rss",
+    "status": "unverified-network-blocked",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "deepmind",
+    "name": "Google DeepMind",
+    "type": "official",
+    "publisher": "Google",
+    "hosts": [
+      "deepmind.google"
+    ],
+    "feedNames": [
+      "Google DeepMind"
+    ],
+    "feedUrl": "https://deepmind.google/blog/rss.xml",
+    "access": "rss",
+    "status": "unverified-network-blocked",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "nvidia",
+    "name": "NVIDIA",
+    "type": "official",
+    "publisher": "NVIDIA",
+    "hosts": [
+      "blogs.nvidia.com",
+      "nvidia.com"
+    ],
+    "feedNames": [
+      "NVIDIA"
+    ],
+    "feedUrl": "https://blogs.nvidia.com/feed/",
+    "access": "rss",
+    "status": "unverified-network-blocked",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "huggingface",
+    "name": "Hugging Face",
+    "type": "official",
+    "publisher": "Hugging Face",
+    "hosts": [
+      "huggingface.co"
+    ],
+    "feedNames": [
+      "Hugging Face"
+    ],
+    "feedUrl": "https://huggingface.co/blog/feed.xml",
+    "access": "rss",
+    "status": "unverified-network-blocked",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "arxiv-ai",
+    "name": "arXiv cs.AI",
+    "type": "research",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "feedNames": [
+      "arXiv cs.AI"
+    ],
+    "feedUrl": "https://rss.arxiv.org/rss/cs.AI",
+    "access": "rss",
+    "status": "unverified-network-blocked",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "arxiv-robotics",
+    "name": "arXiv cs.RO",
+    "type": "research",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "feedNames": [
+      "arXiv cs.RO"
+    ],
+    "feedUrl": "https://rss.arxiv.org/rss/cs.RO",
+    "access": "rss",
+    "status": "unverified-network-blocked",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "ethereum",
+    "name": "Ethereum",
+    "type": "official",
+    "publisher": "Ethereum",
+    "hosts": [
+      "blog.ethereum.org",
+      "ethereum.org"
+    ],
+    "feedNames": [
+      "Ethereum"
+    ],
+    "feedUrl": "https://blog.ethereum.org/feed.xml",
+    "access": "rss",
+    "status": "unverified-network-blocked",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "coinbase",
+    "name": "Coinbase",
+    "type": "official",
+    "publisher": "Coinbase",
+    "hosts": [
+      "coinbase.com"
+    ],
+    "feedNames": [
+      "Coinbase"
+    ],
+    "feedUrl": "https://www.coinbase.com/blog/rss.xml",
+    "access": "rss",
+    "status": "unverified-network-blocked",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "circle",
+    "name": "Circle",
+    "type": "official",
+    "publisher": "Circle",
+    "hosts": [
+      "circle.com"
+    ],
+    "feedNames": [
+      "Circle"
+    ],
+    "feedUrl": "https://www.circle.com/blog/rss.xml",
+    "access": "rss",
+    "status": "unverified-network-blocked",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "microsoft-research",
+    "name": "Microsoft Research",
+    "type": "research",
+    "publisher": "Microsoft",
+    "hosts": [
+      "www.microsoft.com",
+      "microsoft.com"
+    ],
+    "feedNames": [
+      "Microsoft Research"
+    ],
+    "feedUrl": "https://www.microsoft.com/en-us/research/feed/",
+    "access": "rss",
+    "status": "verified-feed",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "github-ai",
+    "name": "GitHub AI Engineering",
+    "type": "official",
+    "publisher": "Microsoft",
+    "hosts": [
+      "github.blog"
+    ],
+    "feedNames": [
+      "GitHub AI Engineering"
+    ],
+    "feedUrl": "https://github.blog/feed/",
+    "access": "agent-lawful",
+    "status": "unavailable-non-feed-response",
+    "articlePathPrefix": null,
+    "reason": "2026-10-04: both topic and root feed returned a non-accepted DTD/HTML response; disabled without weakening XML safety."
+  },
+  {
+    "id": "mit-robotics",
+    "name": "MIT Robotics",
+    "type": "research",
+    "publisher": "MIT",
+    "hosts": [
+      "news.mit.edu"
+    ],
+    "feedNames": [
+      "MIT Robotics"
+    ],
+    "feedUrl": "https://news.mit.edu/rss/feed",
+    "access": "rss",
+    "status": "verified-feed-topic-filtered",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "arxiv-ml",
+    "name": "arXiv cs.LG",
+    "type": "research",
+    "publisher": "arXiv",
+    "hosts": [
+      "arxiv.org"
+    ],
+    "feedNames": [
+      "arXiv cs.LG"
+    ],
+    "feedUrl": "https://rss.arxiv.org/rss/cs.LG",
+    "access": "rss",
+    "status": "verified-empty",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "mcp-sdk",
+    "name": "MCP TypeScript SDK",
+    "type": "official",
+    "publisher": "MCP TypeScript SDK",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "MCP TypeScript SDK"
+    ],
+    "feedUrl": "https://github.com/modelcontextprotocol/typescript-sdk/releases.atom",
+    "access": "rss",
+    "status": "verified-feed",
+    "articlePathPrefix": "/modelcontextprotocol/typescript-sdk/releases/",
+    "reason": null
+  },
+  {
+    "id": "rocm",
+    "name": "AMD ROCm Systems",
+    "type": "official",
+    "publisher": "AMD",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "AMD ROCm Systems"
+    ],
+    "feedUrl": "https://github.com/ROCm/rocm-systems/releases.atom",
+    "access": "rss",
+    "status": "verified-feed",
+    "articlePathPrefix": "/ROCm/rocm-systems/releases/",
+    "reason": null
+  },
+  {
+    "id": "geth",
+    "name": "Ethereum Geth",
+    "type": "official",
+    "publisher": "Ethereum",
+    "hosts": [
+      "github.com"
+    ],
+    "feedNames": [
+      "Ethereum Geth"
+    ],
+    "feedUrl": "https://github.com/ethereum/go-ethereum/releases.atom",
+    "access": "rss",
+    "status": "verified-feed",
+    "articlePathPrefix": "/ethereum/go-ethereum/releases/",
+    "reason": null
+  },
+  {
+    "id": "aws-ml",
+    "name": "AWS Machine Learning",
+    "type": "official",
+    "publisher": "Amazon",
+    "hosts": [
+      "aws.amazon.com"
+    ],
+    "feedNames": [
+      "AWS Machine Learning"
+    ],
+    "feedUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "access": "rss",
+    "status": "verified-public-feed",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "microsoft-blog",
+    "name": "Microsoft",
+    "type": "official",
+    "publisher": "Microsoft",
+    "hosts": [
+      "blogs.microsoft.com",
+      "microsoft.com"
+    ],
+    "feedNames": [
+      "Microsoft"
+    ],
+    "feedUrl": "https://blogs.microsoft.com/feed/",
+    "access": "rss",
+    "status": "verified-public-feed",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "apple-newsroom",
+    "name": "Apple Newsroom",
+    "type": "official",
+    "publisher": "Apple",
+    "hosts": [
+      "apple.com"
+    ],
+    "feedNames": [
+      "Apple Newsroom"
+    ],
+    "feedUrl": "https://www.apple.com/newsroom/rss-feed.rss",
+    "access": "agent-lawful",
+    "status": "original-publication-date-unavailable",
+    "articlePathPrefix": null,
+    "reason": "Feed reachable but original published date absent. Agent must inspect original article rather than use updated timestamp."
+  },
+  {
+    "id": "the-verge",
+    "name": "The Verge",
+    "type": "news",
+    "publisher": "Vox Media",
+    "hosts": [
+      "theverge.com"
+    ],
+    "feedNames": [
+      "The Verge"
+    ],
+    "feedUrl": "https://www.theverge.com/rss/index.xml",
+    "access": "rss",
+    "status": "verified-public-feed",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "techcrunch",
+    "name": "TechCrunch",
+    "type": "news",
+    "publisher": "TechCrunch",
+    "hosts": [
+      "techcrunch.com"
+    ],
+    "feedNames": [
+      "TechCrunch"
+    ],
+    "feedUrl": "https://techcrunch.com/feed/",
+    "access": "rss",
+    "status": "verified-public-feed",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "ars-technica",
+    "name": "Ars Technica",
+    "type": "news",
+    "publisher": "Condé Nast",
+    "hosts": [
+      "arstechnica.com"
+    ],
+    "feedNames": [
+      "Ars Technica"
+    ],
+    "feedUrl": "https://feeds.arstechnica.com/arstechnica/index",
+    "access": "rss",
+    "status": "verified-public-feed",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "wired",
+    "name": "Wired",
+    "type": "news",
+    "publisher": "Condé Nast",
+    "hosts": [
+      "wired.com"
+    ],
+    "feedNames": [
+      "Wired"
+    ],
+    "feedUrl": "https://www.wired.com/feed/rss",
+    "access": "rss",
+    "status": "verified-public-feed",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "nature",
+    "name": "Nature",
+    "type": "research",
+    "publisher": "Springer Nature",
+    "hosts": [
+      "nature.com"
+    ],
+    "feedNames": [
+      "Nature"
+    ],
+    "feedUrl": "https://www.nature.com/nature.rss",
+    "access": "rss",
+    "status": "verified-public-feed",
+    "articlePathPrefix": null,
+    "reason": null
+  },
+  {
+    "id": "meta",
+    "name": "Meta",
+    "type": "official",
+    "publisher": "Meta",
+    "hosts": [
+      "about.fb.com",
+      "ai.meta.com",
+      "engineering.fb.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "amd",
+    "name": "AMD",
+    "type": "official",
+    "publisher": "AMD",
+    "hosts": [
+      "amd.com",
+      "rocm.blogs.amd.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "type": "official",
+    "publisher": "Amazon",
+    "hosts": [
+      "aboutamazon.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "tesla",
+    "name": "Tesla",
+    "type": "official",
+    "publisher": "Tesla",
+    "hosts": [
+      "tesla.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "xai",
+    "name": "xAI",
+    "type": "official",
+    "publisher": "xAI",
+    "hosts": [
+      "x.ai"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "reuters",
+    "name": "Reuters",
+    "type": "news",
+    "publisher": "Reuters",
+    "hosts": [
+      "reuters.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "financial-times",
+    "name": "Financial Times",
+    "type": "news",
+    "publisher": "Financial Times",
+    "hosts": [
+      "ft.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "bloomberg",
+    "name": "Bloomberg",
+    "type": "news",
+    "publisher": "Bloomberg",
+    "hosts": [
+      "bloomberg.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "wsj",
+    "name": "Wall Street Journal",
+    "type": "news",
+    "publisher": "Dow Jones",
+    "hosts": [
+      "wsj.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "nyt",
+    "name": "New York Times",
+    "type": "news",
+    "publisher": "New York Times",
+    "hosts": [
+      "nytimes.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "science",
+    "name": "Science",
+    "type": "research",
+    "publisher": "AAAS",
+    "hosts": [
+      "science.org"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "stanford",
+    "name": "Stanford",
+    "type": "research",
+    "publisher": "Stanford",
+    "hosts": [
+      "stanford.edu",
+      "news.stanford.edu"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "manual-public-or-authorized-only",
+    "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  }
+]

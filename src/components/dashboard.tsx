@@ -6,7 +6,7 @@ import { initialize, type Preferences, type PreferenceController } from '@/lib/n
 import type { BriefingArchive } from '@/lib/briefing/core.cjs';
 import type { CategoryDefinition, NewsBatch, View } from '@/lib/news/types';
 export function Dashboard({batch,definitions,briefing}: {batch: NewsBatch;definitions: CategoryDefinition[];briefing: BriefingArchive}){
- const [view,setView]=useState<View>('Latest'),[referenceTime,setReferenceTime]=useState(batch.asOf);
+ const [view,setView]=useState<View>('Daily Briefing'),[referenceTime,setReferenceTime]=useState(batch.asOf);
  const [preferences,setPreferences]=useState<Preferences>({themePreference:'system',languagePreference:'auto',theme:'light',language:'zh'});
  const controller=useRef<PreferenceController|null>(null),root=useRef<HTMLDivElement>(null);
  useEffect(()=>{

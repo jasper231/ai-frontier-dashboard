@@ -1,44 +1,45 @@
-/* Evidence-linked editorial contract. Never converts rule scores/templates into prose. */
+/* Versioned editorial contract. No model calls or rule-template prose generation. */
 (function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('../news/core.cjs'));else root.FrontierBriefing=factory(root.FrontierData);})(typeof globalThis!=='undefined'?globalThis:this,function(news){
  'use strict';
- const empty=()=>({schemaVersion:1,editions:[]});
- const utc=value=>typeof value==='string'&&/Z$/.test(value)&&Number.isFinite(Date.parse(value));
- function validateEdition(e,{allowSynthetic=false}={}){
-  const fail=message=>{throw new Error('Invalid briefing: '+message);};
-  const bilingual=value=>{if(!value||!['zh','en'].every(lang=>typeof value[lang]==='string'&&value[lang].trim()))fail('both languages required');};
-  if(!e||e.schemaVersion!==1||e.status!=='published'||e.timeZone!=='Asia/Shanghai'||!/^\d{4}-\d{2}-\d{2}$/.test(e.date)||!utc(e.generatedAt)||!utc(e.sourceSnapshotAt)||news.shanghaiDay(e.generatedAt)!==e.date||Date.parse(e.sourceSnapshotAt)>Date.parse(e.generatedAt))fail('edition date/provenance time');
-  if(!e.provenance||!['human','agent',...(allowSynthetic?['synthetic']:[])].includes(e.provenance.kind)||typeof e.provenance.author!=='string'||!e.provenance.author.trim()||e.provenance.evidenceReviewed!==true||e.provenance.bilingualReviewed!==true)fail('review provenance');
-  if(!Array.isArray(e.sources)||!e.sources.length)fail('sources');
-  const byId=new Map();
-  for(const source of e.sources){
-   if(!source||typeof source.id!=='string'||!source.id.trim()||byId.has(source.id)||!utc(source.publishedAt)||Date.parse(source.publishedAt)>Date.parse(e.generatedAt)||!['title','source','sourceUrl','excerpt'].every(k=>typeof source[k]==='string'&&source[k].trim()))fail('source record');
-   let url;try{url=new URL(source.sourceUrl);}catch{fail('source URL');}if(!['http:','https:'].includes(url.protocol)||url.username||url.password)fail('source URL');
-   byId.set(source.id,source);
-  }
-  function paragraph(p,kind){
-   bilingual(p?.text);if(p.kind!==kind||!Array.isArray(p.evidenceIds)||!p.evidenceIds.length||new Set(p.evidenceIds).size!==p.evidenceIds.length||p.evidenceIds.some(id=>!byId.has(id)))fail('paragraph evidence/kind');
-   for(const lang of ['zh','en'])if(/规则分析|规则情景/.test(p.text[lang]))fail('template copy');
-  }
-  const paragraphs=(values,kind)=>{if(!Array.isArray(values)||!values.length)fail('empty narrative section');values.forEach(p=>paragraph(p,kind));};
+ const empty=()=>({schemaVersion:2,editions:[]});
+ const utc=v=>typeof v==='string'&&/Z$/.test(v)&&Number.isFinite(Date.parse(v));
+ function sourceUrl(value){try{const url=new URL(value);return typeof value==='string'&&/^https?:\/\//i.test(value)&&url.hostname&&!url.username&&!url.password?value:null;}catch{return null;}}
+ function corroborated(story){const sources=story.sources||[];return story.verification?.independentlyConfirmed===true&&sources.some(a=>a.type==='official'&&sources.some(b=>b.publisher!==a.publisher&&b.type!=='official'));}
+ function validateEdition(e){
+  const fail=m=>{throw Error('Invalid briefing: '+m);};
+  const bilingual=v=>{if(!v||!['zh','en'].every(lang=>typeof v[lang]==='string'&&v[lang].trim()))fail('both languages required');};
+  if(!e||e.schemaVersion!==2||e.status!=='published'||e.timeZone!=='Asia/Shanghai'||!/^\d{4}-\d{2}-\d{2}$/.test(e.date)||!utc(e.generatedAt)||!utc(e.sourceSnapshotAt)||news.shanghaiDay(e.generatedAt)!==e.date||Date.parse(e.sourceSnapshotAt)>Date.parse(e.generatedAt))fail('edition date/provenance time');
+  if(!e.provenance||!['human','agent'].includes(e.provenance.kind)||typeof e.provenance.author!=='string'||!e.provenance.author.trim()||e.provenance.evidenceReviewed!==true||e.provenance.bilingualReviewed!==true)fail('review provenance');
+  if(!Array.isArray(e.sources)||!e.sources.length)fail('sources');const byId=new Map();
+  for(const s of e.sources){if(!s||typeof s.id!=='string'||!s.id.trim()||byId.has(s.id)||!utc(s.publishedAt)||Date.parse(s.publishedAt)>Date.parse(e.generatedAt)||!['title','name','publisher','url','excerpt'].every(k=>typeof s[k]==='string'&&s[k].trim())||!['official','news','research'].includes(s.type)||!sourceUrl(s.url)||!['snapshot','agent-enrichment'].includes(s.origin||'snapshot'))fail('source record');byId.set(s.id,s);}
+  function paragraph(p,kind){bilingual(p?.text);if(p.kind!==kind||!Array.isArray(p.evidenceIds)||!p.evidenceIds.length||new Set(p.evidenceIds).size!==p.evidenceIds.length||p.evidenceIds.some(id=>!byId.has(id)))fail('paragraph evidence/kind');for(const lang of ['zh','en'])if(/规则分析|规则情景/.test(p.text[lang]))fail('template copy');}
+  function paragraphs(v,kind,optional=false){if(!Array.isArray(v)||(!optional&&!v.length))fail('empty narrative section');v.forEach(p=>paragraph(p,kind));}
   if(!Array.isArray(e.executiveOpening)||e.executiveOpening.length<2||e.executiveOpening.length>4)fail('opening must contain 2–4 sentences');e.executiveOpening.forEach(p=>paragraph(p,'analysis'));
-  if(!Array.isArray(e.stories)||!e.stories.length||e.stories.length>5)fail('1–5 editorial stories; never pad');
-  const storyIds=new Set(),primaryIds=new Set();
+  if(!Array.isArray(e.stories)||!e.stories.length)fail('published edition needs selected events');
+  const ids=new Set(),orders=new Set(),primary=new Set(),duplicate=new Set();
   for(const story of e.stories){
-   if(typeof story.id!=='string'||!story.id.trim()||storyIds.has(story.id))fail('duplicate story');storyIds.add(story.id);bilingual(story.title);
-   if(!Array.isArray(story.newsIds)||!story.newsIds.length||new Set(story.newsIds).size!==story.newsIds.length||story.newsIds.some(id=>!byId.has(id)||primaryIds.has(id)||news.shanghaiDay(byId.get(id).publishedAt)!==e.date))fail('story must use distinct same-day sources');story.newsIds.forEach(id=>primaryIds.add(id));
-   paragraphs(story.confirmedFacts,'confirmed');paragraphs(story.whyItMatters,'analysis');paragraphs(story.yearView,'hypothesis');paragraphs(story.opportunities,'hypothesis');paragraphs(story.risks,'hypothesis');
-   if(story.crossAnalysis){paragraphs(story.crossAnalysis,'analysis');if(story.crossAnalysis.some(p=>p.evidenceIds.length<2||!p.evidenceIds.some(id=>story.newsIds.includes(id))||!p.evidenceIds.some(id=>!story.newsIds.includes(id))))fail('cross analysis requires multiple sources');}
+   if(typeof story.id!=='string'||!story.id.trim()||ids.has(story.id)||!Number.isInteger(story.order)||story.order<1||orders.has(story.order)||!['ai','agents','chips','robotics','crypto'].includes(story.category))fail('story identity/order/category');ids.add(story.id);orders.add(story.order);bilingual(story.title);if(story.internalRanking&&!['importance','sourceQuality','longTermImportance'].every(k=>typeof story.internalRanking[k]==='number'&&Number.isFinite(story.internalRanking[k])&&story.internalRanking[k]>=0&&story.internalRanking[k]<=100))fail('internal ranking range');
+   if(!Array.isArray(story.newsIds)||!story.newsIds.length||story.newsIds.some(id=>!byId.has(id)||primary.has(id))||new Set(story.newsIds).size!==story.newsIds.length||!story.newsIds.some(id=>Date.parse(byId.get(id).publishedAt)>Date.parse(e.generatedAt)-86400000))fail('event needs distinct past-24-hour primary evidence');story.newsIds.forEach(id=>primary.add(id));
+   if(!Array.isArray(story.sources)||!story.sources.length||story.sources.some(s=>!byId.has(s.id)||['name','url','type','publisher'].some(k=>s[k]!==byId.get(s.id)[k]))||new Set(story.sources.map(s=>s.id)).size!==story.sources.length)fail('story source binding');
+   if(story.newsIds.some(id=>!story.sources.some(s=>s.id===id)))fail('primary source missing below facts');
+   paragraphs(story.verifiedFacts,'confirmed');paragraph(story.plainExplanation,'analysis');paragraphs(story.whyItMatters,'analysis');paragraphs(story.longTermView,'hypothesis');paragraphs(story.opportunities,'hypothesis',true);paragraphs(story.risks,'hypothesis',true);if(story.example!=null)paragraph(story.example,'hypothesis');
+   if(story.verifiedFacts.some(p=>p.evidenceIds.some(id=>!story.sources.some(s=>s.id===id))))fail('facts need displayed sources');
+   if(!story.verification||typeof story.verification.independentlyConfirmed!=='boolean'||(story.verification.independentlyConfirmed&&!corroborated(story)))fail('independent confirmation requires reviewed primary and independent publishers');
+   if(!Array.isArray(story.keywords)||story.keywords.length<2||story.keywords.length>5)fail('2–5 explained keywords');story.keywords.forEach(k=>{bilingual(k.term);bilingual(k.explanation);});
+   if(!Array.isArray(story.relatedStoryIds)||new Set(story.relatedStoryIds).size!==story.relatedStoryIds.length||story.relatedStoryIds.some(id=>!byId.has(id)||story.newsIds.includes(id)))fail('related real source IDs');
+   if(story.crossAnalysis){paragraphs(story.crossAnalysis,'analysis');if(story.crossAnalysis.some(p=>p.evidenceIds.length<2))fail('cross analysis needs multiple sources');}
+   for(const field of ['whyItMatters','longTermView','opportunities','risks'])for(const p of story[field])for(const lang of ['zh','en']){const key=lang+':'+p.text[lang].trim().replace(/\s+/g,' ');if(duplicate.has(key))fail('repeated analysis template');duplicate.add(key);}
+   const prose=[...story.verifiedFacts,story.plainExplanation,...story.whyItMatters,...story.longTermView,...story.opportunities,...story.risks,...(story.example?[story.example]:[])];
+   for(const lang of ['zh','en'])for(const p of prose)for(const acronym of p.text[lang].match(/\b(?:MCP|HBM\d?|RAG|CUDA|NVLink)\b/g)||[])if(!story.keywords.some(k=>k.term[lang]===acronym))fail('explain professional acronym: '+acronym);
   }
-  const duplicateText=new Set();
-  for(const story of e.stories)for(const field of ['whyItMatters','yearView','opportunities','risks'])for(const p of story[field])for(const lang of ['zh','en']){const key=lang+':'+p.text[lang].trim().replace(/\s+/g,' ');if(duplicateText.has(key))fail('repeated analysis template');duplicateText.add(key);}
-  if(!Array.isArray(e.watchNext)||e.watchNext.length!==3)fail('exactly three validation points');e.watchNext.forEach(p=>paragraph(p,'hypothesis'));
-  bilingual(e.keyword?.term);paragraph(e.keyword?.explanation,'analysis');
-  if(e.framework)paragraph(e.framework,'analysis');
-  return e;
+  if(!Array.isArray(e.watchNext)||e.watchNext.length<2||e.watchNext.length>5)fail('2–5 future validation points');e.watchNext.forEach(p=>paragraph(p,'hypothesis'));
+  bilingual(e.keyword?.term);paragraph(e.keyword?.explanation,'analysis');paragraph(e.keyword?.whyNow,'analysis');if(e.framework)paragraph(e.framework,'analysis');return e;
  }
- function validateArchive(archive,options){if(!archive||archive.schemaVersion!==1||!Array.isArray(archive.editions))throw new Error('Invalid briefing archive');const days=new Set();for(const edition of archive.editions){validateEdition(edition,options);if(days.has(edition.date))throw new Error('Duplicate briefing date');days.add(edition.date);}return archive;}
- function selectEdition(archive,asOf){try{return validateArchive(archive).editions.find(e=>e.date===news.shanghaiDay(asOf)&&Date.parse(e.generatedAt)<=Date.parse(asOf))||null;}catch{return null;}}
+ function validateArchive(a){if(!a||a.schemaVersion!==2||!Array.isArray(a.editions))throw Error('Invalid briefing archive');const days=new Set();for(const e of a.editions){validateEdition(e);if(days.has(e.date))throw Error('Duplicate briefing date');days.add(e.date);}return a;}
+ function selectEdition(a,asOf){try{return validateArchive(a).editions.find(e=>e.date===news.shanghaiDay(asOf)&&Date.parse(e.generatedAt)<=Date.parse(asOf))||null;}catch{return null;}}
  function chooseArchive(generated,local=empty()){try{return validateArchive(generated);}catch{try{return validateArchive(local);}catch{return empty();}}}
- function bindSources(edition,batch){news.validateBatch(batch);if(batch.isDemo)throw new Error('Cannot publish a real briefing from demo news');if(edition.sourceSnapshotAt!==batch.asOf)throw new Error('Briefing snapshot mismatch');const byId=new Map(batch.items.map(i=>[i.id,i]));for(const source of edition.sources){const item=byId.get(source.id);if(!item||['title','source','sourceUrl','publishedAt'].some(k=>source[k]!==item[k])||source.excerpt!==item.summary)throw new Error('Briefing source does not match original snapshot: '+source.id);}return edition;}
- return {empty,validateEdition,validateArchive,selectEdition,chooseArchive,bindSources};
+ function sortStories(stories){return [...stories].sort((a,b)=>a.order-b.order||a.id.localeCompare(b.id));}
+ function rankStories(stories){const merit=s=>s.internalRanking?Number(s.internalRanking.importance||0)*.65+Number(s.internalRanking.sourceQuality||0)*.2+Number(s.internalRanking.longTermImportance||0)*.15:null;return [...stories].sort((a,b)=>merit(a)!==null&&merit(b)!==null?merit(b)-merit(a)||a.order-b.order:a.order-b.order).map((s,i)=>({...s,order:i+1}));}
+ function bindSources(e,batch,registry=[]){news.validateBatch(batch);if(batch.isDemo)throw Error('Cannot publish a real briefing from demo news');if(e.sourceSnapshotAt!==batch.asOf)throw Error('Briefing snapshot mismatch');const byId=new Map(batch.items.map(i=>[i.id,i]));for(const s of e.sources){if(s.origin==='agent-enrichment'){const adapter=registry.find(a=>a.id===s.adapterId);const url=new URL(s.url);if(!adapter||s.publisher!==adapter.publisher||s.type!==adapter.type||!adapter.hosts.some(h=>url.hostname===h||url.hostname.endsWith('.'+h))||(!utc(s.reviewedAt)||Date.parse(s.reviewedAt)>Date.parse(e.generatedAt)))throw Error('Unbound lawful enrichment source');}else{const item=byId.get(s.id);if(!item||s.name!==item.source||s.url!==item.sourceUrl||s.title!==item.title||s.publishedAt!==item.publishedAt||s.excerpt!==item.summary)throw Error('Briefing source does not match original snapshot: '+s.id);const adapter=registry.find(a=>a.feedNames?.includes(item.source))||registry.find(a=>a.hosts.some(h=>new URL(item.sourceUrl).hostname===h||new URL(item.sourceUrl).hostname.endsWith('.'+h))&&(!a.articlePathPrefix||new URL(item.sourceUrl).pathname.toLowerCase().startsWith(a.articlePathPrefix.toLowerCase()))&&new URL(item.sourceUrl).hostname!=='github.com');if(adapter&&(s.type!==adapter.type||s.publisher!==adapter.publisher))throw Error('Briefing publisher/type does not match source registry');}}return e;}
+ return {empty,sourceUrl,corroborated,validateEdition,validateArchive,selectEdition,chooseArchive,sortStories,rankStories,bindSources};
 });
