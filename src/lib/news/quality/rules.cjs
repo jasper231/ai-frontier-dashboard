@@ -24,13 +24,13 @@ function assess(raw,source,{category,asOf=new Date().toISOString()}={}){
  const age=(Date.parse(asOf)-Date.parse(raw.publishedAt))/86400000;
  add(themes.length>0,'可识别的前沿主题',8);add(release,'具体发布或部署事件',17);add(capability,'能力、安全或效率变化',11);add(durable,'架构、开放生态或协议影响',12);
  add(/\b\d+(?:\.\d+)?\s*(?:x|%|billion|million|tokens)\b|\d+%/i.test(text),'存在可核验的量化主张（未验证）',4);
- add(kind!=='preprint','直接公开的一手来源',8);add(kind==='preprint','未评审论文，不代表能力已获验证',-12);
+ add(kind!=='preprint'&&kind!=='news','直接公开的一手来源',8);add(kind==='news','独立新闻报道（仍需核对原文）',4);add(kind==='preprint','未评审论文，不代表能力已获验证',-12);
  add(age>=0&&age<=1,'近一天的来源时间',6);add(age>1&&age<=7,'近一周的来源时间',3);
  add(promotion,'活动或推广类内容',-25);add(patch&&!security,'普通补丁版本',-18);add(security,'安全或关键漏洞变化',12);
  const importance=Math.max(0,Math.min(kind==='preprint'?68:96,breakdown.reduce((n,p)=>n+p.points,0)));
  const longTermImportance=Math.max(0,Math.min(95,35+(durable?23:0)+(themes.length?14:0)+(themes.length>1?8:0)+(capability?8:0)+(kind==='preprint'?-10:5)-(promotion?28:0)-(patch&&!security?15:0)));
  const primary=topics.find(t=>themes[0]?.id===t.id);
- const sourceQuality={kind,publisher:source.publisher||source.name,score:kind==='preprint'?55:kind==='research'?85:90,note:kind==='preprint'?'公开预印本；尚未确认同行评审或独立复现。':'来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。'};
+ const sourceQuality={kind,publisher:source.publisher||source.name,score:kind==='preprint'?55:kind==='research'?85:kind==='news'?83:90,note:kind==='preprint'?'公开预印本；尚未确认同行评审或独立复现。':kind==='news'?'新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。':'来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。'};
  return {importance,longTermImportance,horizonYears:promotion?0:durable||themes.length>1?7:release||themes.length?5:1,
   whyItMatters:'规则分析：'+(primary?primary.why:'评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。'),
   longTermImpact:'规则情景（3–10 年）：'+(primary?primary.impact:'是否形成长期影响取决于可复现效果与持续采用。'),
