@@ -9,7 +9,7 @@ try{
  socket=new WebSocket(pages.find(p=>p.type==='page').webSocketDebuggerUrl);await new Promise((resolve,reject)=>{socket.onopen=resolve;socket.onerror=reject;});
  let id=0;const pending=new Map();socket.onmessage=event=>{const message=JSON.parse(event.data),entry=pending.get(message.id);if(entry){pending.delete(message.id);if(message.error)entry.reject(Error(JSON.stringify(message.error)));else entry.resolve(message.result);}};
  const command=(method,params={})=>new Promise((resolve,reject)=>{pending.set(++id,{resolve,reject});socket.send(JSON.stringify({id,method,params}));});
- await command('Page.enable');await command('Page.navigate',{url:'file://'+path.resolve(input)});
+ await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await command('Page.enable');await command('Page.navigate',{url:'file://'+path.resolve(input)});
  let complete=false;for(let i=0;i<200;i++){await command('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});const result=await command('Runtime.evaluate',{returnByValue:true,expression:`!!document.getElementById(${JSON.stringify(marker)})`});if(result.result?.value){complete=true;break;}await wait(100);}
  const dom=await command('Runtime.evaluate',{returnByValue:true,expression:'document.documentElement.outerHTML'});fs.mkdirSync(path.dirname(output),{recursive:true});fs.writeFileSync(output,dom.result.value);if(!complete)throw Error('Offline Chrome driver did not finish: '+marker);
  console.log('Captured actual Chrome DOM and scroll/animation frames: '+output);
