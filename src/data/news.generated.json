@@ -1,9 +1,713 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-09T09:55:08.439Z",
+  "asOf": "2026-10-09T17:52:35.988Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 65,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0476a40991c9db1e65d2e0dc",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "069aacfc7f9e43f3ff1928aa",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0893f87c887f7e22117cb3a7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "0048d8c8b6a62919f64f4cd0",
+      "title": "Amazon and others are done keeping data center deals secret. Is it enough to build trust?",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/video/amazon-and-others-are-done-keeping-data-center-deals-secret-is-it-enough-to-build-trust/",
+      "publishedAt": "2026-10-09T16:56:42.000Z",
+      "summary": "Amazon says it will stop using NDAs when negotiating data center deals with local governments, following a similar move from Microsoft earlier this year. Secrecy has fueled community backlash against AI infrastructure, with opposition leading to hundreds of proposed and enacted moratoriums from New York to San Francisc",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "01027b36b4a06b56e1c7bca2",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "05104d235a1385f77669db06",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07efc9a78deca25fdb569b23",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08d01f8b997b97e82bb78769",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "robotics",
+      "id": "ce50b256a6fcc14ee4fb6629",
+      "title": "Danu Robotics’ fight to build a better recycling robot",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/09/danu-robotics-fight-to-build-a-better-recycling-robot/",
+      "publishedAt": "2026-10-09T16:45:00.000Z",
+      "summary": "For six years, Danu founder Amy Ma has been working on a better way to sort recyclable waste.",
+      "tags": [
+        "具身智能",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0476a40991c9db1e65d2e0dc",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08d01f8b997b97e82bb78769",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "f269df2714354eb99f82cd46",
+      "title": "ICYMI: What landed for AI builders in September 2026",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+      "publishedAt": "2026-10-09T15:38:39.000Z",
+      "summary": "A monthly recap of the latest Amazon Bedrock, Amazon Bedrock AgentCore, and Strands updates from September 2026: broader model choice, faster serverless agents with built-in evaluation, and automated knowledge base syncing with native enterprise connectors.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 61,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "存在可核验的量化主张（未验证）",
+            "points": 4
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0476a40991c9db1e65d2e0dc",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08d01f8b997b97e82bb78769",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "3c8f1a5658927de75dccb850",
+      "title": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+      "publishedAt": "2026-10-09T15:35:02.000Z",
+      "summary": "Building an AI agent that works in a demo is a different problem from running one for 40 million developers. Postman and AWS share the architectural patterns behind Agent Mode: controlling tool sprawl, exposing schema-based reads, and treating context as the real bottleneck, plus how it runs on Amazon Bedrock at scale.",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
+      "longTermImpact": "规则情景（3–10 年）：计算与能源供给可能持续约束 AI 的成本与规模。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "compute-supply",
+            "label": "算力与内存约束",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0e3e876085f34fa3aeedfa93",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "46d54842adf4337f34264970",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "575f2b8d33878f21ab301c9a",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "72966dd5c0f3c211fde5aef4",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "chips",
+      "id": "e05551817b225bef5e8ca8d6",
+      "title": "Impactful scheduling for GPU clusters",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/allenai/impactful-scheduling",
+      "publishedAt": "2026-10-09T15:20:29.000Z",
+      "summary": "Impactful scheduling for GPU clusters",
+      "tags": [
+        "算力基础设施",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0476a40991c9db1e65d2e0dc",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "069aacfc7f9e43f3ff1928aa",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "fffbb6973b9690282527829e",
+      "title": "The AI is in the computer",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/podcast/1008707/amazon-alexa-tablet-googlebooks-apple-vergecast",
+      "publishedAt": "2026-10-09T15:10:12.000Z",
+      "summary": "It's gadget season, and a lot of companies are launching a lot of new products. But whether it's Microsoft dropping a high-end laptop, Amazon shipping a fancy Android tablet, or Apple diving headlong into the smart home, the actual strategy appears to be almost always the same. All these companies believe AI assistants",
+      "tags": [
+        "AI 模型",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0476a40991c9db1e65d2e0dc",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "069aacfc7f9e43f3ff1928aa",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "3c5e66d9de6d1c79dee69232",
+      "title": "Instinct was the buzziest AI agent around — can it survive Muse?",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+      "publishedAt": "2026-10-09T14:00:00.000Z",
+      "summary": "Before there were cute little guys, there was Instinct. In August, the startup got its AI agent to market with an unusual playbook: invite-only, no marketing, and barely so much as a website. And yet, Instinct quickly became the buzziest thing in AI, garnering praise for its straightforward, text message-based interfac",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Condé Nast",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0476a40991c9db1e65d2e0dc",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "069aacfc7f9e43f3ff1928aa",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "3c4629d0080df72cfc2a99f5",
+      "title": "The Best Mac Desktop to Buy (2026): Mac Mini, Mac Studio, or iMac?",
+      "source": "Wired",
+      "sourceUrl": "https://www.wired.com/story/best-mac-desktop/",
+      "publishedAt": "2026-10-09T11:00:00.000Z",
+      "summary": "Apple’s Mac desktops have become some of the most sought-after computers this year, driven by surging interest in agentic AI. Here’s which model to buy depending on your use case.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
     {
       "importance": 53,
       "longTermImportance": 40,
@@ -94,6 +798,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -111,14 +823,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -945,18 +1649,18 @@
             "differentSource": true
           },
           {
-            "id": "0856c1a27e7e11a7096c494c",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "16e8f3b1b43eab11df65393b",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "2e8e6fe4d25f301c3cd2ef13",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
             ],
             "differentSource": true
           }
@@ -1650,6 +2354,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -1667,14 +2379,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -2039,6 +2743,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -2056,14 +2768,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -2229,6 +2933,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -2246,14 +2958,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -2672,6 +3376,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -2689,14 +3401,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3281,6 +3985,14 @@
             "differentSource": true
           },
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -3293,14 +4005,6 @@
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0856c1a27e7e11a7096c494c",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
             ],
             "differentSource": true
           }
@@ -3455,6 +4159,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -3472,14 +4184,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4057,18 +4761,18 @@
             "differentSource": true
           },
           {
-            "id": "0856c1a27e7e11a7096c494c",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "16e8f3b1b43eab11df65393b",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "2e8e6fe4d25f301c3cd2ef13",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
             ],
             "differentSource": true
           }
@@ -4687,14 +5391,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0856c1a27e7e11a7096c494c",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "2e8e6fe4d25f301c3cd2ef13",
             "relationship": "shared-topic",
             "themes": [
@@ -4712,6 +5408,14 @@
           },
           {
             "id": "3f5ba0d039c9a71ade917b9d",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "53e9e7559b835f25bdc90a4c",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -5732,6 +6436,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -5749,14 +6461,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -5823,6 +6527,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -5840,14 +6552,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -6278,6 +6982,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -6295,14 +7007,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -6460,6 +7164,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -6477,14 +7189,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7414,6 +8118,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -7431,14 +8143,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7596,6 +8300,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -7613,14 +8325,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7778,6 +8482,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -7795,14 +8507,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -8442,6 +9146,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -8459,14 +9171,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -8715,6 +9419,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -8732,14 +9444,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -8806,6 +9510,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -8823,14 +9535,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9452,6 +10156,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -9469,14 +10181,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9543,6 +10247,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -9560,14 +10272,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9634,6 +10338,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -9651,14 +10363,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9816,6 +10520,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -9833,14 +10545,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9907,6 +10611,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -9924,14 +10636,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10644,6 +11348,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -10661,14 +11373,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10735,6 +11439,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -10752,14 +11464,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11717,6 +12421,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -11734,14 +12446,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11808,6 +12512,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -11825,14 +12537,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13078,6 +13782,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -13095,14 +13807,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13522,6 +14226,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -13539,14 +14251,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13888,6 +14592,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -13905,14 +14617,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13975,6 +14679,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -13992,14 +14704,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14236,6 +14940,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -14253,14 +14965,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14323,6 +15027,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -14340,14 +15052,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14599,6 +15303,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -14616,14 +15328,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14860,6 +15564,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -14877,14 +15589,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15405,6 +16109,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -15422,14 +16134,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15666,6 +16370,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -15683,14 +16395,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17016,6 +17720,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -17033,14 +17745,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17199,6 +17903,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -17216,14 +17928,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18096,6 +18800,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -18113,14 +18825,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18270,6 +18974,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -18287,14 +18999,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18357,6 +19061,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -18374,14 +19086,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18705,6 +19409,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -18722,14 +19434,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -22995,109 +23699,6 @@
       ]
     },
     {
-      "importance": 96,
-      "longTermImportance": 85,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
-      "longTermImpact": "规则情景（3–10 年）：开放生态与可迁移工具链可能影响技术扩散与供应商依赖。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "能力、安全或效率变化",
-            "points": 11
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          },
-          {
-            "reason": "安全或关键漏洞变化",
-            "points": 12
-          }
-        ],
-        "themes": [
-          {
-            "id": "open-ecosystems",
-            "label": "开放模型与软件生态",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Vox Media",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "2e8e6fe4d25f301c3cd2ef13",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "30c38a4f4bf9960ad2b06834",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "3f5ba0d039c9a71ade917b9d",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "53e9e7559b835f25bdc90a4c",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "0856c1a27e7e11a7096c494c",
-      "title": "Anthropic launches free AI security scans for open-source projects",
-      "source": "The Verge",
-      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
-      "publishedAt": "2026-10-08T21:53:51.000Z",
-      "summary": "Anthropic's offering to help open-source projects track down security vulnerabilities with a new service called OSS Scanner. It says open-source projects that opt-in will get \"thorough, periodic security scans by our strongest models at no cost.\" That could mean open-source projects get alerted about possible security ",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
-      ]
-    },
-    {
       "importance": 57,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -23139,6 +23740,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "0476a40991c9db1e65d2e0dc",
             "relationship": "shared-topic",
             "themes": [
@@ -23161,14 +23770,6 @@
               "agent-execution"
             ],
             "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
           }
         ]
       },
@@ -23182,93 +23783,6 @@
       "tags": [
         "智能体",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Vox Media",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "01027b36b4a06b56e1c7bca2",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "05104d235a1385f77669db06",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "07efc9a78deca25fdb569b23",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "robotics",
-      "id": "7bd525b884109b29a505349e",
-      "title": "California is trying to shut down robot vs. human cage matches",
-      "source": "The Verge",
-      "sourceUrl": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
-      "publishedAt": "2026-10-08T20:06:56.000Z",
-      "summary": "The California State Athletic Commission sent a cease-and-desist letter to a startup that hosted a match between a human and a robot last month, as reported by The New York Times. The fight, which took place on September 18th, pitted a human, Frankie LaPenna, against a humanoid robot owned by a tech startup, Rek, that ",
-      "tags": [
-        "具身智能",
-        "新闻来源"
       ]
     },
     {
@@ -23423,14 +23937,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0856c1a27e7e11a7096c494c",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "2e8e6fe4d25f301c3cd2ef13",
             "relationship": "shared-topic",
             "themes": [
@@ -23453,6 +23959,14 @@
               "open-ecosystems"
             ],
             "differentSource": true
+          },
+          {
+            "id": "53e9e7559b835f25bdc90a4c",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
           }
         ]
       },
@@ -23469,185 +23983,7 @@
       ]
     },
     {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "010abefa0fafcbd406f20f91",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0476a40991c9db1e65d2e0dc",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "16755fadce6aa8d0277fd2a5",
-      "title": "Google brings agentic AI to Gemini, starting with businesses",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
-      "publishedAt": "2026-10-08T18:18:00.000Z",
-      "summary": "Google is turning Gemini into an AI agent that can plan, execute tasks, and work across business apps and systems. The agent can delegate work to subagents, use multiple AI models, and even gets its own workplace identity, complete with an email address.",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
       "importance": 65,
-      "longTermImportance": 77,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：协议变更可能影响兼容性、安全和迁移成本；公告本身不能证明已广泛采用。",
-      "longTermImpact": "规则情景（3–10 年）：可信、可互操作的协议可能塑造长期基础设施。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "protocol-trust",
-            "label": "可信与互操作协议",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "000e587f6181b6e4756a187f",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "108ab75ba95a2b5e6b3fc686",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1149d35a639c655d6f1c497d",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1322a304a3c5e6527676eef5",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "d26033846ca159789c4701ab",
-      "title": "OpenAI’s math solutions aren’t meeting the field’s standards yet",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/08/openais-math-solutions-arent-meeting-the-fields-standards-yet/",
-      "publishedAt": "2026-10-08T18:10:55.000Z",
-      "summary": "OpenAI's flood of proofs deviated from the guidelines set by a group of mathematical researchers consulted by the frontier lab.",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 68,
       "longTermImportance": 62,
       "horizonYears": 7,
       "whyItMatters": "规则分析：协议变更可能影响兼容性、安全和迁移成本；公告本身不能证明已广泛采用。",
@@ -23676,8 +24012,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           },
           {
             "reason": "普通补丁版本",
@@ -23747,7 +24083,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
@@ -23772,8 +24108,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -23838,181 +24174,7 @@
       ]
     },
     {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "010abefa0fafcbd406f20f91",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0476a40991c9db1e65d2e0dc",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "e95e5d957aba7cc61b5eaa50",
-      "title": "Natura’s $99 smart ring puts AI agents on your finger",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/08/naturas-smart-ring-puts-ai-agents-on-your-finger/",
-      "publishedAt": "2026-10-08T16:00:00.000Z",
-      "summary": "Natura’s $99 Interface smart ring lets you summon AI agents with the press of a finger to complete tasks, capture thoughts, and control devices — while doubling as a health tracker.",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "010abefa0fafcbd406f20f91",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0476a40991c9db1e65d2e0dc",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "f1d90d44b90167e93d9c4e9a",
-      "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
-      "publishedAt": "2026-10-08T16:00:00.000Z",
-      "summary": "Goodfire just launched what it says is a cheaper way to keep AI agents in check: Instead of paying a second AI to read everything an agent does, its monitors peek inside the model while it works and only call in backup when something looks fishy.",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24029,8 +24191,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24056,7 +24218,7 @@
       ]
     },
     {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24077,8 +24239,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24105,7 +24267,7 @@
       ]
     },
     {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24126,8 +24288,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24153,7 +24315,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24174,8 +24336,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24201,7 +24363,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24218,8 +24380,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24245,7 +24407,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
@@ -24266,8 +24428,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24465,14 +24627,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0856c1a27e7e11a7096c494c",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "30c38a4f4bf9960ad2b06834",
             "relationship": "shared-topic",
             "themes": [
@@ -24490,6 +24644,14 @@
           },
           {
             "id": "53e9e7559b835f25bdc90a4c",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "6a5fdad8571d078693e645d5",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -24726,6 +24888,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "0476a40991c9db1e65d2e0dc",
             "relationship": "shared-topic",
             "themes": [
@@ -24743,14 +24913,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24865,6 +25027,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -24882,14 +25052,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24952,6 +25114,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -24969,14 +25139,6 @@
           },
           {
             "id": "08d01f8b997b97e82bb78769",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25139,6 +25301,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -25156,14 +25326,6 @@
           },
           {
             "id": "08d01f8b997b97e82bb78769",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25230,6 +25392,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -25247,14 +25417,6 @@
           },
           {
             "id": "08d01f8b997b97e82bb78769",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26437,6 +26599,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -26454,14 +26624,6 @@
           },
           {
             "id": "08d01f8b997b97e82bb78769",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26656,6 +26818,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -26673,14 +26843,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26901,6 +27063,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -26918,14 +27088,6 @@
           },
           {
             "id": "08d01f8b997b97e82bb78769",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -27084,6 +27246,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -27101,14 +27271,6 @@
           },
           {
             "id": "08d01f8b997b97e82bb78769",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -27124,93 +27286,6 @@
       "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/making-amazon-quick-enterprise-ready-automated-auditable-cross-account-resource-promotion/",
       "publishedAt": "2026-10-05T15:56:28.000Z",
       "summary": "Promoting Amazon Quick resources (agents, action connectors, knowledge bases, flows, and spaces) from a development to a production AWS account has been a manual, error-prone chore. This post shows how to automate cross-account promotion with an idempotent, auditable MCP server on Amazon Bedrock AgentCore.",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 54,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "010abefa0fafcbd406f20f91",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0476a40991c9db1e65d2e0dc",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "28a10813ff05ef0a0983ca4a",
-      "title": "Agentic retrieval with LangChain and Amazon Bedrock Knowledge Bases",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/agentic-retrieval-with-langchain-and-amazon-bedrock-knowledge-bases/",
-      "publishedAt": "2026-10-05T15:53:56.000Z",
-      "summary": "Build a Retrieval Augmented Generation (RAG) application on Amazon Bedrock Managed Knowledge Base with LangChain, and see how agentic retrieval handles the multi-part questions that single-shot retrieval answers poorly. Run the same query through both paths, read the trace events, and compare what each retrieval path c",
       "tags": [
         "智能体",
         "官方来源"
@@ -27946,6 +28021,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -27963,14 +28046,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28041,7 +28116,7 @@
       ]
     },
     {
-      "importance": 71,
+      "importance": 68,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
@@ -28064,10 +28139,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -28085,14 +28156,6 @@
         },
         "publishedAtBasis": "updated",
         "relatedNews": [
-          {
-            "id": "0856c1a27e7e11a7096c494c",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
           {
             "id": "2e8e6fe4d25f301c3cd2ef13",
             "relationship": "shared-topic",
@@ -28116,6 +28179,14 @@
               "open-ecosystems"
             ],
             "differentSource": true
+          },
+          {
+            "id": "3f5ba0d039c9a71ade917b9d",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
           }
         ]
       },
@@ -28133,7 +28204,7 @@
       ]
     },
     {
-      "importance": 63,
+      "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28152,10 +28223,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28182,7 +28249,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28197,10 +28264,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28226,7 +28289,7 @@
       ]
     },
     {
-      "importance": 63,
+      "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28245,10 +28308,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28275,7 +28334,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28290,54 +28349,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "e81b1dea7ce0fb42c9785562",
-      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/allenai/astabrief",
-      "publishedAt": "2026-10-02T15:19:50.000Z",
-      "summary": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 46,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28363,7 +28374,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -28382,10 +28393,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -28404,6 +28411,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "0476a40991c9db1e65d2e0dc",
             "relationship": "shared-topic",
             "themes": [
@@ -28421,14 +28436,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28491,6 +28498,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -28508,14 +28523,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -29189,6 +29196,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "0476a40991c9db1e65d2e0dc",
             "relationship": "shared-topic",
             "themes": [
@@ -29206,14 +29221,6 @@
           },
           {
             "id": "0893f87c887f7e22117cb3a7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08d01f8b997b97e82bb78769",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -29485,6 +29492,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -29502,14 +29517,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -30044,6 +30051,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "010abefa0fafcbd406f20f91",
             "relationship": "shared-topic",
             "themes": [
@@ -30061,14 +30076,6 @@
           },
           {
             "id": "069aacfc7f9e43f3ff1928aa",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0893f87c887f7e22117cb3a7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31178,7 +31185,7 @@
             "differentSource": true
           },
           {
-            "id": "28a10813ff05ef0a0983ca4a",
+            "id": "30441d231d7d72e0d92f7c1f",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31828,7 +31835,7 @@
             "differentSource": true
           },
           {
-            "id": "28a10813ff05ef0a0983ca4a",
+            "id": "33fd00ceaa5855dfc4011f4c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
