@@ -9,7 +9,7 @@ async function verifyProduct(win){
  assert(doc.querySelector('.view-filters [aria-pressed=true]').dataset.view==='Daily Briefing','Default Daily Briefing');
  assert(doc.querySelector('.brief-masthead h1').textContent.includes(latest.date),'Default newest published edition, even after its day');
  for(const language of ['zh','en'])for(const theme of ['light','dark']){
-  await preference('language',language);await preference('theme',theme);await clickView('Daily Briefing');win.scrollTo(0,0);await pause();
+  await preference('language',language);await preference('theme',theme);await clickView('Daily Briefing');doc.querySelector('[data-edition-date="'+latest.date+'"]').click();await pause();win.scrollTo(0,0);await pause();
   const views=Array.from(doc.querySelectorAll('.view-filters [data-view]'));assert(views.length===2&&views[0].dataset.view==='Daily Briefing'&&views[1].dataset.view==='Long-term','Only two main content entrances');assert(!doc.querySelector('[data-view="Today"],[data-view="Latest"]'),'No visible or hidden Today/Latest buttons');
   assert(win.innerWidth===390,'390px mobile viewport: '+win.innerWidth);assert(doc.documentElement.scrollWidth<=390&&doc.body.scrollWidth<=390,'No horizontal overflow: '+language+'/'+theme);assert(win.getComputedStyle(doc.querySelector('.sidebar')).display==='none','Mobile category/sidebar row removed');
   assert(doc.documentElement.lang===(language==='zh'?'zh-CN':'en')&&doc.documentElement.dataset.theme===theme,'Language/theme reflect current choice');
