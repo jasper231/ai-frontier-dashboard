@@ -1,0 +1,61 @@
+name: Validate archive and mobile product navigation
+on:
+  push:
+    branches: [frontier-product-check-20261009]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Full regression, types, lint and both builds
+        run: |
+          npm run build:pages
+          npm run test:data
+          npm run test:feeds
+          npm run test:pages
+          npm run test:ai
+          npm run test:quality
+          npm run typecheck
+          npm run lint
+          npm run build
+          npm run build:pages
+      - name: Strict published JSON Schema and saved evidence binding
+        run: |
+          python3 -m pip install --quiet jsonschema
+          python3 - <<'PY'
+          import json,jsonschema
+          schema=json.load(open('src/data/briefing.schema.json'))
+          validator=jsonschema.Draft202012Validator(schema,format_checker=jsonschema.FormatChecker())
+          for edition in json.load(open('src/data/briefing.generated.json'))['editions']:
+              validator.validate(edition)
+          print('Strict JSON Schema v2 passed for both languages')
+          PY
+          node - <<'JS'
+          const core=require('./src/lib/briefing/core.cjs'),archive=require('./src/data/briefing.generated.json'),evidence=require('./docs/briefings/2026-10-09-evidence.json');core.bindSources(archive.editions.find(e=>e.date==='2026-10-09'),evidence.sourceSnapshot,require('./src/lib/news/sources.cjs').registry);console.log('Saved source snapshot and lawful enrichment binding passed');
+          JS
+      - name: Chrome regression and actual publication at 390px
+        run: |
+          node scripts/create-browser-regression.mjs
+          CHROME_BIN=$(command -v google-chrome || command -v chromium)
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=15000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/check-browser-result.cjs
+          node scripts/create-publication-regression.mjs
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=15000 --dump-dom "file://$PWD/artifacts/publication-browser-check.html" > artifacts/publication-browser-dom.html
+          node scripts/check-publication-result.cjs
+          node scripts/verify-next-navigation.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: approved-publication-validation
+          path: |
+            artifacts/*browser*.html
+            artifacts/next-browser-result.json
+            dist/index.html

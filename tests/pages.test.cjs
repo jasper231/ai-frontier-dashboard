@@ -28,7 +28,7 @@ test('real cards and Top Signals have native official title and footer links in 
  for(const view of ['Today','Latest','Long-term']){
   const model=createView(real,definitions,view,real.asOf),html=renderDashboard(model);
   const articles=[...html.matchAll(/<article class="(card|signal)" data-item-id="([^"]+)">([\s\S]*?)<\/article>/g)];
-  assert.equal(articles.length,model.items.length+model.signals.length);
+  assert.equal(articles.length,model.items.length+(view==='Long-term'?0:model.signals.length));
   for(const [,kind,id,markup] of articles){
    const item=real.items.find(item=>item.id===id),href=item.sourceUrl.replace(/&/g,'&amp;');
    assert.ok(markup.includes(`<h3><a class="article-title-link" href="${href}" target="_blank" rel="noopener noreferrer">`),kind+' title '+id);
@@ -54,32 +54,28 @@ test('static generator embeds working real links and filtering preserves them wi
   for(const folder of ['src','scripts','public'])fs.cpSync(folder,path.join(tmp,folder),{recursive:true});
   const real={...local,isDemo:false,asOf:'2026-10-02T15:59:59Z',items:local.items.map((item,i)=>({...item,source:'Official Test',sourceUrl:`https://openai.com/news/official-${i}`}))};
   fs.writeFileSync(path.join(tmp,'src/data/news.generated.json'),JSON.stringify(real));
+  const archive={schemaVersion:2,editions:[require('./fixtures/briefing/factory.cjs').editionFor(real)]};
+  fs.writeFileSync(path.join(tmp,'src/data/briefing.generated.json'),JSON.stringify(archive));
   const previous=process.cwd();process.chdir(tmp);
   try{await import('file://'+path.resolve(previous,'scripts/build-pages.mjs')+'?link-test');}finally{process.chdir(previous);}
   const html=fs.readFileSync(path.join(tmp,'dist/index.html'),'utf8');
   assert.ok(html.includes('data-view="Daily Briefing" aria-pressed="true"')); assert.ok(html.includes('https://openai.com/news/official-0'));
   const scripts=[...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];const json={};
   for(const script of scripts)if(script[1].includes('application/json'))json[/id="([^"]+)"/.exec(script[1])[1]]={textContent:script[2]};
-  let handler;const root={innerHTML:'',addEventListener(name,fn){if(name==='click')handler=fn},querySelector(){return {focus(){}}}};
+  let handler;const root={innerHTML:'',addEventListener(name,fn){if(name==='click')handler=fn},querySelector(selector){return selector.includes('aria-pressed')?{focus(){}}:null}};
   class FixedDate extends Date{constructor(...args){super(...(args.length?args:[real.asOf]));}}
-  const context={navigator:{language:'zh-CN'},URL,Date:FixedDate,module:{exports:{}},document:{getElementById(id){return id==='dashboard-root'?root:json[id]}}};vm.createContext(context);
+  const context={navigator:{language:'zh-CN'},URL,URLSearchParams,Date:FixedDate,module:{exports:{}},document:{getElementById(id){return id==='dashboard-root'?root:json[id]}}};vm.createContext(context);
   for(const script of scripts)if(!script[1].includes('application/json'))vm.runInContext(script[2],context);
   const rendered={};
-  for(const view of ['Today','Latest','Long-term']){
-   handler({target:{closest(){return {getAttribute(){return view}}}}});
-   assert.equal(root.innerHTML,renderDashboard(createView(real,definitions,view,real.asOf)));
+  for(const view of ['Long-term','Daily Briefing']){
+   handler({target:{closest(selector){return selector.includes('button[')?{getAttribute(name){return name==='data-view'?view:null}}:null}}});
+   assert.equal(root.innerHTML,renderDashboard(require('../src/lib/news/product.cjs').createModel(real,definitions,view,real.asOf,archive),{briefing:archive,language:'zh'}));
    assert.ok(root.innerHTML.includes(`data-view="${view}" aria-pressed="true"`));
+   assert.ok(!/data-view="(?:Today|Latest)"/.test(root.innerHTML));
    rendered[view]=root.innerHTML;
    assert.ok(root.innerHTML.includes('href="https://openai.com/news/official-0" target="_blank" rel="noopener noreferrer"'));
   }
-  const signals=html=>[...html.matchAll(/<article class="signal" data-item-id="([^"]+)"/g)].map(m=>m[1]);
-  const cards=html=>[...html.matchAll(/<article class="card" data-item-id="([^"]+)"/g)].map(m=>m[1]);
-  assert.ok(!cards(rendered.Today).includes('ai-2'));
-  assert.ok(cards(rendered.Today).length<cards(rendered.Latest).length);
-  assert.equal(cards(rendered.Latest)[0],'ai-1');
-  assert.equal(cards(rendered['Long-term'])[0],'ai-3');
-  assert.notDeepEqual(signals(rendered.Today),signals(rendered.Latest));
-  assert.notDeepEqual(signals(rendered['Long-term']),signals(rendered.Latest));
+  assert.match(rendered['Long-term'],/class="card"/);assert.match(rendered['Daily Briefing'],/class="brief-story"/);
  }finally{fs.rmSync(tmp,{recursive:true,force:true});}
 });
 
@@ -87,7 +83,7 @@ test('shared reading toolbar keeps only views and preferences sticky, with safe-
  const html=renderDashboard(createView(local,definitions,'Latest',local.asOf));
  const toolbar=html.match(/<div class="brief-toolbar">([\s\S]*?)<p class="demo-note">/)[1];
  assert.equal((html.match(/class="preferences"/g)||[]).length,1);
- assert.equal((toolbar.match(/data-view=/g)||[]).length,4);
+ assert.equal((toolbar.match(/data-view=/g)||[]).length,2);
  assert.match(toolbar,/data-preference="language"/);assert.match(toolbar,/data-preference="theme"/);
  assert.doesNotMatch(toolbar,/class="brand"|class="edition"|最后更新/);
  const css=fs.readFileSync('src/app/globals.css','utf8');

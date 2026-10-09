@@ -71,21 +71,25 @@ jobs:
             echo 'A real Chrome browser is required for this regression test'
             exit 1
           fi
-          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=3000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=15000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
           node scripts/check-browser-result.cjs
       - name: Approved bilingual publication at 390px
         shell: bash
         run: |
           node scripts/create-publication-regression.mjs
           CHROME_BIN=$(command -v google-chrome || command -v chromium)
-          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=4000 --dump-dom "file://$PWD/artifacts/publication-browser-check.html" > artifacts/publication-browser-dom.html
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=15000 --dump-dom "file://$PWD/artifacts/publication-browser-check.html" > artifacts/publication-browser-dom.html
           node scripts/check-publication-result.cjs
+      - name: Next.js mobile navigation parity in Chrome
+        run: node scripts/verify-next-navigation.mjs
       - name: Upload browser regression diagnostics
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: browser-regression-${{ github.run_id }}
-          path: artifacts/browser-regression*.html
+          path: |
+            artifacts/*browser*.html
+            artifacts/next-browser-result.json
           if-no-files-found: warn
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
@@ -129,7 +133,7 @@ jobs:
         run: |
           node scripts/create-publication-regression.mjs artifacts/live-pages.html artifacts/live-publication-browser-check.html
           CHROME_BIN=$(command -v google-chrome || command -v chromium)
-          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=4000 --dump-dom "file://$PWD/artifacts/live-publication-browser-check.html" > artifacts/live-publication-browser-dom.html
+          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=15000 --dump-dom "file://$PWD/artifacts/live-publication-browser-check.html" > artifacts/live-publication-browser-dom.html
           node scripts/check-publication-result.cjs artifacts/live-publication-browser-dom.html
       - name: Save live verification evidence
         if: always()

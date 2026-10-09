@@ -182,3 +182,19 @@ main [id] { scroll-margin-top: 8px; }
   .sidebar nav { position: static; }
   .demo-note { margin-bottom: 24px; }
 }
+
+/* Product navigation: hide only the compact controls while reading forward. */
+.brief-toolbar { transition: transform 180ms ease; }
+.brief-archive { margin: 12px 0 0; font-size: 14px; color: var(--muted); }
+.brief-archive>summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; width: max-content; }
+.brief-archive nav { display: flex; flex-wrap: wrap; gap: 6px; padding: 6px 0; }
+.brief-archive a { min-height: 44px; display: flex; align-items: center; padding: 8px 12px; border-radius: 4px; }
+.brief-archive a[aria-current=date] { background: var(--surface-hover); color: var(--text); }
+.trend-label { font-size: 14px; color: var(--muted); margin: 20px 0 6px; font-weight: 500; }
+.trend-explanation p,.trend-impact p,.trend-keywords li { font-size: 16px; line-height: 1.95; color: var(--body-text); overflow-wrap: anywhere; }
+.trend-keywords ul { padding-left: 20px; }
+@media (max-width: 767px) {
+ .sidebar { display: none; }
+ .brief-toolbar[data-reader-hidden=true] { transform: translateY(calc(-100% - 2px)); pointer-events: none; }
+}
+@media (prefers-reduced-motion: reduce) { .brief-toolbar { transition: none; } }

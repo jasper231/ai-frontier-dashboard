@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import core from '../src/lib/news/core.cjs';
+import product from '../src/lib/news/product.cjs';
 import renderer from '../src/lib/news/render.cjs';
 import snapshots from '../src/lib/news/snapshot.cjs';
 import quality from '../src/lib/news/quality/rules.cjs';
@@ -21,8 +21,8 @@ const renderScript=fs.readFileSync('src/lib/news/render.cjs','utf8');
 const briefing=loadArchive();
 const briefingScripts=['core.cjs','render.cjs'].map(file=>fs.readFileSync('src/lib/briefing/'+file,'utf8')).join('\n');
 // Mask CommonJS globals: inline browser execution must always use the browser exports.
-const browserBundle='(function(module,exports,require){\n'+coreScript+'\n'+briefingScripts+'\n'+renderScript+'\n'+browserInteraction+'\n})();';
-const html=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="description" content="个人前沿科技情报终端，关注技术变化及其影响。"><title>AI Frontier — 个人前沿科技情报终端</title><link rel="icon" href="${icon}"><script id="frontier-preferences">${bootstrapScript()}</script><style>${css}</style><noscript><style>html[data-frontier-pending] #dashboard-root{visibility:visible}</style></noscript></head><body><div id="dashboard-root">${renderer.renderDashboard(core.createView(batch,definitions,'Daily Briefing',new Date().toISOString()),{briefing})}</div><script type="application/json" id="news-snapshot">${json(batch)}</script><script type="application/json" id="category-definitions">${json(definitions)}</script><script type="application/json" id="briefing-snapshot">${json(briefing)}</script><script>${browserBundle}</script></body></html>`;
+const browserBundle='(function(module,exports,require){\n'+coreScript+'\n'+briefingScripts+'\n'+fs.readFileSync('src/lib/news/product.cjs','utf8')+'\n'+fs.readFileSync('src/lib/news/reading-controls.cjs','utf8')+'\n'+renderScript+'\n'+browserInteraction+'\n})();';
+const html=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="description" content="个人前沿科技情报终端，关注技术变化及其影响。"><title>AI Frontier — 个人前沿科技情报终端</title><link rel="icon" href="${icon}"><script id="frontier-preferences">${bootstrapScript()}</script><style>${css}</style><noscript><style>html[data-frontier-pending] #dashboard-root{visibility:visible}</style></noscript></head><body><div id="dashboard-root">${renderer.renderDashboard(product.createModel(batch,definitions,'Daily Briefing',new Date().toISOString(),briefing),{briefing})}</div><script type="application/json" id="news-snapshot">${json(batch)}</script><script type="application/json" id="category-definitions">${json(definitions)}</script><script type="application/json" id="briefing-snapshot">${json(briefing)}</script><script>${browserBundle}</script></body></html>`;
 fs.mkdirSync('static-preview',{recursive:true});
 for(const name of ['index.html','dashboard-standalone.html'])fs.writeFileSync('static-preview/'+name,html);
 fs.writeFileSync('static-preview/styles.css',css);
