@@ -133,3 +133,52 @@ html[data-frontier-pending] #dashboard-root{visibility:hidden}
 .brief-story-sources p{font-size:12px;color:var(--muted);margin-top:4px}
 .brief-story-keywords ul{list-style:none;padding:0;margin:0}.brief-story-keywords li{font-size:15px;line-height:1.9;color:var(--body-text);margin-bottom:8px}
 @media(max-width:767px){.brief-source-link{font-size:14px}.brief-reading h1{font-size:29px}.brief-story-index{font-size:13px;white-space:nowrap}}
+
+/* Compact reading controls; metadata and branding remain in normal flow. */
+:root {
+  --reader-safe-top: env(safe-area-inset-top, 0px);
+  --reader-toolbar-height: 57px;
+}
+html {
+  overflow-x: clip;
+  scroll-padding-top: calc(var(--reader-toolbar-height) + var(--reader-safe-top) + 12px);
+}
+body { overflow-x: clip; }
+.brief-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+  padding: calc(4px + var(--reader-safe-top)) 0 4px;
+  margin-bottom: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.brief-toolbar .view-filters {
+  flex: 1 1 auto;
+  width: auto;
+  min-width: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  padding: 2px;
+}
+.brief-toolbar .view-filters::-webkit-scrollbar { display: none; }
+.brief-toolbar .view-filters button {
+  flex: 0 0 auto;
+  min-height: 44px;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+.brief-toolbar .preferences { flex: 0 0 auto; gap: 2px; }
+.demo-note { margin: 10px 0 32px; }
+.sidebar nav { top: calc(var(--reader-toolbar-height) + var(--reader-safe-top) + 12px); }
+main [id] { scroll-margin-top: 8px; }
+@media (max-width: 767px) {
+  .brief-toolbar { margin-bottom: 0; gap: 6px; }
+  .sidebar nav { position: static; }
+  .demo-note { margin-bottom: 24px; }
+}
