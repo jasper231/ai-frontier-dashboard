@@ -12,7 +12,7 @@
   if(!e)return `<section id="brief-opening" class="brief-reading" data-briefing-status="unpublished"><h1>${escape(t.title)} <span>｜${date}</span></h1><p class="brief-empty">${t.unpublished}</p>${radar}</section>`;
   const editions=core.publishedEditions(archive,asOf);
   const past=`<details class="brief-archive"><summary>${t.archive}</summary><nav aria-label="${t.archive}">${editions.map(item=>`<a href="#view=briefing&amp;date=${item.date}" data-edition-date="${item.date}" aria-current="${item.date===e.date?'date':'false'}">${item.date}</a>`).join('')}</nav></details>`;
-  const related=new Map([...items.map(i=>[i.id,{title:i18n.content(i,'title',language),url:i.sourceUrl}]),...e.sources.map(s=>[s.id,{title:language==='zh'?(e.stories.find(story=>story.sources.some(source=>source.id===s.id))?.title.zh||'来源｜'+s.name):s.title,url:s.url}])]);
+  const related=new Map([...items.map(i=>[i.id,{title:i18n.content(i,'title',language),url:i.sourceUrl}]),...e.sources.map(s=>[s.id,{title:e.stories.find(story=>story.sources.some(source=>source.id===s.id))?.title[language]||(language==='zh'?'来源｜':'Source | ')+s.name,url:s.url}])]);
   const seen=new Set(),glossary=e.stories.flatMap(story=>story.keywords);
   function explain(value){let output=value;for(const k of glossary){const term=text(k.term);if(!/^[A-Z][A-Za-z0-9]{1,}$/.test(term)||seen.has(term))continue;const pattern=new RegExp('\\b'+term+'\\b');if(pattern.test(output)){output=output.replace(pattern,term+(language==='zh'?'（':' (')+text(k.explanation)+(language==='zh'?'）':')'));seen.add(term);}}return escape(output);}
   const paragraph=p=>text(p.text).split(/\n\s*\n/).map(part=>`<p>${explain(part)}</p>`).join('');
