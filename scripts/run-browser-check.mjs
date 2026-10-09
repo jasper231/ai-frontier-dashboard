@@ -3,7 +3,7 @@ import {spawn,execFileSync} from 'node:child_process';import fs from 'node:fs';i
 const [input,output,marker='browser-regression-result']=process.argv.slice(2);if(!input||!output)throw Error('Usage: run-browser-check.mjs input.html output.html result-id');
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms)),tmp=fs.mkdtempSync(path.join(os.tmpdir(),'frontier-dom-chrome-'));
 const chrome=process.env.CHROME_BIN||execFileSync('sh',['-c','command -v google-chrome || command -v chromium'],{encoding:'utf8'}).trim();
-const browser=spawn(chrome,['--headless','--no-sandbox','--disable-dev-shm-usage','--disable-background-networking','--remote-debugging-port=9223','--user-data-dir='+tmp,'about:blank'],{stdio:'ignore'});let socket;
+const browser=spawn(chrome,['--headless','--window-size=430,950','--no-sandbox','--disable-dev-shm-usage','--disable-background-networking','--remote-debugging-port=9223','--user-data-dir='+tmp,'about:blank'],{stdio:'ignore'});let socket;
 try{
  let pages;for(let i=0;i<100;i++){try{pages=await(await fetch('http://127.0.0.1:9223/json/list')).json();break;}catch{await wait(100);}}if(!pages)throw Error('Chrome debugging endpoint did not start');
  socket=new WebSocket(pages.find(p=>p.type==='page').webSocketDebuggerUrl);await new Promise((resolve,reject)=>{socket.onopen=resolve;socket.onerror=reject;});
