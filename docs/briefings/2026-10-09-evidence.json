@@ -1,0 +1,198 @@
+{
+  "reviewedSnapshotCommit": "5fbdf763acfb84c461206ef088b7927e56cf8efe",
+  "reviewedSnapshotBlob": "5b8d19fcf8c24f164519770a6001142c5b47ccfe",
+  "sourceSnapshot": {
+    "schemaVersion": 1,
+    "asOf": "2026-10-08T18:19:15.911Z",
+    "timeZone": "UTC",
+    "isDemo": false,
+    "items": [
+      {
+        "importance": 57,
+        "longTermImportance": 54,
+        "horizonYears": 5,
+        "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+        "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+        "ruleAnalysis": {
+          "version": "public-quality-v1",
+          "scoring": [
+            {
+              "reason": "基础相关性",
+              "points": 35
+            },
+            {
+              "reason": "可识别的前沿主题",
+              "points": 8
+            },
+            {
+              "reason": "直接公开的一手来源",
+              "points": 8
+            },
+            {
+              "reason": "近一天的来源时间",
+              "points": 6
+            }
+          ],
+          "themes": [
+            {
+              "id": "agent-execution",
+              "label": "可验证的智能体执行",
+              "evidence": "headline"
+            }
+          ],
+          "sourceQuality": {
+            "kind": "official",
+            "publisher": "NVIDIA",
+            "score": 90,
+            "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+          },
+          "publishedAtBasis": "published",
+          "relatedNews": [
+            {
+              "id": "00d8cd492dd233709b99e946",
+              "relationship": "shared-topic",
+              "themes": [
+                "agent-execution"
+              ],
+              "differentSource": true
+            },
+            {
+              "id": "0504944df6daba281072ce20",
+              "relationship": "shared-topic",
+              "themes": [
+                "agent-execution"
+              ],
+              "differentSource": true
+            },
+            {
+              "id": "069aacfc7f9e43f3ff1928aa",
+              "relationship": "shared-topic",
+              "themes": [
+                "agent-execution"
+              ],
+              "differentSource": true
+            },
+            {
+              "id": "0893f87c887f7e22117cb3a7",
+              "relationship": "shared-topic",
+              "themes": [
+                "agent-execution"
+              ],
+              "differentSource": true
+            }
+          ]
+        },
+        "category": "agents",
+        "id": "1815740c61d22b3c8c663f13",
+        "title": "NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs With RTX Spark and AI Agents",
+        "source": "NVIDIA",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
+        "publishedAt": "2026-10-07T18:45:28.000Z",
+        "summary": "At a Microsoft event in San Francisco on Wednesday, NVIDIA founder and CEO Jensen Huang and Microsoft CEO Satya Nadella outlined how NVIDIA and Microsoft are co-engineering hardware and software for AI agents to run on Windows PCs. NVIDIA was founded because of Windows, Huang said. Now AI agents are coming to Windows. ",
+        "tags": [
+          "智能体",
+          "官方来源"
+        ]
+      }
+    ]
+  },
+  "enrichmentSources": [
+    {
+      "id": "google-work-official",
+      "title": "Google Cloud",
+      "name": "Google Cloud",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026",
+      "type": "official",
+      "publisher": "Google",
+      "publishedAt": "2026-10-08T00:00:00Z",
+      "excerpt": "Gemini can act as a coworker agent with its own identity. Source displays October 8, 2026 only; timestamp represents the date boundary, not an observed publication clock time.",
+      "origin": "agent-enrichment",
+      "adapterId": "google-ai",
+      "reviewedAt": "2026-10-09T00:35:00Z"
+    },
+    {
+      "id": "google-work-reuters",
+      "title": "Reuters",
+      "name": "Reuters",
+      "url": "https://www.reuters.com/business/google-cloud-introduces-gemini-agent-work-ai-race-heats-up-2026-10-08/",
+      "type": "news",
+      "publisher": "Reuters",
+      "publishedAt": "2026-10-08T15:08:39Z",
+      "excerpt": "Google Cloud on Thursday introduced the Gemini agent, a single AI agent for work.",
+      "origin": "agent-enrichment",
+      "adapterId": "reuters",
+      "reviewedAt": "2026-10-09T00:35:00Z"
+    },
+    {
+      "id": "anthropic-cyber-official",
+      "title": "Anthropic",
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "type": "official",
+      "publisher": "Anthropic",
+      "publishedAt": "2026-10-08T00:00:00Z",
+      "excerpt": "The Critical Infrastructure Defense Program brings frontier models, on-site engineers, and threat research to defenders. Source gives a date only; timestamp represents its date boundary.",
+      "origin": "agent-enrichment",
+      "adapterId": "anthropic",
+      "reviewedAt": "2026-10-09T00:35:00Z"
+    },
+    {
+      "id": "anthropic-scanner-official",
+      "title": "Anthropic — OSS Scanner",
+      "name": "Anthropic — OSS Scanner",
+      "url": "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source",
+      "type": "official",
+      "publisher": "Anthropic",
+      "publishedAt": "2026-10-08T00:00:00Z",
+      "excerpt": "The outputs of this opt-in vulnerability scanner will be fully model-generated, without human review or triage. Source gives a date only; timestamp represents its date boundary.",
+      "origin": "agent-enrichment",
+      "adapterId": "anthropic",
+      "reviewedAt": "2026-10-09T00:35:00Z"
+    },
+    {
+      "id": "anthropic-cyber-axios",
+      "title": "Axios",
+      "name": "Axios",
+      "url": "https://www.axios.com/2026/10/08/anthropic-critical-infrastructure-cybersecurity",
+      "type": "news",
+      "publisher": "Axios",
+      "publishedAt": "2026-10-08T19:00:18Z",
+      "excerpt": "Anthropic is launching a new cybersecurity initiative for companies protecting critical infrastructure.",
+      "origin": "agent-enrichment",
+      "adapterId": "axios",
+      "reviewedAt": "2026-10-09T00:35:00Z"
+    },
+    {
+      "id": "waymo-debt-official",
+      "title": "Waymo",
+      "name": "Waymo",
+      "url": "https://blog.waymo.com/blog/2026/10/waymo-closes-5-billion-debt-financing/",
+      "type": "official",
+      "publisher": "Waymo",
+      "publishedAt": "2026-10-08T00:00:00Z",
+      "excerpt": "Waymo closed a $5 billion term loan, its first debt financing. Source displays October 8, 2026 only; timestamp represents its date boundary.",
+      "origin": "agent-enrichment",
+      "adapterId": "waymo",
+      "reviewedAt": "2026-10-09T00:35:00Z"
+    },
+    {
+      "id": "waymo-debt-techcrunch",
+      "title": "TechCrunch",
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/08/waymo-locks-in-5b-loan-from-blackstone-pimco-to-fuel-robotaxi-expansion/",
+      "type": "news",
+      "publisher": "TechCrunch",
+      "publishedAt": "2026-10-08T14:16:00Z",
+      "excerpt": "Waymo closed a $5 billion loan from lenders including PIMCO, Blackstone, and Sixth Street. Published at 7:16 AM PDT; seconds are unspecified.",
+      "origin": "agent-enrichment",
+      "adapterId": "techcrunch",
+      "reviewedAt": "2026-10-09T00:35:00Z"
+    }
+  ],
+  "reviewNotes": [
+    "Chinese publication text approved by jasper231 before import. English counterpart independently edited against the same factual boundaries.",
+    "Independent media corroborate announcements, not measured product performance or audited operating results.",
+    "Date-only original pages use a normalized UTC date-boundary value. No exact publication clock time is claimed.",
+    "Research coverage remains October 8 08:19 to October 9 08:19 Asia/Shanghai. No new research or candidate reselection was performed."
+  ]
+}

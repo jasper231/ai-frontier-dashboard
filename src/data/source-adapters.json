@@ -39,7 +39,8 @@
     "type": "official",
     "publisher": "Google",
     "hosts": [
-      "blog.google"
+      "blog.google",
+      "cloud.google.com"
     ],
     "feedNames": [
       "Google AI"
@@ -616,5 +617,33 @@
     "access": "agent-lawful",
     "status": "manual-public-or-authorized-only",
     "reason": "No stable permitted feed is enabled. Use only directly accessible public or lawfully authorized source material; never bypass paywalls or use third-party feed mirrors."
+  },
+  {
+    "id": "axios",
+    "name": "Axios",
+    "type": "news",
+    "publisher": "Axios",
+    "hosts": [
+      "axios.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "reviewed-public-original",
+    "reason": "Registered solely for the previously reviewed 2026-10-09 edition; no automated transport added."
+  },
+  {
+    "id": "waymo",
+    "name": "Waymo",
+    "type": "official",
+    "publisher": "Waymo",
+    "hosts": [
+      "waymo.com"
+    ],
+    "feedNames": [],
+    "feedUrl": null,
+    "access": "agent-lawful",
+    "status": "reviewed-public-original",
+    "reason": "Registered solely for the previously reviewed 2026-10-09 edition; no automated transport added."
   }
 ]
