@@ -5,12 +5,13 @@ async function verifyProduct(win){
  const published=win.FrontierBriefing.publishedEditions(archive,now),latest=published[0];assert(!!latest,'Fixture/live artifact has a real available edition');
  const clickView=async view=>{doc.querySelector('.view-filters [data-view="'+view+'"]').click();await pause();assert(doc.querySelector('.view-filters [aria-pressed=true]').dataset.view===view,'Main view switches: '+view);};
  const preference=async(kind,value)=>{const menu=doc.querySelector('[data-preference="'+kind+'"]');if(!menu.open)menu.querySelector('summary').click();assert(menu.open,'Native '+kind+' menu opens');const option=menu.querySelector('button[data-'+kind+'="'+value+'"]');assert(option.getBoundingClientRect().height>=44,'Preference touch height is 44px');option.click();await pause();};
+ await pause(100);
  assert(doc.querySelector('.view-filters [aria-pressed=true]').dataset.view==='Daily Briefing','Default Daily Briefing');
  assert(doc.querySelector('.brief-masthead h1').textContent.includes(latest.date),'Default newest published edition, even after its day');
  for(const language of ['zh','en'])for(const theme of ['light','dark']){
   await preference('language',language);await preference('theme',theme);await clickView('Daily Briefing');win.scrollTo(0,0);await pause();
   const views=Array.from(doc.querySelectorAll('.view-filters [data-view]'));assert(views.length===2&&views[0].dataset.view==='Daily Briefing'&&views[1].dataset.view==='Long-term','Only two main content entrances');assert(!doc.querySelector('[data-view="Today"],[data-view="Latest"]'),'No visible or hidden Today/Latest buttons');
-  assert(win.innerWidth===390,'390px mobile viewport');assert(doc.documentElement.scrollWidth<=390&&doc.body.scrollWidth<=390,'No horizontal overflow: '+language+'/'+theme);assert(win.getComputedStyle(doc.querySelector('.sidebar')).display==='none','Mobile category/sidebar row removed');
+  assert(win.innerWidth===390,'390px mobile viewport: '+win.innerWidth);assert(doc.documentElement.scrollWidth<=390&&doc.body.scrollWidth<=390,'No horizontal overflow: '+language+'/'+theme);assert(win.getComputedStyle(doc.querySelector('.sidebar')).display==='none','Mobile category/sidebar row removed');
   assert(doc.documentElement.lang===(language==='zh'?'zh-CN':'en')&&doc.documentElement.dataset.theme===theme,'Language/theme reflect current choice');
   assert(doc.title===win.FrontierI18n.dictionary(language).pageTitle&&doc.querySelector('meta[name=description]').content===win.FrontierI18n.dictionary(language).description,'Localized title and description');
   const articles=Array.from(doc.querySelectorAll('.brief-story'));assert(articles.length===latest.stories.length,'Published highlight count is natural, not a fixed quota');
