@@ -3,7 +3,7 @@ import {spawn,execFileSync} from 'node:child_process';
 import fs from 'node:fs';import os from 'node:os';import path from 'node:path';
 const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms)),tmp=fs.mkdtempSync(path.join(os.tmpdir(),'frontier-next-browser-'));
 const chrome=process.env.CHROME_BIN||execFileSync('sh',['-c','command -v google-chrome || command -v chromium'],{encoding:'utf8'}).trim();
-const server=spawn(process.execPath,['node_modules/next/dist/bin/next','start','--hostname','127.0.0.1','--port','3100'],{stdio:'ignore'});
+const server=spawn('python3',['-m','http.server','3100','--bind','127.0.0.1','--directory','out'],{stdio:'ignore'});
 let browser,socket;const checks=[];
 try{
  async function until(url){for(let i=0;i<100;i++){try{const r=await fetch(url);if(r.ok)return r;}catch{}await wait(100);}throw Error('Browser/server did not start: '+url);}

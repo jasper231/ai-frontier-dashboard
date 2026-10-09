@@ -14,8 +14,8 @@
   }
   const focus=event=>{if(event.target.closest?.('.brief-toolbar'))reveal();};
   const toggle=()=>{if(menuOpen())reveal();};
-  env.addEventListener?.('scroll',scroll,{passive:true});root.addEventListener('focusin',focus);root.addEventListener('toggle',toggle,true);mobile.addEventListener?.('change',reveal);
-  refresh();return {refresh,reveal,dispose(){env.removeEventListener?.('scroll',scroll);root.removeEventListener('focusin',focus);root.removeEventListener('toggle',toggle,true);mobile.removeEventListener?.('change',reveal);}};
+  env.addEventListener?.('scroll',scroll,{passive:true,capture:true});root.addEventListener('focusin',focus);root.addEventListener('toggle',toggle,true);mobile.addEventListener?.('change',reveal);
+  refresh();return {refresh,reveal,dispose(){env.removeEventListener?.('scroll',scroll,true);root.removeEventListener('focusin',focus);root.removeEventListener('toggle',toggle,true);mobile.removeEventListener?.('change',reveal);}};
  }
  return {attach};
 });
