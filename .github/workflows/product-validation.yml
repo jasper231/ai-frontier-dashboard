@@ -41,6 +41,8 @@ jobs:
           node - <<'JS'
           const core=require('./src/lib/briefing/core.cjs'),archive=require('./src/data/briefing.generated.json'),evidence=require('./docs/briefings/2026-10-09-evidence.json');core.bindSources(archive.editions.find(e=>e.date==='2026-10-09'),evidence.sourceSnapshot,require('./src/lib/news/sources.cjs').registry);console.log('Saved source snapshot and lawful enrichment binding passed');
           JS
+      - name: Next.js real mobile Chrome parity
+        run: node scripts/verify-next-navigation.mjs
       - name: Chrome regression and actual publication at 390px
         run: |
           node scripts/create-browser-regression.mjs
@@ -50,7 +52,6 @@ jobs:
           node scripts/create-publication-regression.mjs
           "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=4000 --dump-dom "file://$PWD/artifacts/publication-browser-check.html" > artifacts/publication-browser-dom.html
           node scripts/check-publication-result.cjs
-          node scripts/verify-next-navigation.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
