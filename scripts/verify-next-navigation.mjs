@@ -9,7 +9,7 @@ try{
  async function until(url){for(let i=0;i<100;i++){try{const r=await fetch(url);if(r.ok)return r;}catch{}await wait(100);}throw Error('Browser/server did not start: '+url);}
  await until('http://127.0.0.1:3100');browser=spawn(chrome,['--headless','--no-sandbox','--disable-dev-shm-usage','--disable-background-networking','--remote-debugging-port=9222','--user-data-dir='+tmp,'about:blank'],{stdio:'ignore'});
  const pages=await (await until('http://127.0.0.1:9222/json/list')).json();socket=new WebSocket(pages.find(p=>p.type==='page').webSocketDebuggerUrl);await new Promise((resolve,reject)=>{socket.onopen=resolve;socket.onerror=reject;});
- let id=0;const pending=new Map();socket.onmessage=event=>{const result=JSON.parse(event.data),entry=pending.get(result.id);if(entry){pending.delete(result.id);result.error?entry.reject(Error(JSON.stringify(result.error))):entry.resolve(result.result);}};
+ let id=0;const pending=new Map();socket.onmessage=event=>{const result=JSON.parse(event.data),entry=pending.get(result.id);if(entry){pending.delete(result.id);if(result.error)entry.reject(Error(JSON.stringify(result.error)));else entry.resolve(result.result);}};
  const command=(method,params={})=>new Promise((resolve,reject)=>{pending.set(++id,{resolve,reject});socket.send(JSON.stringify({id,method,params}));});
  await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await command('Page.enable');
  // The approved publication remains deterministic in regression, regardless of test day.
