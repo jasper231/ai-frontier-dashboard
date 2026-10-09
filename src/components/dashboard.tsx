@@ -20,6 +20,10 @@ export function Dashboard({batch,definitions,briefing}: {batch: NewsBatch;defini
   element?.addEventListener('toggle',closeOther,true);
   return ()=>{unsubscribe();element?.removeEventListener('toggle',closeOther,true);};
  },[]);
+ useEffect(()=>{
+  const scroller=root.current?.querySelector<HTMLElement>('.view-filters'),active=scroller?.querySelector<HTMLElement>('[aria-pressed="true"]');
+  if(scroller&&active)scroller.scrollLeft=Math.max(0,active.offsetLeft-scroller.offsetLeft-(scroller.clientWidth-active.offsetWidth)/2);
+ },[view,preferences,referenceTime]);
  const model=createView(batch,definitions,view,referenceTime);
  return <div id="dashboard-root" ref={root} onClick={event=>{
   const target=event.target;if(!(target instanceof Element))return;
