@@ -15,3 +15,6 @@ export function corroborated(story:BriefingStory):boolean;
 export function sortStories(stories:BriefingStory[]):BriefingStory[];
 export function rankStories(stories:BriefingStory[]):BriefingStory[];
 export function bindSources(edition:BriefingEdition,batch:NewsBatch,registry?:{id:string;publisher:string;type:string;hosts:string[]}[]):BriefingEdition;
+
+export function publishedEditions(archive:unknown,asOf:string):BriefingEdition[];
+export function resolveEdition(archive:unknown,asOf:string,date?:string):BriefingEdition|null;

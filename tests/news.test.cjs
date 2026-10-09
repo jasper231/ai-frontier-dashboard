@@ -43,15 +43,16 @@ test('standalone browser scripts perform real filter updates without network or 
  const scripts=[...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];
  const jsonScripts={};for(const s of scripts)if(s[1].includes('application/json'))jsonScripts[/id="([^"]+)"/.exec(s[1])[1]]={textContent:s[2]};
  let callback;let focused=false;
- const root={innerHTML:'',addEventListener(name,fn){if(name==='click')callback=fn},querySelector(){return {focus(){focused=true}}}};
+ const root={innerHTML:'',addEventListener(name,fn){if(name==='click')callback=fn},querySelector(selector){return selector.includes('aria-pressed')?{focus(){focused=true}}:null}};
  const embedded=JSON.parse(jsonScripts['news-snapshot'].textContent);
  const embeddedDefinitions=JSON.parse(jsonScripts['category-definitions'].textContent);
  class FixedDate extends Date {constructor(...args){super(...(args.length?args:[embedded.asOf]));}}
- const context={navigator:{language:'zh-CN'},URL,Date:FixedDate,document:{getElementById(id){return id==='dashboard-root'?root:jsonScripts[id]}}};
+ const context={navigator:{language:'zh-CN'},URL,URLSearchParams,Date:FixedDate,document:{getElementById(id){return id==='dashboard-root'?root:jsonScripts[id]}}};
  vm.createContext(context);for(const s of scripts)if(!s[1].includes('application/json'))vm.runInContext(s[2],context);
- for(const view of ['Today','Long-term','Latest']){
-  callback({target:{closest(){return {getAttribute(){return view}}}}});
-  assert.equal(root.innerHTML,renderDashboard(core.createView(embedded,embeddedDefinitions,view,embedded.asOf)));
+ const archive=JSON.parse(jsonScripts['briefing-snapshot'].textContent);
+ for(const view of ['Long-term','Daily Briefing']){
+  callback({target:{closest(selector){return selector.includes('button[')?{getAttribute(name){return name==='data-view'?view:null}}:null}}});
+  assert.equal(root.innerHTML,renderDashboard(require('../src/lib/news/product.cjs').createModel(embedded,embeddedDefinitions,view,embedded.asOf,archive),{briefing:archive,language:'zh'}));
   assert.ok(root.innerHTML.includes(`data-view="${view}" aria-pressed="true"`));
  }
  assert.ok(focused);assert.match(html,/<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">/);

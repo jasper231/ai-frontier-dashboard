@@ -1,39 +1,17 @@
-/* Real approved edition in the actual standalone artifact, with a 390px iframe. */
+/* Verify actual standalone publication; no synthetic data enters this artifact. */
 import fs from 'node:fs';
 import vm from 'node:vm';
-const input=process.argv[2]||'dist/index.html';
-const output=process.argv[3]||'artifacts/publication-browser-check.html';
+import {verifyProduct} from './browser-product-checks.cjs';
+const input=process.argv[2]||'dist/index.html',output=process.argv[3]||'artifacts/publication-browser-check.html';
 let html=fs.readFileSync(input,'utf8');
 const embedded=/<script[^>]*id="briefing-snapshot"[^>]*>([\s\S]*?)<\/script>/.exec(html);
 if(!embedded)throw Error('Standalone artifact is missing briefing data');
-const edition=JSON.parse(embedded[1]).editions.find(e=>e.date==='2026-10-09');
-if(!edition)throw Error('Approved edition missing from artifact');
-const reference=Date.parse(edition.generatedAt)+60000;
+const latest=JSON.parse(embedded[1]).editions.filter(e=>e.status==='published').sort((a,b)=>b.date.localeCompare(a.date))[0];
+if(!latest)throw Error('Actual artifact has no published edition to verify');
+const reference=Date.parse(latest.generatedAt)+60000;
 html=html.replace('<head>',`<head><script>globalThis.Date=class extends Date{constructor(...args){super(...(args.length?args:[${reference}]));}static now(){return ${reference};}};</script>`);
-const mobile=JSON.stringify(html.replace('<head>','<head><base href="about:srcdoc">')).replace(/</g,'\\u003c');
-const driver=`(function(){const checks=[];function assert(ok,message){if(!ok)throw Error(message);checks.push(message);}function finish(error){const out=document.createElement('pre');out.id='publication-verification-result';out.textContent=JSON.stringify({passed:!error,error:error?.message,checks});document.body.append(out);}
- const frame=document.createElement('iframe');frame.style.cssText='width:390px;height:844px;border:0';frame.onload=async()=>{try{const doc=frame.contentDocument,win=frame.contentWindow,p=win.FrontierPreferences.controller;const news=doc.getElementById('news-snapshot').textContent;const archive=JSON.parse(doc.getElementById('briefing-snapshot').textContent),edition=archive.editions.find(e=>e.date==='2026-10-09');
- for(const language of ['zh','en'])for(const theme of ['light','dark']){doc.querySelector('button[data-language="'+language+'"]').click();doc.querySelector('button[data-theme="'+theme+'"]').click();doc.querySelector('[data-view="Daily Briefing"]').click();assert(win.innerWidth===390,'390 CSS-pixel viewport');assert(doc.documentElement.scrollWidth<=390&&doc.body.scrollWidth<=390,'No horizontal overflow: '+language+'/'+theme);assert(doc.documentElement.lang===(language==='zh'?'zh-CN':'en'),'Language changes in real DOM');assert(doc.documentElement.dataset.theme===theme,'Theme changes in real DOM');const articles=Array.from(doc.querySelectorAll('.brief-story'));assert(articles.length===3,'Actual edition contains three selected events');const text=doc.querySelector('.brief-reading').textContent;assert(!/本轮编辑说明|中文审阅稿|\\/100|★★★★★/.test(text),'No editing notes or importance scores');assert(language==='zh'?!/Top Stories|Top Signals|What happened|Why it matters|Long-term impact|FIELD NOTES|PRIORITY/.test(text):!/[\\u3400-\\u9fff]/.test(text),'Complete briefing localization: '+language);
- assert(doc.querySelector('[data-briefing-coverage]').textContent===(language==='zh'?'覆盖时间：10 月 8 日 08:19 – 10 月 9 日 08:19（北京时间）':'Coverage: October 8, 08:19 – October 9, 08:19 (Beijing time)'),'UTC coverage formats as Beijing time');assert(parseFloat(win.getComputedStyle(doc.querySelector('[data-briefing-coverage]')).fontSize)<parseFloat(win.getComputedStyle(doc.querySelector('.brief-story-section p')).fontSize),'Coverage is subordinate metadata');
- articles.forEach((article,i)=>{const s=edition.stories[i],takeaway=article.querySelector('[data-briefing-section="keyTakeaway"]');assert(article.dataset.storyId===s.id,'Approved event order preserved');assert(takeaway.querySelector('p').textContent===s.keyTakeaway.text[language],'Approved bilingual takeaway preserved');assert(takeaway.previousElementSibling.tagName==='HEADER','Takeaway immediately follows headline');const facts=article.querySelector('[data-briefing-section="verifiedFacts"]');assert(facts.nextElementSibling.dataset.briefingSection==='sources','Sources immediately follow facts');const links=Array.from(article.querySelectorAll('.brief-story-sources a'));assert(links.length===s.sources.length,'Every source name is linked');links.forEach((a,j)=>{assert(a.getAttribute('href')===s.sources[j].url&&a.target==='_blank'&&a.rel==='noopener noreferrer','Original URL and safe new-tab attributes');assert(a.getBoundingClientRect().height>=44,'Source has at least 44px touch area');});assert(parseFloat(win.getComputedStyle(facts.querySelector('p')).fontSize)>=17,'Narrative readable at default mobile zoom');});
- for(const view of ['Latest','Today','Long-term','Daily Briefing']){doc.querySelector('[data-view="'+view+'"]').click();assert(doc.querySelector('[data-view="'+view+'"]').getAttribute('aria-pressed')==='true','Radar/Briefing switching survives: '+view);}assert(doc.getElementById('news-snapshot').textContent===news,'Preferences and views leave news unchanged');
- }
- const settle=()=>new Promise(resolve=>win.setTimeout(resolve,20));
- for(const language of ['zh','en'])for(const theme of ['light','dark']){
- doc.querySelector('[data-language="'+language+'"]').click();doc.querySelector('[data-theme="'+theme+'"]').click();doc.querySelector('[data-view="Daily Briefing"]').click();
- win.scrollTo(0,doc.querySelectorAll('.brief-story')[2].offsetTop);await settle();
- let toolbar=doc.querySelector('.brief-toolbar'),rect=toolbar.getBoundingClientRect();
- assert(rect.top>=-1&&rect.top<=1,'Toolbar remains at viewport top deep in third story');assert(rect.height<=64,'Compact single-row mobile toolbar');
- assert(doc.querySelector('.topbar').getBoundingClientRect().bottom<0&&doc.querySelector('.demo-note').getBoundingClientRect().bottom<0,'Brand and metadata scroll away');
- assert(doc.documentElement.scrollWidth<=390&&doc.body.scrollWidth<=390,'Scrolled toolbar causes no body overflow');
- for(const button of toolbar.querySelectorAll('button[data-view],summary'))assert(button.getBoundingClientRect().height>=44,'Sticky controls retain 44px touch height');
- for(const view of ['Latest','Today','Long-term','Daily Briefing']){doc.querySelector('[data-view="'+view+'"]').click();await settle();assert(doc.querySelector('[data-view="'+view+'"]').getAttribute('aria-pressed')==='true','Deep-scroll view switch: '+view);const active=doc.querySelector('.view-filters [aria-pressed="true"]'),bounds=doc.querySelector('.view-filters').getBoundingClientRect(),a=active.getBoundingClientRect();assert(a.left>=bounds.left&&a.right<=bounds.right,'Selected view stays visible in horizontal toolbar: '+view);}
- const menu=doc.querySelector('[data-preference="language"]');menu.querySelector('summary').click();assert(menu.open,'Language menu opens while reading');assert(menu.querySelector('.preference-options').getBoundingClientRect().right<=390,'Sticky language menu fits viewport');menu.querySelector('summary').click();
- for(const id of ['brief-opening','brief-top-stories','brief-watch','brief-keyword']){const target=doc.getElementById(id);doc.querySelector('a[href="#'+id+'"]').click();await settle();assert(target.getBoundingClientRect().top>=doc.querySelector('.brief-toolbar').getBoundingClientRect().bottom,'Briefing anchor heading clears toolbar: '+id);}
- doc.documentElement.style.setProperty('--reader-safe-top','24px');win.scrollTo(0,1000);await settle();assert(parseFloat(win.getComputedStyle(doc.querySelector('.brief-toolbar')).paddingTop)>=28,'Safe-area inset reserves space above controls');doc.documentElement.style.removeProperty('--reader-safe-top');
- doc.querySelector('[data-view="Latest"]').click();await settle();for(const id of ['ai','agents','chips','robotics','crypto']){const target=doc.getElementById(id);if(target){doc.querySelector('a[href="#'+id+'"]').click();await settle();assert(target.getBoundingClientRect().top>=doc.querySelector('.brief-toolbar').getBoundingClientRect().bottom,'Radar anchor clears toolbar: '+id);}}
- }
-assert(p.snapshot().language==='en','English remains selected');finish();}catch(error){finish(error);}};frame.srcdoc=${mobile};document.body.append(frame);})();`;
+const driver=`(function(){async function run(){let result;try{result={passed:true,checks:await (${verifyProduct.toString()})(window)};}catch(error){result={passed:false,error:error.message,stack:error.stack};}const out=document.createElement('pre');out.id='publication-verification-result';out.textContent=JSON.stringify(result);document.body.append(out);}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',run,{once:true});else run();})();`;
+html=html.replace('</head>','<style>pre[id$=result]{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%}</style></head>');
 html=html.replace('</body>',`<script>${driver}</script></body>`);
 for(const script of html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g))if(!script[1].includes('application/json'))new vm.Script(script[2]);
-fs.mkdirSync('artifacts',{recursive:true});fs.writeFileSync(output,html);console.log('Generated actual-edition mobile verification from '+input);
+fs.mkdirSync('artifacts',{recursive:true});fs.writeFileSync(output,html);console.log('Generated actual-publication product verification from '+input);
