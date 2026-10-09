@@ -47,10 +47,10 @@ jobs:
         run: |
           node scripts/create-browser-regression.mjs
           CHROME_BIN=$(command -v google-chrome || command -v chromium)
-          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=4000 --dump-dom "file://$PWD/artifacts/browser-regression.html" > artifacts/browser-regression-dom.html
+          node scripts/run-browser-check.mjs artifacts/browser-regression.html artifacts/browser-regression-dom.html browser-regression-result
           node scripts/check-browser-result.cjs
           node scripts/create-publication-regression.mjs
-          "$CHROME_BIN" --headless --no-sandbox --disable-dev-shm-usage --disable-background-networking --virtual-time-budget=4000 --dump-dom "file://$PWD/artifacts/publication-browser-check.html" > artifacts/publication-browser-dom.html
+          node scripts/run-browser-check.mjs artifacts/publication-browser-check.html artifacts/publication-browser-dom.html publication-verification-result
           node scripts/check-publication-result.cjs
       - uses: actions/upload-artifact@v4
         if: always()
