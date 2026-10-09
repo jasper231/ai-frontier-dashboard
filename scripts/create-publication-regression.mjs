@@ -9,7 +9,7 @@ if(!embedded)throw Error('Standalone artifact is missing briefing data');
 const latest=JSON.parse(embedded[1]).editions.filter(e=>e.status==='published').sort((a,b)=>b.date.localeCompare(a.date))[0];
 if(!latest)throw Error('Actual artifact has no published edition to verify');
 const reference=Date.parse(latest.generatedAt)+60000;
-html=html.replace('<head>',`<head><script>globalThis.Date=class extends Date{constructor(...args){super(...(args.length?args:[${reference}]));}static now(){return ${reference};}};</script>`);
+html=html.replace('<head>',`<head><script>window.__readerEvents=[];window.__frontierReadingProbe=e=>window.__readerEvents.push(e);globalThis.Date=class extends Date{constructor(...args){super(...(args.length?args:[${reference}]));}static now(){return ${reference};}};</script>`);
 const mobile=JSON.stringify(html.replace('<head>','<head><base href="about:srcdoc">')).replace(/</g,'\\u003c');
 const driver=`(function(){const frame=document.createElement('iframe');frame.style.cssText='position:fixed;top:0;left:0;z-index:1000;width:390px;height:844px;border:0';frame.onload=async()=>{let result;try{result={passed:true,checks:await (${verifyProduct.toString()})(frame.contentWindow)};}catch(error){result={passed:false,error:error.message,stack:error.stack};}const out=document.createElement('pre');out.id='publication-verification-result';out.textContent=JSON.stringify(result);document.body.append(out);};frame.srcdoc=${mobile};document.body.append(frame);})();`;
 html=html.replace('</body>',`<script>${driver}</script></body>`);

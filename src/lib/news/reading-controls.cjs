@@ -5,8 +5,9 @@
   const mobile=env.matchMedia?.('(max-width: 767px)')||{matches:false};
   const menuOpen=()=>!!root.querySelector('.preference-menu[open],.brief-archive[open]');
   function refresh(){const toolbar=root.querySelector('.brief-toolbar');if(toolbar?.dataset)toolbar.dataset.readerHidden=String(hidden&&mobile.matches&&!menuOpen()&&(env.scrollY||0)>120);}
-  function reveal(){hidden=false;accumulated=0;refresh();}
-  function scroll(){const y=Math.max(0,env.scrollY||0),delta=y-previous;previous=y;
+  function probe(event){env.__frontierReadingProbe?.({event,y:env.scrollY,previous,hidden,mobile:mobile.matches,menu:menuOpen()});}
+  function reveal(){probe('reveal');hidden=false;accumulated=0;refresh();}
+  function scroll(){const y=Math.max(0,env.scrollY||0),delta=y-previous;previous=y;probe('scroll');
    if(!mobile.matches||y<=120||menuOpen()){reveal();return;}
    accumulated=Math.sign(delta)===Math.sign(accumulated)?accumulated+delta:delta;
    if(Math.abs(accumulated)>=8){hidden=accumulated>0;accumulated=0;refresh();}
