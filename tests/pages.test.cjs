@@ -9,7 +9,7 @@ test('last update displays snapshot time and fallback never pretends to be a suc
 test('Pages output is a complete offline page without absolute local assets',()=>{
  const html=fs.readFileSync('dist/index.html','utf8');assert.ok(fs.existsSync('dist/.nojekyll'));
  assert.equal(html,fs.readFileSync('static-preview/index.html','utf8'));
- assert.match(html,/<meta name="viewport" content="width=device-width, initial-scale=1">/);
+ assert.match(html,/<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">/);
  assert.ok(!/\b(?:src|href)=["']\/(?!\/)/.test(html));assert.ok(!html.includes('localhost'));assert.ok(!/fetch\(/.test(html));
  assert.ok(!/<script[^>]+src=/.test(html));assert.ok(!/<link[^>]+rel="stylesheet"/.test(html));
 });
@@ -81,4 +81,18 @@ test('static generator embeds working real links and filtering preserves them wi
   assert.notDeepEqual(signals(rendered.Today),signals(rendered.Latest));
   assert.notDeepEqual(signals(rendered['Long-term']),signals(rendered.Latest));
  }finally{fs.rmSync(tmp,{recursive:true,force:true});}
+});
+
+test('shared reading toolbar keeps only views and preferences sticky, with safe-area and anchor offsets',()=>{
+ const html=renderDashboard(createView(local,definitions,'Latest',local.asOf));
+ const toolbar=html.match(/<div class="brief-toolbar">([\s\S]*?)<p class="demo-note">/)[1];
+ assert.equal((html.match(/class="preferences"/g)||[]).length,1);
+ assert.equal((toolbar.match(/data-view=/g)||[]).length,4);
+ assert.match(toolbar,/data-preference="language"/);assert.match(toolbar,/data-preference="theme"/);
+ assert.doesNotMatch(toolbar,/class="brand"|class="edition"|最后更新/);
+ const css=fs.readFileSync('src/app/globals.css','utf8');
+ assert.match(css,/--reader-safe-top: env\(safe-area-inset-top, 0px\)/);
+ assert.match(css,/scroll-padding-top: calc\(var\(--reader-toolbar-height\)/);
+ assert.match(css,/main \[id\] \{ scroll-margin-top: 8px/);
+ assert.match(css,/\.brief-toolbar \{\s*position: sticky;\s*top: 0;/);
 });
