@@ -6,7 +6,10 @@
   const batch=JSON.parse(document.getElementById('news-snapshot').textContent),definitions=JSON.parse(document.getElementById('category-definitions').textContent);
   const briefing=JSON.parse(document.getElementById('briefing-snapshot').textContent);
   const preferences=globalThis.FrontierPreferences.controller;let selectedView='Daily Briefing';
-  function render(){root.innerHTML=globalThis.FrontierRender.renderDashboard(globalThis.FrontierData.createView(batch,definitions,selectedView,new Date().toISOString()),{...preferences.snapshot(),briefing});preferences.ready();}
+  function render(){root.innerHTML=globalThis.FrontierRender.renderDashboard(globalThis.FrontierData.createView(batch,definitions,selectedView,new Date().toISOString()),{...preferences.snapshot(),briefing});preferences.ready();
+   const scroller=root.querySelector('.view-filters'),active=root.querySelector('.view-filters [aria-pressed="true"]');
+   if(scroller&&active)scroller.scrollLeft=Math.max(0,active.offsetLeft-scroller.offsetLeft-(scroller.clientWidth-active.offsetWidth)/2);
+  }
   preferences.subscribe(render);
   root.addEventListener('click',function(event){
    const target=event.target&&event.target.nodeType===3?event.target.parentElement:event.target;

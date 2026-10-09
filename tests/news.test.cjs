@@ -54,7 +54,7 @@ test('standalone browser scripts perform real filter updates without network or 
   assert.equal(root.innerHTML,renderDashboard(core.createView(embedded,embeddedDefinitions,view,embedded.asOf)));
   assert.ok(root.innerHTML.includes(`data-view="${view}" aria-pressed="true"`));
  }
- assert.ok(focused);assert.match(html,/<meta name="viewport" content="width=device-width, initial-scale=1">/);
+ assert.ok(focused);assert.match(html,/<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">/);
 });
 
 test('Long-term prioritizes impact score rather than generic importance',()=>{const model=core.createView(batch,definitions,'Long-term',batch.asOf);assert.ok(model.items.every((item,i)=>!i||model.items[i-1].longTermImportance>=item.longTermImportance));assert.equal(model.categories[0].entries[0].id,'ai-3');});
