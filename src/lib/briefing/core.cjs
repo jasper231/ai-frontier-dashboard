@@ -9,6 +9,7 @@
   const fail=m=>{throw Error('Invalid briefing: '+m);};
   const bilingual=v=>{if(!v||!['zh','en'].every(lang=>typeof v[lang]==='string'&&v[lang].trim()))fail('both languages required');};
   if(!e||e.schemaVersion!==2||e.status!=='published'||e.timeZone!=='Asia/Shanghai'||!/^\d{4}-\d{2}-\d{2}$/.test(e.date)||!utc(e.generatedAt)||!utc(e.sourceSnapshotAt)||news.shanghaiDay(e.generatedAt)!==e.date||Date.parse(e.sourceSnapshotAt)>Date.parse(e.generatedAt))fail('edition date/provenance time');
+  if(e.coverageWindow!==undefined){const w=e.coverageWindow;if(!w||Object.keys(w).some(k=>!['start','end'].includes(k))||!utc(w.start)||!utc(w.end)||Date.parse(w.start)>=Date.parse(w.end)||Date.parse(w.end)>Date.parse(e.generatedAt))fail('coverage window requires ordered UTC times before publication');}
   if(!e.provenance||!['human','agent'].includes(e.provenance.kind)||typeof e.provenance.author!=='string'||!e.provenance.author.trim()||e.provenance.evidenceReviewed!==true||e.provenance.bilingualReviewed!==true)fail('review provenance');
   if(!Array.isArray(e.sources)||!e.sources.length)fail('sources');const byId=new Map();
   for(const s of e.sources){if(!s||typeof s.id!=='string'||!s.id.trim()||byId.has(s.id)||!utc(s.publishedAt)||Date.parse(s.publishedAt)>Date.parse(e.generatedAt)||!['title','name','publisher','url','excerpt'].every(k=>typeof s[k]==='string'&&s[k].trim())||!['official','news','research'].includes(s.type)||!sourceUrl(s.url)||!['snapshot','agent-enrichment'].includes(s.origin||'snapshot'))fail('source record');byId.set(s.id,s);}
@@ -22,6 +23,7 @@
    if(!Array.isArray(story.newsIds)||!story.newsIds.length||story.newsIds.some(id=>!byId.has(id)||primary.has(id))||new Set(story.newsIds).size!==story.newsIds.length||!story.newsIds.some(id=>Date.parse(byId.get(id).publishedAt)>Date.parse(e.generatedAt)-86400000))fail('event needs distinct past-24-hour primary evidence');story.newsIds.forEach(id=>primary.add(id));
    if(!Array.isArray(story.sources)||!story.sources.length||story.sources.some(s=>!byId.has(s.id)||['name','url','type','publisher'].some(k=>s[k]!==byId.get(s.id)[k]))||new Set(story.sources.map(s=>s.id)).size!==story.sources.length)fail('story source binding');
    if(story.newsIds.some(id=>!story.sources.some(s=>s.id===id)))fail('primary source missing below facts');
+   if(story.keyTakeaway!==undefined)paragraph(story.keyTakeaway,'analysis');
    paragraphs(story.verifiedFacts,'confirmed');paragraph(story.plainExplanation,'analysis');paragraphs(story.whyItMatters,'analysis');paragraphs(story.longTermView,'hypothesis');paragraphs(story.opportunities,'hypothesis',true);paragraphs(story.risks,'hypothesis',true);if(story.example!=null)paragraph(story.example,'hypothesis');
    if(story.verifiedFacts.some(p=>p.evidenceIds.some(id=>!story.sources.some(s=>s.id===id))))fail('facts need displayed sources');
    if(!story.verification||typeof story.verification.independentlyConfirmed!=='boolean'||(story.verification.independentlyConfirmed&&!corroborated(story)))fail('independent confirmation requires reviewed primary and independent publishers');

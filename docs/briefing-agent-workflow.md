@@ -37,3 +37,9 @@ import校验并原子更新 `src/data/briefing.generated.json`；失败不覆盖
 ## App准备
 
 briefing/core与render是无服务器纯数据/渲染模块，Next.js和独立Pages共用；读取归档与UI解耦。未来PWA/Capacitor可复用schema、来源接口、离线快照、主题/语言偏好和触摸布局。本轮不新增service worker、原生权限或App功能。
+
+## 向后兼容的出版字段（仍为 schema v2）
+
+- story.keyTakeaway 可选，沿用双语 narrative，kind 必须为 analysis，并保留 evidenceIds。缺失时不渲染空栏目。
+- edition.coverageWindow 可选，只保存 start/end UTC ISO 时间；渲染时按 Asia/Shanghai 和当前语言生成标题下的低权重 metadata。
+- 本期审核证据与日期精度说明见 docs/briefings/2026-10-09-evidence.json；新闻快照不因发布简报而更改。

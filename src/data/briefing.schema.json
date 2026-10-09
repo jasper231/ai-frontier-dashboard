@@ -178,6 +178,26 @@
           }
         }
       ]
+    },
+    "coverageWindow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "end": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        }
+      }
     }
   },
   "$defs": {
@@ -561,6 +581,20 @@
               "maximum": 100
             }
           }
+        },
+        "keyTakeaway": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/narrative"
+            },
+            {
+              "properties": {
+                "kind": {
+                  "const": "analysis"
+                }
+              }
+            }
+          ]
         }
       }
     }
