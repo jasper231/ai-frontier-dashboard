@@ -25,7 +25,11 @@
   const selected=mainViews.includes(view)?view:'Daily Briefing';
   return news.createView(selected==='Long-term'?{...batch,items:trends(batch,archive,asOf)}:batch,definitions,selected,asOf);
  }
+ function briefingStatus(archive,asOf,editionDate){
+  const published=briefing.publishedEditions(archive,asOf),selected=briefing.resolveEdition(archive,asOf,editionDate);
+  return {editionDate:selected?.date||null,latestDate:published[0]?.date||null,todayPublished:published.some(e=>e.date===news.shanghaiDay(asOf))};
+ }
  function readLocation(location){const params=new URLSearchParams((location?.hash||'').slice(1));return {view:params.get('view')==='trends'?'Long-term':'Daily Briefing',editionDate:/^\d{4}-\d{2}-\d{2}$/.test(params.get('date')||'')?params.get('date'):undefined};}
  function writeLocation(env,view,editionDate){const params=new URLSearchParams({view:view==='Long-term'?'trends':'briefing'});if(editionDate)params.set('date',editionDate);const hash='#'+params.toString();try{if(env.location.hash!==hash)env.history.pushState(null,'',hash);}catch{/* restricted file/WebView history must not prevent reading */}}
- return {mainViews,trends,completeZh,createModel,readLocation,writeLocation};
+ return {mainViews,trends,completeZh,createModel,briefingStatus,readLocation,writeLocation};
 });

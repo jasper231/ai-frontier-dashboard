@@ -46,3 +46,20 @@ test('mobile scroll threshold, reverse reveal, menu lock, focus, top reset and c
  listeners.get('focusin')({target:{closest(){return {};}}});assert.equal(toolbar.dataset.readerHidden,'false');scroll(5);assert.equal(toolbar.dataset.readerHidden,'false');reader.dispose();assert.equal(listeners.size,0);
  const css=fs.readFileSync('src/app/globals.css','utf8');assert.match(css,/transition: transform 180ms/);assert.match(css,/prefers-reduced-motion: reduce\) \{ \.brief-toolbar \{ transition: none/);
 });
+
+test('Radar refresh and published Briefing dates remain independent across Shanghai midnight',()=>{
+ const fresh={...batch,isDemo:false,asOf:'2026-10-09T22:08:58Z'},asOf='2026-10-10T15:00:00Z';
+ const render=(view,at=asOf,a=archive,date)=>renderer.renderDashboard(product.createModel(fresh,definitions,view,at,a),{briefing:a,editionDate:date});
+ const briefingHtml=render('Daily Briefing'),radarHtml=render('Long-term');
+ assert.match(briefingHtml,/本期简报：2026-10-09/);assert.match(briefingHtml,/今日简报尚未发布，当前显示上一期：2026-10-09/);
+ assert.match(briefingHtml,/data-briefing-coverage/);assert.doesNotMatch(briefingHtml,/data-radar-updated|新闻雷达更新|最后更新/);
+ assert.match(radarHtml,/新闻雷达更新：2026-10-10 06:08 北京时间/);assert.doesNotMatch(radarHtml,/本期简报|data-briefing-pending/);
+ // 16:00 UTC starts the next Shanghai day; refresh time is not publication time.
+ assert.equal(product.briefingStatus(archive,'2026-10-09T15:59:59Z').todayPublished,true);
+ assert.equal(product.briefingStatus(archive,'2026-10-09T16:00:00Z').todayPublished,false);
+ assert.doesNotMatch(render('Daily Briefing','2026-10-09T15:59:59Z'),/data-briefing-pending/);
+ const next={...archive.editions[0],date:'2026-10-10',generatedAt:new Date(Date.parse(archive.editions[0].generatedAt)+86400000).toISOString(),sources:archive.editions[0].sources.map(s=>({...s,publishedAt:new Date(Date.parse(s.publishedAt)+86400000).toISOString()}))},both={...archive,editions:[...archive.editions,next]};
+ assert.match(render('Daily Briefing',asOf,both),/本期简报：2026-10-10/);assert.doesNotMatch(render('Daily Briefing',asOf,both),/data-briefing-pending/);
+ const historical=render('Daily Briefing',asOf,both,'2026-10-09');assert.match(historical,/本期简报：2026-10-09/);assert.doesNotMatch(historical,/data-briefing-pending/);
+ const english=renderer.renderDashboard(product.createModel(fresh,definitions,'Daily Briefing',asOf,archive),{briefing:archive,language:'en'});assert.match(english,/Briefing edition: 2026-10-09/);assert.match(english,/Today’s briefing has not been published/);
+});

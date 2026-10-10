@@ -1,0 +1,75 @@
+name: Validate separated publication and Radar times
+on:
+  push:
+    branches: [frontier-time-labels-check-20261010]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Unpack phone upload if source is not present
+        shell: bash
+        run: |
+          if [ ! -f scripts/build-pages.mjs ]; then
+            python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          with zipfile.ZipFile('project-source.zip') as archive:
+              for member in archive.infolist():
+                  target = Path(member.filename)
+                  if target.is_absolute() or '..' in target.parts:
+                      raise ValueError('Invalid archive path')
+                  if target.parts and target.parts[0] in ('.git', '.github'):
+                      continue
+                  archive.extract(member)
+          PY
+          fi
+      - name: Install locked dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Build and check static Pages directory
+        run: |
+          npm run build:pages
+          npm run test:data
+          npm run test:feeds
+          npm run test:pages
+          npm run test:ai
+          npm run test:quality
+          npm run typecheck
+          npm run lint
+          npm run build
+          npm run build:pages
+      - name: Real browser regression of generated static artifact
+        shell: bash
+        run: |
+          node scripts/create-browser-regression.mjs
+          CHROME_BIN=$(command -v google-chrome || command -v chromium || true)
+          if [ -z "$CHROME_BIN" ]; then
+            echo 'A real Chrome browser is required for this regression test'
+            exit 1
+          fi
+          node scripts/run-browser-check.mjs artifacts/browser-regression.html artifacts/browser-regression-dom.html browser-regression-result
+          node scripts/check-browser-result.cjs
+      - name: Approved bilingual publication at 390px
+        shell: bash
+        run: |
+          node scripts/create-publication-regression.mjs
+          CHROME_BIN=$(command -v google-chrome || command -v chromium)
+          node scripts/run-browser-check.mjs artifacts/publication-browser-check.html artifacts/publication-browser-dom.html publication-verification-result
+          node scripts/check-publication-result.cjs
+      - name: Next.js mobile navigation parity in Chrome
+        run: node scripts/verify-next-navigation.mjs
+      - name: Upload browser regression diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-regression-${{ github.run_id }}
+          path: |
+            artifacts/*browser*.html
+            artifacts/next-browser-result.json
+          if-no-files-found: warn

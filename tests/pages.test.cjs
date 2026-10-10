@@ -3,8 +3,8 @@ const {renderDashboard}=require('../src/lib/news/render.cjs');const {createView}
 const local=require('../src/data/news.local.json');const definitions=require('../src/data/categories.json');
 test('last update displays snapshot time and fallback never pretends to be a successful refresh',()=>{
  const real={...local,isDemo:false,asOf:'2026-10-03T12:34:56Z'};
- assert.match(renderDashboard(createView(real,definitions,'Latest',real.asOf)),/最后更新：2026-10-03 20:34 北京时间（2026-10-03 12:34 UTC）/);
- assert.match(renderDashboard(createView(local,definitions,'Latest',local.asOf)),/最后更新：尚无真实更新 · 本地示例/);
+ assert.match(renderDashboard(createView(real,definitions,'Latest',real.asOf)),/新闻雷达更新：2026-10-03 20:34 北京时间（2026-10-03 12:34 UTC）/);
+ assert.match(renderDashboard(createView(local,definitions,'Latest',local.asOf)),/新闻雷达更新：尚无真实更新 · 本地示例/);
 });
 test('Pages output is a complete offline page without absolute local assets',()=>{
  const html=fs.readFileSync('dist/index.html','utf8');assert.ok(fs.existsSync('dist/.nojekyll'));
