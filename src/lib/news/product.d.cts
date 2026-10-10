@@ -5,3 +5,5 @@ export function completeZh(item:NewsItem):boolean;
 export function createModel(batch:NewsBatch,definitions:CategoryDefinition[],view:View,asOf:string,archive:unknown):DashboardView;
 export function readLocation(location?:{hash:string}):{view:View;editionDate?:string};
 export function writeLocation(env:Window,view:View,editionDate?:string):void;
+
+export function briefingStatus(archive:unknown,asOf:string,editionDate?:string):{editionDate:string|null;latestDate:string|null;todayPublished:boolean};
