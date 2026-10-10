@@ -1,9 +1,283 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-10T11:46:45.919Z",
+  "asOf": "2026-10-10T16:49:41.236Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0048d8c8b6a62919f64f4cd0",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0476a40991c9db1e65d2e0dc",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "069aacfc7f9e43f3ff1928aa",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "818f4dcf830d117b3a347d0a",
+      "title": "Anthropic is cutting off its internal evaluations from the internet",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet",
+      "publishedAt": "2026-10-10T14:41:16.000Z",
+      "summary": "After a recent spate of high-profile incidents in which AI agents escaped containment, Anthropic is cutting off internet access for all internal evaluations. In a report Friday, the company detailed \"unintended model actions,\" including submitting a false tip regarding an unsolved murder, that led to the decision. Alth",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0476a40991c9db1e65d2e0dc",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "069aacfc7f9e43f3ff1928aa",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0893f87c887f7e22117cb3a7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "2640e3ae8dcdb9be477dde0c",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "publishedAt": "2026-10-10T14:00:00.000Z",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 65,
+      "longTermImportance": 85,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          },
+          {
+            "id": "protocol-trust",
+            "label": "可信与互操作协议",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "1322a304a3c5e6527676eef5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "27c3c2cba22a01e5fab8b734",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "28b681e9ee2411cc842e2515",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "58375e71a9edc0b3d1f1b9e7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "c9390824224ecd5bf3e13e60",
+      "title": "AI agent makers are promising privacy — will they deliver?",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+      "publishedAt": "2026-10-10T13:00:00.000Z",
+      "summary": "At this year's OpenAI DevDay, CEO Sam Altman unveiled the company's new AI agent Dots - and told the crowd that the company wants to \"set a new standard for privacy in frontier AI.\" OpenAI would spend the day taking veiled shots at Meta's Muse, its primary competitor, for failing to keep users' data safe. […]",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
     {
       "importance": 69,
       "longTermImportance": 77,
@@ -154,6 +428,15 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "c9390824224ecd5bf3e13e60",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "d6b9f5e651b1891e950e0096",
             "relationship": "shared-topic",
             "themes": [
@@ -173,15 +456,6 @@
           },
           {
             "id": "27c3c2cba22a01e5fab8b734",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "protocol-trust"
-            ],
-            "differentSource": false
-          },
-          {
-            "id": "28b681e9ee2411cc842e2515",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -848,6 +1122,15 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "c9390824224ecd5bf3e13e60",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "d6b9f5e651b1891e950e0096",
             "relationship": "shared-topic",
             "themes": [
@@ -867,15 +1150,6 @@
           },
           {
             "id": "28b681e9ee2411cc842e2515",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "protocol-trust"
-            ],
-            "differentSource": false
-          },
-          {
-            "id": "58375e71a9edc0b3d1f1b9e7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -1242,6 +1516,15 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "c9390824224ecd5bf3e13e60",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "d6b9f5e651b1891e950e0096",
             "relationship": "shared-topic",
             "themes": [
@@ -1261,15 +1544,6 @@
           },
           {
             "id": "27c3c2cba22a01e5fab8b734",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "protocol-trust"
-            ],
-            "differentSource": false
-          },
-          {
-            "id": "58375e71a9edc0b3d1f1b9e7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -2200,6 +2474,15 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "c9390824224ecd5bf3e13e60",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "d6b9f5e651b1891e950e0096",
             "relationship": "shared-topic",
             "themes": [
@@ -2219,15 +2502,6 @@
           },
           {
             "id": "27c3c2cba22a01e5fab8b734",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "protocol-trust"
-            ],
-            "differentSource": false
-          },
-          {
-            "id": "28b681e9ee2411cc842e2515",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -3830,6 +4104,15 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "c9390824224ecd5bf3e13e60",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "d6b9f5e651b1891e950e0096",
             "relationship": "shared-topic",
             "themes": [
@@ -3849,15 +4132,6 @@
           },
           {
             "id": "27c3c2cba22a01e5fab8b734",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "protocol-trust"
-            ],
-            "differentSource": false
-          },
-          {
-            "id": "28b681e9ee2411cc842e2515",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -8067,7 +8341,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
@@ -8088,8 +8362,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -8154,7 +8428,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -8175,8 +8449,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -8241,7 +8515,7 @@
       ]
     },
     {
-      "importance": 61,
+      "importance": 58,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -8266,8 +8540,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -8332,7 +8606,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
@@ -8353,8 +8627,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
