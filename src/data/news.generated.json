@@ -1,9 +1,678 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-15T13:52:31.776Z",
+  "asOf": "2026-10-15T18:50:36.789Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 74,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
+      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "inference-economics",
+            "label": "推理成本与效率",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "04fd70865e249f59ce7aa7e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "06be42075e2fd31ae399c100",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "06dfd4f22d7f3707c53604eb",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0ac49991de8fd7a4e7286ed4",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "fc94b0a99c247635aa467810",
+      "title": "Meta’s Muse Spark Open now available in Amazon SageMaker JumpStart",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+      "publishedAt": "2026-10-15T17:43:35.000Z",
+      "summary": "Muse Spark Open, Meta's coding-optimized open-weight model, is now available in Amazon SageMaker JumpStart. Deploy it to a SageMaker AI endpoint in your own AWS account using SageMaker Studio or the SageMaker Python SDK, and run your first inference request.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 74,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "020914d4401604455fcc8cfe",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02336069bfc68c374539e408",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "06be42075e2fd31ae399c100",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0ac49991de8fd7a4e7286ed4",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "468b3077a208433fef72cd21",
+      "title": "Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/",
+      "publishedAt": "2026-10-15T17:00:23.000Z",
+      "summary": "A new beginning for Windows PCs starts tomorrow with the launch of NVIDIA RTX Spark — one PC built for creators, gamers and AI agents. All are invited to celebrate with NVIDIA and partners at launch events around the world. Share Your Spark Every PC has a story. What was your first Windows PC, and […]",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "020914d4401604455fcc8cfe",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02336069bfc68c374539e408",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "06be42075e2fd31ae399c100",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "c7c9cc2b493a13afd6e13327",
+      "title": "Friends don’t let friends feed their data to AI agents",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/tech/1011938/muse-ai-data-friends-consent",
+      "publishedAt": "2026-10-15T16:21:45.000Z",
+      "summary": "There's a growing trend in the consumer tech world: gadgets designed to spy on everything and everyone around you, regardless of whether or not anyone else actually consented to it. Now, with the advent of \"AI personal assistants\" like Meta's Muse, you're being cheerfully asked not just to give up your own data, but al",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Google",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "3b88e631408680364ea9a152",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "publishedAt": "2026-10-15T16:08:03.000Z",
+      "summary": "Accelerating the search for novel antimicrobial peptides using Google Antigravity for Science.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 69,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：协议变更可能影响兼容性、安全和迁移成本；公告本身不能证明已广泛采用。",
+      "longTermImpact": "规则情景（3–10 年）：可信、可互操作的协议可能塑造长期基础设施。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "protocol-trust",
+            "label": "可信与互操作协议",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "research",
+          "publisher": "Microsoft",
+          "score": 85,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "04fd70865e249f59ce7aa7e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "06cf1e386b2c99c38010597d",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d222f33fb905770c455de65",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d36244bb44988afb8652a90",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "467c8e42acb6bdc9ebe797d8",
+      "title": "Proof-based general-purpose computing with Magnetar",
+      "source": "Microsoft Research",
+      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
+      "publishedAt": "2026-10-15T16:00:00.000Z",
+      "summary": "Zero-knowledge proofs can verify computing results without rerunning workloads or exposing sensitive data. Magnetar helps bring them into the mainstream with support for standard programming languages, major speed gains, and quantum-resistant security. The post Proof-based general-purpose computing with Magnetar appear",
+      "tags": [
+        "AI 模型",
+        "研究来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "020914d4401604455fcc8cfe",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02336069bfc68c374539e408",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "06be42075e2fd31ae399c100",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "ee4bdfee28f7d805cf226337",
+      "title": "Trust in Depth: Giving agents more autonomy without losing control",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/trust-in-depth-giving-agents-more-autonomy-without-losing-control/",
+      "publishedAt": "2026-10-15T15:05:35.000Z",
+      "summary": "Enterprise leaders want AI agents to take on more work but don't fully trust them to act correctly every time. Trust in Depth is AWS's layered approach-scope, know, bound, observe, and prove-that lets agents act on their own when their actions can be verified, reserving human judgment for the decisions that need it.",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "010abefa0fafcbd406f20f91",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "020914d4401604455fcc8cfe",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02336069bfc68c374539e408",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "06be42075e2fd31ae399c100",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "fa3be6b020a0d422ad5cd4bf",
+      "title": "AI agents are coming to Rivian’s cars",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
+      "publishedAt": "2026-10-15T15:02:36.000Z",
+      "summary": "We'll likely learn more about how this will work at the company's upcoming \"AI & Autonomy Day\" event in December.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 68,
+      "longTermImportance": 62,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "能力、安全或效率变化",
+            "points": 11
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "020914d4401604455fcc8cfe",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02336069bfc68c374539e408",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "06be42075e2fd31ae399c100",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0ac49991de8fd7a4e7286ed4",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "369f65bd0511e1b4da8810c8",
+      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "publishedAt": "2026-10-15T15:00:24.000Z",
+      "summary": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for local agentic workl",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
     {
       "importance": 49,
       "longTermImportance": 40,
@@ -49,11 +718,11 @@
       ]
     },
     {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
       "ruleAnalysis": {
         "version": "public-quality-v1",
         "scoring": [
@@ -62,77 +731,34 @@
             "points": 35
           },
           {
-            "reason": "可识别的前沿主题",
+            "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
           },
           {
             "reason": "近一天的来源时间",
             "points": 6
           }
         ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "headline"
-          }
-        ],
+        "themes": [],
         "sourceQuality": {
-          "kind": "news",
-          "publisher": "Vox Media",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
         },
         "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "01027b36b4a06b56e1c7bca2",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "01327a94966dc1c1ace2cf93",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0859b28bae2c659b174a1ef2",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0a52d803710f6353f15e8e8d",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
+        "relatedNews": []
       },
-      "category": "robotics",
-      "id": "c0b77d592a9eb64d6164a123",
-      "title": "Your secrets aren’t safe with this cute robot toy — they’re on Chinese servers ready to be hacked",
-      "source": "The Verge",
-      "sourceUrl": "https://www.theverge.com/tech/1010727/eiliko-robot-hack-energize-lab",
-      "publishedAt": "2026-10-15T11:00:00.000Z",
-      "summary": "There's a new digital pet in town - a cute little marshmallow of a robot that can change its cartoony expressions to match your mood. But if you or your kids talk to \"Eiliko\" over Wi-Fi, it'll phone home to China. Its AI companion can store literally everything you tell it on Chinese servers, where […]",
+      "category": "ai",
+      "id": "a60f4a701f887ae8f46b94e0",
+      "title": "Teaching students to think and learn through questions",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "publishedAt": "2026-10-15T13:00:00.000Z",
+      "summary": "Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.",
       "tags": [
-        "具身智能",
-        "新闻来源"
+        "AI 模型",
+        "官方来源"
       ]
     },
     {
@@ -531,7 +1157,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -1327,7 +1953,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -3029,7 +3655,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -3219,7 +3845,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -3624,7 +4250,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -3918,7 +4544,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4264,7 +4890,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4454,7 +5080,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5026,7 +5652,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5981,7 +6607,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -6172,7 +6798,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -6263,7 +6889,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -6850,7 +7476,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7637,7 +8263,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -8848,7 +9474,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9121,7 +9747,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9976,7 +10602,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10458,7 +11084,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10549,7 +11175,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10640,7 +11266,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10870,7 +11496,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10961,7 +11587,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -11625,7 +12251,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -11864,7 +12490,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12228,7 +12854,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12319,7 +12945,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12410,7 +13036,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12501,7 +13127,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12592,7 +13218,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12965,7 +13591,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13104,7 +13730,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13195,7 +13821,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14153,7 +14779,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14597,7 +15223,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14771,7 +15397,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14945,7 +15571,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15032,7 +15658,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15119,7 +15745,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15206,7 +15832,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15293,7 +15919,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15650,7 +16276,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17277,7 +17903,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17451,7 +18077,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17538,7 +18164,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17625,7 +18251,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17799,7 +18425,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18417,7 +19043,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18504,7 +19130,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18678,7 +19304,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19488,7 +20114,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19575,7 +20201,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19662,7 +20288,7 @@
             "differentSource": true
           },
           {
-            "id": "c0b77d592a9eb64d6164a123",
+            "id": "d96a2391b623b2cb26cccc90",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -23731,6 +24357,98 @@
       ]
     },
     {
+      "importance": 60,
+      "longTermImportance": 48,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "能力、安全或效率变化",
+            "points": 11
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "ff0cf28c5d7530571030bbc5",
+      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/meta-muse-spark-open",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "summary": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "eb67409897ed2136a753e141",
+      "title": "Welcome FLUX.3 Image Klein in Diffusers",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/flux-3",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "summary": "Welcome FLUX.3 Image Klein in Diffusers",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
       "importance": 53,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -23818,94 +24536,7 @@
       ]
     },
     {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "010abefa0fafcbd406f20f91",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "020914d4401604455fcc8cfe",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02336069bfc68c374539e408",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "06be42075e2fd31ae399c100",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "2dcf16d6f1c0e22fcddf8b0f",
-      "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
-      "publishedAt": "2026-10-14T18:00:00.000Z",
-      "summary": "Most companies use AI agents to ship products faster or speed up workflows. Apate.ai sends them undercover to get scammed.",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -23926,8 +24557,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -23992,7 +24623,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24009,8 +24640,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24036,7 +24667,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24057,8 +24688,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24123,7 +24754,7 @@
       ]
     },
     {
-      "importance": 84,
+      "importance": 81,
       "longTermImportance": 62,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24152,8 +24783,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           },
           {
             "reason": "安全或关键漏洞变化",
@@ -26541,6 +27172,93 @@
           {
             "id": "agent-execution",
             "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "020914d4401604455fcc8cfe",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02336069bfc68c374539e408",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "06be42075e2fd31ae399c100",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "09d1d26fa19dd694ec40f7bb",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "79428cf43613e4131c16b2f4",
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "publishedAt": "2026-10-09T16:00:35.000Z",
+      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for exploring scenarios, invest",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 54,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一周的来源时间",
+            "points": 3
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
             "evidence": "excerpt"
           }
         ],
@@ -26829,94 +27547,7 @@
       ]
     },
     {
-      "importance": 54,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "020914d4401604455fcc8cfe",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02336069bfc68c374539e408",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "06be42075e2fd31ae399c100",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "79428cf43613e4131c16b2f4",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "publishedAt": "2026-10-08T21:06:35.000Z",
-      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for exploring scenarios, invest",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 85,
       "horizonYears": 7,
       "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
@@ -26939,10 +27570,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -27021,7 +27648,7 @@
       ]
     },
     {
-      "importance": 65,
+      "importance": 62,
       "longTermImportance": 62,
       "horizonYears": 7,
       "whyItMatters": "规则分析：协议变更可能影响兼容性、安全和迁移成本；公告本身不能证明已广泛采用。",
@@ -27048,10 +27675,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           },
           {
             "reason": "普通补丁版本",
@@ -27121,7 +27744,7 @@
       ]
     },
     {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
@@ -27144,10 +27767,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -27212,7 +27831,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -27227,10 +27846,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -27256,7 +27871,7 @@
       ]
     },
     {
-      "importance": 63,
+      "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -27275,10 +27890,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -27680,89 +28291,6 @@
       "tags": [
         "智能体",
         "研究来源"
-      ]
-    },
-    {
-      "importance": 51,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "010abefa0fafcbd406f20f91",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "020914d4401604455fcc8cfe",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02336069bfc68c374539e408",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "06be42075e2fd31ae399c100",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "e8f53962f1d3b68d467146e9",
-      "title": "Beyond hours saved: Building the business case for agentic automation",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/beyond-hours-saved-building-the-business-case-for-agentic-automation/",
-      "publishedAt": "2026-10-07T15:50:00.000Z",
-      "summary": "The RPA-era ROI model misses most of the value agentic automation creates. This post gives AI center of excellence leaders a framework to size the full value of agents across time savings, exception handling, decision quality, and maintenance economics, and to prioritize which workflows to automate first.",
-      "tags": [
-        "智能体",
-        "官方来源"
       ]
     },
     {
@@ -29926,50 +30454,6 @@
       ]
     },
     {
-      "importance": 47,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "b421bcddf08b4fb7efd1eb13",
-      "title": "Productive, Durable, Fungible: How NVIDIA AI Factories Maximize Return on Investment",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories/",
-      "publishedAt": "2026-10-01T13:00:49.000Z",
-      "summary": "AI factories are built by the megawatt, even by the gigawatt. Each megawatt factory costs roughly $60 million, and AI factory operators will only commit capital on that scale with a clear view of the return on investment. Three key things shape AI factory returns: Earning capacity: What the factory could earn in a year",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 68,
       "longTermImportance": 62,
       "horizonYears": 7,
@@ -30138,46 +30622,6 @@
       "summary": "Gemini 4 Argon: our next era of frontier intelligence",
       "tags": [
         "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "chips",
-      "id": "880bbed0e07a3f69d412ccc6",
-      "title": "NVIDIA Opens Applications for 2027–2028 Graduate Fellowships With Awards Up to $60,000",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2026/",
-      "publishedAt": "2026-09-30T17:00:21.000Z",
-      "summary": "Bringing together the world’s brightest minds and the latest accelerated computing technology leads to powerful breakthroughs that help tackle some of the biggest research problems. To foster such innovation, the NVIDIA Graduate Fellowship Program provides grants, mentors and technical support to doctoral students doin",
-      "tags": [
-        "算力基础设施",
         "官方来源"
       ]
     },
@@ -36741,46 +37185,6 @@
       ]
     },
     {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "330fba64551db8b49d6a895e",
-      "title": "How law firm Gilbert + Tobin governs and scales AI with OpenAI",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/gilbert-tobin",
-      "publishedAt": "2026-09-01T01:00:00.000Z",
-      "summary": "See how Gilbert + Tobin combines CEO-led commitment, rigorous governance, and human accountability to scale ChatGPT Enterprise and Codex across the firm.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
@@ -37495,46 +37899,6 @@
       "tags": [
         "AI 模型",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "8625f311cd075df682a0da65",
-      "title": "Broadening access to Skala creates a faster path to predictive DFT",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/broadening-access-to-skala-creates-a-faster-path-to-predictive-dft/",
-      "publishedAt": "2026-08-20T16:00:00.000Z",
-      "summary": "Skala 1.1, the updated deep-learning exchange-correlation functional from Microsoft Research, provides greater accuracy, expanded accessibility across the computational chemistry ecosystem, and a living benchmark to track computational performance. The post Broadening access to Skala creates a faster path to predictive",
-      "tags": [
-        "AI 模型",
-        "研究来源"
       ]
     },
     {
@@ -43126,46 +43490,6 @@
         "themes": [],
         "sourceQuality": {
           "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "0e90042cc61fe00149a93862",
-      "title": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
-      "publishedAt": "2026-05-18T15:12:46.000Z",
-      "summary": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
           "publisher": "Google",
           "score": 90,
           "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
@@ -43705,56 +44029,6 @@
       "summary": "Gemini 3.5 is built to help you execute complex, agentic workflows.",
       "tags": [
         "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 51,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
-      "longTermImpact": "规则情景（3–10 年）：开放生态与可迁移工具链可能影响技术扩散与供应商依赖。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "open-ecosystems",
-            "label": "开放模型与软件生态",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "071ef486161ea85226d79e00",
-      "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-      "publishedAt": "2026-05-14T18:55:01.000Z",
-      "summary": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-      "tags": [
-        "AI 模型",
         "官方来源"
       ]
     },
@@ -47956,50 +48230,6 @@
       "sourceUrl": "https://deepmind.google/blog/a-new-era-of-intelligence-with-gemini-3/",
       "publishedAt": "2025-11-18T16:06:41.000Z",
       "summary": "A new era of intelligence with Gemini 3",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 60,
-      "longTermImportance": 40,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Google",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "d04d95060623617b00123419",
-      "title": "Introducing Google Antigravity",
-      "source": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/introducing-google-antigravity/",
-      "publishedAt": "2025-11-18T16:06:32.000Z",
-      "summary": "Introducing Google Antigravity",
       "tags": [
         "AI 模型",
         "官方来源"
