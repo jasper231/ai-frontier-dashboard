@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-17T17:42:41.661Z",
+  "asOf": "2026-10-17T19:59:29.875Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
@@ -8162,7 +8162,7 @@
       ]
     },
     {
-      "importance": 61,
+      "importance": 58,
       "longTermImportance": 63,
       "horizonYears": 7,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -8183,8 +8183,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -8210,7 +8210,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -8231,8 +8231,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -8297,7 +8297,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -8318,8 +8318,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
