@@ -1,9 +1,96 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-18T17:44:09.650Z",
+  "asOf": "2026-10-18T19:58:28.872Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "01027b36b4a06b56e1c7bca2",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "11ff8ec29951a09759d96e69",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "bf815e64fedf96f62911c925",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "d96a2391b623b2cb26cccc90",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "robotics",
+      "id": "3cf4d945cff63c953202fa1a",
+      "title": "A woman was arrested in Philly for blocking a delivery robot",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
+      "publishedAt": "2026-10-18T18:28:10.000Z",
+      "summary": "Carolyn Marvin was arrested and charged with disorderly conduct after blocking the path of an Uber delivery robot and refusing to get out of the way. Marvin told Philadelphia's ABC13 \"I know they're taking the jobs of human delivery workers and so, I have been protesting them whenever I saw them by standing in front […",
+      "tags": [
+        "具身智能",
+        "新闻来源"
+      ]
+    },
     {
       "importance": 53,
       "longTermImportance": 54,
@@ -566,15 +653,15 @@
             "differentSource": true
           },
           {
-            "id": "467c8e42acb6bdc9ebe797d8",
+            "id": "3cf4d945cff63c953202fa1a",
             "relationship": "shared-topic",
             "themes": [
-              "protocol-trust"
+              "physical-automation"
             ],
             "differentSource": true
           },
           {
-            "id": "617335a68477fa8d494addb1",
+            "id": "467c8e42acb6bdc9ebe797d8",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -1859,6 +1946,14 @@
         "relatedNews": [
           {
             "id": "01027b36b4a06b56e1c7bca2",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3cf4d945cff63c953202fa1a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -3505,6 +3600,14 @@
           },
           {
             "id": "11ff8ec29951a09759d96e69",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3cf4d945cff63c953202fa1a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5929,6 +6032,14 @@
             "differentSource": true
           },
           {
+            "id": "3cf4d945cff63c953202fa1a",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "bf815e64fedf96f62911c925",
             "relationship": "shared-topic",
             "themes": [
@@ -5938,14 +6049,6 @@
           },
           {
             "id": "d96a2391b623b2cb26cccc90",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "f5f3fe2846a1077a42792c15",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
