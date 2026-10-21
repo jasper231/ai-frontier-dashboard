@@ -1,9 +1,100 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-20T21:09:38.818Z",
+  "asOf": "2026-10-21T02:59:21.101Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 68,
+      "longTermImportance": 62,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
+      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "能力、安全或效率变化",
+            "points": 11
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "inference-economics",
+            "label": "推理成本与效率",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0049828ab9fb0322230b3ae8",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "03edfbf4ceca2aded8e0c898",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "081f16d2b5be036b013b947a",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08c94156f77b7114844f4652",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "542ed0bcb34611a395d9f3fa",
+      "title": "Beyond the KV cache: Training and serving i14’s Laplace 3B linear attention model on AWS Trainium2 with native PyTorch",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/beyond-the-kv-cache-training-and-serving-i14s-laplace-3b-linear-attention-model-on-aws-trainium2-with-native-pytorch/",
+      "publishedAt": "2026-10-20T21:14:10.000Z",
+      "summary": "Learn how i14 trained and served Laplace 3B, a linear attention model, on AWS Trainium2 using native PyTorch. Its recurrent state stays fixed at 29.5 MB per sequence regardless of context length, avoiding the growing key-value cache of transformer models and keeping serving memory predictable.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
     {
       "importance": 53,
       "longTermImportance": 54,
@@ -664,7 +755,7 @@
       },
       "category": "ai",
       "id": "14423eb5946bd5d1ae5f9267",
-      "title": "Ex-Nvidia-turned-VC Amulya Vishwanath: ‘Physical AI is in it’s LEGO era’",
+      "title": "Ex-Nvidia-turned-VC Amulya Vishwanath: ‘Physical AI is in its LEGO era’",
       "source": "TechCrunch",
       "sourceUrl": "https://techcrunch.com/2026/10/20/ex-nvidia-turned-vc-amulya-vishwanath-physical-ai-is-in-its-lego-era/",
       "publishedAt": "2026-10-20T16:20:06.000Z",
@@ -1608,7 +1699,7 @@
       "source": "TechCrunch",
       "sourceUrl": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
       "publishedAt": "2026-10-20T13:00:00.000Z",
-      "summary": "Eka Robotics may be the first robotic arm that is actually good at picking a wide range of objects up, and it is so smooth and human-like, it is wowing the industry.",
+      "summary": "Eka Robotics may be the first robotic arm that is actually good at picking up a wide range of objects, and it is so smooth and human-like, it is wowing the industry.",
       "tags": [
         "AI 模型",
         "新闻来源"
@@ -1659,6 +1750,97 @@
       "summary": "An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.",
       "tags": [
         "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 61,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "存在可核验的量化主张（未验证）",
+            "points": 4
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "00af1117d288ef6a6aa489e7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "03deac55d9f496d6e3aae865",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "03edfbf4ceca2aded8e0c898",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07ac7e56c4dbe5bbeea48de6",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "aa8847d44cbae3328f3c5cbb",
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/terminal-x",
+      "publishedAt": "2026-10-20T07:00:00.000Z",
+      "summary": "Terminal X’s Eval Agent grades outputs against a 54-criterion rubric, catching 25% more deviances from a fund’s mandate with GPT-6.1 Sol.",
+      "tags": [
+        "智能体",
         "官方来源"
       ]
     },
@@ -3440,15 +3622,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "4f379e8b58549775d4b2d8fc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "52f3aeaa536e159374805e86",
             "relationship": "shared-topic",
             "themes": [
@@ -3468,6 +3641,15 @@
           },
           {
             "id": "8d243f03725d3d080fb8eed1",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "91f50d7b4c8864ae133e3db3",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -4815,7 +4997,7 @@
             "differentSource": true
           },
           {
-            "id": "4f379e8b58549775d4b2d8fc",
+            "id": "5d25b2ea856cc3afb99d3aee",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -5023,7 +5205,7 @@
             "differentSource": true
           },
           {
-            "id": "4f379e8b58549775d4b2d8fc",
+            "id": "5d25b2ea856cc3afb99d3aee",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -5421,7 +5603,7 @@
             "differentSource": true
           },
           {
-            "id": "4f379e8b58549775d4b2d8fc",
+            "id": "5d25b2ea856cc3afb99d3aee",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -5437,7 +5619,7 @@
       "source": "arXiv cs.AI",
       "sourceUrl": "https://arxiv.org/abs/2610.24611",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.24611v1 Announce Type: new Abstract: Evaluating software agents on a full benchmark is expensive. A small task subset can preserve agent rankings while yielding inaccurate scores. Historical responses provide useful structure, but tasks with identical source responses can have different outcomes for a new ta",
+      "summary": "arXiv:2610.24611v2 Announce Type: new Abstract: Evaluating software agents on a full benchmark is expensive. A small task subset can preserve agent rankings while yielding inaccurate scores. Historical responses provide useful structure, but tasks with identical source responses can have different outcomes for a new ta",
       "tags": [
         "智能体",
         "预印本"
@@ -6100,7 +6282,7 @@
       "source": "arXiv cs.AI",
       "sourceUrl": "https://arxiv.org/abs/2610.24161",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.24161v1 Announce Type: new Abstract: TorchTPU is an open-source collaboration between Google and Meta that introduces a native and principled PyTorch backend for Google TPUs. It enables seamless out-of-the-box model execution and TPU migration while delivering industry-competitive inference and training perf",
+      "summary": "arXiv:2610.24161v2 Announce Type: new Abstract: TorchTPU is an open-source collaboration between Google and Meta that introduces a native and principled PyTorch backend for Google TPUs. It enables seamless out-of-the-box model execution and TPU migration while delivering industry-competitive inference and training perf",
       "tags": [
         "AI 模型",
         "预印本"
@@ -9360,15 +9542,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "4f379e8b58549775d4b2d8fc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "52f3aeaa536e159374805e86",
             "relationship": "shared-topic",
             "themes": [
@@ -9388,6 +9561,15 @@
           },
           {
             "id": "8d243f03725d3d080fb8eed1",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "91f50d7b4c8864ae133e3db3",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -10093,15 +10275,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "4f379e8b58549775d4b2d8fc",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "00af1117d288ef6a6aa489e7",
             "relationship": "shared-topic",
             "themes": [
@@ -10119,6 +10292,14 @@
           },
           {
             "id": "03edfbf4ceca2aded8e0c898",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07ac7e56c4dbe5bbeea48de6",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10272,7 +10453,7 @@
       "source": "arXiv cs.LG",
       "sourceUrl": "https://arxiv.org/abs/2610.24306",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.24306v1 Announce Type: new Abstract: Location encoders learn compact representations of latitude--longitude coordinates for downstream geospatial prediction tasks. Existing approaches are pretrained using continuous or naturally occurring supervision, such as imagery, climate variables, or species distributi",
+      "summary": "arXiv:2610.24306v2 Announce Type: new Abstract: Location encoders learn compact representations of latitude--longitude coordinates for downstream geospatial prediction tasks. Existing approaches are pretrained using continuous or naturally occurring supervision, such as imagery, climate variables, or species distributi",
       "tags": [
         "AI 模型",
         "预印本"
@@ -10516,15 +10697,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "4f379e8b58549775d4b2d8fc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "52f3aeaa536e159374805e86",
             "relationship": "shared-topic",
             "themes": [
@@ -10544,6 +10716,15 @@
           },
           {
             "id": "8d243f03725d3d080fb8eed1",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "91f50d7b4c8864ae133e3db3",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -11345,7 +11526,7 @@
             "differentSource": true
           },
           {
-            "id": "4f379e8b58549775d4b2d8fc",
+            "id": "5d25b2ea856cc3afb99d3aee",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -12156,7 +12337,7 @@
             "differentSource": true
           },
           {
-            "id": "4f379e8b58549775d4b2d8fc",
+            "id": "5d25b2ea856cc3afb99d3aee",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -12328,7 +12509,7 @@
       "source": "arXiv cs.RO",
       "sourceUrl": "https://arxiv.org/abs/2610.25946",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.25946v1 Announce Type: new Abstract: Developing coordination policies for complex multi-agent systems relies on either labor-intensive algorithm design or opaque task-specific reinforcement learning. With recent advances in autonomous coding agents, we show that policy search directly in code space offers a ",
+      "summary": "arXiv:2610.25946v2 Announce Type: new Abstract: Developing coordination policies for complex multi-agent systems relies on either labor-intensive algorithm design or opaque task-specific reinforcement learning. With recent advances in autonomous coding agents, we show that policy search directly in code space offers a ",
       "tags": [
         "智能体",
         "预印本"
@@ -13015,15 +13196,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "4f379e8b58549775d4b2d8fc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "52f3aeaa536e159374805e86",
             "relationship": "shared-topic",
             "themes": [
@@ -13043,6 +13215,15 @@
           },
           {
             "id": "8d243f03725d3d080fb8eed1",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "91f50d7b4c8864ae133e3db3",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -13297,15 +13478,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "4f379e8b58549775d4b2d8fc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "52f3aeaa536e159374805e86",
             "relationship": "shared-topic",
             "themes": [
@@ -13325,6 +13497,15 @@
           },
           {
             "id": "8d243f03725d3d080fb8eed1",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "91f50d7b4c8864ae133e3db3",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -14589,7 +14770,7 @@
       "source": "arXiv cs.RO",
       "sourceUrl": "https://arxiv.org/abs/2610.24675",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.24675v1 Announce Type: new Abstract: Learning a single perceptive policy for diverse humanoid loco-manipulation requires unifying high-level task decisions without losing the state-dependent physical responses that make each interaction succeed. This makes the representation between high-level planning and w",
+      "summary": "arXiv:2610.24675v2 Announce Type: new Abstract: Learning a single perceptive policy for diverse humanoid loco-manipulation requires unifying high-level task decisions without losing the state-dependent physical responses that make each interaction succeed. This makes the representation between high-level planning and w",
       "tags": [
         "具身智能",
         "预印本"
@@ -14812,7 +14993,7 @@
             "differentSource": true
           },
           {
-            "id": "4f379e8b58549775d4b2d8fc",
+            "id": "5d25b2ea856cc3afb99d3aee",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -16347,7 +16528,7 @@
       "source": "arXiv cs.RO",
       "sourceUrl": "https://arxiv.org/abs/2610.25397",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.25397v1 Announce Type: new Abstract: Visual-inertial odometry systems are often constrained by the assumption that sensors are rigidly mounted, which limits their adaptability in practical scenarios involving structural motion. To address this limitation, this paper investigates time-varying camera-IMU extri",
+      "summary": "arXiv:2610.25397v2 Announce Type: new Abstract: Visual-inertial odometry systems are often constrained by the assumption that sensors are rigidly mounted, which limits their adaptability in practical scenarios involving structural motion. To address this limitation, this paper investigates time-varying camera-IMU extri",
       "tags": [
         "具身智能",
         "预印本"
@@ -16434,7 +16615,7 @@
       "source": "arXiv cs.LG",
       "sourceUrl": "https://arxiv.org/abs/2610.23946",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.23946v1 Announce Type: new Abstract: Pretraining scaling laws treat training data as a one-dimensional quantity: a token count. Agentic reinforcement learning (RL) inherits this scalar abstraction, but modern synthesis pipelines now generate \\textit{tasks}, \\textit{environments}, and \\textit{trajectories} in",
+      "summary": "arXiv:2610.23946v2 Announce Type: new Abstract: Pretraining scaling laws treat training data as a one-dimensional quantity: a token count. Agentic reinforcement learning (RL) inherits this scalar abstraction, but modern synthesis pipelines now generate \\textit{tasks}, \\textit{environments}, and \\textit{trajectories} in",
       "tags": [
         "智能体",
         "预印本"
@@ -16574,15 +16755,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "4f379e8b58549775d4b2d8fc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "52f3aeaa536e159374805e86",
             "relationship": "shared-topic",
             "themes": [
@@ -16602,6 +16774,15 @@
           },
           {
             "id": "8d243f03725d3d080fb8eed1",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "91f50d7b4c8864ae133e3db3",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -17061,7 +17242,7 @@
       "source": "arXiv cs.AI",
       "sourceUrl": "https://arxiv.org/abs/2610.25043",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.25043v1 Announce Type: new Abstract: Flow-matching vision-language-action (VLA) models generate an action chunk by iteratively denoising Gaussian noise, but typically execute only a short prefix before replanning with updated observations. Under this receding-horizon paradigm, the unexecuted remainder---the ",
+      "summary": "arXiv:2610.25043v2 Announce Type: new Abstract: Flow-matching vision-language-action (VLA) models generate an action chunk by iteratively denoising Gaussian noise, but typically execute only a short prefix before replanning with updated observations. Under this receding-horizon paradigm, the unexecuted remainder---the ",
       "tags": [
         "AI 模型",
         "预印本"
@@ -19038,7 +19219,7 @@
       "source": "arXiv cs.AI",
       "sourceUrl": "https://arxiv.org/abs/2610.24264",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.24264v1 Announce Type: new Abstract: As LLM-based agents are deployed with increasing autonomy in real-world environments, a critical failure mode emerges: agentic misalignment, where agents choose harmful actions over failure. However, existing safety benchmarks primarily evaluate whether agents comply with",
+      "summary": "arXiv:2610.24264v2 Announce Type: new Abstract: As LLM-based agents are deployed with increasing autonomy in real-world environments, a critical failure mode emerges: agentic misalignment, where agents choose harmful actions over failure. However, existing safety benchmarks primarily evaluate whether agents comply with",
       "tags": [
         "智能体",
         "预印本"
@@ -20100,7 +20281,7 @@
       "source": "arXiv cs.AI",
       "sourceUrl": "https://arxiv.org/abs/2610.24520",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.24520v1 Announce Type: new Abstract: In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial e",
+      "summary": "arXiv:2610.24520v2 Announce Type: new Abstract: In long-term interactions with large language model (LLM) agents, users reveal habits through their choices and actions. These habits capture implicit user information that agents must infer across conversations. However, individual observations may provide only partial e",
       "tags": [
         "智能体",
         "预印本"
@@ -20354,7 +20535,7 @@
             "differentSource": true
           },
           {
-            "id": "4f379e8b58549775d4b2d8fc",
+            "id": "5d25b2ea856cc3afb99d3aee",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -21530,7 +21711,7 @@
             "differentSource": true
           },
           {
-            "id": "4f379e8b58549775d4b2d8fc",
+            "id": "5d25b2ea856cc3afb99d3aee",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -22329,7 +22510,7 @@
       "source": "arXiv cs.RO",
       "sourceUrl": "https://arxiv.org/abs/2610.25649",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.25649v1 Announce Type: new Abstract: Long-horizon human-scene interaction requires coordinated spatial reasoning, physical feasibility, and the ability to recover from compounding execution errors. Text-driven motion models are largely scene-agnostic and lack closed-loop correction, while geometry-conditione",
+      "summary": "arXiv:2610.25649v2 Announce Type: new Abstract: Long-horizon human-scene interaction requires coordinated spatial reasoning, physical feasibility, and the ability to recover from compounding execution errors. Text-driven motion models are largely scene-agnostic and lack closed-loop correction, while geometry-conditione",
       "tags": [
         "智能体",
         "预印本"
@@ -22505,7 +22686,7 @@
             "differentSource": true
           },
           {
-            "id": "4f379e8b58549775d4b2d8fc",
+            "id": "5d25b2ea856cc3afb99d3aee",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -25156,7 +25337,7 @@
       "source": "arXiv cs.LG",
       "sourceUrl": "https://arxiv.org/abs/2610.24585",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.24585v1 Announce Type: new Abstract: Delirium affects a large fraction of intensive care unit (ICU) patients and foreshadows longer stays, lasting cognitive decline, and higher mortality. Flagging the patients who will become delirious within the first day of admission would give clinicians a window to inter",
+      "summary": "arXiv:2610.24585v2 Announce Type: new Abstract: Delirium affects a large fraction of intensive care unit (ICU) patients and foreshadows longer stays, lasting cognitive decline, and higher mortality. Flagging the patients who will become delirious within the first day of admission would give clinicians a window to inter",
       "tags": [
         "AI 模型",
         "预印本"
@@ -25559,7 +25740,7 @@
       "source": "arXiv cs.LG",
       "sourceUrl": "https://arxiv.org/abs/2610.24777",
       "publishedAt": "2026-10-20T04:00:00.000Z",
-      "summary": "arXiv:2610.24777v1 Announce Type: new Abstract: Predictive Process Monitoring (PPM) forecasts future events of ongoing business processes based on event logs. However, deep learning PPM approaches are often limited by labeled data scarcity and the low variability of real-world logs. To address this, we introduce SiamSA",
+      "summary": "arXiv:2610.24777v2 Announce Type: new Abstract: Predictive Process Monitoring (PPM) forecasts future events of ongoing business processes based on event logs. However, deep learning PPM approaches are often limited by labeled data scarcity and the low variability of real-world logs. To address this, we introduce SiamSA",
       "tags": [
         "AI 模型",
         "预印本"
@@ -25670,7 +25851,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -25687,8 +25868,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -25714,7 +25895,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -25731,8 +25912,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -25758,7 +25939,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -25775,8 +25956,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -25802,7 +25983,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -25819,8 +26000,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -26805,115 +26986,6 @@
       "summary": "With ia.i, a conversational interface, and the IARA governance platform, Itaú is applying its AI First strategy to customers and employees — in one of Brazil’s most regulated sectors.",
       "tags": [
         "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 83,
-      "longTermImportance": 85,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
-      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "inference-economics",
-            "label": "推理成本与效率",
-            "evidence": "excerpt"
-          },
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          },
-          {
-            "id": "compute-supply",
-            "label": "算力与内存约束",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03edfbf4ceca2aded8e0c898",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0fa633616815fb1476df76bd",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "105b4672ff4fd27ca8dc2111",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "3449a11d13dc70b2ae9a6b46",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "4f379e8b58549775d4b2d8fc",
-      "title": "Introducing Reflection Beam: an open-weight model for agentic coding on AWS",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
-      "publishedAt": "2026-10-16T15:23:10.000Z",
-      "summary": "Reflection AI's Beam is an open-weight model for agentic coding and long-horizon tasks. This post shows how to deploy Beam on AWS: start with an Amazon SageMaker JumpStart real-time endpoint, or use Amazon SageMaker HyperPod Inference with JumpStart, SGLang, or vLLM for Kubernetes-native control over distributed GPU in",
-      "tags": [
-        "智能体",
         "官方来源"
       ]
     },
@@ -28454,7 +28526,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28469,10 +28541,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28498,7 +28566,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -28517,10 +28585,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -37589,50 +37653,6 @@
       "sourceUrl": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
       "publishedAt": "2026-09-03T15:02:08.000Z",
       "summary": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 47,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "fc40ddafdd41e0cc6b8e9f20",
-      "title": "Daybreak for Frontline Defenders: $1B to protect essential services",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/daybreak-for-frontline-defenders",
-      "publishedAt": "2026-09-03T13:15:00.000Z",
-      "summary": "OpenAI introduces Daybreak for Frontline Defenders. A $1 billion commitment expands access to frontier cyber AI, training, and support for essential services.",
       "tags": [
         "AI 模型",
         "官方来源"
