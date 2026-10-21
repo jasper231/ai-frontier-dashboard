@@ -1,9 +1,1363 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-21T08:25:56.686Z",
+  "asOf": "2026-10-21T14:18:08.252Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Condé Nast",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03deac55d9f496d6e3aae865",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08948083f4afbf0736738c1d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "a543dcc418c01df034fe8424",
+      "title": "AI Guardrails Aren’t Stopping Criminal Hackers",
+      "source": "Wired",
+      "sourceUrl": "https://www.wired.com/story/ai-guardrails-arent-stopping-criminal-hackers/",
+      "publishedAt": "2026-10-21T14:00:00.000Z",
+      "summary": "Hackers around the world are all-in on using agentic AI to wage attacks—and manipulating tools like Anthropic’s Claude to help them carry out their crimes.",
+      "tags": [
+        "AI 模型",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03deac55d9f496d6e3aae865",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08948083f4afbf0736738c1d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "8eaa1a0c536053841d6fdbe8",
+      "title": "OpenAI says an AI agent lied about disabling its safety monitoring system",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1015316/openai-ai-agent-disabling-monitoring-systems",
+      "publishedAt": "2026-10-21T13:57:43.000Z",
+      "summary": "OpenAI disclosed a pair of safety incidents that involved AI agents weakening their safety monitoring systems during internal coding tasks. In one incident, OpenAI says its GPT-6 Astra agent disabled its safety monitor when copying reference code - and then lied about it. \"The reference didn't configure a monitor, and ",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 66,
+      "longTermImportance": 40,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "release",
+          "publisher": "AMD",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "updated",
+        "relatedNews": []
+      },
+      "category": "chips",
+      "id": "8566d21fb875ae04702d68e0",
+      "title": "hip-version_10.2.62940",
+      "source": "AMD ROCm Systems",
+      "sourceUrl": "https://github.com/ROCm/rocm-systems/releases/tag/hip-version_10.2.62940",
+      "publishedAt": "2026-10-21T13:29:55.000Z",
+      "summary": "Tag for build hip-version_10.2.62940",
+      "tags": [
+        "算力基础设施",
+        "官方来源",
+        "来源更新时间"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
+      "longTermImpact": "规则情景（3–10 年）：计算与能源供给可能持续约束 AI 的成本与规模。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "compute-supply",
+            "label": "算力与内存约束",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0fa633616815fb1476df76bd",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "105b4672ff4fd27ca8dc2111",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3449a11d13dc70b2ae9a6b46",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "chips",
+      "id": "9d139281b4ec70e03eef76f7",
+      "title": "Nvidia’s latest GPU driver brings a new way to speed up PC games",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/news/1015299/nvidia-driver-microsoft-advanced-shader-delivery-support",
+      "publishedAt": "2026-10-21T13:09:26.000Z",
+      "summary": "Nvidia is rolling out a new GPU driver today (621.01) that enables Microsoft's new Advanced Shader Delivery technology to speed up game launches. The technology also removes mid-game \"just-in-time\" shader compilation, reducing stuttering and CPU spikes. Microsoft's Advanced Shader Delivery works by offloading shader co",
+      "tags": [
+        "算力基础设施",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 61,
+      "longTermImportance": 63,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "b1215e1aefc04c61e203617a",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "publishedAt": "2026-10-21T13:00:00.000Z",
+      "summary": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "5c32755a71da49edb4fef8ed",
+      "title": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/kumo-forecast",
+      "publishedAt": "2026-10-21T12:51:24.000Z",
+      "summary": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "95dedf578de78f3ec264f66e",
+      "title": "OpenAI models are coming to Google Cloud",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+      "publishedAt": "2026-10-21T12:00:00.000Z",
+      "summary": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03deac55d9f496d6e3aae865",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08948083f4afbf0736738c1d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "6822fece1c79cc899786a2c2",
+      "title": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+      "publishedAt": "2026-10-21T10:50:37.000Z",
+      "summary": "At GTC Berlin, NVIDIA is showcasing its full lineup of local AI hardware. RTX Spark, which launched last week, powers personal agents on Windows PCs; DGX Spark supports developers building and scaling applications on Linux; and DGX Station serves enterprise teams running frontier workloads on Linux, with a Windows vers",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 69,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
+      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "inference-economics",
+            "label": "推理成本与效率",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0049828ab9fb0322230b3ae8",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "03deac55d9f496d6e3aae865",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08c94156f77b7114844f4652",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0f1cc5b3263bc7a1232ac18c",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "chips",
+      "id": "653d201e8928688350182b45",
+      "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+      "publishedAt": "2026-10-21T10:45:17.000Z",
+      "summary": "General availability of the instances is coming next month, with planned expansion of availability to Europe — bringing an integrated platform for training, inference and large-scale reinforcement learning to cloud customers. A5X instances bring together NVIDIA Vera Rubin NVL72, NVIDIA ConnectX-9 SuperNICs, Google Clou",
+      "tags": [
+        "算力基础设施",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 69,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03deac55d9f496d6e3aae865",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08948083f4afbf0736738c1d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "cb2d9eae775325ba2d47ad9d",
+      "title": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+      "publishedAt": "2026-10-21T10:30:41.000Z",
+      "summary": "Demand from AI-natives is pulling the European AI cloud ecosystem forward faster than ever. Developers need compute closer to their data, open models they can customize and serve at scale, and full-stack infrastructure that is secure by design. NVIDIA Cloud Partners across Europe, the Nordics, Africa, and Central Asia ",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "chips",
+      "id": "ca37162b222176ea5f9c1205",
+      "title": "Europe’s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+      "publishedAt": "2026-10-21T10:30:40.000Z",
+      "summary": "To increase productivity, accelerate innovation and create new opportunities for economic growth, Europe’s industrial leaders are tapping NVIDIA CUDA-X and Omniverse libraries, as well as NVIDIA Cosmos and Nemotron open models, across the engineering and manufacturing lifecycle. Bringing those capabilities together on ",
+      "tags": [
+        "算力基础设施",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 74,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
+      "longTermImpact": "规则情景（3–10 年）：计算与能源供给可能持续约束 AI 的成本与规模。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "compute-supply",
+            "label": "算力与内存约束",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0fa633616815fb1476df76bd",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "105b4672ff4fd27ca8dc2111",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3449a11d13dc70b2ae9a6b46",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "chips",
+      "id": "8860c6bfedf824046aa32e7c",
+      "title": "NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+      "publishedAt": "2026-10-21T10:30:25.000Z",
+      "summary": "NVIDIA cuDSS, launched today in general availability, is an NVIDIA CUDA-X library that shifts a critical part of engineering and scientific simulations onto GPUs. Complex engineering feats — from advanced chips to aircraft to industrial systems —– depend on simulation to predict how designs will perform before they’re ",
+      "tags": [
+        "算力基础设施",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 69,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03deac55d9f496d6e3aae865",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08948083f4afbf0736738c1d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "ab1f29b681fe09cc1e449b6e",
+      "title": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Securely Scale Across Global Infrastructure",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+      "publishedAt": "2026-10-21T10:30:02.000Z",
+      "summary": "NVIDIA builds tools to enable safe agents across the stack. The NVIDIA OpenShell Reference Architecture, announced today, is part of NVIDIA’s growing portfolio of technologies that enables organizations to safely deploy agents at scale. NVIDIA Confidential Computing is the infrastructure layer that protects the models ",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 69,
+      "longTermImportance": 85,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          },
+          {
+            "id": "open-ecosystems",
+            "label": "开放模型与软件生态",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "1d8e2dff615beca9bf0905ab",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "7a45fde949a78d3e27cc5b68",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "d413c98db0f6141e5dc4a1b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "03deac55d9f496d6e3aae865",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "301b0a5a7c01472977a81e48",
+      "title": "NVIDIA Agent Toolkit Expands, Grounding Enterprise Agents in Company Data",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/enterprise-platforms-agent-toolkit/",
+      "publishedAt": "2026-10-21T10:10:01.000Z",
+      "summary": "Agents are only as useful as what they know, and only as trustworthy as the boundaries they run within. Leading enterprises are using the open source NVIDIA Agent Toolkit — now expanded with new tools — to customize and control agents, use company data to inform their answers and actions, monitor what they do and […]",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "054319838139f0cbb09c9c8e",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08766224db6b1b6f6d6ab6ed",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0eb7a3aa83372f3fd390b7ed",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "fe2b50db8dabc11e230271d5",
+      "title": "NVIDIA Open Models Advance Europe’s Sovereign Intelligence Across Industries",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+      "publishedAt": "2026-10-21T10:00:07.000Z",
+      "summary": "NVIDIA is expanding its family of open models across language, robotics, biology, and quantum computing, giving developers, researchers and enterprises what they need to build applications tailored to local languages and industries The portfolio includes the new NVIDIA Nemotron 3.5 Super VL and Nemotron 3.5 Bolt models",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 62,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          },
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1d8e2dff615beca9bf0905ab",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "23675028600476715d5ad9fb",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "2e120deef521cbeb8697b76f",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "robotics",
+      "id": "7882d35c8c318e7bb50beda6",
+      "title": "GTC Berlin 2026: Live Updates From NVIDIA CEO Jensen Huang’s Keynote",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/",
+      "publishedAt": "2026-10-21T09:30:16.000Z",
+      "summary": "Founded in a tent near the Berlin Wall in 1980, the Tempodrom moved several times before settling near Anhalter Bahnhof in 2001. Its permanent home has since hosted concerts, galas and political events. Today, it hosts a different kind of spectacle. GTC Berlin runs three days, with more than 100 sessions on agentic AI,",
+      "tags": [
+        "具身智能",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "ea92da5c121ecb4527027c2b",
+      "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/building-chatgpt-ad-stack",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "summary": "Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03deac55d9f496d6e3aae865",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08948083f4afbf0736738c1d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "64ddfb139fec8a1cb4597ec2",
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "publishedAt": "2026-10-21T04:50:00.000Z",
+      "summary": "See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
     {
       "importance": 64,
       "longTermImportance": 78,
@@ -78,6 +1432,15 @@
             "differentSource": false
           },
           {
+            "id": "301b0a5a7c01472977a81e48",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "38cdbc1072ef9fe3986a0b7c",
             "relationship": "shared-topic",
             "themes": [
@@ -88,15 +1451,6 @@
           },
           {
             "id": "426f7f0d83f72b981867fe22",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "acc51b4e38b4927616d0ac9a",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -379,14 +1733,6 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "3939c7ba48805cf0091868a0",
             "relationship": "shared-topic",
             "themes": [
@@ -396,6 +1742,14 @@
           },
           {
             "id": "3c2c64e92fb5bff97575841f",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "467c8e42acb6bdc9ebe797d8",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -474,14 +1828,6 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "3939c7ba48805cf0091868a0",
             "relationship": "shared-topic",
             "themes": [
@@ -491,6 +1837,14 @@
           },
           {
             "id": "3c2c64e92fb5bff97575841f",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "467c8e42acb6bdc9ebe797d8",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -697,7 +2051,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "69a766607353eb4ce62eb537",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -904,11 +2258,11 @@
             "differentSource": false
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "38cdbc1072ef9fe3986a0b7c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
-              "protocol-trust"
+              "physical-automation"
             ],
             "differentSource": true
           }
@@ -990,6 +2344,15 @@
             "differentSource": true
           },
           {
+            "id": "301b0a5a7c01472977a81e48",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "7a45fde949a78d3e27cc5b68",
             "relationship": "shared-topic",
             "themes": [
@@ -1000,14 +2363,6 @@
           },
           {
             "id": "03deac55d9f496d6e3aae865",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "07ac7e56c4dbe5bbeea48de6",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1559,15 +2914,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "29e059fc3089a68bb383737f",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "511a84f55bad4b22f828fca7",
             "relationship": "shared-topic",
             "themes": [
@@ -1587,6 +2933,15 @@
           },
           {
             "id": "69a766607353eb4ce62eb537",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "7be1f38a8edb49a3323a08ff",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -1786,7 +3141,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "3939c7ba48805cf0091868a0",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -2024,7 +3379,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "3939c7ba48805cf0091868a0",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -2127,7 +3482,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "69a766607353eb4ce62eb537",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -2422,7 +3777,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "3939c7ba48805cf0091868a0",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -2525,7 +3880,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "69a766607353eb4ce62eb537",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -2803,14 +4158,6 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "3939c7ba48805cf0091868a0",
             "relationship": "shared-topic",
             "themes": [
@@ -2820,6 +4167,14 @@
           },
           {
             "id": "3c2c64e92fb5bff97575841f",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "467c8e42acb6bdc9ebe797d8",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -3595,7 +4950,7 @@
             "differentSource": true
           },
           {
-            "id": "acc51b4e38b4927616d0ac9a",
+            "id": "7882d35c8c318e7bb50beda6",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -3604,13 +4959,13 @@
             "differentSource": true
           },
           {
-            "id": "08c3d40d068a97863ff845b1",
+            "id": "acc51b4e38b4927616d0ac9a",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
               "physical-automation"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -3863,15 +5218,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "29e059fc3089a68bb383737f",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "511a84f55bad4b22f828fca7",
             "relationship": "shared-topic",
             "themes": [
@@ -3891,6 +5237,15 @@
           },
           {
             "id": "69a766607353eb4ce62eb537",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "7be1f38a8edb49a3323a08ff",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -3998,11 +5353,11 @@
             "differentSource": false
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "38cdbc1072ef9fe3986a0b7c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
-              "protocol-trust"
+              "physical-automation"
             ],
             "differentSource": true
           }
@@ -4181,7 +5536,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "3939c7ba48805cf0091868a0",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -4268,6 +5623,15 @@
             "differentSource": false
           },
           {
+            "id": "301b0a5a7c01472977a81e48",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "38cdbc1072ef9fe3986a0b7c",
             "relationship": "shared-topic",
             "themes": [
@@ -4278,15 +5642,6 @@
           },
           {
             "id": "426f7f0d83f72b981867fe22",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "acc51b4e38b4927616d0ac9a",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -4362,14 +5717,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -4379,6 +5726,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4544,14 +5899,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -4561,6 +5908,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4964,7 +6319,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "69a766607353eb4ce62eb537",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -5155,7 +6510,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "69a766607353eb4ce62eb537",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -5336,7 +6691,7 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
+            "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -5344,7 +6699,7 @@
             "differentSource": true
           },
           {
-            "id": "08948083f4afbf0736738c1d",
+            "id": "08c3d40d068a97863ff845b1",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -5543,7 +6898,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "69a766607353eb4ce62eb537",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -5619,14 +6974,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -5636,6 +6983,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -5726,7 +7081,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "3939c7ba48805cf0091868a0",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -6083,14 +7438,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -6100,6 +7447,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -6574,6 +7929,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "301b0a5a7c01472977a81e48",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "8e00c4d2f82f9c8fffdfa04a",
             "relationship": "shared-topic",
             "themes": [
@@ -6591,14 +7954,6 @@
           },
           {
             "id": "1d8e2dff615beca9bf0905ab",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": false
-          },
-          {
-            "id": "7a45fde949a78d3e27cc5b68",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -6764,14 +8119,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -6781,6 +8128,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -6978,7 +8333,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "3939c7ba48805cf0091868a0",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -7417,14 +8772,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -7434,6 +8781,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7608,14 +8963,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -7625,6 +8972,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7790,14 +9145,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -7807,6 +9154,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7881,14 +9236,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -7898,6 +9245,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -8063,14 +9418,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -8080,6 +9427,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -8709,14 +10064,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -8726,6 +10073,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9540,14 +10895,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -9557,6 +10904,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9800,7 +11155,7 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
+            "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9808,7 +11163,7 @@
             "differentSource": true
           },
           {
-            "id": "08948083f4afbf0736738c1d",
+            "id": "08c3d40d068a97863ff845b1",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10595,14 +11950,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -10612,6 +11959,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10973,14 +12328,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -10990,6 +12337,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11155,14 +12510,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -11172,6 +12519,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11246,14 +12601,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -11263,6 +12610,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11428,14 +12783,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -11445,6 +12792,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11534,7 +12889,7 @@
             "differentSource": true
           },
           {
-            "id": "acc51b4e38b4927616d0ac9a",
+            "id": "7882d35c8c318e7bb50beda6",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -11543,13 +12898,13 @@
             "differentSource": true
           },
           {
-            "id": "08c3d40d068a97863ff845b1",
+            "id": "acc51b4e38b4927616d0ac9a",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
               "physical-automation"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -11710,14 +13065,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -11727,6 +13074,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -12246,7 +13601,7 @@
             "differentSource": true
           },
           {
-            "id": "acc51b4e38b4927616d0ac9a",
+            "id": "7882d35c8c318e7bb50beda6",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -12255,13 +13610,13 @@
             "differentSource": true
           },
           {
-            "id": "08c3d40d068a97863ff845b1",
+            "id": "acc51b4e38b4927616d0ac9a",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
               "physical-automation"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -12331,14 +13686,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -12348,6 +13695,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -12522,14 +13877,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
@@ -12539,6 +13886,14 @@
           },
           {
             "id": "0d5e72a763fbb4b0f5defe96",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "105b4672ff4fd27ca8dc2111",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13077,14 +14432,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -13094,6 +14441,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13446,14 +14801,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -13463,6 +14810,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14561,14 +15916,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -14578,6 +15925,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14831,14 +16186,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
@@ -14848,6 +16195,14 @@
           },
           {
             "id": "0d5e72a763fbb4b0f5defe96",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "105b4672ff4fd27ca8dc2111",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15005,14 +16360,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -15022,6 +16369,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15179,14 +16534,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -15196,6 +16543,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15368,7 +16723,7 @@
             "differentSource": true
           },
           {
-            "id": "acc51b4e38b4927616d0ac9a",
+            "id": "7882d35c8c318e7bb50beda6",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -15377,13 +16732,13 @@
             "differentSource": true
           },
           {
-            "id": "08c3d40d068a97863ff845b1",
+            "id": "acc51b4e38b4927616d0ac9a",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
               "physical-automation"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -15449,14 +16804,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -15466,6 +16813,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15536,14 +16891,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -15553,6 +16900,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15821,14 +17176,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -15838,6 +17185,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -16352,14 +17707,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -16369,6 +17716,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -16439,14 +17794,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -16456,6 +17803,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -16526,14 +17881,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -16543,6 +17890,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -16613,14 +17968,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -16630,6 +17977,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -16787,14 +18142,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -16804,6 +18151,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -16961,14 +18316,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -16978,6 +18325,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17150,7 +18505,7 @@
             "differentSource": true
           },
           {
-            "id": "acc51b4e38b4927616d0ac9a",
+            "id": "7882d35c8c318e7bb50beda6",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -17159,13 +18514,13 @@
             "differentSource": true
           },
           {
-            "id": "08c3d40d068a97863ff845b1",
+            "id": "acc51b4e38b4927616d0ac9a",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
               "physical-automation"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -17246,7 +18601,7 @@
             "differentSource": true
           },
           {
-            "id": "acc51b4e38b4927616d0ac9a",
+            "id": "7882d35c8c318e7bb50beda6",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -17255,13 +18610,13 @@
             "differentSource": true
           },
           {
-            "id": "08c3d40d068a97863ff845b1",
+            "id": "acc51b4e38b4927616d0ac9a",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
               "physical-automation"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -17327,14 +18682,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -17344,6 +18691,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17580,14 +18935,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -17597,6 +18944,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17763,14 +19118,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -17780,6 +19127,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18285,14 +19640,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -18302,6 +19649,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18372,14 +19727,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -18389,6 +19736,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -19008,14 +20363,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -19025,6 +20372,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -19373,14 +20728,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -19390,6 +20737,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -19547,14 +20902,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -19564,6 +20911,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -19730,14 +21085,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -19747,6 +21094,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -19991,14 +21346,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -20008,6 +21355,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -20363,7 +21718,7 @@
             "differentSource": true
           },
           {
-            "id": "acc51b4e38b4927616d0ac9a",
+            "id": "7882d35c8c318e7bb50beda6",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -20372,13 +21727,13 @@
             "differentSource": true
           },
           {
-            "id": "08c3d40d068a97863ff845b1",
+            "id": "acc51b4e38b4927616d0ac9a",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
               "physical-automation"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -20793,14 +22148,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -20810,6 +22157,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -20976,14 +22331,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -20993,6 +22340,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -23687,6 +25042,14 @@
             "differentSource": true
           },
           {
+            "id": "301b0a5a7c01472977a81e48",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "7a45fde949a78d3e27cc5b68",
             "relationship": "shared-topic",
             "themes": [
@@ -23696,14 +25059,6 @@
           },
           {
             "id": "afb08d4e1e797d1a7d47f846",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "d413c98db0f6141e5dc4a1b1",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -24141,50 +25496,6 @@
       ]
     },
     {
-      "importance": 49,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "e8a8161ff83426ef4f6b8321",
-      "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-      "publishedAt": "2026-10-20T18:17:47.000Z",
-      "summary": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 69,
       "longTermImportance": 85,
       "horizonYears": 7,
@@ -24262,7 +25573,7 @@
             "differentSource": true
           },
           {
-            "id": "29e059fc3089a68bb383737f",
+            "id": "511a84f55bad4b22f828fca7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -24330,14 +25641,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -24355,6 +25658,14 @@
           },
           {
             "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24504,14 +25815,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -24529,6 +25832,14 @@
           },
           {
             "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24726,14 +26037,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -24751,6 +26054,14 @@
           },
           {
             "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24857,14 +26168,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -24882,6 +26185,14 @@
           },
           {
             "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24948,14 +26259,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -24973,6 +26276,14 @@
           },
           {
             "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25035,14 +26346,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -25060,6 +26363,14 @@
           },
           {
             "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25122,14 +26433,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -25147,6 +26450,14 @@
           },
           {
             "id": "0b9bb1631bab5704607ed0e5",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d5e72a763fbb4b0f5defe96",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25261,14 +26572,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -25278,6 +26581,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25299,8 +26610,8 @@
       ]
     },
     {
-      "importance": 65,
-      "longTermImportance": 85,
+      "importance": 66,
+      "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
       "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
@@ -25320,40 +26631,42 @@
             "points": 12
           },
           {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
+            "reason": "直接公开的一手来源",
+            "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
           {
             "id": "agent-execution",
             "label": "可验证的智能体执行",
-            "evidence": "headline"
-          },
-          {
-            "id": "protocol-trust",
-            "label": "可信与互操作协议",
-            "evidence": "headline"
+            "evidence": "excerpt"
           }
         ],
         "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
         },
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "03deac55d9f496d6e3aae865",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
-              "agent-execution",
-              "protocol-trust"
+              "agent-execution"
             ],
             "differentSource": true
           },
@@ -25361,223 +26674,34 @@
             "id": "08c3d40d068a97863ff845b1",
             "relationship": "shared-topic",
             "themes": [
-              "agent-execution",
-              "protocol-trust"
+              "agent-execution"
             ],
             "differentSource": true
           },
           {
-            "id": "27fe1f54c6dcc0a5bf71a8fd",
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
-              "agent-execution",
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "511a84f55bad4b22f828fca7",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "protocol-trust"
+              "agent-execution"
             ],
             "differentSource": true
           }
         ]
       },
       "category": "agents",
-      "id": "29e059fc3089a68bb383737f",
-      "title": "Figma co-founder Dylan Field thinks MCP is not a perfect protocol",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/",
-      "publishedAt": "2026-10-20T14:13:32.000Z",
-      "summary": "Figma said it plans to support as many standards as possible without exposing all of its data.",
+      "id": "f17b97a4336d6686950a14db",
+      "title": "European Leaders Turn to NVIDIA Vera CPUs to Build Local Infrastructure",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/european-leaders-vera-cpu-infrastructure/",
+      "publishedAt": "2026-10-20T10:30:11.000Z",
+      "summary": "Nebius and Nscale are among global technology partners looking to NVIDIA Vera CPUs to build the next wave of infrastructure. Their momentum reflects rapid advancements in agentic computing. Agents do more than generate answers: they retrieve information, run software tools, execute code and evaluate results. Each step ",
       "tags": [
         "智能体",
-        "新闻来源"
+        "官方来源"
       ]
     },
     {
-      "importance": 57,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "01027b36b4a06b56e1c7bca2",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "054319838139f0cbb09c9c8e",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08766224db6b1b6f6d6ab6ed",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08c3d40d068a97863ff845b1",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "robotics",
-      "id": "60a47462fb2ac517178b1361",
-      "title": "SpaceX alum’s aviation startup, Reliable Robotics, lands $115M, topping $1B valuation",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/20/spacex-alums-aviation-startup-reliable-robotics-lands-115m-topping-1b-valuation/",
-      "publishedAt": "2026-10-20T13:17:36.000Z",
-      "summary": "Reliable Robotics extended its Series D round with $115 million in equity and $25 million in debt.",
-      "tags": [
-        "具身智能",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "01027b36b4a06b56e1c7bca2",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "054319838139f0cbb09c9c8e",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08766224db6b1b6f6d6ab6ed",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08c3d40d068a97863ff845b1",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "da387e24567a952837226a6b",
-      "title": "Eka is worth $1.45B thanks to a physical AI model that has experts raving",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/",
-      "publishedAt": "2026-10-20T13:00:00.000Z",
-      "summary": "Eka Robotics may be the first robotic arm that is actually good at picking up a wide range of objects, and it is so smooth and human-like, it is wowing the industry.",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -25598,8 +26722,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -25678,14 +26802,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -25695,6 +26811,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26445,14 +27569,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -26462,6 +27578,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26617,93 +27741,6 @@
       "tags": [
         "AI 模型",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 50,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Condé Nast",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03deac55d9f496d6e3aae865",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08948083f4afbf0736738c1d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08c3d40d068a97863ff845b1",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "de5ff6f54f5c054664fc5be4",
-      "title": "OnlyFans Creators Are Pissed That Meta Lets Muse Talk Dirty",
-      "source": "Wired",
-      "sourceUrl": "https://www.wired.com/story/onlyfans-creators-are-pissed-that-meta-lets-muse-talk-dirty/",
-      "publishedAt": "2026-10-18T10:30:00.000Z",
-      "summary": "Adult performers are questioning why Meta allows its AI agent to sext while restricting their social media accounts.",
-      "tags": [
-        "智能体",
-        "新闻来源"
       ]
     },
     {
@@ -27078,14 +28115,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -27095,6 +28124,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -27789,54 +28826,6 @@
       ]
     },
     {
-      "importance": 50,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "chips",
-      "id": "fedbb3936e92270b7feccdf4",
-      "title": "The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
-      "publishedAt": "2026-10-15T05:00:12.000Z",
-      "summary": "The Nordic countries have become the European leader in unicorn startup density, producing the most emerging companies valued at $1 billion or more per capita on the continent. Now, a new chapter for the region is unfolding as countries race to build one of Europe’s most consequential technology ecosystems. The many co",
-      "tags": [
-        "算力基础设施",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 57,
       "longTermImportance": 48,
       "horizonYears": 1,
@@ -27973,7 +28962,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -27992,10 +28981,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -28022,14 +29007,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -28039,6 +29016,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28060,7 +29045,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28075,10 +29060,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28104,7 +29085,7 @@
       ]
     },
     {
-      "importance": 63,
+      "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28123,10 +29104,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28246,14 +29223,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -28263,6 +29232,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28278,184 +29255,6 @@
       "sourceUrl": "https://openai.com/index/third-moment-research",
       "publishedAt": "2026-10-14T07:00:00.000Z",
       "summary": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 55,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03deac55d9f496d6e3aae865",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08948083f4afbf0736738c1d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08c3d40d068a97863ff845b1",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0b9bb1631bab5704607ed0e5",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "07ac7e56c4dbe5bbeea48de6",
-      "title": "NVIDIA Announces New Investments in the UK Startup Ecosystem",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/uk-ecosystem-deployment/",
-      "publishedAt": "2026-10-14T06:04:15.000Z",
-      "summary": "Across industries, the U.K. is putting the full stack to work. The scale of deployment is growing fast, from enterprises transforming their businesses to startups solving some of the planet’s hardest problems. NVIDIA is putting that principle into practice, including through a five-year, $250 million compute commitment",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 80,
-      "longTermImportance": 77,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03deac55d9f496d6e3aae865",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08948083f4afbf0736738c1d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08c3d40d068a97863ff845b1",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0b9bb1631bab5704607ed0e5",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "51408f953358d0aa86346bc7",
-      "title": "European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/",
-      "publishedAt": "2026-10-14T06:00:28.000Z",
-      "summary": "Keeping a city running means making decisions that affect residents every day — from when to repair a road to how to use energy more efficiently. Across the EMEA region, cities and local software, infrastructure and integration partners are using NVIDIA accelerated computing to build physical AI agents and digital twin",
       "tags": [
         "智能体",
         "官方来源"
@@ -28547,14 +29346,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -28564,6 +29355,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28670,14 +29469,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -28687,6 +29478,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b9bb1631bab5704607ed0e5",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28851,46 +29650,6 @@
         "themes": [],
         "sourceQuality": {
           "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "a4bbae21d3b4c9572ce6de80",
-      "title": "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
-      "publishedAt": "2026-10-13T12:00:49.000Z",
-      "summary": "NVIDIA RTX Spark is a new beginning for the PC — a reinvention combining the capabilities of a gaming PC, a creative studio and a personal AI supercomputer into a single superchip. With up to 128GB of unified memory and 1 petaflop of AI compute, RTX Spark delivers the full stack of NVIDIA RTX and […]",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
           "publisher": "OpenAI",
           "score": 90,
           "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
@@ -28907,89 +29666,6 @@
       "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
       "tags": [
         "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 51,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03deac55d9f496d6e3aae865",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08948083f4afbf0736738c1d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08c3d40d068a97863ff845b1",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0b9bb1631bab5704607ed0e5",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "a2a8ddf1867ef9361c9265bb",
-      "title": "NVIDIA Announces New Investments in France’s Startups",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/",
-      "publishedAt": "2026-10-13T05:00:31.000Z",
-      "summary": "Companies in France are deploying agentic computing across industries spanning space, financial services, the public sector and scientific research, demonstrating how the country’s ecosystem has moved from ambition to application. France’s progress sits on deliberate groundwork. The AI Action Summit in February 2025 an",
-      "tags": [
-        "智能体",
         "官方来源"
       ]
     },
@@ -29076,93 +29752,6 @@
       "tags": [
         "AI 模型",
         "研究来源"
-      ]
-    },
-    {
-      "importance": 63,
-      "longTermImportance": 77,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：协议变更可能影响兼容性、安全和迁移成本；公告本身不能证明已广泛采用。",
-      "longTermImpact": "规则情景（3–10 年）：可信、可互操作的协议可能塑造长期基础设施。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "protocol-trust",
-            "label": "可信与互操作协议",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "08948083f4afbf0736738c1d",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08c3d40d068a97863ff845b1",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1a7c58d5e92ffdaa91808ccf",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "27fe1f54c6dcc0a5bf71a8fd",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "9e0276cba47ca07d702d825d",
-      "title": "OCP Global Summit: Amid Ecosystem Adoption, NVIDIA Opens Vera Rubin Architecture to Help Scale AI Factories Worldwide",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
-      "publishedAt": "2026-10-12T15:00:25.000Z",
-      "summary": "As AI factories grow from megawatts to gigawatts, building them takes more than advanced computing. Open standards are helping the industry scale AI infrastructure faster, more efficiently and more reliably. At the Open Compute Project (OCP) Global Summit, taking place in the San Jose McEnery Convention Center, NVIDIA ",
-      "tags": [
-        "AI 模型",
-        "官方来源"
       ]
     },
     {
@@ -29343,89 +29932,6 @@
       ]
     },
     {
-      "importance": 51,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03deac55d9f496d6e3aae865",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08948083f4afbf0736738c1d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08c3d40d068a97863ff845b1",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "79428cf43613e4131c16b2f4",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "publishedAt": "2026-10-09T16:00:35.000Z",
-      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for exploring scenarios, invest",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 55,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -29475,14 +29981,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -29492,6 +29990,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "09d1d26fa19dd694ec40f7bb",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -29738,50 +30244,6 @@
       ]
     },
     {
-      "importance": 60,
-      "longTermImportance": 40,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "chips",
-      "id": "3a27acd6fba5e7448ae857eb",
-      "title": "Rally Up: ‘Gears of War: E-Day’ Launches on GeForce NOW",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day/",
-      "publishedAt": "2026-10-08T13:00:46.000Z",
-      "summary": "Gears of War: E-Day leads the charge on GeForce NOW this week, bringing Marcus Fenix and Dom Santiago’s first fight against the Locust Horde to the cloud with GeForce RTX-powered performance. A new way to join the action is also coming: Fire TV users will soon be able to purchase GeForce NOW memberships directly throug",
-      "tags": [
-        "算力基础设施",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 47,
       "longTermImportance": 40,
       "horizonYears": 1,
@@ -29946,89 +30408,6 @@
       ]
     },
     {
-      "importance": 51,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03deac55d9f496d6e3aae865",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08948083f4afbf0736738c1d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "08c3d40d068a97863ff845b1",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "1815740c61d22b3c8c663f13",
-      "title": "NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs With RTX Spark and AI Agents",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
-      "publishedAt": "2026-10-07T18:45:28.000Z",
-      "summary": "At a Microsoft event in San Francisco on Wednesday, NVIDIA founder and CEO Jensen Huang and Microsoft CEO Satya Nadella outlined how NVIDIA and Microsoft are co-engineering hardware and software for AI agents to run on Windows PCs. NVIDIA was founded because of Windows, Huang said. Now AI agents are coming to Windows. ",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 62,
       "longTermImportance": 62,
       "horizonYears": 5,
@@ -30078,14 +30457,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "08948083f4afbf0736738c1d",
             "relationship": "shared-topic",
             "themes": [
@@ -30095,6 +30466,14 @@
           },
           {
             "id": "08c3d40d068a97863ff845b1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "09d1d26fa19dd694ec40f7bb",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -30551,46 +30930,6 @@
         "themes": [],
         "sourceQuality": {
           "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "33e718013b81e9f4cb7d9cd0",
-      "title": "Why Telecom Operators Are Building Their AI Strategy on Open Models",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/telecom-operators-open-models/",
-      "publishedAt": "2026-10-06T13:00:19.000Z",
-      "summary": "Telecom operators are increasingly building their AI strategies on open models — and the reasons go beyond mere cost. Open models give telcos the ability to trust, control and customize AI across their most critical workloads — from autonomous networks to customer care. NVIDIA’s latest State of AI in Telecommunications",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
           "publisher": "OpenAI",
           "score": 90,
           "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
@@ -30696,14 +31035,6 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "09d1d26fa19dd694ec40f7bb",
             "relationship": "shared-topic",
             "themes": [
@@ -30712,7 +31043,15 @@
             "differentSource": true
           },
           {
-            "id": "1815740c61d22b3c8c663f13",
+            "id": "369f65bd0511e1b4da8810c8",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "468b3077a208433fef72cd21",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31353,7 +31692,7 @@
             "differentSource": true
           },
           {
-            "id": "9e0276cba47ca07d702d825d",
+            "id": "d6b9f5e651b1891e950e0096",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -31420,23 +31759,23 @@
             "differentSource": true
           },
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1815740c61d22b3c8c663f13",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "200a5d3dd39c6bfb7a201928",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "369f65bd0511e1b4da8810c8",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3fcefd9c665fb2c2484965cf",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31643,51 +31982,6 @@
       ]
     },
     {
-      "importance": 60,
-      "longTermImportance": 40,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "release",
-          "publisher": "AMD",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "updated",
-        "relatedNews": []
-      },
-      "category": "chips",
-      "id": "d802e769755afbc74b5be57f",
-      "title": "hip-version_10.2.62750",
-      "source": "AMD ROCm Systems",
-      "sourceUrl": "https://github.com/ROCm/rocm-systems/releases/tag/hip-version_10.2.62750",
-      "publishedAt": "2026-10-02T15:29:59.000Z",
-      "summary": "Tag for build hip-version_10.2.62750",
-      "tags": [
-        "算力基础设施",
-        "官方来源",
-        "来源更新时间"
-      ]
-    },
-    {
       "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
@@ -31769,22 +32063,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "07ac7e56c4dbe5bbeea48de6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1815740c61d22b3c8c663f13",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "200a5d3dd39c6bfb7a201928",
             "relationship": "shared-topic",
             "themes": [
@@ -31794,6 +32072,22 @@
           },
           {
             "id": "369f65bd0511e1b4da8810c8",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3fcefd9c665fb2c2484965cf",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "468b3077a208433fef72cd21",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31997,7 +32291,7 @@
             "differentSource": true
           },
           {
-            "id": "9e0276cba47ca07d702d825d",
+            "id": "d6b9f5e651b1891e950e0096",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -32005,12 +32299,12 @@
             "differentSource": true
           },
           {
-            "id": "d6b9f5e651b1891e950e0096",
+            "id": "bc50945e3cbbceb9120555ef",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
             ],
-            "differentSource": true
+            "differentSource": false
           }
         ]
       },
@@ -32441,14 +32735,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "1815740c61d22b3c8c663f13",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "27cd99b1dbe3442031772f3a",
             "relationship": "shared-topic",
             "themes": [
@@ -32466,6 +32752,14 @@
           },
           {
             "id": "4e56c7312349a760a0edf744",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "6ac27c68838b29eeea8939f0",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -32545,14 +32839,6 @@
             "differentSource": true
           },
           {
-            "id": "1815740c61d22b3c8c663f13",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "56c490db040147f1def4aa82",
             "relationship": "shared-topic",
             "themes": [
@@ -32562,6 +32848,14 @@
           },
           {
             "id": "617335a68477fa8d494addb1",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "72648b76d1b32673b48b0fe8",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -32935,14 +33229,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "1815740c61d22b3c8c663f13",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "27cd99b1dbe3442031772f3a",
             "relationship": "shared-topic",
             "themes": [
@@ -32960,6 +33246,14 @@
           },
           {
             "id": "4e56c7312349a760a0edf744",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "6ac27c68838b29eeea8939f0",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -35527,7 +35821,7 @@
             "differentSource": true
           },
           {
-            "id": "3784d7aba9718af9aa1923cc",
+            "id": "3fcefd9c665fb2c2484965cf",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -35535,7 +35829,7 @@
             "differentSource": true
           },
           {
-            "id": "3fcefd9c665fb2c2484965cf",
+            "id": "4e56c7312349a760a0edf744",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -37170,50 +37464,6 @@
       ]
     },
     {
-      "importance": 47,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "a1b72811dd254b5043b516f3",
-      "title": "1Password increases engineering productivity 21% with Codex",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/1password",
-      "publishedAt": "2026-09-08T00:00:00.000Z",
-      "summary": "Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 63,
       "longTermImportance": 77,
       "horizonYears": 7,
@@ -37384,169 +37634,6 @@
       "summary": "In May, the Protocol cluster welcomed a trio of new cluster coordinators and promised updates to follow. After months of settling in and aligning with contributors cluster-wide, across the EF and across the Ethereum ecosystem, we are now happy to share Protocol's priorities: what Protocol is for, the commitments...",
       "tags": [
         "稳定币与可信基础设施",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "073b13b14ae0138b1424f5cc",
-      "title": "Supporting independent journalism in Ukraine",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/supporting-independent-journalism-in-ukraine",
-      "publishedAt": "2026-09-07T00:00:00.000Z",
-      "summary": "OpenAI, AIRPPU and WAN-IFRA launch an AI program to help Ukrainian news organizations strengthen innovation, resilience, and independent journalism.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "e0f75446731d598ce3aa6549",
-      "title": "An Alien Mind",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/an-alien-mind",
-      "publishedAt": "2026-09-06T09:00:00.000Z",
-      "summary": "Jakub Pachocki reflects on increasingly capable AI and the challenge of keeping it aligned. He calls for stronger safeguards and international coordination.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 51,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "6bf5b05134dd23a67198b53a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "a1d018f16fad79f97456f75b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "cdd1118267ee925c63286ac8",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "27cd99b1dbe3442031772f3a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": false
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "3784d7aba9718af9aa1923cc",
-      "title": "Research acceleration: The view inside OpenAI",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/research-acceleration-view-inside-openai",
-      "publishedAt": "2026-09-06T08:00:00.000Z",
-      "summary": "Inside OpenAI, coding agents are reshaping AI research. Explore early data on agent usage, experiment velocity, task complexity, and research acceleration.",
-      "tags": [
-        "智能体",
         "官方来源"
       ]
     },
@@ -37744,7 +37831,7 @@
             "differentSource": true
           },
           {
-            "id": "3784d7aba9718af9aa1923cc",
+            "id": "6a886414536a09e3da65022e",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -38081,7 +38168,7 @@
             "differentSource": true
           },
           {
-            "id": "3784d7aba9718af9aa1923cc",
+            "id": "5ba78b757300e8cc3ff5b4c8",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -38089,7 +38176,7 @@
             "differentSource": true
           },
           {
-            "id": "5ba78b757300e8cc3ff5b4c8",
+            "id": "6a886414536a09e3da65022e",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
