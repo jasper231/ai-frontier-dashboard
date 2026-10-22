@@ -1,9 +1,583 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-22T08:26:01.972Z",
+  "asOf": "2026-10-22T14:17:44.077Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03aea1bc87026e4b6e0ef56d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07755911b2e46dc29ebfb243",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d8be09c556e897ec32f427d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1178f409c73ca56a12cf5bd1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "f674cb3a2ea47ac1133543c9",
+      "title": "Claude Duet app is Anthropic’s bet on agents",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+      "publishedAt": "2026-10-22T13:53:26.000Z",
+      "summary": "Claude Duet is available through waitlist for Pro and Max plan users",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 66,
+      "longTermImportance": 40,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "chips",
+      "id": "856d845adf1f95fea166c443",
+      "title": "Cloud Deployment Incoming: ‘Call of Duty: Modern Warfare 4’ Arrives on GeForce NOW",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/",
+      "publishedAt": "2026-10-22T13:00:20.000Z",
+      "summary": "Lock in and load out this GFN Thursday. Call of Duty: Modern Warfare 4 arrives on GeForce NOW at launch, bringing a new campaign, multiplayer action and DMZ, high-stakes extraction mode to supported devices. The campaign also gets an enhanced look: GeForce RTX 5080-class performance arrives for Ultimate members, bringi",
+      "tags": [
+        "算力基础设施",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03aea1bc87026e4b6e0ef56d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07755911b2e46dc29ebfb243",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d8be09c556e897ec32f427d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1178f409c73ca56a12cf5bd1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "3721c0cfc60457c537d3aecf",
+      "title": "1Password lets AI agents use your passwords without seeing them",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in",
+      "publishedAt": "2026-10-22T13:00:00.000Z",
+      "summary": "1Password is introducing a new feature that allows AI agents to sign into your accounts without actually seeing or handling your passwords. The aptly named 1Password for Agents doesn't give bots free reign to access all of your connected accounts - you'll still need to grant approval for sign-in requests - but should m",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Condé Nast",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "021e1393631a6cc5a7a85d63",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "068d30e11e2f098983b7d36f",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07721de300d03095cb080831",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d8be09c556e897ec32f427d",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "robotics",
+      "id": "5ec9b8a9a89ba033ef83e7e7",
+      "title": "Meet Mori, a Cute Robot Mushroom That Doesn’t Really Say (or Do) Anything",
+      "source": "Wired",
+      "sourceUrl": "https://www.wired.com/story/meet-mori-a-cute-robot-mushroom-that-doesnt-really-say-or-do-anything/",
+      "publishedAt": "2026-10-22T13:00:00.000Z",
+      "summary": "Step one in convincing people to live with robots with cameras on their faces? Disguise them as cute home decor.",
+      "tags": [
+        "具身智能",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "021e1393631a6cc5a7a85d63",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "068d30e11e2f098983b7d36f",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07721de300d03095cb080831",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d8be09c556e897ec32f427d",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "robotics",
+      "id": "87b450e65853d53fd32a85cf",
+      "title": "Just because Tesla’s Optimus is in production doesn’t mean it’s actually ready",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/tech/1016492/tesla-optimus-robots-production-musk-q3-earnings",
+      "publishedAt": "2026-10-22T12:53:27.000Z",
+      "summary": "On Tesla's earnings call Wednesday, CEO Elon Musk announced that the company had begun early production of its humanoid robot on its high-volume line in Fremont, California. Then he laid out what still needs work: the robot's hands, its safety, reliability, and durability, and the artificial intelligence needed to make",
+      "tags": [
+        "具身智能",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03aea1bc87026e4b6e0ef56d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07755911b2e46dc29ebfb243",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d8be09c556e897ec32f427d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1178f409c73ca56a12cf5bd1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "98d9236d4f529e574f6b74da",
+      "title": "AI agents are ready to shop. Some retailers are wary.",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/report/1015811/ai-shopping-agents-blocked-amazon-the-realreal-target-meta-muse",
+      "publishedAt": "2026-10-22T12:30:00.000Z",
+      "summary": "Using an AI agent to shop for you is a strange experience. Tech companies have marketed them as personal assistants - the democratizing of labor that ordinarily would only be available to the rich and powerful. In practice, at least for buying things, it's more like sending an anxious and apologetic teenager out to the",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 65,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
+      "longTermImpact": "规则情景（3–10 年）：开放生态与可迁移工具链可能影响技术扩散与供应商依赖。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "open-ecosystems",
+            "label": "开放模型与软件生态",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Condé Nast",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "206e1c6bb61d57d55e1f078c",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "301b0a5a7c01472977a81e48",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "38e70b683c26da979fcef795",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "59fc5a4c6c2c84d10d7b1838",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "be145cfed5b15d064d7a4ae0",
+      "title": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
+      "source": "Wired",
+      "sourceUrl": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
+      "publishedAt": "2026-10-22T10:00:00.000Z",
+      "summary": "The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
+      "tags": [
+        "AI 模型",
+        "新闻来源"
+      ]
+    },
     {
       "importance": 49,
       "longTermImportance": 40,
@@ -43,6 +617,50 @@
       "sourceUrl": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
       "publishedAt": "2026-10-22T07:51:31.000Z",
       "summary": "Ensemble forecasting with IBM Granite time-series models",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "6400feb681472530a689e8c5",
+      "title": "What FDE means at OpenAI",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/forward-deployed-engineering-means",
+      "publishedAt": "2026-10-22T06:00:00.000Z",
+      "summary": "What forward deployed engineering means at OpenAI",
       "tags": [
         "AI 模型",
         "官方来源"
@@ -95,14 +713,6 @@
         "relatedNews": [
           {
             "id": "413dd60b809b7367ad35a048",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "ae4a4fcac1b8ddb4b1c28160",
             "relationship": "shared-topic",
             "themes": [
               "digital-settlement"
@@ -792,7 +1402,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -800,7 +1410,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -1389,7 +1999,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -1397,7 +2007,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -2248,14 +2858,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
@@ -2273,6 +2875,14 @@
           },
           {
             "id": "176bcf3737452a30f1d5cad7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1cd13d5781055cd8c89b026f",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -2770,7 +3380,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -2778,7 +3388,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -3387,7 +3997,7 @@
             "differentSource": true
           },
           {
-            "id": "de9db6f384cbc788775550a9",
+            "id": "be145cfed5b15d064d7a4ae0",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -3561,14 +4171,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -3578,6 +4180,14 @@
           },
           {
             "id": "141eb216d6da6f890bd55567",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "211c38b8a7c9c8a2803f67d6",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -4462,7 +5072,7 @@
             "differentSource": true
           },
           {
-            "id": "de9db6f384cbc788775550a9",
+            "id": "be145cfed5b15d064d7a4ae0",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -4620,7 +5230,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4628,7 +5238,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4711,7 +5321,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4719,7 +5329,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5075,7 +5685,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5083,7 +5693,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -6142,14 +6752,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
@@ -6167,6 +6769,14 @@
           },
           {
             "id": "176bcf3737452a30f1d5cad7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1cd13d5781055cd8c89b026f",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -6415,7 +7025,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -6423,7 +7033,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7152,7 +7762,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7160,7 +7770,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7334,14 +7944,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
@@ -7359,6 +7961,14 @@
           },
           {
             "id": "176bcf3737452a30f1d5cad7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1cd13d5781055cd8c89b026f",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -7425,7 +8035,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7433,7 +8043,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7516,7 +8126,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7524,7 +8134,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7607,14 +8217,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
@@ -7632,6 +8234,14 @@
           },
           {
             "id": "176bcf3737452a30f1d5cad7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1cd13d5781055cd8c89b026f",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -7698,7 +8308,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7706,7 +8316,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7880,7 +8490,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7888,7 +8498,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -8427,7 +9037,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -8435,7 +9045,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9199,14 +9809,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -9216,6 +9818,14 @@
           },
           {
             "id": "11b989a19aff38f3889bd648",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "141eb216d6da6f890bd55567",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -9282,7 +9892,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9290,7 +9900,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9464,7 +10074,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9472,7 +10082,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9646,7 +10256,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9654,7 +10264,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9737,7 +10347,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9745,7 +10355,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9919,7 +10529,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9927,7 +10537,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10101,7 +10711,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10109,7 +10719,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10374,7 +10984,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10382,7 +10992,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10465,7 +11075,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10473,7 +11083,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10604,7 +11214,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10612,7 +11222,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10695,7 +11305,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10703,7 +11313,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -11068,7 +11678,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -11076,7 +11686,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -11777,14 +12387,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
@@ -11802,6 +12404,14 @@
           },
           {
             "id": "176bcf3737452a30f1d5cad7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1cd13d5781055cd8c89b026f",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -12098,14 +12708,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
@@ -12123,6 +12725,14 @@
           },
           {
             "id": "176bcf3737452a30f1d5cad7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1cd13d5781055cd8c89b026f",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -12351,14 +12961,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -12368,6 +12970,14 @@
           },
           {
             "id": "11b989a19aff38f3889bd648",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "141eb216d6da6f890bd55567",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -12717,7 +13327,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12725,7 +13335,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12804,7 +13414,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12812,7 +13422,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12891,7 +13501,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12899,7 +13509,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13161,7 +13771,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13169,7 +13779,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13248,7 +13858,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13256,7 +13866,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13335,7 +13945,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13343,7 +13953,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13422,7 +14032,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13430,7 +14040,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13709,14 +14319,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -13726,6 +14328,14 @@
           },
           {
             "id": "11b989a19aff38f3889bd648",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "141eb216d6da6f890bd55567",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -14049,7 +14659,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14057,7 +14667,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14136,7 +14746,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14144,7 +14754,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14318,14 +14928,6 @@
         },
         "publishedAtBasis": "published",
         "relatedNews": [
-          {
-            "id": "ae4a4fcac1b8ddb4b1c28160",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": true
-          },
           {
             "id": "f22a63cc12b9be5044807d05",
             "relationship": "shared-topic",
@@ -14651,7 +15253,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14659,7 +15261,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14825,14 +15427,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
@@ -14850,6 +15444,14 @@
           },
           {
             "id": "176bcf3737452a30f1d5cad7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1cd13d5781055cd8c89b026f",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -15008,7 +15610,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15016,7 +15618,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15182,7 +15784,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15190,7 +15792,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15365,14 +15967,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
@@ -15390,6 +15984,14 @@
           },
           {
             "id": "176bcf3737452a30f1d5cad7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1cd13d5781055cd8c89b026f",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -15452,14 +16054,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
@@ -15477,6 +16071,14 @@
           },
           {
             "id": "176bcf3737452a30f1d5cad7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1cd13d5781055cd8c89b026f",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -15809,7 +16411,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15817,7 +16419,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15928,7 +16530,7 @@
             "differentSource": false
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
+            "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -16618,7 +17220,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -16626,7 +17228,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -16984,14 +17586,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "11b989a19aff38f3889bd648",
             "relationship": "shared-topic",
             "themes": [
@@ -17009,6 +17603,14 @@
           },
           {
             "id": "176bcf3737452a30f1d5cad7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1cd13d5781055cd8c89b026f",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -17158,7 +17760,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17166,7 +17768,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17332,7 +17934,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17340,7 +17942,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17419,7 +18021,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17427,7 +18029,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17872,7 +18474,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17880,7 +18482,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17959,7 +18561,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17967,7 +18569,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18046,7 +18648,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18054,7 +18656,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18133,7 +18735,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18141,7 +18743,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18307,7 +18909,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18315,7 +18917,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18402,14 +19004,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -18419,6 +19013,14 @@
           },
           {
             "id": "11b989a19aff38f3889bd648",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "141eb216d6da6f890bd55567",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -18568,7 +19170,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18576,7 +19178,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18663,14 +19265,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -18680,6 +19274,14 @@
           },
           {
             "id": "141eb216d6da6f890bd55567",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "211c38b8a7c9c8a2803f67d6",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -18838,7 +19440,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18846,7 +19448,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18925,7 +19527,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18933,7 +19535,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19099,7 +19701,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19107,7 +19709,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19375,7 +19977,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "68b8aa0d4d41ee26ffae9f5c",
+            "id": "5ec9b8a9a89ba033ef83e7e7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19383,7 +19985,7 @@
             "differentSource": true
           },
           {
-            "id": "6a7ad8e441e64987a0ce116c",
+            "id": "68b8aa0d4d41ee26ffae9f5c",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -23174,81 +23776,6 @@
     },
     {
       "importance": 57,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
-      "longTermImpact": "规则情景（3–10 年）：可互操作的数字结算可能改变跨境资金与商业流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "digital-settlement",
-            "label": "数字结算基础设施",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Vox Media",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "413dd60b809b7367ad35a048",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "f22a63cc12b9be5044807d05",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "ae4a4fcac1b8ddb4b1c28160",
-      "title": "Meta says it would’ve made over $22 billion if it didn’t have to pay a child safety settlement",
-      "source": "The Verge",
-      "sourceUrl": "https://www.theverge.com/tech/1015877/meta-q3-2026-earnings-child-safety-settlement",
-      "publishedAt": "2026-10-21T20:46:56.000Z",
-      "summary": "Meta had to shell out $9.89 billion to pay for a chunk of the child safety settlement it reached with US attorneys general. That's according to the company's third-quarter earnings report released on Wednesday, which says Meta's income from operations would have been $22.89 billion without the settlement. In August, Me",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 57,
       "longTermImportance": 62,
       "horizonYears": 7,
       "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
@@ -23535,14 +24062,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -23552,6 +24071,14 @@
           },
           {
             "id": "11b989a19aff38f3889bd648",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "141eb216d6da6f890bd55567",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -23614,93 +24141,6 @@
       "tags": [
         "AI 模型",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
-      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "inference-economics",
-            "label": "推理成本与效率",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "00291f2746a3666bb0b13e6b",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "03aea1bc87026e4b6e0ef56d",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "11b989a19aff38f3889bd648",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "141eb216d6da6f890bd55567",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "02eb1eddbd30c2b3c5d0befc",
-      "title": "Waymo starts offering rides at the Las Vegas airport",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/21/waymo-starts-offering-rides-at-the-las-vegas-airport/",
-      "publishedAt": "2026-10-21T16:59:44.000Z",
-      "summary": "Waymo only just started offering rides to the public in Las Vegas in September but is already serving a 24-square-mile area in the city.",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
       ]
     },
     {
@@ -24027,7 +24467,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24048,8 +24488,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24114,7 +24554,7 @@
       ]
     },
     {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24135,8 +24575,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24163,7 +24603,7 @@
       ]
     },
     {
-      "importance": 61,
+      "importance": 58,
       "longTermImportance": 63,
       "horizonYears": 7,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24184,8 +24624,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24211,7 +24651,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24228,8 +24668,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24255,7 +24695,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24276,8 +24716,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24342,7 +24782,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
@@ -24367,8 +24807,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24395,14 +24835,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -24412,6 +24844,14 @@
           },
           {
             "id": "11b989a19aff38f3889bd648",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "141eb216d6da6f890bd55567",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -24433,7 +24873,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24458,8 +24898,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24524,7 +24964,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24541,8 +24981,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24568,7 +25008,7 @@
       ]
     },
     {
-      "importance": 74,
+      "importance": 71,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
@@ -24593,8 +25033,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24659,7 +25099,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24684,8 +25124,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24750,7 +25190,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 85,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24775,8 +25215,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24850,7 +25290,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
@@ -24871,8 +25311,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24937,7 +25377,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 62,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24958,8 +25398,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -25552,14 +25992,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -25569,6 +26001,14 @@
           },
           {
             "id": "11b989a19aff38f3889bd648",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "141eb216d6da6f890bd55567",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -25587,93 +26027,6 @@
       "tags": [
         "AI 模型",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 50,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Condé Nast",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "01027b36b4a06b56e1c7bca2",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "021e1393631a6cc5a7a85d63",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "068d30e11e2f098983b7d36f",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "07721de300d03095cb080831",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "6a7ad8e441e64987a0ce116c",
-      "title": "Meta drops the word \"train\" from its commercial TOS after AI backlash",
-      "source": "Ars Technica",
-      "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash/",
-      "publishedAt": "2026-10-20T20:07:58.000Z",
-      "summary": "Meta changes AI scraping policy but won’t add language respecting robots.txt.",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
       ]
     },
     {
@@ -25917,14 +26270,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -25934,6 +26279,14 @@
           },
           {
             "id": "11b989a19aff38f3889bd648",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "141eb216d6da6f890bd55567",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -27153,50 +27506,6 @@
       ]
     },
     {
-      "importance": 46,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "3c471b8abda39883376e55a6",
-      "title": "Germany Wants to Lead the World in Industrial AI: How NVIDIA Will Help",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
-      "publishedAt": "2026-10-19T19:27:08.000Z",
-      "summary": "In the cavernous hall of Kraftwerk, a former power station in Berlin, German Chancellor Friedrich Merz and NVIDIA founder and CEO Jensen Huang sat down to discuss Germany’s AI roadmap, and in particular, the industrial applications of AI. Huang opened by tracing NVIDIA’s longstanding relationship with German industry, ",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -27866,7 +28175,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -27881,10 +28190,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -27910,7 +28215,7 @@
       ]
     },
     {
-      "importance": 63,
+      "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -27929,10 +28234,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28806,14 +29107,6 @@
             "differentSource": true
           },
           {
-            "id": "02eb1eddbd30c2b3c5d0befc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "03aea1bc87026e4b6e0ef56d",
             "relationship": "shared-topic",
             "themes": [
@@ -28823,6 +29116,14 @@
           },
           {
             "id": "11b989a19aff38f3889bd648",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "176bcf3737452a30f1d5cad7",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -29656,14 +29957,6 @@
         },
         "publishedAtBasis": "published",
         "relatedNews": [
-          {
-            "id": "6a7ad8e441e64987a0ce116c",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
           {
             "id": "f5f3fe2846a1077a42792c15",
             "relationship": "shared-topic",
@@ -35781,46 +36074,6 @@
       "summary": "Every year since January 2019, teams from the Ethereum Foundation have spent an afternoon or two on r/ethereum answering questions from the community. The format hasn’t really changed: one thread, technical debates, detailed explanations, and community members asking whatever is on their mind. By now it is a tradition,",
       "tags": [
         "稳定币与可信基础设施",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "503e9c2326e78f3e54698b50",
-      "title": "How GPT-5.6 Sol helps run quantum computing experiments",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/codex-quantum-computing-experiments",
-      "publishedAt": "2026-09-08T17:00:00.000Z",
-      "summary": "See how an MIT researcher uses GPT-5.6 Sol with Codex to autonomously run quantum computing experiments, analyze results, and calibrate qubits.",
-      "tags": [
-        "AI 模型",
         "官方来源"
       ]
     },
