@@ -1,9 +1,144 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-22T23:49:32.455Z",
+  "asOf": "2026-10-23T03:01:48.986Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 61,
+      "longTermImportance": 63,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "90e35913e5ba3eb8b4a92f72",
+      "title": "Kazakhstan Expands Compute for Its AI Future",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
+      "publishedAt": "2026-10-23T02:00:13.000Z",
+      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. Together, the ecosystem announcements below point to the nation’s increasing supply of accelerated computing — along with its growing demand for wha",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03aea1bc87026e4b6e0ef56d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07755911b2e46dc29ebfb243",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d8be09c556e897ec32f427d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1178f409c73ca56a12cf5bd1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "a6d2b02a9412fc6611cae6aa",
+      "title": "Left alone with nothing to do, AI agents started playing",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+      "publishedAt": "2026-10-23T00:45:37.000Z",
+      "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
     {
       "importance": 68,
       "longTermImportance": 62,
@@ -179,6 +314,93 @@
       "summary": "Every company is suddenly an AI company. Compute is an asset. Cars are flying. We’ve been promised robots — again. It’s time again to dig through earnings reports, listen to investor calls, and call out the latest wins and losses from around the tech sector and what it means for where the companies go next.",
       "tags": [
         "具身智能",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Condé Nast",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "03aea1bc87026e4b6e0ef56d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07755911b2e46dc29ebfb243",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0d8be09c556e897ec32f427d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1178f409c73ca56a12cf5bd1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "4bbc4ed947d5a02c3727fcc3",
+      "title": "Comcast loses more customers, claims other ISPs' cheap prices are \"irrational\"",
+      "source": "Ars Technica",
+      "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/comcast-loses-more-customers-claims-other-isps-cheap-prices-are-irrational/",
+      "publishedAt": "2026-10-22T21:07:09.000Z",
+      "summary": "Comcast plans job cuts and more AI agents for its shrinking cable customer base.",
+      "tags": [
+        "智能体",
         "新闻来源"
       ]
     },
@@ -1254,93 +1476,6 @@
       ]
     },
     {
-      "importance": 57,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03aea1bc87026e4b6e0ef56d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "07755911b2e46dc29ebfb243",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0d8be09c556e897ec32f427d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1178f409c73ca56a12cf5bd1",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "d6172869a6c9d34ff449060a",
-      "title": "Flint-interactive: A language for creating interactive data visualizations",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
-      "publishedAt": "2026-10-22T16:00:00.000Z",
-      "summary": "Flint-interactive gives AI agents a language for creating interactive visualizations. Click a chart, filter data, highlight related content, and explore beyond the view the author originally chose. The post Flint-interactive: A language for creating interactive data visualizations appeared first on Microsoft Research .",
-      "tags": [
-        "智能体",
-        "研究来源"
-      ]
-    },
-    {
       "importance": 53,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -1428,93 +1563,6 @@
       ]
     },
     {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03aea1bc87026e4b6e0ef56d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "07755911b2e46dc29ebfb243",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0d8be09c556e897ec32f427d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1178f409c73ca56a12cf5bd1",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "2f32a876015ee666ac58babf",
-      "title": "Spotify’s current AI bet is about being the music service that agents choose",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
-      "publishedAt": "2026-10-22T15:03:58.000Z",
-      "summary": "Spotify co-CEO Gustav Söderström explains why the rise of AI agents could be good news for the music service.",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
       "importance": 61,
       "longTermImportance": 63,
       "horizonYears": 7,
@@ -1560,97 +1608,6 @@
       "tags": [
         "AI 模型",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 57,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
-      "longTermImpact": "规则情景（3–10 年）：计算与能源供给可能持续约束 AI 的成本与规模。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "compute-supply",
-            "label": "算力与内存约束",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "572009d3acbf9142234307b8",
-            "relationship": "shared-topic",
-            "themes": [
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "59fc5a4c6c2c84d10d7b1838",
-            "relationship": "shared-topic",
-            "themes": [
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "6273fff4311815359d71c9b6",
-            "relationship": "shared-topic",
-            "themes": [
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "727fcc5fdd57511f5d46df00",
-            "relationship": "shared-topic",
-            "themes": [
-              "compute-supply"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "chips",
-      "id": "fb82b94a693bff833316f4de",
-      "title": "Fusion startup Helion is developing new semiconductors that could double output of its power plants",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/22/fusion-startup-helion-is-developing-new-semiconductors-that-could-double-output-of-its-power-plants/",
-      "publishedAt": "2026-10-22T14:59:28.000Z",
-      "summary": "Helion now has another $225 million to help speed development of its first fusion power plant, due to provide Microsoft with electricity in 2028.",
-      "tags": [
-        "算力基础设施",
-        "新闻来源"
       ]
     },
     {
@@ -1962,6 +1919,50 @@
       "sourceUrl": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
       "publishedAt": "2026-10-22T07:51:31.000Z",
       "summary": "Ensemble forecasting with IBM Granite time-series models",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "6400feb681472530a689e8c5",
+      "title": "What FDE means at OpenAI",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/forward-deployed-engineering-means",
+      "publishedAt": "2026-10-22T06:00:00.000Z",
+      "summary": "What forward deployed engineering means at OpenAI",
       "tags": [
         "AI 模型",
         "官方来源"
@@ -6204,7 +6205,7 @@
       "source": "arXiv cs.AI",
       "sourceUrl": "https://arxiv.org/abs/2610.29330",
       "publishedAt": "2026-10-22T04:00:00.000Z",
-      "summary": "arXiv:2610.29330v1 Announce Type: new Abstract: How do LLM agents' strategies differ, and how much can instructions to adopt a persona change their behavior over a game? We study these questions with AgentMonopoly, an environment where agents communicate, buy and trade properties, and make decisions that affect later t",
+      "summary": "arXiv:2610.29330v2 Announce Type: new Abstract: How do LLM agents' strategies differ, and how much can instructions to adopt a persona change their behavior over a game? We study these questions with AgentMonopoly, an environment where agents communicate, buy and trade properties, and make decisions that affect later t",
       "tags": [
         "智能体",
         "预印本"
@@ -6395,7 +6396,7 @@
       "source": "arXiv cs.AI",
       "sourceUrl": "https://arxiv.org/abs/2610.29680",
       "publishedAt": "2026-10-22T04:00:00.000Z",
-      "summary": "arXiv:2610.29680v1 Announce Type: new Abstract: Using an LLM to generate training data for another is among the most general ways to train one, and it remains common practice. Some frontier teams have closed that route for their own models: what comes back is an answer, or a short summary, without the detailed reasonin",
+      "summary": "arXiv:2610.29680v2 Announce Type: new Abstract: Using an LLM to generate training data for another is among the most general ways to train one, and it remains common practice. Some frontier teams have closed that route for their own models: what comes back is an answer, or a short summary, without the detailed reasonin",
       "tags": [
         "AI 模型",
         "预印本"
@@ -8190,7 +8191,7 @@
       "source": "arXiv cs.AI",
       "sourceUrl": "https://arxiv.org/abs/2610.29122",
       "publishedAt": "2026-10-22T04:00:00.000Z",
-      "summary": "arXiv:2610.29122v1 Announce Type: new Abstract: Individual patient data are the gold standard for secondary analysis of time-to-event evidence, but they are rarely released, and reconstruction from a published Kaplan-Meier figure could help. Existing methods all claim high fidelity, each judged by whichever agreements ",
+      "summary": "arXiv:2610.29122v2 Announce Type: new Abstract: Individual patient data are the gold standard for secondary analysis of time-to-event evidence, but they are rarely released, and reconstruction from a published Kaplan-Meier figure could help. Existing methods all claim high fidelity, each judged by whichever agreements ",
       "tags": [
         "AI 模型",
         "预印本"
@@ -8836,7 +8837,7 @@
       "source": "arXiv cs.RO",
       "sourceUrl": "https://arxiv.org/abs/2610.29829",
       "publishedAt": "2026-10-22T04:00:00.000Z",
-      "summary": "arXiv:2610.29829v1 Announce Type: new Abstract: General-purpose robots must handle tasks, objects and environments they were never trained on, yet zero-shot generalization remains one of the least solved problems in physical AI. In digital AI, zero-shot capability grew with the volume and, above all, the diversity of t",
+      "summary": "arXiv:2610.29829v2 Announce Type: new Abstract: General-purpose robots must handle tasks, objects and environments they were never trained on, yet zero-shot generalization remains one of the least solved problems in physical AI. In digital AI, zero-shot capability grew with the volume and, above all, the diversity of t",
       "tags": [
         "具身智能",
         "预印本"
@@ -14539,7 +14540,7 @@
       "source": "arXiv cs.LG",
       "sourceUrl": "https://arxiv.org/abs/2610.29385",
       "publishedAt": "2026-10-22T04:00:00.000Z",
-      "summary": "arXiv:2610.29385v1 Announce Type: new Abstract: Language models relying on verbalized Chain-of-Thought (CoT) are constrained to token-by-token generation in the language space, where many tokens serve textual coherence rather than core reasoning. This entangles genuine differences in logical trajectories with superfici",
+      "summary": "arXiv:2610.29385v2 Announce Type: new Abstract: Language models relying on verbalized Chain-of-Thought (CoT) are constrained to token-by-token generation in the language space, where many tokens serve textual coherence rather than core reasoning. This entangles genuine differences in logical trajectories with superfici",
       "tags": [
         "AI 模型",
         "预印本"
@@ -17766,7 +17767,7 @@
       "source": "arXiv cs.RO",
       "sourceUrl": "https://arxiv.org/abs/2610.29845",
       "publishedAt": "2026-10-22T04:00:00.000Z",
-      "summary": "arXiv:2610.29845v1 Announce Type: new Abstract: Autonomous mobile robots operating in dense crowds and cluttered sites require $360^\\circ$ perception to react to surrounding hazards. While panoramic LiDAR offers full-surround coverage, learning representations within reinforcement learning (RL) is sample-inefficient un",
+      "summary": "arXiv:2610.29845v2 Announce Type: new Abstract: Autonomous mobile robots operating in dense crowds and cluttered sites require $360^\\circ$ perception to react to surrounding hazards. While panoramic LiDAR offers full-surround coverage, learning representations within reinforcement learning (RL) is sample-inefficient un",
       "tags": [
         "具身智能",
         "预印本"
@@ -21516,7 +21517,7 @@
       "source": "arXiv cs.RO",
       "sourceUrl": "https://arxiv.org/abs/2610.29203",
       "publishedAt": "2026-10-22T04:00:00.000Z",
-      "summary": "arXiv:2610.29203v1 Announce Type: new Abstract: Vision-language-action (VLA) navigation models translate visual observations and instructions into actions. Navigation success assesses whether an agent reaches the goal. However, reaching the goal successfully does not establish whether the model genuinely follows the in",
+      "summary": "arXiv:2610.29203v2 Announce Type: new Abstract: Vision-language-action (VLA) navigation models translate visual observations and instructions into actions. Navigation success assesses whether an agent reaches the goal. However, reaching the goal successfully does not establish whether the model genuinely follows the in",
       "tags": [
         "智能体",
         "预印本"
@@ -24723,7 +24724,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24740,8 +24741,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24767,7 +24768,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24784,8 +24785,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -25313,50 +25314,6 @@
       "tags": [
         "AI 模型",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 46,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "77ec6ad66af3dcc4f6130bd1",
-      "title": "Solving a 31-year-old grand challenge in mathematics – the KLS conjecture",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
-      "publishedAt": "2026-10-21T16:00:00.000Z",
-      "summary": "For decades, a fundamental question about the difficulty of computing in high-dimensional spaces has resisted proof. New research resolves this question, removing a major theoretical obstacle to understanding the efficiency of randomized algorithms used across science and computing. The Kannan–Lovász–Simonovits (KLS) c",
-      "tags": [
-        "AI 模型",
-        "研究来源"
       ]
     },
     {
@@ -27523,141 +27480,6 @@
       ]
     },
     {
-      "importance": 46,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "e08619ed2cad1d928f20ef77",
-      "title": "Called to serve: Tech, research, and positive impact",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/",
-      "publishedAt": "2026-10-20T16:00:00.000Z",
-      "summary": "Lab Director Chris White has worked on research challenges with real-world implications—from new approaches to wartime data analysis to tools for combating human trafficking. He talks to program manager Weishung Liu about the influences that led to the work and more. The post Called to serve: Tech, research, and positi",
-      "tags": [
-        "AI 模型",
-        "研究来源"
-      ]
-    },
-    {
-      "importance": 66,
-      "longTermImportance": 77,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03aea1bc87026e4b6e0ef56d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "07755911b2e46dc29ebfb243",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0d8be09c556e897ec32f427d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1178f409c73ca56a12cf5bd1",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "f17b97a4336d6686950a14db",
-      "title": "European Leaders Turn to NVIDIA Vera CPUs to Build Local Infrastructure",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/european-leaders-vera-cpu-infrastructure/",
-      "publishedAt": "2026-10-20T10:30:11.000Z",
-      "summary": "Nebius and Nscale are among global technology partners looking to NVIDIA Vera CPUs to build the next wave of infrastructure. Their momentum reflects rapid advancements in agentic computing. Agents do more than generate answers: they retrieve information, run software tools, execute code and evaluate results. Each step ",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 50,
       "longTermImportance": 40,
       "horizonYears": 1,
@@ -28245,7 +28067,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -28264,10 +28086,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -28332,7 +28150,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28347,10 +28165,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28376,7 +28190,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28391,10 +28205,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28420,7 +28230,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28435,10 +28245,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28541,93 +28347,6 @@
       "tags": [
         "AI 模型",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 63,
-      "longTermImportance": 77,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：协议变更可能影响兼容性、安全和迁移成本；公告本身不能证明已广泛采用。",
-      "longTermImpact": "规则情景（3–10 年）：可信、可互操作的协议可能塑造长期基础设施。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "protocol-trust",
-            "label": "可信与互操作协议",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "00291f2746a3666bb0b13e6b",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "03aea1bc87026e4b6e0ef56d",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "12a39b7a11bc6a2e7b5ccc57",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1353be402f8662ba7a70116d",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "467c8e42acb6bdc9ebe797d8",
-      "title": "Proof-based general-purpose computing with Magnetar",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
-      "publishedAt": "2026-10-15T16:00:00.000Z",
-      "summary": "Zero-knowledge proofs can verify computing results without rerunning workloads or exposing sensitive data. Magnetar helps bring them into the mainstream with support for standard programming languages, major speed gains, and quantum-resistant security. The post Proof-based general-purpose computing with Magnetar appear",
-      "tags": [
-        "AI 模型",
-        "研究来源"
       ]
     },
     {
@@ -29592,46 +29311,6 @@
       ]
     },
     {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "ca946f1238ba7f960eed727d",
-      "title": "Simulating student learning for better AI tutoring",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
-      "publishedAt": "2026-10-12T16:00:00.000Z",
-      "summary": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may engage with tutors, giving feedback to improve tutor performance across subjects like chess, writing, and mathematics. The post Simulating student learning for better AI tut",
-      "tags": [
-        "AI 模型",
-        "研究来源"
-      ]
-    },
-    {
       "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
@@ -30285,93 +29964,6 @@
       ]
     },
     {
-      "importance": 62,
-      "longTermImportance": 62,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "能力、安全或效率变化",
-            "points": 11
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "09d1d26fa19dd694ec40f7bb",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "19dd92d404877d6897de0b0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1da987a218b173eb882dffe0",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "200a5d3dd39c6bfb7a201928",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "7fdb639a795018181a7ee4af",
-      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
-      "publishedAt": "2026-10-07T16:00:00.000Z",
-      "summary": "Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing agents to RL training, making it easier to improve them without rebuilding them. The post Agent Lightning v1.0: A 3,500-Line Lightweigh",
-      "tags": [
-        "智能体",
-        "研究来源"
-      ]
-    },
-    {
       "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
@@ -30710,46 +30302,6 @@
         ],
         "themes": [],
         "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "4b0006aa1b5d0be3a7971f22",
-      "title": "What AI gets wrong and what failure teaches us",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/podcast/what-ai-gets-wrong-and-what-failure-teaches-us/",
-      "publishedAt": "2026-10-06T16:19:06.000Z",
-      "summary": "Jennifer Neville did not want to go into computer science—but that’s exactly where she landed. Neville discusses the starts and stops that led to her professional sweet spot and her work identifying “surprising failures” making it hard for AI to handle complexity. The post What AI gets wrong and what failure teaches us",
-      "tags": [
-        "AI 模型",
-        "研究来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
           "kind": "official",
           "publisher": "OpenAI",
           "score": 90,
@@ -30912,7 +30464,7 @@
             "differentSource": true
           },
           {
-            "id": "7fdb639a795018181a7ee4af",
+            "id": "afa8c33f8eb7996a39419dea",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31537,14 +31089,6 @@
             "differentSource": true
           },
           {
-            "id": "467c8e42acb6bdc9ebe797d8",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "617335a68477fa8d494addb1",
             "relationship": "shared-topic",
             "themes": [
@@ -31559,6 +31103,14 @@
               "protocol-trust"
             ],
             "differentSource": true
+          },
+          {
+            "id": "72648b76d1b32673b48b0fe8",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": false
           }
         ]
       },
@@ -32262,46 +31814,6 @@
       ]
     },
     {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "489d5fcf8020ccbf81e0c712",
-      "title": "Forecasting space weather risks on power grids",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/",
-      "publishedAt": "2026-09-30T16:00:00.000Z",
-      "summary": "Extreme space-weather events can damage power systems on Earth and degrade GPS accuracy and satellite operations. A new machine learning system can predict where damage is likely to occur 30-60 minutes before a storm arrives. The post Forecasting space weather risks on power grids appeared first on Microsoft Research .",
-      "tags": [
-        "AI 模型",
-        "研究来源"
-      ]
-    },
-    {
       "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
@@ -32611,50 +32123,6 @@
       ]
     },
     {
-      "importance": 60,
-      "longTermImportance": 40,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "7ee79eecb360c6d0bfd2bfc4",
-      "title": "Introducing Quine: An AI research system designed for the complexity of biology",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
-      "publishedAt": "2026-09-29T14:00:02.000Z",
-      "summary": "Biology doesn't operate in silos, and neither should the AI representation of it. Quine is an early-stage research effort to create a multimodal world model of biology. By connecting insights across biological scales and modalities, Quine helps scientists computationally search a space far larger than intuition allows ",
-      "tags": [
-        "AI 模型",
-        "研究来源"
-      ]
-    },
-    {
       "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -32878,46 +32346,6 @@
       "tags": [
         "AI 模型",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "research",
-          "publisher": "Microsoft",
-          "score": 85,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "f3d0899182d2ff38229cec9f",
-      "title": "One year in: How Microsoft Research Asia – Singapore is advancing research, partnership and talent for real-world impact",
-      "source": "Microsoft Research",
-      "sourceUrl": "https://www.microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact/",
-      "publishedAt": "2026-09-28T21:00:00.000Z",
-      "summary": "Since launching a year ago, the Microsoft Research Asia — Singapore lab has established a strong foundation, deepened collaboration across government, academia, and industry, and explored how frontier AI research can create real-world value. The post One year in: How Microsoft Research Asia – Singapore is advancing res",
-      "tags": [
-        "AI 模型",
-        "研究来源"
       ]
     },
     {
@@ -35530,14 +34958,6 @@
             "differentSource": true
           },
           {
-            "id": "333ccaae81484d3a4e17f3d0",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "3fcefd9c665fb2c2484965cf",
             "relationship": "shared-topic",
             "themes": [
@@ -35547,6 +34967,14 @@
           },
           {
             "id": "4e56c7312349a760a0edf744",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "6a886414536a09e3da65022e",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -36620,89 +36048,6 @@
       ]
     },
     {
-      "importance": 51,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "6bf5b05134dd23a67198b53a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "a1d018f16fad79f97456f75b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "cdd1118267ee925c63286ac8",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "27cd99b1dbe3442031772f3a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": false
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "333ccaae81484d3a4e17f3d0",
-      "title": "GPT-6 Astra: The next generation in intelligence for work",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/gpt-6-astra-next-generation-work",
-      "publishedAt": "2026-09-09T11:00:00.000Z",
-      "summary": "Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 38,
       "longTermImportance": 49,
       "horizonYears": 0,
@@ -37181,7 +36526,7 @@
             "differentSource": true
           },
           {
-            "id": "333ccaae81484d3a4e17f3d0",
+            "id": "6a886414536a09e3da65022e",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -37189,7 +36534,7 @@
             "differentSource": true
           },
           {
-            "id": "6a886414536a09e3da65022e",
+            "id": "6ac27c68838b29eeea8939f0",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -37518,14 +36863,6 @@
             "differentSource": true
           },
           {
-            "id": "333ccaae81484d3a4e17f3d0",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "5ba78b757300e8cc3ff5b4c8",
             "relationship": "shared-topic",
             "themes": [
@@ -37535,6 +36872,14 @@
           },
           {
             "id": "6a886414536a09e3da65022e",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "a1d018f16fad79f97456f75b",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
