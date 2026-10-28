@@ -1,9 +1,555 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-28T11:58:41.718Z",
+  "asOf": "2026-10-28T18:09:11.848Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "research",
+          "publisher": "MIT Robotics",
+          "score": 85,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "02a13dcc1d4c0709bfa87495",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0b1418f653280e07b46541eb",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0f679cbec212f08a9eb5fd31",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "12b12ae817cea28900aeaa8a",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "robotics",
+      "id": "a912ef7f01eb37570f9c1355",
+      "title": "A soft robot could help doctors diagnose and treat disorders of the small intestine",
+      "source": "MIT Robotics",
+      "sourceUrl": "https://news.mit.edu/2026/soft-robot-could-help-doctors-diagnose-treat-small-intestine-disorders-1028",
+      "publishedAt": "2026-10-28T18:00:00.000Z",
+      "summary": "MIT engineers designed a robotic enteroscope that can inch through the hard-to-reach small intestine, making biopsies and drug delivery easier.",
+      "tags": [
+        "具身智能",
+        "研究来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Google",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "3e32bae570ff21ee59e510c6",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "publishedAt": "2026-10-28T17:00:58.000Z",
+      "summary": "Gemini 4 Carbon: Our next frontier model",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 65,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "007d7ed2909622e7b53c5797",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "10a0df171a06e25d1d9ccb5f",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "123381003ba50a8e3fb7fd1a",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "18559cb38b762050d854f339",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "090274bcc4740a7076a18a0b",
+      "title": "As AI agents reshape the web, Google opens Gemini and Search to more apps",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/28/as-ai-agents-reshape-the-web-google-opens-gemini-and-search-to-more-apps/",
+      "publishedAt": "2026-10-28T17:00:00.000Z",
+      "summary": "A new developer platform will let businesses bring their services to Google's AI experiences, potentially changing how consumers discover and use apps.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 74,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Microsoft",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "007d7ed2909622e7b53c5797",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "10a0df171a06e25d1d9ccb5f",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "123381003ba50a8e3fb7fd1a",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "c2494667117d789fe0c059a1",
+      "title": "Introducing the Microsoft Copilot harness: Unlocking the potential of truly multi-model agentic work",
+      "source": "Microsoft",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+      "publishedAt": "2026-10-28T16:51:35.000Z",
+      "summary": "If you want to compete, you need to be multi-model. And if you want to take advantage of everything that different AI models have to offer, you need a great harness. But building one that works seamlessly across multiple models and surfaces is incredibly hard. You need to solve for performance, quality, and cost. And..",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 66,
+      "longTermImportance": 40,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "release",
+          "publisher": "AMD",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "updated",
+        "relatedNews": []
+      },
+      "category": "chips",
+      "id": "b0cb784867075ffe13faa094",
+      "title": "hip-version_10.3.63010",
+      "source": "AMD ROCm Systems",
+      "sourceUrl": "https://github.com/ROCm/rocm-systems/releases/tag/hip-version_10.3.63010",
+      "publishedAt": "2026-10-28T16:26:34.000Z",
+      "summary": "Tag for build hip-version_10.3.63010",
+      "tags": [
+        "算力基础设施",
+        "官方来源",
+        "来源更新时间"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 62,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          },
+          {
+            "id": "compute-supply",
+            "label": "算力与内存约束",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "2a957930710eebf4bcf01522",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "583519ff11ee292e21098a09",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "58c83bcac1dcfb5bb88e9ae1",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "704febc84f20bda57c66ae04",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "compute-supply"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "7281347817fe3ba228cd8684",
+      "title": "Thin, Light and Built for Everything: NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/",
+      "publishedAt": "2026-10-28T15:00:46.000Z",
+      "summary": "NVIDIA RTX Spark powers thin and light laptops built for everything that developers, creators and gamers do. RTX Spark laptops are now available from ASUS, Dell, HP, Lenovo, Microsoft and MSI. These powerful systems combine an NVIDIA Blackwell RTX GPU and an NVIDIA Grace CPU in a single superchip with up to 128GB of un",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "ec733f799e1aaee3d1ac15d7",
+      "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "publishedAt": "2026-10-28T14:58:17.000Z",
+      "summary": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "e2ed7680c50ae3f074e04f96",
+      "title": "The future of the firm",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/the-future-of-the-firm",
+      "publishedAt": "2026-10-28T10:00:00.000Z",
+      "summary": "How AI might enter the org chart—beneath, beside, and between us.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
     {
       "importance": 57,
       "longTermImportance": 54,
@@ -54,6 +600,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -63,14 +617,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1524,6 +2070,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -1541,14 +2095,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1624,6 +2170,15 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "7281347817fe3ba228cd8684",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "583519ff11ee292e21098a09",
             "relationship": "shared-topic",
             "themes": [
@@ -1643,15 +2198,6 @@
           },
           {
             "id": "704febc84f20bda57c66ae04",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "compute-supply"
-            ],
-            "differentSource": false
-          },
-          {
-            "id": "ef598a94a45241da615d47c7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -3418,6 +3964,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -3435,14 +3989,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3911,6 +4457,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -3928,14 +4482,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4006,6 +4552,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -4023,14 +4577,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4479,7 +5025,7 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "7902623a7409394d76db7189",
+            "id": "309be4c3a7b700fcffbd007f",
             "relationship": "shared-topic",
             "themes": [
               "digital-settlement"
@@ -4495,7 +5041,15 @@
             "differentSource": true
           },
           {
-            "id": "f22a63cc12b9be5044807d05",
+            "id": "ba0f139352f89fd548565be0",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "cb546f889aad4ee204ee6cc2",
             "relationship": "shared-topic",
             "themes": [
               "digital-settlement"
@@ -4661,6 +5215,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -4670,14 +5232,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -5587,6 +6141,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -5604,14 +6166,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7958,6 +8512,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -7975,14 +8537,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -8340,6 +8894,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -8357,14 +8919,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -8431,6 +8985,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -8448,14 +9010,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9775,6 +10329,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -9792,14 +10354,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9974,6 +10528,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -9983,14 +10545,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10616,6 +11170,15 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "7281347817fe3ba228cd8684",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "2a957930710eebf4bcf01522",
             "relationship": "shared-topic",
             "themes": [
@@ -10635,15 +11198,6 @@
           },
           {
             "id": "704febc84f20bda57c66ae04",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "compute-supply"
-            ],
-            "differentSource": false
-          },
-          {
-            "id": "ef598a94a45241da615d47c7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -11107,6 +11661,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -11124,14 +11686,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11206,6 +11760,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -11215,14 +11777,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11297,6 +11851,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -11306,14 +11868,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11610,6 +12164,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -11627,14 +12189,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11701,6 +12255,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -11718,14 +12280,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -12352,6 +12906,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -12369,14 +12931,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13003,6 +13557,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -13020,14 +13582,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13185,6 +13739,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -13202,14 +13764,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13747,6 +14301,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -13764,14 +14326,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13921,6 +14475,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -13938,14 +14500,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14460,6 +15014,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -14469,14 +15031,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14547,6 +15101,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -14556,14 +15118,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14997,6 +15551,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -15006,14 +15568,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15259,6 +15813,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -15276,14 +15838,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15624,6 +16178,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -15633,14 +16195,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15893,6 +16447,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -15910,14 +16472,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -16170,6 +16724,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -16187,14 +16749,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -16526,6 +17080,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -16535,14 +17097,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17153,6 +17707,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -17162,14 +17724,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17603,6 +18157,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -17620,14 +18182,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18134,6 +18688,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -18151,14 +18713,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -19457,6 +20011,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -19474,14 +20036,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -23143,6 +23697,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "1b32b76055351a4f936b0e5d",
             "relationship": "shared-topic",
             "themes": [
@@ -23160,14 +23722,6 @@
           },
           {
             "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -23234,6 +23788,441 @@
       "tags": [
         "AI 模型",
         "预印本"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
+      "longTermImpact": "规则情景（3–10 年）：可互操作的数字结算可能改变跨境资金与商业流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "digital-settlement",
+            "label": "数字结算基础设施",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "research",
+          "publisher": "Springer Nature",
+          "score": 85,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "2cb85755d67850e762bd48e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "9e3281d0a01ace75c0212823",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "f22a63cc12b9be5044807d05",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "ba0f139352f89fd548565be0",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": false
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "309be4c3a7b700fcffbd007f",
+      "title": "This Arabian desert was once a lush paradise. Why did ancient humans avoid it?",
+      "source": "Nature",
+      "sourceUrl": "https://www.nature.com/articles/d41586-026-03484-3",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "summary": "Nature, Published online: 28 October 2026; doi:10.1038/d41586-026-03484-3 Expedition revealed that water wasn’t enough for human settlement — plus, proposals to block sunlight get serious.",
+      "tags": [
+        "AI 模型",
+        "研究来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
+      "longTermImpact": "规则情景（3–10 年）：计算与能源供给可能持续约束 AI 的成本与规模。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "compute-supply",
+            "label": "算力与内存约束",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "research",
+          "publisher": "Springer Nature",
+          "score": 85,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "02a13dcc1d4c0709bfa87495",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "182dda83b4032b88e868c2f1",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "185c2e95af99730f9004242d",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "19aaf19fd36f13b01f836ddd",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "chips",
+      "id": "53000a28a9d0bb2937c93bbe",
+      "title": "Monolithically and in situ integrated PbS infrared imagers",
+      "source": "Nature",
+      "sourceUrl": "https://www.nature.com/articles/s41586-026-11222-y",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "summary": "Nature, Published online: 28 October 2026; doi:10.1038/s41586-026-11222-y A method for growing infrared image sensors directly from solution using raw materials by monolithic in situ integration of high-performance semiconductor PbS photodetectors on readout integrated circuits is described, yielding films with excelle",
+      "tags": [
+        "算力基础设施",
+        "研究来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
+      "longTermImpact": "规则情景（3–10 年）：计算与能源供给可能持续约束 AI 的成本与规模。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "compute-supply",
+            "label": "算力与内存约束",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "research",
+          "publisher": "Springer Nature",
+          "score": 85,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "02a13dcc1d4c0709bfa87495",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "182dda83b4032b88e868c2f1",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "185c2e95af99730f9004242d",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "19aaf19fd36f13b01f836ddd",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "chips",
+      "id": "94e9c23d7221e7e1de93da37",
+      "title": "Delayed electron–hole recombination in a pseudo-direct semiconductor",
+      "source": "Nature",
+      "sourceUrl": "https://www.nature.com/articles/s41586-026-11223-x",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "summary": "Nature, Published online: 28 October 2026; doi:10.1038/s41586-026-11223-x Pseudo-direct bandgap character in bismuth sulfide retards bimolecular electron–hole recombination while preserving strong light absorption.",
+      "tags": [
+        "算力基础设施",
+        "研究来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
+      "longTermImpact": "规则情景（3–10 年）：可互操作的数字结算可能改变跨境资金与商业流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "digital-settlement",
+            "label": "数字结算基础设施",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "research",
+          "publisher": "Springer Nature",
+          "score": 85,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "2cb85755d67850e762bd48e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "9e3281d0a01ace75c0212823",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "f22a63cc12b9be5044807d05",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "309be4c3a7b700fcffbd007f",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": false
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "ba0f139352f89fd548565be0",
+      "title": "Stone and water governed early human settlement of the desert",
+      "source": "Nature",
+      "sourceUrl": "https://www.nature.com/articles/s41586-026-11180-5",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "summary": "Nature, Published online: 28 October 2026; doi:10.1038/s41586-026-11180-5 A geoarchaeological survey of the Rub’ al Khali (the Empty Quarter of Arabia) and spatial modelling of the Arabian Peninsula suggest that human settlement tracked the co-occurrence of water and stone suitable for making tools, rather than water a",
+      "tags": [
+        "AI 模型",
+        "研究来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
+      "longTermImpact": "规则情景（3–10 年）：可互操作的数字结算可能改变跨境资金与商业流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "digital-settlement",
+            "label": "数字结算基础设施",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "research",
+          "publisher": "Springer Nature",
+          "score": 85,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "2cb85755d67850e762bd48e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "9e3281d0a01ace75c0212823",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "f22a63cc12b9be5044807d05",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "309be4c3a7b700fcffbd007f",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": false
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "cb546f889aad4ee204ee6cc2",
+      "title": "Why did ancient humans avoid this lush paradise",
+      "source": "Nature",
+      "sourceUrl": "https://www.nature.com/articles/d41586-026-03486-1",
+      "publishedAt": "2026-10-28T00:00:00.000Z",
+      "summary": "Nature, Published online: 28 October 2026; doi:10.1038/d41586-026-03486-1 A new expedition into the Rub’ al Khali desert finds no evidence of ancient human settlement.",
+      "tags": [
+        "AI 模型",
+        "研究来源"
       ]
     },
     {
@@ -23373,6 +24362,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -23382,14 +24379,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -23411,268 +24400,7 @@
       ]
     },
     {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "007d7ed2909622e7b53c5797",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "10a0df171a06e25d1d9ccb5f",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "9a3764356b202945ed7a1545",
-      "title": "Bank of America kindly asks that you don’t share your banking password with your AI assistant",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
-      "publishedAt": "2026-10-27T21:44:34.000Z",
-      "summary": "The banking giant reminds customers that \"you're responsible for activity\" resulting from your AI agents' access.",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
-      "longTermImpact": "规则情景（3–10 年）：计算与能源供给可能持续约束 AI 的成本与规模。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "compute-supply",
-            "label": "算力与内存约束",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "02a13dcc1d4c0709bfa87495",
-            "relationship": "shared-topic",
-            "themes": [
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "182dda83b4032b88e868c2f1",
-            "relationship": "shared-topic",
-            "themes": [
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "185c2e95af99730f9004242d",
-            "relationship": "shared-topic",
-            "themes": [
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "19aaf19fd36f13b01f836ddd",
-            "relationship": "shared-topic",
-            "themes": [
-              "compute-supply"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "chips",
-      "id": "a319fafacbe8e7445581e7f2",
-      "title": "Re:Build, which spun out Slate Auto, raises $2.1B",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/27/rebuild-which-spun-out-slate-auto-raises-2-1b/",
-      "publishedAt": "2026-10-27T20:31:17.000Z",
-      "summary": "The manufacturing accelerator bills itself as \"America’s answer to Shenzhen.\"",
-      "tags": [
-        "算力基础设施",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Vox Media",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "02a13dcc1d4c0709bfa87495",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0b1418f653280e07b46541eb",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0f679cbec212f08a9eb5fd31",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "12b12ae817cea28900aeaa8a",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "b2aff63a03e983b29f98161a",
-      "title": "VisionQuest is what happens when AI really goes rogue",
-      "source": "The Verge",
-      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
-      "publishedAt": "2026-10-27T17:30:00.000Z",
-      "summary": "In Marvel's VisionQuest, a superpowered robot tries to better understand humanity by getting lost in elaborate, digital daydreams in which he and other artificial intelligence-powered beings live together in a home. The series is deeply fantastical, yet it plays with some of the ideas that have come to dominate the con",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 60,
+      "importance": 57,
       "longTermImportance": 48,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -23693,8 +24421,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -23720,90 +24448,7 @@
       ]
     },
     {
-      "importance": 57,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
-      "longTermImpact": "规则情景（3–10 年）：可互操作的数字结算可能改变跨境资金与商业流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "digital-settlement",
-            "label": "数字结算基础设施",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Vox Media",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "2cb85755d67850e762bd48e1",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "9e3281d0a01ace75c0212823",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "f22a63cc12b9be5044807d05",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "7902623a7409394d76db7189",
-      "title": "Meta’s $25 billion legal loss just put blood in the water",
-      "source": "The Verge",
-      "sourceUrl": "https://www.theverge.com/policy/1019604/new-mexico-meta-cambridge-analytica-kids-safety-settlement",
-      "publishedAt": "2026-10-27T16:44:40.000Z",
-      "summary": "When attorneys general from across the US announced a $17 billion settlement with Meta this summer, the sum was unprecedented. But a ruling last week by a New Mexico judge blew that number out of the water. The judge ordered Meta to pay $25 billion to resolve claims that Meta misled users around the 2018 […]",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -23820,8 +24465,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -23847,7 +24492,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -23864,8 +24509,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -23891,7 +24536,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -23912,8 +24557,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -23939,7 +24584,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -23960,8 +24605,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -23988,6 +24633,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -23997,14 +24650,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24075,6 +24720,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -24084,14 +24737,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24162,6 +24807,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -24171,14 +24824,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24249,6 +24894,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -24258,14 +24911,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24336,6 +24981,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -24345,14 +24998,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24664,6 +25309,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -24673,14 +25326,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24847,6 +25492,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -24856,14 +25509,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25123,6 +25768,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -25132,14 +25785,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25214,6 +25859,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -25223,14 +25876,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25801,6 +26446,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -25810,14 +26463,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26232,6 +26877,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -26241,14 +26894,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26640,6 +27285,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -26649,14 +27302,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26919,6 +27564,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -26928,14 +27581,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -27006,6 +27651,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -27015,14 +27668,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -27325,7 +27970,7 @@
             "differentSource": true
           },
           {
-            "id": "7902623a7409394d76db7189",
+            "id": "309be4c3a7b700fcffbd007f",
             "relationship": "shared-topic",
             "themes": [
               "digital-settlement"
@@ -27334,6 +27979,14 @@
           },
           {
             "id": "9e3281d0a01ace75c0212823",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "ba0f139352f89fd548565be0",
             "relationship": "shared-topic",
             "themes": [
               "digital-settlement"
@@ -27838,55 +28491,7 @@
       ]
     },
     {
-      "importance": 57,
-      "longTermImportance": 48,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "能力、安全或效率变化",
-            "points": 11
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "94a5f6526eada9bc0f52700e",
-      "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/nvidia/kumo-relational",
-      "publishedAt": "2026-10-21T18:26:30.000Z",
-      "summary": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 58,
+      "importance": 55,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
@@ -27909,10 +28514,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -27977,7 +28578,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -27992,10 +28593,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28021,7 +28618,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28036,10 +28633,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28065,7 +28658,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28080,10 +28673,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28109,7 +28698,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 39,
       "horizonYears": 5,
       "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
@@ -28136,10 +28725,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           },
           {
             "reason": "普通补丁版本",
@@ -28209,7 +28794,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28224,10 +28809,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28253,7 +28834,7 @@
       ]
     },
     {
-      "importance": 63,
+      "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28272,10 +28853,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28302,7 +28879,7 @@
       ]
     },
     {
-      "importance": 58,
+      "importance": 55,
       "longTermImportance": 63,
       "horizonYears": 7,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28321,10 +28898,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28350,7 +28923,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28365,10 +28938,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28439,6 +29008,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -28448,14 +29025,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28613,6 +29182,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -28622,14 +29199,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28827,6 +29396,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -28836,14 +29413,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28957,89 +29526,6 @@
       "summary": "Agents are only as useful as what they know, and only as trustworthy as the boundaries they run within. Leading enterprises are using the open source NVIDIA Agent Toolkit — now expanded with new tools — to customize and control agents, use company data to inform their answers and actions, monitor what they do and […]",
       "tags": [
         "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 51,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "02a13dcc1d4c0709bfa87495",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0b1418f653280e07b46541eb",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0f679cbec212f08a9eb5fd31",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "12b12ae817cea28900aeaa8a",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "fe2b50db8dabc11e230271d5",
-      "title": "NVIDIA Open Models Advance Europe’s Sovereign Intelligence Across Industries",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
-      "publishedAt": "2026-10-21T10:00:07.000Z",
-      "summary": "NVIDIA is expanding its family of open models across language, robotics, biology, and quantum computing, giving developers, researchers and enterprises what they need to build applications tailored to local languages and industries The portfolio includes the new NVIDIA Nemotron 3.5 Super VL and Nemotron 3.5 Bolt models",
-      "tags": [
-        "AI 模型",
         "官方来源"
       ]
     },
@@ -29229,6 +29715,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -29238,14 +29732,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -29532,6 +30018,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -29541,14 +30035,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -29775,6 +30261,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -29784,14 +30278,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -30035,6 +30521,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -30044,14 +30538,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -30118,6 +30604,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -30127,14 +30621,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -30201,6 +30687,14 @@
             "differentSource": true
           },
           {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "10a0df171a06e25d1d9ccb5f",
             "relationship": "shared-topic",
             "themes": [
@@ -30210,14 +30704,6 @@
           },
           {
             "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31325,14 +31811,6 @@
           },
           {
             "id": "898575ccc2fcbfd5eae1b581",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "fe2b50db8dabc11e230271d5",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -32810,51 +33288,6 @@
       "tags": [
         "智能体",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 60,
-      "longTermImportance": 40,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "release",
-          "publisher": "AMD",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "updated",
-        "relatedNews": []
-      },
-      "category": "chips",
-      "id": "33ee6e277940172900b93a4d",
-      "title": "hip-version_10.2.62790",
-      "source": "AMD ROCm Systems",
-      "sourceUrl": "https://github.com/ROCm/rocm-systems/releases/tag/hip-version_10.2.62790",
-      "publishedAt": "2026-10-06T02:56:11.000Z",
-      "summary": "Tag for build hip-version_10.2.62790",
-      "tags": [
-        "算力基础设施",
-        "官方来源",
-        "来源更新时间"
       ]
     },
     {
@@ -36356,90 +36789,6 @@
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/google-un-data-commons-platform/",
       "publishedAt": "2026-09-17T20:00:00.000Z",
       "summary": "UN System Data Commons Data webpage",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "d22acfa5d0cc1d093c4a65f6",
-      "title": "How Cooley is accelerating IPO work with ChatGPT",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/cooley-gopublic",
-      "publishedAt": "2026-09-17T12:00:00.000Z",
-      "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 60,
-      "longTermImportance": 40,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "192794312f979cbd50ee7eab",
-      "title": "Introducing Astra for Law",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/astra-for-law",
-      "publishedAt": "2026-09-17T00:00:00.000Z",
-      "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
       "tags": [
         "AI 模型",
         "官方来源"
@@ -47769,46 +48118,6 @@
       "sourceUrl": "https://deepmind.google/blog/introducing-nano-banana-pro/",
       "publishedAt": "2025-11-20T15:05:02.000Z",
       "summary": "Introducing Nano Banana Pro",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Google",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "1e3ba56918daeb5235b36c36",
-      "title": "Start building with Gemini 3",
-      "source": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/start-building-with-gemini-3/",
-      "publishedAt": "2025-11-18T17:49:13.000Z",
-      "summary": "Start building with Gemini 3",
       "tags": [
         "AI 模型",
         "官方来源"
