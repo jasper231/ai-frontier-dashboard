@@ -1,9 +1,937 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-10-28T18:09:11.848Z",
+  "asOf": "2026-10-29T00:33:30.056Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
+      "longTermImpact": "规则情景（3–10 年）：可互操作的数字结算可能改变跨境资金与商业流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "存在可核验的量化主张（未验证）",
+            "points": 4
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "digital-settlement",
+            "label": "数字结算基础设施",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "2cb85755d67850e762bd48e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "309be4c3a7b700fcffbd007f",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "9e3281d0a01ace75c0212823",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "ba0f139352f89fd548565be0",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "353dd9ae4406521804ae7757",
+      "title": "Microsoft recorded $10 billion in revenue from OpenAI",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+      "publishedAt": "2026-10-28T21:34:30.000Z",
+      "summary": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of the partnership.",
+      "tags": [
+        "AI 模型",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 65,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
+      "longTermImpact": "规则情景（3–10 年）：开放生态与可迁移工具链可能影响技术扩散与供应商依赖。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "open-ecosystems",
+            "label": "开放模型与软件生态",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "26b3e231b17f579a62252872",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "301b0a5a7c01472977a81e48",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "322dc659658d02e716320d87",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "40e02ac52743a94781d16337",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "cf0b445a13fca74cd4d1dfb7",
+      "title": "Akai is embracing vibe-coded mods with an open-source MPC",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+      "publishedAt": "2026-10-28T21:34:04.000Z",
+      "summary": "The MPC Sample Key isn't even formally announced yet, but Akai is already showing off what the modding community is cooking up through vibe coding. Akai has decided to embrace the explosion of hackers and custom firmware developers by giving them early access to the device, which will have open-source firmware. It will",
+      "tags": [
+        "AI 模型",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 70,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "007d7ed2909622e7b53c5797",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "10a0df171a06e25d1d9ccb5f",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "123381003ba50a8e3fb7fd1a",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "7b5653451a244c2d34efb38f",
+      "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "publishedAt": "2026-10-28T20:03:00.000Z",
+      "summary": "Google has released its latest frontier model, Gemini 4 Carbon, offering \"significant gains\" in coding, agentic tasks, and cybersecurity. In an announcement on Wednesday, Google highlights Carbon's top spot on the Artificial Analysis Intelligence Index (v5.0) benchmark, with Claude Opus 5.5 and GPT-6 Astra trailing beh",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 76,
+      "longTermImportance": 62,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "能力、安全或效率变化",
+            "points": 11
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          },
+          {
+            "reason": "安全或关键漏洞变化",
+            "points": 12
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "007d7ed2909622e7b53c5797",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "10a0df171a06e25d1d9ccb5f",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "123381003ba50a8e3fb7fd1a",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "18559cb38b762050d854f339",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "a8da8fe6f1d2eb26e19ec821",
+      "title": "Hacker stole personnel data about thousands of Homeland Security employees, including CBP and ICE agents",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/28/hacker-stole-personnel-data-about-thousands-of-homeland-security-employees-including-cbp-and-ice-agents/",
+      "publishedAt": "2026-10-28T20:01:00.000Z",
+      "summary": "A hacker obtained personally identifiable information about more than 40,000 Homeland Security staffers, which has since been published online.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 76,
+      "longTermImportance": 62,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "能力、安全或效率变化",
+            "points": 11
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          },
+          {
+            "reason": "安全或关键漏洞变化",
+            "points": 12
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Condé Nast",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "007d7ed2909622e7b53c5797",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "10a0df171a06e25d1d9ccb5f",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "123381003ba50a8e3fb7fd1a",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "9eec4bcf8eb34679e1dd4497",
+      "title": "Massive Leak Exposes 41,000 Homeland Security Workers—Including Undercover ICE Agents",
+      "source": "Wired",
+      "sourceUrl": "https://www.wired.com/story/massive-leak-exposes-41000-homeland-security-workers-including-undercover-ice-agents/",
+      "publishedAt": "2026-10-28T20:00:00.000Z",
+      "summary": "The leaked records include the locations of ICE and CBP facilities, workers’ cell phone numbers, and the members of groups tied to wiretap programs, Palantir software, and xAI’s Grok chatbot.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 69,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
+      "longTermImpact": "规则情景（3–10 年）：开放生态与可迁移工具链可能影响技术扩散与供应商依赖。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "存在可核验的量化主张（未验证）",
+            "points": 4
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "open-ecosystems",
+            "label": "开放模型与软件生态",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "26b3e231b17f579a62252872",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "301b0a5a7c01472977a81e48",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "322dc659658d02e716320d87",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "469c5853dc0b4d6184e50e06",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "40e02ac52743a94781d16337",
+      "title": "Wiz’s CTO on PHP2Shell and the coming ‘vulnpocalypse’",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/video/wizs-cto-on-php2shell-and-the-coming-vulnpocalypse/",
+      "publishedAt": "2026-10-28T19:05:46.000Z",
+      "summary": "The PHP scare may have faded from your feed, but the cleanup is far from over. Last week, two critical bugs in the open source language behind roughly 70% of websites left organizations scrambling to fix their systems, with some taking sites offline until the vulnerabilities could be patched. According to researchers w",
+      "tags": [
+        "AI 模型",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Condé Nast",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "007d7ed2909622e7b53c5797",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "10a0df171a06e25d1d9ccb5f",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "123381003ba50a8e3fb7fd1a",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "8965c562f4d21fcca2b0b57a",
+      "title": "I Put a Bunch of AI Agents in Charge of a Fantasy Soccer Team. They’re Not Better Than Humans—Yet",
+      "source": "Wired",
+      "sourceUrl": "https://www.wired.com/story/i-put-ai-agents-in-charge-of-a-fantasy-team/",
+      "publishedAt": "2026-10-28T18:30:00.000Z",
+      "summary": "To experiment with AI’s predictive skills, I let Codex loose on a fantasy team. It tried to bench Erling Haaland at first, but it soon learned the error of its ways.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 69,
+      "longTermImportance": 85,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
+      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "inference-economics",
+            "label": "推理成本与效率",
+            "evidence": "excerpt"
+          },
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          },
+          {
+            "id": "open-ecosystems",
+            "label": "开放模型与软件生态",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "18559cb38b762050d854f339",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "202d9ab2851e24f9a8ba99df",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "301b0a5a7c01472977a81e48",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution",
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3632756593fbf18dae022677",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "a15f6ab37c7893ad744089ed",
+      "title": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-10-28T18:28:26.000Z",
+      "summary": "Stand up a governed, multi-account Agentic AI Platform on Amazon Bedrock AgentCore. This post walks through the architecture and an open-source reference blueprint: the operating model, control plane, per-Workstream cells, separate inference and tool gateways, and a CI/CD evaluation pipeline that gates each agent befor",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 68,
+      "longTermImportance": 62,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
+      "longTermImpact": "规则情景（3–10 年）：计算与能源供给可能持续约束 AI 的成本与规模。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "能力、安全或效率变化",
+            "points": 11
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "compute-supply",
+            "label": "算力与内存约束",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "02a13dcc1d4c0709bfa87495",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "182dda83b4032b88e868c2f1",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "185c2e95af99730f9004242d",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "19aaf19fd36f13b01f836ddd",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "chips",
+      "id": "5b54fb74a59ffe3f5477d375",
+      "title": "Distributed training with Ray Train DLCs and EFA on EKS",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/distributed-training-with-ray-train-dlcs-and-efa-on-eks/",
+      "publishedAt": "2026-10-28T18:19:54.000Z",
+      "summary": "The Ray Train Deep Learning Container ships the full CUDA-through-EFA stack, so you build no image. This post walks through a reproducible sample that fine-tunes Qwen2.5-1.5B with PyTorch FSDP across eight GPUs on two EFA-enabled g6.12xlarge instances on Amazon EKS, using the container exactly as published.",
+      "tags": [
+        "算力基础设施",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "007d7ed2909622e7b53c5797",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "10a0df171a06e25d1d9ccb5f",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "123381003ba50a8e3fb7fd1a",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "3592c2289faff55994bbf1d7",
+      "title": "Accelerating software delivery with agentic QA automation using Amazon Nova Act – Part 3",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/accelerating-software-delivery-with-agentic-qa-automation-using-amazon-nova-act-part-3/",
+      "publishedAt": "2026-10-28T18:12:13.000Z",
+      "summary": "As QA test automation spreads across an organization, organizing tests and controlling who owns them becomes the real work. Part 3 of the QA Studio series on Amazon Nova Act adds applications that organize tests and report health metrics, plus team-based user management that controls who can see and change what.",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
     {
       "importance": 57,
       "longTermImportance": 54,
@@ -507,6 +1435,93 @@
       ]
     },
     {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "007d7ed2909622e7b53c5797",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "090274bcc4740a7076a18a0b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "10a0df171a06e25d1d9ccb5f",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "123381003ba50a8e3fb7fd1a",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "a395c7da350b5086cc15f6b6",
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "publishedAt": "2026-10-28T13:15:00.000Z",
+      "summary": "OpenAI and ServiceNow expand their partnership to bring OpenAI models and agents into ServiceNow and ServiceNow workflows into ChatGPT and Codex.",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
       "importance": 49,
       "longTermImportance": 40,
       "horizonYears": 1,
@@ -626,10 +1641,10 @@
         ]
       },
       "category": "agents",
-      "id": "67c6b18b0a76451db874442c",
+      "id": "709cc8e2bd467b7916899fb3",
       "title": "Legora is building the agentic operating system for legal work",
       "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
+      "sourceUrl": "https://openai.com/index/legora",
       "publishedAt": "2026-10-28T09:30:00.000Z",
       "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
       "tags": [
@@ -1416,7 +2431,7 @@
             "differentSource": true
           },
           {
-            "id": "de9db6f384cbc788775550a9",
+            "id": "a15f6ab37c7893ad744089ed",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -1425,13 +2440,13 @@
             "differentSource": true
           },
           {
-            "id": "aad08e4de914d16755a9036f",
+            "id": "de9db6f384cbc788775550a9",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
               "open-ecosystems"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -2094,7 +3109,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3182,7 +4197,7 @@
             "differentSource": true
           },
           {
-            "id": "de9db6f384cbc788775550a9",
+            "id": "a15f6ab37c7893ad744089ed",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -3191,13 +4206,13 @@
             "differentSource": true
           },
           {
-            "id": "4b3cffa7806de0c65dc7eadb",
+            "id": "de9db6f384cbc788775550a9",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
               "open-ecosystems"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -3684,7 +4699,7 @@
             "differentSource": true
           },
           {
-            "id": "f6cf73b1fedb638ef18cee2b",
+            "id": "a15f6ab37c7893ad744089ed",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -3693,13 +4708,13 @@
             "differentSource": true
           },
           {
-            "id": "18559cb38b762050d854f339",
+            "id": "f6cf73b1fedb638ef18cee2b",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
               "agent-execution"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -3988,7 +5003,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4082,7 +5097,7 @@
             "differentSource": true
           },
           {
-            "id": "f6cf73b1fedb638ef18cee2b",
+            "id": "a15f6ab37c7893ad744089ed",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -4091,13 +5106,13 @@
             "differentSource": true
           },
           {
-            "id": "18559cb38b762050d854f339",
+            "id": "f6cf73b1fedb638ef18cee2b",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
               "agent-execution"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -4481,7 +5496,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4576,7 +5591,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4850,7 +5865,7 @@
             "differentSource": true
           },
           {
-            "id": "469c5853dc0b4d6184e50e06",
+            "id": "40e02ac52743a94781d16337",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -4858,7 +5873,7 @@
             "differentSource": true
           },
           {
-            "id": "51e7680749ce4e393ed920e7",
+            "id": "469c5853dc0b4d6184e50e06",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -5033,6 +6048,14 @@
             "differentSource": true
           },
           {
+            "id": "353dd9ae4406521804ae7757",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "9e3281d0a01ace75c0212823",
             "relationship": "shared-topic",
             "themes": [
@@ -5042,14 +6065,6 @@
           },
           {
             "id": "ba0f139352f89fd548565be0",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "cb546f889aad4ee204ee6cc2",
             "relationship": "shared-topic",
             "themes": [
               "digital-settlement"
@@ -5132,7 +6147,7 @@
             "differentSource": true
           },
           {
-            "id": "469c5853dc0b4d6184e50e06",
+            "id": "40e02ac52743a94781d16337",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -5140,7 +6155,7 @@
             "differentSource": true
           },
           {
-            "id": "4b3cffa7806de0c65dc7eadb",
+            "id": "469c5853dc0b4d6184e50e06",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -5413,7 +6428,7 @@
             "differentSource": true
           },
           {
-            "id": "4b3cffa7806de0c65dc7eadb",
+            "id": "40e02ac52743a94781d16337",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -6165,7 +7180,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7122,7 +8137,7 @@
             "differentSource": true
           },
           {
-            "id": "469c5853dc0b4d6184e50e06",
+            "id": "40e02ac52743a94781d16337",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -7130,7 +8145,7 @@
             "differentSource": true
           },
           {
-            "id": "51e7680749ce4e393ed920e7",
+            "id": "469c5853dc0b4d6184e50e06",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -8421,6 +9436,15 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "a15f6ab37c7893ad744089ed",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "02a13dcc1d4c0709bfa87495",
             "relationship": "shared-topic",
             "themes": [
@@ -8438,14 +9462,6 @@
           },
           {
             "id": "1cd33358fa8ed608bec699fc",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "202d9ab2851e24f9a8ba99df",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics"
@@ -8536,7 +9552,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -8626,7 +9642,7 @@
             "differentSource": true
           },
           {
-            "id": "f6cf73b1fedb638ef18cee2b",
+            "id": "a15f6ab37c7893ad744089ed",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -8635,13 +9651,13 @@
             "differentSource": true
           },
           {
-            "id": "18559cb38b762050d854f339",
+            "id": "f6cf73b1fedb638ef18cee2b",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
               "agent-execution"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -8918,7 +9934,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9009,7 +10025,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10070,7 +11086,7 @@
             "differentSource": true
           },
           {
-            "id": "f6cf73b1fedb638ef18cee2b",
+            "id": "a15f6ab37c7893ad744089ed",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -10079,13 +11095,13 @@
             "differentSource": true
           },
           {
-            "id": "202d9ab2851e24f9a8ba99df",
+            "id": "f6cf73b1fedb638ef18cee2b",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
               "agent-execution"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -10353,7 +11369,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11685,7 +12701,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -12188,7 +13204,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -12279,7 +13295,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -12551,7 +13567,7 @@
             "differentSource": true
           },
           {
-            "id": "f6cf73b1fedb638ef18cee2b",
+            "id": "a15f6ab37c7893ad744089ed",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -12560,13 +13576,13 @@
             "differentSource": true
           },
           {
-            "id": "18559cb38b762050d854f339",
+            "id": "f6cf73b1fedb638ef18cee2b",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
               "agent-execution"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -12930,7 +13946,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13581,7 +14597,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13763,7 +14779,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14325,7 +15341,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14499,7 +15515,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15837,7 +16853,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -16471,7 +17487,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -16748,7 +17764,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18181,7 +19197,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18712,7 +19728,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -20035,7 +21051,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -20121,7 +21137,7 @@
             "differentSource": true
           },
           {
-            "id": "f6cf73b1fedb638ef18cee2b",
+            "id": "a15f6ab37c7893ad744089ed",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -20130,13 +21146,13 @@
             "differentSource": true
           },
           {
-            "id": "18559cb38b762050d854f339",
+            "id": "f6cf73b1fedb638ef18cee2b",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
               "agent-execution"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -23721,7 +24737,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "264baa27287b5fe406214edd",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -23791,7 +24807,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
@@ -23812,8 +24828,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -23840,6 +24856,14 @@
             "differentSource": true
           },
           {
+            "id": "353dd9ae4406521804ae7757",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "9e3281d0a01ace75c0212823",
             "relationship": "shared-topic",
             "themes": [
@@ -23854,14 +24878,6 @@
               "digital-settlement"
             ],
             "differentSource": true
-          },
-          {
-            "id": "ba0f139352f89fd548565be0",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": false
           }
         ]
       },
@@ -23878,7 +24894,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
@@ -23899,8 +24915,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -23965,7 +24981,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
@@ -23986,8 +25002,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24052,7 +25068,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
@@ -24073,8 +25089,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24101,6 +25117,14 @@
             "differentSource": true
           },
           {
+            "id": "353dd9ae4406521804ae7757",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "9e3281d0a01ace75c0212823",
             "relationship": "shared-topic",
             "themes": [
@@ -24115,14 +25139,6 @@
               "digital-settlement"
             ],
             "differentSource": true
-          },
-          {
-            "id": "309be4c3a7b700fcffbd007f",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": false
           }
         ]
       },
@@ -24139,7 +25155,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
@@ -24160,8 +25176,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24188,6 +25204,14 @@
             "differentSource": true
           },
           {
+            "id": "353dd9ae4406521804ae7757",
+            "relationship": "shared-topic",
+            "themes": [
+              "digital-settlement"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "9e3281d0a01ace75c0212823",
             "relationship": "shared-topic",
             "themes": [
@@ -24202,14 +25226,6 @@
               "digital-settlement"
             ],
             "differentSource": true
-          },
-          {
-            "id": "309be4c3a7b700fcffbd007f",
-            "relationship": "shared-topic",
-            "themes": [
-              "digital-settlement"
-            ],
-            "differentSource": false
           }
         ]
       },
@@ -24226,7 +25242,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24247,95 +25263,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "007d7ed2909622e7b53c5797",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "10a0df171a06e25d1d9ccb5f",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "18559cb38b762050d854f339",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "65df9bca02e321f30f2b7fd2",
-      "title": "Guidewire buys Hyperexponential for $1.7B in cash",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/27/guidewire-buys-hyperexponential-for-1-7b-in-cash/",
-      "publishedAt": "2026-10-27T22:26:03.000Z",
-      "summary": "The deal, expected to close sometime next year, is to help bring AI agents to work alongside humans to underwrite, analyze, and price decisions.",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -27420,189 +28349,6 @@
     },
     {
       "importance": 54,
-      "longTermImportance": 62,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
-      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "inference-economics",
-            "label": "推理成本与效率",
-            "evidence": "excerpt"
-          },
-          {
-            "id": "compute-supply",
-            "label": "算力与内存约束",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "02a13dcc1d4c0709bfa87495",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "185c2e95af99730f9004242d",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "19aaf19fd36f13b01f836ddd",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "23e4e793ace9b2cdc4245fb7",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "986e2ea6ee80b8b5fafeeccc",
-      "title": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
-      "publishedAt": "2026-10-22T16:30:06.000Z",
-      "summary": "Teams deploying custom text-to-speech models on Amazon SageMaker AI often guess at autoscaling thresholds, and a wrong guess either wastes GPU spend or breaches a latency SLO. This post deploys Kokoro-82M as a custom container and derives a measured autoscaling policy from two live-endpoint measurements, Q_max and T_to",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 54,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "007d7ed2909622e7b53c5797",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "090274bcc4740a7076a18a0b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "10a0df171a06e25d1d9ccb5f",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "123381003ba50a8e3fb7fd1a",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "23aa3d120b551ff011ac2d6d",
-      "title": "How Rescale built an AI triage agent with Strands Agents and AI-DLC",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-rescale-built-an-ai-triage-agent-with-strands-agents-and-ai-dlc/",
-      "publishedAt": "2026-10-22T16:25:57.000Z",
-      "summary": "Rescale used the AI-Driven Development Lifecycle (AI-DLC) framework on AWS, with Strands Agents and Amazon Bedrock, to build an intelligent test-triage agent in weeks. Learn how AI-DLC structures AI-assisted development and how Rescale is scaling the practice across its engineering organization.",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -27978,7 +28724,7 @@
             "differentSource": true
           },
           {
-            "id": "9e3281d0a01ace75c0212823",
+            "id": "353dd9ae4406521804ae7757",
             "relationship": "shared-topic",
             "themes": [
               "digital-settlement"
@@ -27986,7 +28732,7 @@
             "differentSource": true
           },
           {
-            "id": "ba0f139352f89fd548565be0",
+            "id": "9e3281d0a01ace75c0212823",
             "relationship": "shared-topic",
             "themes": [
               "digital-settlement"
@@ -28312,7 +29058,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28327,10 +29073,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28356,7 +29098,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -28371,10 +29113,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -28400,7 +29138,7 @@
       ]
     },
     {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：协议变更可能影响兼容性、安全和迁移成本；公告本身不能证明已广泛采用。",
@@ -28423,10 +29161,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -29498,7 +30232,7 @@
             "differentSource": true
           },
           {
-            "id": "aad08e4de914d16755a9036f",
+            "id": "a15f6ab37c7893ad744089ed",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -29507,7 +30241,7 @@
             "differentSource": true
           },
           {
-            "id": "de9db6f384cbc788775550a9",
+            "id": "aad08e4de914d16755a9036f",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -29607,7 +30341,7 @@
             "differentSource": true
           },
           {
-            "id": "aad08e4de914d16755a9036f",
+            "id": "a15f6ab37c7893ad744089ed",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution",
@@ -31596,14 +32330,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "301b0a5a7c01472977a81e48",
             "relationship": "shared-topic",
             "themes": [
@@ -31621,6 +32347,14 @@
           },
           {
             "id": "3bb16877d8a781bb212bba26",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3bb7f581684ef39f682a4639",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31735,7 +32469,7 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
+            "id": "301b0a5a7c01472977a81e48",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31743,7 +32477,7 @@
             "differentSource": true
           },
           {
-            "id": "301b0a5a7c01472977a81e48",
+            "id": "35e334c198740f7416638922",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -32223,14 +32957,6 @@
             "differentSource": true
           },
           {
-            "id": "23aa3d120b551ff011ac2d6d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "301b0a5a7c01472977a81e48",
             "relationship": "shared-topic",
             "themes": [
@@ -32240,6 +32966,14 @@
           },
           {
             "id": "51888f116f5b083740bce796",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "53911f98c21c784fce1ad32f",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
