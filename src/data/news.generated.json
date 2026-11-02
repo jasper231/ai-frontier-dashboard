@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-01T19:19:53.789Z",
+  "asOf": "2026-11-02T00:10:34.268Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
@@ -208,14 +208,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -233,6 +225,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "24c1285ad5edaaad29cb254c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -295,14 +295,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -320,6 +312,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "24c1285ad5edaaad29cb254c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -382,14 +382,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -407,6 +399,14 @@
           },
           {
             "id": "35e334c198740f7416638922",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -457,12 +457,12 @@
           {
             "id": "agent-execution",
             "label": "可验证的智能体执行",
-            "evidence": "excerpt"
+            "evidence": "headline"
           }
         ],
         "sourceQuality": {
           "kind": "news",
-          "publisher": "TechCrunch",
+          "publisher": "Condé Nast",
           "score": 83,
           "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
         },
@@ -494,93 +494,6 @@
           },
           {
             "id": "24c1285ad5edaaad29cb254c",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "03ea0cb6a82382c62e3354ae",
-      "title": "Last-minute Halloween costumes for tech nerds",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
-      "publishedAt": "2026-10-30T21:26:59.000Z",
-      "summary": "No Halloween costume? Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson.",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 50,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Condé Nast",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0f01adb2acab0a67ba71c0b0",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1dda19717c518d488a54cc7f",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1e3ebf94e41ebe19793bfa16",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -643,14 +556,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -668,6 +573,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "24c1285ad5edaaad29cb254c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -778,14 +691,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -803,6 +708,14 @@
           },
           {
             "id": "35e334c198740f7416638922",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -952,14 +865,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -977,6 +882,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "24c1285ad5edaaad29cb254c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1295,14 +1208,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -1320,6 +1225,14 @@
           },
           {
             "id": "35e334c198740f7416638922",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1382,14 +1295,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -1407,6 +1312,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "24c1285ad5edaaad29cb254c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1469,14 +1382,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -1494,6 +1399,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "24c1285ad5edaaad29cb254c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1560,14 +1473,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -1585,6 +1490,14 @@
           },
           {
             "id": "35e334c198740f7416638922",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1782,14 +1695,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -1807,6 +1712,14 @@
           },
           {
             "id": "35e334c198740f7416638922",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1873,14 +1786,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -1898,6 +1803,14 @@
           },
           {
             "id": "35e334c198740f7416638922",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1960,14 +1873,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -1985,6 +1890,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "24c1285ad5edaaad29cb254c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -2139,14 +2052,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "1dda19717c518d488a54cc7f",
             "relationship": "shared-topic",
             "themes": [
@@ -2164,6 +2069,14 @@
           },
           {
             "id": "3592c2289faff55994bbf1d7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "364e712e0335d807c83b2da7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -2535,7 +2448,7 @@
             "differentSource": false
           },
           {
-            "id": "03ea0cb6a82382c62e3354ae",
+            "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -2543,7 +2456,7 @@
             "differentSource": true
           },
           {
-            "id": "0f01adb2acab0a67ba71c0b0",
+            "id": "1e3ebf94e41ebe19793bfa16",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -2697,14 +2610,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -2722,6 +2627,14 @@
           },
           {
             "id": "35e334c198740f7416638922",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -2859,14 +2772,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -2884,6 +2789,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "24c1285ad5edaaad29cb254c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3000,14 +2913,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -3025,6 +2930,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "24c1285ad5edaaad29cb254c",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3087,14 +3000,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "1dda19717c518d488a54cc7f",
             "relationship": "shared-topic",
             "themes": [
@@ -3112,6 +3017,14 @@
           },
           {
             "id": "3592c2289faff55994bbf1d7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "364e712e0335d807c83b2da7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3218,14 +3131,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "1dda19717c518d488a54cc7f",
             "relationship": "shared-topic",
             "themes": [
@@ -3243,6 +3148,14 @@
           },
           {
             "id": "3592c2289faff55994bbf1d7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "364e712e0335d807c83b2da7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3880,14 +3793,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "1dda19717c518d488a54cc7f",
             "relationship": "shared-topic",
             "themes": [
@@ -3905,6 +3810,14 @@
           },
           {
             "id": "3592c2289faff55994bbf1d7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "364e712e0335d807c83b2da7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3967,14 +3880,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "1dda19717c518d488a54cc7f",
             "relationship": "shared-topic",
             "themes": [
@@ -3992,6 +3897,14 @@
           },
           {
             "id": "3592c2289faff55994bbf1d7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "364e712e0335d807c83b2da7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4213,14 +4126,6 @@
             "differentSource": false
           },
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -4230,6 +4135,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "200a5d3dd39c6bfb7a201928",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4292,14 +4205,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -4317,6 +4222,14 @@
           },
           {
             "id": "200a5d3dd39c6bfb7a201928",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "35e334c198740f7416638922",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4475,14 +4388,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "1dda19717c518d488a54cc7f",
             "relationship": "shared-topic",
             "themes": [
@@ -4500,6 +4405,14 @@
           },
           {
             "id": "3592c2289faff55994bbf1d7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "364e712e0335d807c83b2da7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4706,7 +4619,7 @@
       ]
     },
     {
-      "importance": 71,
+      "importance": 68,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -4729,10 +4642,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -4751,14 +4660,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "1dda19717c518d488a54cc7f",
             "relationship": "shared-topic",
             "themes": [
@@ -4776,6 +4677,14 @@
           },
           {
             "id": "3592c2289faff55994bbf1d7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "364e712e0335d807c83b2da7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4838,14 +4747,6 @@
         "publishedAtBasis": "updated",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -4863,6 +4764,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "200a5d3dd39c6bfb7a201928",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -5601,14 +5510,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -5626,6 +5527,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "200a5d3dd39c6bfb7a201928",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -5724,14 +5633,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -5749,6 +5650,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "200a5d3dd39c6bfb7a201928",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -6941,14 +6850,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -6966,6 +6867,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "200a5d3dd39c6bfb7a201928",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7115,14 +7024,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -7140,6 +7041,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "200a5d3dd39c6bfb7a201928",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7260,14 +7169,6 @@
             "differentSource": true
           },
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "1dda19717c518d488a54cc7f",
             "relationship": "shared-topic",
             "themes": [
@@ -7277,6 +7178,14 @@
           },
           {
             "id": "24c1285ad5edaaad29cb254c",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "3592c2289faff55994bbf1d7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7375,14 +7284,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "1dda19717c518d488a54cc7f",
             "relationship": "shared-topic",
             "themes": [
@@ -7400,6 +7301,14 @@
           },
           {
             "id": "3592c2289faff55994bbf1d7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "364e712e0335d807c83b2da7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7678,14 +7587,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "1dda19717c518d488a54cc7f",
             "relationship": "shared-topic",
             "themes": [
@@ -7703,6 +7604,14 @@
           },
           {
             "id": "3592c2289faff55994bbf1d7",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "364e712e0335d807c83b2da7",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7921,14 +7830,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "03ea0cb6a82382c62e3354ae",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0f01adb2acab0a67ba71c0b0",
             "relationship": "shared-topic",
             "themes": [
@@ -7946,6 +7847,14 @@
           },
           {
             "id": "1e3ebf94e41ebe19793bfa16",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "200a5d3dd39c6bfb7a201928",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
