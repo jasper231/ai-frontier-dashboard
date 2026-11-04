@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-03T20:44:41.177Z",
+  "asOf": "2026-11-04T01:00:01.730Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
@@ -24353,7 +24353,7 @@
       ]
     },
     {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24374,8 +24374,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24402,94 +24402,7 @@
       ]
     },
     {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "023b8a9373f8f35265748150",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "046f31786bb677e608069fe9",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0493ee34dafaff2609049044",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "07159714c466a3c783b75219",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "d38f7b5068359c02019572a7",
-      "title": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "publishedAt": "2026-11-03T00:35:52.000Z",
-      "summary": "Y Combinator Garry Tan has jokingly admitted that he's suffered from \"cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast, The Builders, Tan put a price tag on his passion.",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 85,
       "horizonYears": 7,
       "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
@@ -24514,8 +24427,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24586,7 +24499,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24603,8 +24516,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24630,7 +24543,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24647,8 +24560,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24674,7 +24587,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24691,8 +24604,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -27509,6 +27422,50 @@
       ]
     },
     {
+      "importance": 46,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一周的来源时间",
+            "points": 3
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "16681fd606d5f6994d060736",
+      "title": "Evernote turns AI-driven discovery into paid subscriptions",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/ads/customers/evernote",
+      "publishedAt": "2026-10-28T19:40:49.000Z",
+      "summary": "Evernote used ChatGPT Ads to introduce its note-taking app to people working with AI. The team tracked how often free trials led to paid subscriptions.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
       "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -28048,7 +28005,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
@@ -28067,10 +28024,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -28135,7 +28088,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
@@ -28154,10 +28107,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -28222,7 +28171,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
@@ -28241,10 +28190,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -28309,7 +28254,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：结算效率和覆盖范围可能变化，但合规、储备、兑付和对手方风险仍需评估。",
@@ -28328,10 +28273,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -28783,6 +28724,93 @@
       ]
     },
     {
+      "importance": 68,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "023b8a9373f8f35265748150",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "046f31786bb677e608069fe9",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0493ee34dafaff2609049044",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "07159714c466a3c783b75219",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "35e334c198740f7416638922",
+      "title": "Introducing GPT-6.1 Terra",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "publishedAt": "2026-10-26T18:00:00.000Z",
+      "summary": "Delivering fast and capable computer use at scale",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
       "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
@@ -29120,93 +29148,6 @@
         "算力基础设施",
         "官方来源",
         "来源更新时间"
-      ]
-    },
-    {
-      "importance": 68,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "023b8a9373f8f35265748150",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "046f31786bb677e608069fe9",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0493ee34dafaff2609049044",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "07159714c466a3c783b75219",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "35e334c198740f7416638922",
-      "title": "Introducing GPT-6.1 Terra",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
-      "publishedAt": "2026-10-26T00:00:00.000Z",
-      "summary": "Bringing fast and capable computer use to everyone",
-      "tags": [
-        "智能体",
-        "官方来源"
       ]
     },
     {
@@ -36591,50 +36532,6 @@
       "sourceUrl": "https://openai.com/index/two-years-of-openai-academy",
       "publishedAt": "2026-09-23T16:00:00.000Z",
       "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 55,
-      "longTermImportance": 63,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "9328fa400dd37e6b9e773781",
-      "title": "OpenAI extends cyber access to Ukraine for civilian defense",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
-      "publishedAt": "2026-09-23T13:00:00.000Z",
-      "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
       "tags": [
         "AI 模型",
         "官方来源"
