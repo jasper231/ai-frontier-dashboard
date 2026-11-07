@@ -1,9 +1,100 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-07T09:31:55.575Z",
+  "asOf": "2026-11-07T17:18:34.217Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 65,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
+      "longTermImpact": "规则情景（3–10 年）：开放生态与可迁移工具链可能影响技术扩散与供应商依赖。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "open-ecosystems",
+            "label": "开放模型与软件生态",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Condé Nast",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "0676c12db8f0f583e52d7006",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1f284cf74f35c5cb7fd54f72",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "20366c4b5aede8776073d7a8",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "77011d077be502fd6ca18a27",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "6bb9de0b97b6208697a907f1",
+      "title": "This Totally Free App Can Free Up Space on Your Mac",
+      "source": "Wired",
+      "sourceUrl": "https://www.wired.com/story/this-totally-free-app-can-free-up-space-on-your-mac-purge/",
+      "publishedAt": "2026-11-07T11:15:00.000Z",
+      "summary": "Stop paying for disk cleaners. This open source utility safely clears hidden caches, leftover app junk, and even gigabytes of offline Apple Intelligence models.",
+      "tags": [
+        "AI 模型",
+        "新闻来源"
+      ]
+    },
     {
       "importance": 53,
       "longTermImportance": 54,
@@ -429,7 +520,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -451,7 +542,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 85,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -476,8 +567,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -525,7 +616,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -547,7 +638,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -568,8 +659,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -612,7 +703,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -634,7 +725,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -655,8 +746,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -699,7 +790,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -721,7 +812,7 @@
       ]
     },
     {
-      "importance": 73,
+      "importance": 70,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -750,8 +841,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -794,7 +885,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -816,7 +907,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -837,8 +928,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -881,7 +972,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -903,7 +994,7 @@
       ]
     },
     {
-      "importance": 80,
+      "importance": 77,
       "longTermImportance": 62,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -928,8 +1019,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           },
           {
             "reason": "安全或关键漏洞变化",
@@ -976,7 +1067,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -998,7 +1089,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
@@ -1023,8 +1114,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -1044,6 +1135,14 @@
         "relatedNews": [
           {
             "id": "20366c4b5aede8776073d7a8",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "6bb9de0b97b6208697a907f1",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -1081,7 +1180,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
@@ -1102,8 +1201,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -1168,7 +1267,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
@@ -1189,8 +1288,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -1255,7 +1354,7 @@
       ]
     },
     {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -1276,8 +1375,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -1304,7 +1403,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
@@ -1325,8 +1424,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -1844,97 +1943,6 @@
       ]
     },
     {
-      "importance": 67,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "02f8d5931637abfc769da469",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0f01adb2acab0a67ba71c0b0",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0f2d755e3513ed127d81cc3b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "1121cf54e69f72cb6b4feafa",
-      "title": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
-      "publishedAt": "2026-11-05T22:40:55.000Z",
-      "summary": "Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay.",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
       "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -2000,7 +2008,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -2432,6 +2440,14 @@
         "relatedNews": [
           {
             "id": "20366c4b5aede8776073d7a8",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "6bb9de0b97b6208697a907f1",
             "relationship": "shared-topic",
             "themes": [
               "open-ecosystems"
@@ -2965,101 +2981,6 @@
       ]
     },
     {
-      "importance": 66,
-      "longTermImportance": 77,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：协议变更可能影响兼容性、安全和迁移成本；公告本身不能证明已广泛采用。",
-      "longTermImpact": "规则情景（3–10 年）：可信、可互操作的协议可能塑造长期基础设施。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "protocol-trust",
-            "label": "可信与互操作协议",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Condé Nast",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "1109c7dc5eeb22026df6e0e3",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "251ddaf516fd70e904373f50",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "25fa4dd18ec78a48a9233cc0",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "348277486d931184951806bf",
-            "relationship": "shared-topic",
-            "themes": [
-              "protocol-trust"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "e58427ff7f7a9839b6609876",
-      "title": "Altra Running Promo Codes: 10% Off November 2026",
-      "source": "Wired",
-      "sourceUrl": "https://www.wired.com/story/altra-promo-code/",
-      "publishedAt": "2026-11-05T06:00:00.000Z",
-      "summary": "Score big savings on Altra Running shoes with up to 50% off sale styles, 20% off select models, 10% off your first order when you sign up, plus free standard delivery on every purchase.",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
-      ]
-    },
-    {
       "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -3526,7 +3447,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3657,7 +3578,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3844,7 +3765,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -3939,7 +3860,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -5051,7 +4972,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -5138,7 +5059,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -5225,7 +5146,7 @@
             "differentSource": true
           },
           {
-            "id": "1121cf54e69f72cb6b4feafa",
+            "id": "14e90e72d3401ddf817f6448",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
