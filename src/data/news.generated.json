@@ -1,11 +1,146 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-10T14:10:36.451Z",
+  "asOf": "2026-11-10T21:10:02.075Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
     {
-      "importance": 70,
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Google",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "fafff4292c09fd9370c59269",
+      "title": "Gemini Intelligence: New features, on more devices",
+      "source": "Google AI",
+      "sourceUrl": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+      "publishedAt": "2026-11-10T19:00:00.000Z",
+      "summary": "A man speaks into a phone. Text on the screen reads 'Gemini Intelligence'",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 69,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "012ef623765d450c6457d14b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "020af8abad78216ac05a0277",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02e9abf47eaf3fa01f98fe0d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "13a34de7d52df6b34d60df0f",
+      "title": "Autonomous treasury agents: How Trovata built an AI-native solution on Amazon Bedrock and AgentCore",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/autonomous-treasury-agents-how-trovata-built-an-ai-native-solution-on-amazon-bedrock-and-agentcore/",
+      "publishedAt": "2026-11-10T18:11:08.000Z",
+      "summary": "Learn how Trovata built autonomous treasury agents on Amazon Bedrock and Amazon Bedrock AgentCore, using an RBAC-secured architecture for bank-branded AI deployment and agentic workflows that move corporate treasury from manual operations to real-time decision-making at enterprise scale.",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 53,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -22,8 +157,499 @@
             "points": 8
           },
           {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "012ef623765d450c6457d14b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "020af8abad78216ac05a0277",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02e9abf47eaf3fa01f98fe0d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "3ec8add99452b34023174e31",
+      "title": "ChatGPT is getting verified AI ‘Business Agents’",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+      "publishedAt": "2026-11-10T18:00:00.000Z",
+      "summary": "ChatGPT is going to let you chat with verified \"Business Agents\" that represent a brand to help you with things like comparison shopping. The feature, available first to \"eligible\" e-commerce and online service businesses in the US, is launching as part of a suite of business-focused features in ChatGPT being announced",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 61,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "存在可核验的量化主张（未验证）",
+            "points": 4
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "012ef623765d450c6457d14b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "020af8abad78216ac05a0277",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02e9abf47eaf3fa01f98fe0d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "4895a9783a95645627eec273",
+      "title": "How TCS built an agentic test orchestrator with Amazon Bedrock AgentCore",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-tcs-built-an-agentic-test-orchestrator-with-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-11-10T16:59:43.000Z",
+      "summary": "Tata Consultancy Services (TCS) built an agentic test orchestrator on Amazon Bedrock AgentCore that turns requirements into executable, governed tests for its Banking, Financial Services, and Insurance (BFSI) clients. Learn how specialized agents, per-tenant isolation, and workload-aware execution cut testing effort by",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 66,
+      "longTermImportance": 40,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
             "reason": "具体发布或部署事件",
             "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Google",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "55cb0588b3e8436e78b20ba9",
+      "title": "Gemini 4 Carbon is now available",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "publishedAt": "2026-11-10T16:03:47.000Z",
+      "summary": "Gemini 4 Carbon is now available",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 69,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
+      "longTermImpact": "规则情景（3–10 年）：开放生态与可迁移工具链可能影响技术扩散与供应商依赖。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "open-ecosystems",
+            "label": "开放模型与软件生态",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "1452cecb841fb606d3f6d477",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1b95f7ce7054439f22c93768",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1d0edfdd827fe02d305a0b85",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1ff838787000710307f37f4b",
+            "relationship": "shared-topic",
+            "themes": [
+              "open-ecosystems"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "8eec2e0e61665676840d0b1f",
+      "title": "NVIDIA Expands Open Source Commitment With OpenShell Donation and New AI Infrastructure",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+      "publishedAt": "2026-11-10T16:00:03.000Z",
+      "summary": "Kubernetes, the open source system that manages how applications run across thousands of AI factories, has become the foundation for AI, and the demands on it are only growing. To help meet them, NVIDIA is deepening its commitment to open source at KubeCon + CloudNativeCon, the flagship conference for the Kubernetes an",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "012ef623765d450c6457d14b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "020af8abad78216ac05a0277",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02e9abf47eaf3fa01f98fe0d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "064fb88520fa5af6f591c843",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "00824ebcd8896845c55819fd",
+      "title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/",
+      "publishedAt": "2026-11-10T15:29:30.000Z",
+      "summary": "Users can now interact with Meta’s AI assistant through voice calls, text messages, or dictation on their Apple Watch.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 64,
+      "longTermImportance": 62,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "能力、安全或效率变化",
+            "points": 11
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Condé Nast",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "034defb880a0bb622ee8ccda",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "03bbac86e97b07e2cbbb6a07",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0da6135c8cd30b3805a73dde",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0e6aeb512df07c7120719bdd",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "robotics",
+      "id": "c86d08502069b5ef25941361",
+      "title": "DeepMind reveals Gemini Robotics 2.5 and open safety benchmark \"ASIMOV-jailbreak\"",
+      "source": "Ars Technica",
+      "sourceUrl": "https://arstechnica.com/google/2026/11/deepmind-reveals-gemini-robotics-2-5-and-open-safety-benchmark-asimov-jailbreak/",
+      "publishedAt": "2026-11-10T15:00:39.000Z",
+      "summary": "The new model is up to twice as successful at some tasks.",
+      "tags": [
+        "具身智能",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
           },
           {
             "reason": "独立新闻报道（仍需核对原文）",
@@ -85,187 +711,13 @@
       },
       "category": "agents",
       "id": "126b111b5d436487e51fda56",
-      "title": "Adobe adds more AI to its products and launches an MCP",
+      "title": "Adobe brings AI agents and new creative tools to Photoshop, Premiere, and Firefly",
       "source": "TechCrunch",
       "sourceUrl": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
       "publishedAt": "2026-11-10T14:05:10.000Z",
       "summary": "Adobe is taking on Figma with a new prototype builder tool in Firefly.",
       "tags": [
         "智能体",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Vox Media",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "012ef623765d450c6457d14b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "020af8abad78216ac05a0277",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "499cff9552f92642d8da1095",
-      "title": "Adobe is going all in on agentic AI",
-      "source": "The Verge",
-      "sourceUrl": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
-      "publishedAt": "2026-11-10T14:00:00.000Z",
-      "summary": "Adobe is committing itself to the notion that chatbots and AI agents could be your next design assistant, or even automate creative workflows and repetitive tasks on your behalf. Some of the tools and features announced today at Adobe's Max conference in Miami, Florida, include allowing your preferred third-party AI ag",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 53,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "012ef623765d450c6457d14b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "020af8abad78216ac05a0277",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "e086b6a569cdaf26afeb2781",
-      "title": "After challenging Google’s Android with Cyanogen, its co-founder takes aim at Windows for AI era",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era/",
-      "publishedAt": "2026-11-10T14:00:00.000Z",
-      "summary": "Kora is set to launch as a free-to-use alternative to Windows, targeting users who rely heavily on AI models and agents.",
-      "tags": [
-        "AI 模型",
         "新闻来源"
       ]
     },
@@ -311,200 +763,6 @@
       "tags": [
         "AI 模型",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 93,
-      "longTermImportance": 62,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "能力、安全或效率变化",
-            "points": 11
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          },
-          {
-            "reason": "安全或关键漏洞变化",
-            "points": 12
-          }
-        ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "034defb880a0bb622ee8ccda",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "03bbac86e97b07e2cbbb6a07",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0da6135c8cd30b3805a73dde",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e6aeb512df07c7120719bdd",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "robotics",
-      "id": "0cd81599427e692adda5f368",
-      "title": "Ring, known for its doorbell cameras, launches a home security drone and an enterprise security robot",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/",
-      "publishedAt": "2026-11-10T13:30:00.000Z",
-      "summary": "Amazon-owned Ring is pushing into robotics with the launch of a home security drone and a rolling robot designed to patrol and protect businesses.",
-      "tags": [
-        "具身智能",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 76,
-      "longTermImportance": 62,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "能力、安全或效率变化",
-            "points": 11
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          },
-          {
-            "reason": "安全或关键漏洞变化",
-            "points": 12
-          }
-        ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Vox Media",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "034defb880a0bb622ee8ccda",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "03bbac86e97b07e2cbbb6a07",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0da6135c8cd30b3805a73dde",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "robotics",
-      "id": "c068d4b5ec3f4dbc6b426613",
-      "title": "Amazon turned its Alexa robot into a Ring security patrol bot",
-      "source": "The Verge",
-      "sourceUrl": "https://www.theverge.com/tech/1030282/amazon-ring-robotics-rover-cam-4k-security-business",
-      "publishedAt": "2026-11-10T13:30:00.000Z",
-      "summary": "As part of a new brand called Ring Robotics - designed to take a more proactive approach to security instead of just monitoring - a new rolling mobile security camera was announced by Amazon, called the Ring Rover Cam. It borrows a lot of the design and functionality from the Astro home robot that Amazon […]",
-      "tags": [
-        "具身智能",
-        "新闻来源"
       ]
     },
     {
@@ -565,7 +823,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -573,7 +831,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -643,97 +901,6 @@
       ]
     },
     {
-      "importance": 65,
-      "longTermImportance": 77,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
-      "longTermImpact": "规则情景（3–10 年）：开放生态与可迁移工具链可能影响技术扩散与供应商依赖。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一天的来源时间",
-            "points": 6
-          }
-        ],
-        "themes": [
-          {
-            "id": "open-ecosystems",
-            "label": "开放模型与软件生态",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "0676c12db8f0f583e52d7006",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1452cecb841fb606d3f6d477",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1b95f7ce7054439f22c93768",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1d0edfdd827fe02d305a0b85",
-            "relationship": "shared-topic",
-            "themes": [
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "7fc88fbdaa8e97213d1bb6c9",
-      "title": "Cyberattacks threaten to make open-source AI a little less open, Hugging Face exec warns",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
-      "publishedAt": "2026-11-10T13:00:00.000Z",
-      "summary": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open-source communities valuable to developers worldwide.",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
-      ]
-    },
-    {
       "importance": 74,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -779,6 +946,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -796,14 +971,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -869,6 +1036,54 @@
       ]
     },
     {
+      "importance": 66,
+      "longTermImportance": 40,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "991ad48e8559b2fefa9ff7bc",
+      "title": "Introducing Businesses in ChatGPT",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-businesses-chatgpt",
+      "publishedAt": "2026-11-10T10:00:00.000Z",
+      "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
       "importance": 49,
       "longTermImportance": 40,
       "horizonYears": 1,
@@ -907,6 +1122,50 @@
       "sourceUrl": "https://openai.com/index/closing-ai-guidance-gap-education",
       "publishedAt": "2026-11-10T09:00:00.000Z",
       "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "f3fc54cd1d78c100d666a9c2",
+      "title": "Work at the Frontier: AI’s effect on freelance work",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/ai-effect-on-freelance-work",
+      "publishedAt": "2026-11-10T07:00:00.000Z",
+      "summary": "New research from OpenAI and Upwork finds shifting demand for freelance work, new skill combinations, and larger budgets and more hours for AI-related projects.",
       "tags": [
         "AI 模型",
         "官方来源"
@@ -1057,6 +1316,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -1074,14 +1341,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -1692,7 +1951,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -1700,7 +1959,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "121d1d4b63d3c8fd3c269028",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -1866,14 +2125,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -1891,6 +2142,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -2165,14 +2424,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -2190,6 +2441,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -2455,14 +2714,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -2480,6 +2731,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -2546,14 +2805,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -2571,6 +2822,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -2637,14 +2896,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -2662,6 +2913,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4568,6 +4827,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -4585,14 +4852,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -4758,14 +5017,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -4783,6 +5034,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4964,7 +5223,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4972,7 +5231,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "121d1d4b63d3c8fd3c269028",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5343,7 +5602,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5351,10 +5610,10 @@
             "differentSource": true
           },
           {
-            "id": "0e6aeb512df07c7120719bdd",
+            "id": "1452cecb841fb606d3f6d477",
             "relationship": "shared-topic",
             "themes": [
-              "physical-automation"
+              "open-ecosystems"
             ],
             "differentSource": true
           }
@@ -5531,7 +5790,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5539,10 +5798,10 @@
             "differentSource": true
           },
           {
-            "id": "0e6aeb512df07c7120719bdd",
+            "id": "1452cecb841fb606d3f6d477",
             "relationship": "shared-topic",
             "themes": [
-              "physical-automation"
+              "open-ecosystems"
             ],
             "differentSource": true
           }
@@ -6867,6 +7126,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -6884,14 +7151,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7331,14 +7590,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -7356,6 +7607,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7604,6 +7863,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -7621,14 +7888,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7711,7 +7970,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7719,7 +7978,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "121d1d4b63d3c8fd3c269028",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7786,6 +8045,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -7803,14 +8070,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -7877,14 +8136,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -7902,6 +8153,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -8250,14 +8509,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -8275,6 +8526,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -8748,14 +9007,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -8773,6 +9024,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9130,14 +9389,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -9155,6 +9406,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9429,6 +9688,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -9446,14 +9713,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9881,14 +10140,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -9906,6 +10157,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9972,14 +10231,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -9997,6 +10248,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10311,14 +10570,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -10336,6 +10587,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -10493,6 +10752,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -10510,14 +10777,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10780,6 +11039,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -10797,14 +11064,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10962,14 +11221,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -10987,6 +11238,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -11144,14 +11403,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -11169,6 +11420,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -11474,14 +11733,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -11499,6 +11750,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -11856,14 +12115,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -11881,6 +12132,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12195,14 +12454,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -12220,6 +12471,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12286,14 +12545,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -12311,6 +12562,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12377,14 +12636,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -12402,6 +12653,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12568,14 +12827,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -12593,6 +12844,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -12855,6 +13114,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -12872,14 +13139,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -12946,6 +13205,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -12963,14 +13230,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13037,6 +13296,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -13054,14 +13321,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -13128,14 +13387,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -13153,6 +13404,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13219,14 +13478,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -13244,6 +13495,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13310,14 +13569,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -13335,6 +13586,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13640,14 +13899,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -13665,6 +13916,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -13731,6 +13990,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -13748,14 +14015,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14319,11 +14578,10 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "20366c4b5aede8776073d7a8",
+            "id": "00824ebcd8896845c55819fd",
             "relationship": "shared-topic",
             "themes": [
-              "agent-execution",
-              "open-ecosystems"
+              "agent-execution"
             ],
             "differentSource": true
           },
@@ -14407,6 +14665,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "020af8abad78216ac05a0277",
             "relationship": "shared-topic",
             "themes": [
@@ -14424,14 +14690,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14494,14 +14752,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -14519,6 +14769,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14581,6 +14839,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -14598,14 +14864,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14764,6 +15022,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -14781,14 +15047,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15139,14 +15397,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -15164,6 +15414,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15496,14 +15754,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -15521,6 +15771,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -15583,6 +15841,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -15600,14 +15866,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -15670,14 +15928,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -15695,6 +15945,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -16114,14 +16372,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -16139,6 +16389,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -16201,14 +16459,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -16226,6 +16476,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -16956,14 +17214,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -16981,6 +17231,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17043,14 +17301,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -17068,6 +17318,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17130,6 +17388,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -17147,14 +17413,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17217,6 +17475,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -17234,14 +17500,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17304,6 +17562,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -17321,14 +17587,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17391,6 +17649,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -17408,14 +17674,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -17565,14 +17823,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -17590,6 +17840,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17652,14 +17910,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -17677,6 +17927,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17835,14 +18093,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -17860,6 +18110,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -17922,6 +18180,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -17939,14 +18205,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18207,14 +18465,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -18232,6 +18482,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18564,6 +18822,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -18581,14 +18847,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -18651,14 +18909,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -18676,6 +18926,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -18738,6 +18996,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "020af8abad78216ac05a0277",
             "relationship": "shared-topic",
             "themes": [
@@ -18755,14 +19021,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -19008,14 +19266,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -19033,6 +19283,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19095,14 +19353,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -19120,6 +19370,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19182,6 +19440,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -19199,14 +19465,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -19381,7 +19639,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19389,7 +19647,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19452,14 +19710,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -19477,6 +19727,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19626,14 +19884,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -19651,6 +19901,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19713,14 +19971,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -19738,6 +19988,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19800,14 +20058,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -19825,6 +20075,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -19887,6 +20145,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -19904,14 +20170,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -20061,14 +20319,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -20086,6 +20336,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -20148,14 +20406,6 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
-            "id": "0cd81599427e692adda5f368",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
@@ -20173,6 +20423,14 @@
           },
           {
             "id": "5a90caffb2c87d2e6e8eb5c3",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "65ac5c3e3308f7c469cbd0e0",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -20235,6 +20493,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -20252,14 +20518,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24086,6 +24344,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -24103,14 +24369,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24132,7 +24390,95 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "5f3963726dbe36e6ccf9753b",
+      "title": "Decision Models in Hugging Face",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/decision",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "summary": "Decision Models in Hugging Face",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "cb93d68b445c05b0e3dc3bb4",
+      "title": "Pay for Hugging Face Hub with your Google Cloud Account",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/hub-gcp-marketplace",
+      "publishedAt": "2026-11-10T00:00:00.000Z",
+      "summary": "Pay for Hugging Face Hub with your Google Cloud Account",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24153,8 +24499,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24172,6 +24518,14 @@
         },
         "publishedAtBasis": "published",
         "relatedNews": [
+          {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
           {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
@@ -24195,14 +24549,6 @@
               "agent-execution"
             ],
             "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
           }
         ]
       },
@@ -24219,7 +24565,7 @@
       ]
     },
     {
-      "importance": 74,
+      "importance": 71,
       "longTermImportance": 62,
       "horizonYears": 7,
       "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
@@ -24244,8 +24590,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24319,7 +24665,94 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 54,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一周的来源时间",
+            "points": 3
+          }
+        ],
+        "themes": [
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Google",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "034defb880a0bb622ee8ccda",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "03bbac86e97b07e2cbbb6a07",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0da6135c8cd30b3805a73dde",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0e6aeb512df07c7120719bdd",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "robotics",
+      "id": "6b6709b612e5913e3ffca54a",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "source": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "publishedAt": "2026-11-09T19:51:47.000Z",
+      "summary": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+      "tags": [
+        "具身智能",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 66,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24344,8 +24777,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24363,6 +24796,14 @@
         },
         "publishedAtBasis": "published",
         "relatedNews": [
+          {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
           {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
@@ -24386,14 +24827,6 @@
               "agent-execution"
             ],
             "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
           }
         ]
       },
@@ -24410,7 +24843,7 @@
       ]
     },
     {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24431,8 +24864,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24458,7 +24891,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24483,8 +24916,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24503,6 +24936,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -24520,14 +24961,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -24549,7 +24982,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24570,8 +25003,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24589,6 +25022,14 @@
         },
         "publishedAtBasis": "published",
         "relatedNews": [
+          {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
           {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
@@ -24612,14 +25053,6 @@
               "agent-execution"
             ],
             "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
           }
         ]
       },
@@ -24636,7 +25069,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24653,8 +25086,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24737,7 +25170,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -24745,7 +25178,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -24916,7 +25349,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -24924,7 +25357,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -25131,6 +25564,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -25148,14 +25589,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25362,6 +25795,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -25379,14 +25820,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -25569,7 +26002,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -25577,7 +26010,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -25656,7 +26089,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -25664,7 +26097,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -25822,93 +26255,6 @@
       ]
     },
     {
-      "importance": 50,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Condé Nast",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "012ef623765d450c6457d14b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "020af8abad78216ac05a0277",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "7142f0ef7fb76f39c0d4f06c",
-      "title": "Chainalysis says hackers stole credentials and tokens for all of its customers",
-      "source": "Ars Technica",
-      "sourceUrl": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/",
-      "publishedAt": "2026-11-06T20:56:41.000Z",
-      "summary": "Company said a \"multifront cyberattack\" included AI agents and an on-path data snatch.",
-      "tags": [
-        "智能体",
-        "新闻来源"
-      ]
-    },
-    {
       "importance": 54,
       "longTermImportance": 62,
       "horizonYears": 7,
@@ -26046,6 +26392,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -26063,14 +26417,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26233,6 +26579,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -26250,14 +26604,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26320,6 +26666,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -26337,14 +26691,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26415,6 +26761,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -26432,14 +26786,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26502,6 +26848,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -26519,14 +26873,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26597,6 +26943,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -26614,14 +26968,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -26791,7 +27137,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -26799,7 +27145,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -26955,6 +27301,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -26972,14 +27326,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -27269,6 +27615,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -27286,14 +27640,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -27504,6 +27850,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -27521,14 +27875,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -27866,6 +28212,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -27883,14 +28237,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28050,6 +28396,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -28067,14 +28421,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -28197,7 +28543,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -28205,7 +28551,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -28467,7 +28813,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -28475,7 +28821,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -28541,93 +28887,6 @@
       ]
     },
     {
-      "importance": 54,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "012ef623765d450c6457d14b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "020af8abad78216ac05a0277",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "d32d8e40f63cd24bb7520214",
-      "title": "Use decision models with Amazon Bedrock AgentCore Evaluations",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/use-decision-models-with-amazon-bedrock-agentcore-evaluations/",
-      "publishedAt": "2026-11-04T18:46:36.000Z",
-      "summary": "Some agent-evaluation questions are narrow and repeatable, and decision models answer exactly that kind of question. This post shows how to connect two decision models, Jev and Strands Decider, to Amazon Bedrock AgentCore Evaluations through code-based evaluators, and how to validate a decision-model check before you g",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
@@ -28668,190 +28927,6 @@
       "summary": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
       "tags": [
         "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 54,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "012ef623765d450c6457d14b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "020af8abad78216ac05a0277",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "a87ec7a4b5e96d706fdb35ad",
-      "title": "Smart Approvals in AWS Quick: Human oversight where it matters",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/smart-approvals-in-amazon-quick-human-oversight-where-it-matters/",
-      "publishedAt": "2026-11-04T16:33:03.000Z",
-      "summary": "Smart Approvals in Amazon Quick reviews eligible agent actions within your existing controls, reducing unnecessary approval prompts while keeping consequential decisions with a person. See how policy sets the boundary, how a classifier reviews actions, and how AWS CloudTrail and Amazon CloudWatch Logs support audit.",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 66,
-      "longTermImportance": 85,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          },
-          {
-            "id": "open-ecosystems",
-            "label": "开放模型与软件生态",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "2fd8e8bb5d87d3210012832b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution",
-              "open-ecosystems"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "012ef623765d450c6457d14b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "020af8abad78216ac05a0277",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "20366c4b5aede8776073d7a8",
-      "title": "Four layers of context engineering for production AI agents: How Deep Insight applies them in working code",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-layers-of-context-engineering-for-production-ai-agents-how-deep-insight-applies-them-in-working-code/",
-      "publishedAt": "2026-11-04T16:30:40.000Z",
-      "summary": "In production AI agents, context management is the real bottleneck. This post presents a four-layer context engineering framework (architecture, prompts, file-based tools, and verification agents), implemented in working code from Deep Insight, an open source multi-agent data analysis solution on the Strands Agents SDK",
-      "tags": [
-        "智能体",
         "官方来源"
       ]
     },
@@ -29098,7 +29173,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -29106,7 +29181,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -29391,6 +29466,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -29408,14 +29491,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -29478,6 +29553,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -29495,14 +29578,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -29568,7 +29643,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -29583,10 +29658,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -29612,7 +29683,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -29631,10 +29702,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -29652,6 +29719,14 @@
         },
         "publishedAtBasis": "published",
         "relatedNews": [
+          {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
           {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
@@ -29675,14 +29750,6 @@
               "agent-execution"
             ],
             "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
           }
         ]
       },
@@ -29699,7 +29766,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -29714,10 +29781,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -29743,7 +29806,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
@@ -29762,10 +29825,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -29991,6 +30050,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -30008,14 +30075,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -30763,6 +30822,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -30780,14 +30847,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -30946,7 +31005,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -30954,7 +31013,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -31138,6 +31197,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -31155,14 +31222,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31345,6 +31404,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -31362,14 +31429,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -31737,7 +31796,7 @@
             "differentSource": true
           },
           {
-            "id": "0cd81599427e692adda5f368",
+            "id": "0da6135c8cd30b3805a73dde",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -31745,7 +31804,7 @@
             "differentSource": true
           },
           {
-            "id": "0da6135c8cd30b3805a73dde",
+            "id": "0e6aeb512df07c7120719bdd",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -31848,6 +31907,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -31865,14 +31932,6 @@
           },
           {
             "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -32068,6 +32127,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -32085,14 +32152,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -32191,6 +32250,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "00824ebcd8896845c55819fd",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "012ef623765d450c6457d14b",
             "relationship": "shared-topic",
             "themes": [
@@ -32208,14 +32275,6 @@
           },
           {
             "id": "064fb88520fa5af6f591c843",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "075c1677a801da1f46efab99",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -32315,50 +32374,6 @@
       "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
       "publishedAt": "2026-10-27T16:01:38.000Z",
       "summary": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 47,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "d7e464add4da97a4e7592a6f",
-      "title": "How AI Is Changing the Pace of Discovery for Millions Living With Dementia",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/",
-      "publishedAt": "2026-10-27T15:00:20.000Z",
-      "summary": "There are 57 million people worldwide living with dementia today. For the researchers working to help them, the obstacle isn’t a lack of effort — it’s too much data, too few experts to synthesize it and a pace of discovery that can’t keep up with the disease. The Consortium for Biomedical Research and AI in […]",
       "tags": [
         "AI 模型",
         "官方来源"
@@ -32684,7 +32699,7 @@
             "differentSource": true
           },
           {
-            "id": "20366c4b5aede8776073d7a8",
+            "id": "23c4f130369cb97228de4151",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -32855,7 +32870,7 @@
             "differentSource": true
           },
           {
-            "id": "20366c4b5aede8776073d7a8",
+            "id": "23c4f130369cb97228de4151",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -37720,46 +37735,6 @@
         "relatedNews": []
       },
       "category": "ai",
-      "id": "2896758265cec81d95898858",
-      "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/atlassian-partnership",
-      "publishedAt": "2026-10-06T16:00:00.000Z",
-      "summary": "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge and help teams plan, build, and deliver work.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
       "id": "00427e47df5ef3064509e152",
       "title": "Sharing AI progress in mathematics",
       "source": "OpenAI",
@@ -37891,46 +37866,6 @@
       "summary": "Learn how OpenAI and Ironclad are training and evaluating AI agents on complex contracting workflows to advance computer use for professional work.",
       "tags": [
         "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "d2b5b29b4c815525619915dc",
-      "title": "Our approach to EU text provenance rules",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/eu-text-provenance",
-      "publishedAt": "2026-10-05T15:00:00.000Z",
-      "summary": "How OpenAI is approaching text watermarking under EU rules. Learn where watermarks apply, how detection works, and why access starts with researchers.",
-      "tags": [
-        "AI 模型",
         "官方来源"
       ]
     },
@@ -39722,46 +39657,6 @@
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/dialogues-christina-koch/",
       "publishedAt": "2026-09-14T19:00:00.000Z",
       "summary": "Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Google",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "fd1baec08311b505543d5a8c",
-      "title": "DevFest is back",
-      "source": "Google AI",
-      "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/devfest2026/",
-      "publishedAt": "2026-09-14T16:00:00.000Z",
-      "summary": "Animation of the text \"{DevFest} 2026 Join us! Google Developer Groups\" with a globe icon, asterisk icon, icon",
       "tags": [
         "AI 模型",
         "官方来源"
@@ -44182,14 +44077,6 @@
               "agent-execution"
             ],
             "differentSource": true
-          },
-          {
-            "id": "2eb5bcc3ad88b97ec36616da",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": false
           }
         ]
       },
@@ -44446,14 +44333,6 @@
         },
         "publishedAtBasis": "published",
         "relatedNews": [
-          {
-            "id": "2eb5bcc3ad88b97ec36616da",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
           {
             "id": "d2b47e5ca2b10e4d38ddb26f",
             "relationship": "shared-topic",
@@ -44846,129 +44725,6 @@
       ]
     },
     {
-      "importance": 51,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "3d293869c3ae62396dc43f6e",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "72286a4388d15b6d16668041",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "94d085538b2ed7ae2fa09e15",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "d2b47e5ca2b10e4d38ddb26f",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": false
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "2eb5bcc3ad88b97ec36616da",
-      "title": "MosaicLeaks: Can your research agent keep a secret?",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/ServiceNow/mosaicleaks",
-      "publishedAt": "2026-06-18T18:13:13.000Z",
-      "summary": "MosaicLeaks: Can your research agent keep a secret?",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "26cac67090219df52b95f14c",
-      "title": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/peft-beyond-lora",
-      "publishedAt": "2026-06-18T00:00:00.000Z",
-      "summary": "Beyond LoRA: Can you beat the most popular fine-tuning technique?",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
@@ -45045,14 +44801,6 @@
         },
         "publishedAtBasis": "published",
         "relatedNews": [
-          {
-            "id": "2eb5bcc3ad88b97ec36616da",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
           {
             "id": "72286a4388d15b6d16668041",
             "relationship": "shared-topic",
@@ -45164,14 +44912,6 @@
         },
         "publishedAtBasis": "published",
         "relatedNews": [
-          {
-            "id": "2eb5bcc3ad88b97ec36616da",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
           {
             "id": "3d293869c3ae62396dc43f6e",
             "relationship": "shared-topic",
@@ -49712,86 +49452,6 @@
       "summary": "Q3 2025 brought an exciting wave of innovation and community energy! Explore the projects we funded this quarter and the work they’re advancing:...",
       "tags": [
         "稳定币与可信基础设施",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Google",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "464cf0b65cf16d468041977f",
-      "title": "AlphaFold: Five years of impact",
-      "source": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/alphafold-five-years-of-impact/",
-      "publishedAt": "2025-11-25T16:00:12.000Z",
-      "summary": "Explore how AlphaFold has accelerated science and fueled a global wave of biological discovery.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Google",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "732842600c633719141a3759",
-      "title": "Revealing a key protein behind heart disease",
-      "source": "Google DeepMind",
-      "sourceUrl": "https://deepmind.google/blog/revealing-a-key-protein-behind-heart-disease/",
-      "publishedAt": "2025-11-25T15:52:51.000Z",
-      "summary": "AlphaFold has revealed the structure of a key protein behind heart disease",
-      "tags": [
-        "AI 模型",
         "官方来源"
       ]
     },
