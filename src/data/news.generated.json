@@ -1,9 +1,184 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-12T05:27:30.260Z",
+  "asOf": "2026-11-12T14:30:10.757Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "chips",
+      "id": "bb315cafa402d8202158b92c",
+      "title": "A New Dawn in the Cloud: ‘Warhammer 40,000: Dawn of War IV’ Is Coming to GeForce NOW",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/geforce-now-thursday-warhammer-dawn-of-war-iv-coming/",
+      "publishedAt": "2026-11-12T14:00:59.000Z",
+      "summary": "Rally the ranks this GFN Thursday. Warhammer 40,000: Dawn of War IV is coming to GeForce NOW, allowing players to experience the battle for Kronus through cloud gaming. There’s more on the horizon, with NVIDIA DLSS 5 technology coming to War Thunder and Where Winds Meet. Meanwhile, Dragon’s Dogma 2: Dark Arisen brings ",
+      "tags": [
+        "算力基础设施",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：可获得的算力、内存带宽和能耗共同约束模型训练与部署，需区分规格与实测收益。",
+      "longTermImpact": "规则情景（3–10 年）：计算与能源供给可能持续约束 AI 的成本与规模。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "compute-supply",
+            "label": "算力与内存约束",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "064fb88520fa5af6f591c843",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1864e43d05e791382882d165",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "24bc76c8a5ccec322485553c",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "59360bd6cd686ad2dc83ae9a",
+            "relationship": "shared-topic",
+            "themes": [
+              "compute-supply"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "chips",
+      "id": "8922d709796f6fffd97970c8",
+      "title": "Nine Korean startups vie for a spot in Disrupt 2027’s Startup Battlefield 200 competition",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/12/nine-korean-startups-vie-for-a-spot-in-disrupt-2027s-startup-battlefield-200-competition/",
+      "publishedAt": "2026-11-12T13:26:25.000Z",
+      "summary": "The startups work across the deep tech sector, including healthcare, fintech, energy, semiconductors, and AI. All nine are looking to enter the US.",
+      "tags": [
+        "算力基础设施",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "4922ca6fb0dd92994c349853",
+      "title": "Holiday Extras is rethinking what it can build with Codex",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/business/customer-stories/holidays-extras-codex",
+      "publishedAt": "2026-11-12T09:30:00.000Z",
+      "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
     {
       "importance": 57,
       "longTermImportance": 54,
@@ -92,6 +267,54 @@
       ]
     },
     {
+      "importance": 53,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "存在可核验的量化主张（未验证）",
+            "points": 4
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "d7c1da8cb7dc41da688b7a99",
+      "title": "Supporting research on AI and children’s safety",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/children-first-declaration",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
       "importance": 49,
       "longTermImportance": 40,
       "horizonYears": 1,
@@ -130,6 +353,50 @@
       "sourceUrl": "https://openai.com/index/gilbert-tobin-sam-nickless",
       "publishedAt": "2026-11-12T00:00:00.000Z",
       "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "cbda9238a3684b28e47a3f03",
+      "title": "The Definitive Fine-Tuning Guide for 3D Generation Models",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/3d-lora-finetuning",
+      "publishedAt": "2026-11-12T00:00:00.000Z",
+      "summary": "The Definitive Fine-Tuning Guide for 3D Generation Models",
       "tags": [
         "AI 模型",
         "官方来源"
@@ -1687,7 +1954,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -1708,8 +1975,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -1774,7 +2041,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -1791,8 +2058,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -1818,7 +2085,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -1835,8 +2102,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -1862,7 +2129,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：协议变更可能影响兼容性、安全和迁移成本；公告本身不能证明已广泛采用。",
@@ -1891,8 +2158,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -2101,7 +2368,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6b6709b612e5913e3ffca54a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -2109,7 +2376,7 @@
             "differentSource": true
           },
           {
-            "id": "6b6709b612e5913e3ffca54a",
+            "id": "6fbb9cbc09ce7eb4c3adf9c4",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -2640,7 +2907,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6b6709b612e5913e3ffca54a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -3242,93 +3509,6 @@
       "tags": [
         "AI 模型",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 50,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "Condé Nast",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "1153869638ee727cb025cf62",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "5a90caffb2c87d2e6e8eb5c3",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "6b6709b612e5913e3ffca54a",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "6e07690c27eb09da199b1ed7",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "65ac5c3e3308f7c469cbd0e0",
-      "title": "Ring’s Indoor Drone Camera Is Back—and Now Powered by AI",
-      "source": "Wired",
-      "sourceUrl": "https://www.wired.com/story/ring-robotics-drone-cam-rover-cam/",
-      "publishedAt": "2026-11-10T13:30:00.000Z",
-      "summary": "This $250 Drone Cam flies around your home to monitor threats. There’s also the Rover Cam for businesses, featuring the guts of Amazon’s former Astro robot.",
-      "tags": [
-        "AI 模型",
-        "新闻来源"
       ]
     },
     {
@@ -4022,7 +4202,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6e07690c27eb09da199b1ed7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4193,7 +4373,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6b6709b612e5913e3ffca54a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4201,7 +4381,7 @@
             "differentSource": true
           },
           {
-            "id": "6b6709b612e5913e3ffca54a",
+            "id": "6fbb9cbc09ce7eb4c3adf9c4",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -4425,15 +4605,15 @@
             "differentSource": true
           },
           {
-            "id": "064fb88520fa5af6f591c843",
+            "id": "8922d709796f6fffd97970c8",
             "relationship": "shared-topic",
             "themes": [
               "compute-supply"
             ],
-            "differentSource": false
+            "differentSource": true
           },
           {
-            "id": "1864e43d05e791382882d165",
+            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "compute-supply"
@@ -4940,7 +5120,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6b6709b612e5913e3ffca54a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5027,7 +5207,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6b6709b612e5913e3ffca54a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5106,15 +5286,15 @@
             "differentSource": true
           },
           {
-            "id": "064fb88520fa5af6f591c843",
+            "id": "8922d709796f6fffd97970c8",
             "relationship": "shared-topic",
             "themes": [
               "compute-supply"
             ],
-            "differentSource": false
+            "differentSource": true
           },
           {
-            "id": "1864e43d05e791382882d165",
+            "id": "064fb88520fa5af6f591c843",
             "relationship": "shared-topic",
             "themes": [
               "compute-supply"
@@ -5333,7 +5513,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6b6709b612e5913e3ffca54a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5341,7 +5521,7 @@
             "differentSource": true
           },
           {
-            "id": "6b6709b612e5913e3ffca54a",
+            "id": "6e07690c27eb09da199b1ed7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -6314,7 +6494,7 @@
       ]
     },
     {
-      "importance": 63,
+      "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -6333,10 +6513,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -6362,7 +6538,7 @@
       ]
     },
     {
-      "importance": 54,
+      "importance": 51,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -6381,10 +6557,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -6449,7 +6621,7 @@
       ]
     },
     {
-      "importance": 46,
+      "importance": 43,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -6464,10 +6636,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -6554,7 +6722,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6b6709b612e5913e3ffca54a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7057,7 +7225,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6b6709b612e5913e3ffca54a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7379,7 +7547,7 @@
             "differentSource": true
           },
           {
-            "id": "f09a5d5281fd9fadc65892b5",
+            "id": "8922d709796f6fffd97970c8",
             "relationship": "shared-topic",
             "themes": [
               "compute-supply"
@@ -7387,12 +7555,12 @@
             "differentSource": true
           },
           {
-            "id": "064fb88520fa5af6f591c843",
+            "id": "f09a5d5281fd9fadc65892b5",
             "relationship": "shared-topic",
             "themes": [
               "compute-supply"
             ],
-            "differentSource": false
+            "differentSource": true
           }
         ]
       },
@@ -8533,7 +8701,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6b6709b612e5913e3ffca54a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -8839,50 +9007,6 @@
       "summary": "Granite Switch 4.1.1 — Update models like you update software",
       "tags": [
         "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 60,
-      "longTermImportance": 40,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "chips",
-      "id": "ea413dd27e3e4bb89632d341",
-      "title": "Slice Into GFN Thursday: ‘Phantom Blade Zero’ Launches on GeForce NOW",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/geforce-now-thursday-phantom-blade-zero/",
-      "publishedAt": "2026-10-29T13:00:16.000Z",
-      "summary": "This Halloween week, GFN Thursday is delivering a fresh batch of gaming treats. Something wicked this blade comes. S-GAME’s Phantom Blade Zero launches on GeForce NOW today, bringing a scarily good blend of martial arts and punk fantasy to the cloud. There’s also something on the horizon for adventurers: World of Warcr",
-      "tags": [
-        "算力基础设施",
         "官方来源"
       ]
     },
@@ -9316,7 +9440,7 @@
             "differentSource": true
           },
           {
-            "id": "65ac5c3e3308f7c469cbd0e0",
+            "id": "6b6709b612e5913e3ffca54a",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9324,7 +9448,7 @@
             "differentSource": true
           },
           {
-            "id": "6b6709b612e5913e3ffca54a",
+            "id": "6e07690c27eb09da199b1ed7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -14712,46 +14836,6 @@
         "themes": [],
         "sourceQuality": {
           "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "d9e485b409fe8517ac6e3a5b",
-      "title": "Disrupting AI-enabled “false front” operations",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
-      "publishedAt": "2026-10-08T00:00:00.000Z",
-      "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
           "publisher": "Hugging Face",
           "score": 90,
           "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
@@ -14854,46 +14938,6 @@
       "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
       "publishedAt": "2026-10-07T12:00:00.000Z",
       "summary": "Overview of Playground",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "661f64ddb5f472a2675ed75a",
-      "title": "Helping teens learn, plan, and shape the future of AI",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/teens-learn-and-plan",
-      "publishedAt": "2026-10-07T12:00:00.000Z",
-      "summary": "College Planner is coming to ChatGPT for Teens to help students manage college applications, alongside new flashcards, quizzes, and a teen AI council.",
       "tags": [
         "AI 模型",
         "官方来源"
@@ -21396,46 +21440,6 @@
       "sourceUrl": "https://huggingface.co/blog/ffasr-leaderboard",
       "publishedAt": "2026-06-24T00:00:00.000Z",
       "summary": "Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "2e297cf400e7d42e20feb31f",
-      "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/cross-origin-storage",
-      "publishedAt": "2026-06-23T00:00:00.000Z",
-      "summary": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
       "tags": [
         "AI 模型",
         "官方来源"
