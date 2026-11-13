@@ -1,9 +1,822 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-13T13:48:12.252Z",
+  "asOf": "2026-11-13T21:08:36.762Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 65,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "010d2c43010e70e17787d7e4",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02bb1a2d1323033fe886a40c",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02e9abf47eaf3fa01f98fe0d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "039c74dda2a3b52c28a0b12b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "754f24889ed9e00a6da88e40",
+      "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "publishedAt": "2026-11-13T20:45:10.000Z",
+      "summary": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US billing address and \"eligible US-issued American Express, Chase, Mastercard and Visa cards.\" After a",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 65,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "010d2c43010e70e17787d7e4",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02bb1a2d1323033fe886a40c",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02e9abf47eaf3fa01f98fe0d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0556eb8bafc5c7584e57d950",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "49f0b0840b1ef26af09f29c8",
+      "title": "AI agent startup LangChain hits $3B valuation",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "publishedAt": "2026-11-13T19:37:57.000Z",
+      "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 73,
+      "longTermImportance": 85,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
+      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "存在可核验的量化主张（未验证）",
+            "points": 4
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "inference-economics",
+            "label": "推理成本与效率",
+            "evidence": "headline"
+          },
+          {
+            "id": "compute-supply",
+            "label": "算力与内存约束",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "2551474761e05508e9f49a67",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "4bd21d5ca2a1de6fc8eb00b7",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "7331ec97cf61baf2386a0da1",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "c10310cdcfd4a8e47b748052",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "chips",
+      "id": "a8cb743586dc52b9f3a44c7d",
+      "title": "Cost-optimizing AssemblyAI speech-to-text inference on AWS with Amazon EC2 Spot",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+      "publishedAt": "2026-11-13T19:35:35.000Z",
+      "summary": "Learn how AssemblyAI runs cost-optimized speech-to-text inference at scale on AWS, using Amazon ECS, Amazon EC2 Spot GPU instances, and an Amazon SQS-based retry architecture to achieve 70% cost savings while maintaining SLA commitments across European Regions.",
+      "tags": [
+        "算力基础设施",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
+      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "inference-economics",
+            "label": "推理成本与效率",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "060e1912f97a0c425d6c7451",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0636b3cafc2b5817e26489e0",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1134bdbc357ce8aea73caaca",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "15e8418a00dbc25df65d998c",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "5fc66b49260043b9fbe203d0",
+      "title": "Cost attribution and controls for AI developer and productivity tools on Amazon Bedrock",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-attribution-and-controls-for-ai-developer-and-productivity-tools-on-amazon-bedrock/",
+      "publishedAt": "2026-11-13T18:44:02.000Z",
+      "summary": "Amazon Bedrock provides built-in, zero-instrumentation cost attribution that traces every inference call back to the IAM principal that made it. This post shows how to attribute per-user Bedrock costs for AI developer and productivity tools using IAM Identity Center, session tags, and CUR 2.0, and how to enforce per-us",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
+      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "inference-economics",
+            "label": "推理成本与效率",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Amazon",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "060e1912f97a0c425d6c7451",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0636b3cafc2b5817e26489e0",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1134bdbc357ce8aea73caaca",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "15e8418a00dbc25df65d998c",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "5e58f673d3a366d25ac9372b",
+      "title": "Build a model improvement flywheel with Amazon SageMaker HyperPod Data Capture",
+      "source": "AWS Machine Learning",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/build-a-model-improvement-flywheel-with-amazon-sagemaker-hyperpod-data-capture/",
+      "publishedAt": "2026-11-13T18:01:15.000Z",
+      "summary": "Amazon SageMaker HyperPod Data Capture records live inference inputs and outputs to Amazon S3. This post walks through one end-to-end example: capturing a support router's production traffic, surfacing a new-product blind spot with Amazon Athena, fine-tuning on the captured data with the HyperPod training operator, and",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 57,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "010d2c43010e70e17787d7e4",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "01ee5fe602c9fe4318794751",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "042a5cee7cf2047fb4a70a4f",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1153869638ee727cb025cf62",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "robotics",
+      "id": "cdc8eef67bc55a0d0fa5ca86",
+      "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "publishedAt": "2026-11-13T18:00:39.000Z",
+      "summary": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "tags": [
+        "具身智能",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "96c7f67bef86f8316048a87f",
+      "title": "XYBench: Helping with the problem behind the question",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/allenai/xybench",
+      "publishedAt": "2026-11-13T17:02:35.000Z",
+      "summary": "XYBench: Helping with the problem behind the question",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "TechCrunch",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "010d2c43010e70e17787d7e4",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02bb1a2d1323033fe886a40c",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02e9abf47eaf3fa01f98fe0d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0556eb8bafc5c7584e57d950",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "bbcb79fadd39dd32e9c79702",
+      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+      "publishedAt": "2026-11-13T16:00:12.000Z",
+      "summary": "ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 74,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "010d2c43010e70e17787d7e4",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02bb1a2d1323033fe886a40c",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "039c74dda2a3b52c28a0b12b",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0556eb8bafc5c7584e57d950",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "7d4d71d056da02862d0b2ec1",
+      "title": "Introducing ChatGPT Wallet",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-chatgpt-wallet",
+      "publishedAt": "2026-11-13T15:00:00.000Z",
+      "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.",
+      "tags": [
+        "智能体",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "Hugging Face",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "6841e619fcd7e8d9370258a2",
+      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "source": "Hugging Face",
+      "sourceUrl": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "publishedAt": "2026-11-13T14:05:22.000Z",
+      "summary": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
     {
       "importance": 49,
       "longTermImportance": 40,
@@ -447,7 +1260,7 @@
             "differentSource": true
           },
           {
-            "id": "c10310cdcfd4a8e47b748052",
+            "id": "a8cb743586dc52b9f3a44c7d",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -10180,7 +10993,7 @@
             "differentSource": true
           },
           {
-            "id": "c73a5f70abfd5467ea9cb1d6",
+            "id": "a8cb743586dc52b9f3a44c7d",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -10189,7 +11002,7 @@
             "differentSource": true
           },
           {
-            "id": "cb9b318f703a0f1ab64226f6",
+            "id": "c73a5f70abfd5467ea9cb1d6",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -11623,7 +12436,7 @@
             "differentSource": true
           },
           {
-            "id": "c73a5f70abfd5467ea9cb1d6",
+            "id": "a8cb743586dc52b9f3a44c7d",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -11632,7 +12445,7 @@
             "differentSource": true
           },
           {
-            "id": "cb9b318f703a0f1ab64226f6",
+            "id": "c73a5f70abfd5467ea9cb1d6",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -15839,6 +16652,15 @@
             "differentSource": true
           },
           {
+            "id": "a8cb743586dc52b9f3a44c7d",
+            "relationship": "shared-topic",
+            "themes": [
+              "inference-economics",
+              "compute-supply"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "c10310cdcfd4a8e47b748052",
             "relationship": "shared-topic",
             "themes": [
@@ -15849,15 +16671,6 @@
           },
           {
             "id": "c73a5f70abfd5467ea9cb1d6",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "compute-supply"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "cb9b318f703a0f1ab64226f6",
             "relationship": "shared-topic",
             "themes": [
               "inference-economics",
@@ -23974,7 +24787,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
@@ -23995,8 +24808,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24061,7 +24874,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24082,8 +24895,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24148,7 +24961,7 @@
       ]
     },
     {
-      "importance": 70,
+      "importance": 67,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24173,8 +24986,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24239,7 +25052,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24256,8 +25069,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24283,7 +25096,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24304,8 +25117,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24370,7 +25183,7 @@
       ]
     },
     {
-      "importance": 65,
+      "importance": 62,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
@@ -24395,8 +25208,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24461,7 +25274,7 @@
       ]
     },
     {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -24482,8 +25295,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -24509,7 +25322,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24530,8 +25343,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24596,7 +25409,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
@@ -24625,8 +25438,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24691,7 +25504,7 @@
       ]
     },
     {
-      "importance": 53,
+      "importance": 50,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24712,8 +25525,8 @@
             "points": 4
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24778,7 +25591,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24803,8 +25616,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24869,7 +25682,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 85,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24894,8 +25707,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -24969,7 +25782,7 @@
       ]
     },
     {
-      "importance": 57,
+      "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -24990,8 +25803,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -25056,7 +25869,7 @@
       ]
     },
     {
-      "importance": 69,
+      "importance": 66,
       "longTermImportance": 85,
       "horizonYears": 7,
       "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
@@ -25081,8 +25894,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -25156,7 +25969,7 @@
       ]
     },
     {
-      "importance": 49,
+      "importance": 46,
       "longTermImportance": 40,
       "horizonYears": 1,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -25173,8 +25986,8 @@
             "points": 8
           },
           {
-            "reason": "近一天的来源时间",
-            "points": 6
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [],
@@ -25865,280 +26678,6 @@
       "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
       "publishedAt": "2026-11-11T22:26:40.000Z",
       "summary": "A recap of the major Amazon Bedrock, Amazon Bedrock AgentCore, and Strands updates from October 2026: new models to match each task, updates that keep agents available and grounded, and clearer cost reporting for AI builders.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 54,
-      "longTermImportance": 62,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：推理成本、延迟与质量之间的取舍可能决定应用能否规模化，需用真实负载验证。",
-      "longTermImpact": "规则情景（3–10 年）：低成本、可用的推理服务可能成为 AI 应用基础设施。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "inference-economics",
-            "label": "推理成本与效率",
-            "evidence": "excerpt"
-          },
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "1134bdbc357ce8aea73caaca",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "15fb861087fc30c908382084",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "370548d51c2068ec22ad1406",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "425dc654955059895980fa2d",
-            "relationship": "shared-topic",
-            "themes": [
-              "inference-economics",
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "e3fb265c4a7f0c03e332381c",
-      "title": "The attendee’s guide to the AWS re:Invent 2026 AI/ML track",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/the-attendees-guide-to-the-aws-reinvent-2026-ai-ml-track/",
-      "publishedAt": "2026-11-11T21:05:59.000Z",
-      "summary": "AWS re:Invent 2026 includes more than 140 AI/ML track sessions. This attendee's guide helps you find the breakouts, chalk talks, workshops, and builders' sessions that fit your role and goals, spanning AI chips, models and inference, agents, agent trust, and sustainability, so you can build a smarter re:Invent schedule",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 66,
-      "longTermImportance": 77,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "010d2c43010e70e17787d7e4",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02bb1a2d1323033fe886a40c",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "039c74dda2a3b52c28a0b12b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "fd6c66a0e11b0365f1aac7cb",
-      "title": "Automating AWS Agent Registry updates with push-based architecture",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/automating-aws-agent-registry-updates-with-push-based-architecture/",
-      "publishedAt": "2026-11-11T20:52:48.000Z",
-      "summary": "This post shows how to keep the AWS Agent Registry current automatically. Using AWS CloudTrail, Amazon EventBridge, AWS Lambda, and AgentCore Identity, an event-driven pipeline detects MCP server changes and pushes updated tool metadata to the registry with no stored secrets, across single- and multi-account environmen",
-      "tags": [
-        "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 54,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "excerpt"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Amazon",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "010d2c43010e70e17787d7e4",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02bb1a2d1323033fe886a40c",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "039c74dda2a3b52c28a0b12b",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "ai",
-      "id": "8556616005ab5618b6a17228",
-      "title": "How DXC Technology built a multi-model AI substrate on Amazon Bedrock",
-      "source": "AWS Machine Learning",
-      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-dxc-technology-built-a-multi-model-ai-substrate-on-amazon-bedrock/",
-      "publishedAt": "2026-11-11T20:45:45.000Z",
-      "summary": "DXC Technology runs mission-critical managed IT services for regulated organizations across 70 countries. Learn how DXC built DCX OASIS, its Human+AI operating model, on a governed multi-model substrate in Amazon Bedrock, separating a resilient model substrate from a trusted harness that orchestrates, governs, and audi",
       "tags": [
         "AI 模型",
         "官方来源"
@@ -27439,50 +27978,6 @@
       ]
     },
     {
-      "importance": 46,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "ac8f18750241a65f1eaff594",
-      "title": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-personas-finance-japan",
-      "publishedAt": "2026-11-09T15:05:57.000Z",
-      "summary": "Nemotron-Personas-Finance-Japan: A Synthetic Dataset Capturing Japan's Demographics and Financial Context",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 54,
       "longTermImportance": 54,
       "horizonYears": 5,
@@ -28538,7 +29033,7 @@
       ]
     },
     {
-      "importance": 66,
+      "importance": 63,
       "longTermImportance": 77,
       "horizonYears": 7,
       "whyItMatters": "规则分析：开放接口和可迁移性可能降低接入成本，但许可、维护和兼容性仍需评估。",
@@ -28561,10 +29056,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [
@@ -28625,93 +29116,6 @@
       "summary": "A year ago, NVIDIA open sourced its Aerial wireless software, joining Sionna and a broader suite of open source tools for accelerating next-generation 6G network development. Together, they give researchers a foundation for testing ideas, comparing results and building on each other’s work — connecting simulation and A",
       "tags": [
         "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 54,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "physical-automation",
-            "label": "具身智能与物理自动化",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "010d2c43010e70e17787d7e4",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "01ee5fe602c9fe4318794751",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "042a5cee7cf2047fb4a70a4f",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1153869638ee727cb025cf62",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "robotics",
-      "id": "5a90caffb2c87d2e6e8eb5c3",
-      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/allenai/toyblocks",
-      "publishedAt": "2026-11-06T14:00:48.000Z",
-      "summary": "ToyBlocks: A controlled world for robot learning and evaluation",
-      "tags": [
-        "具身智能",
         "官方来源"
       ]
     },
@@ -32352,14 +32756,6 @@
             "differentSource": true
           },
           {
-            "id": "5a90caffb2c87d2e6e8eb5c3",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "6e07690c27eb09da199b1ed7",
             "relationship": "shared-topic",
             "themes": [
@@ -32369,6 +32765,14 @@
           },
           {
             "id": "84abd1857de5dfd951d90dcf",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "d08694737b722c2bcd90894d",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -37279,46 +37683,6 @@
         "稳定币与可信基础设施",
         "官方来源",
         "来源更新时间"
-      ]
-    },
-    {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "db7b9e6fe248e3146f87743a",
-      "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/oracle",
-      "publishedAt": "2026-10-08T16:00:00.000Z",
-      "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
       ]
     },
     {
@@ -42371,50 +42735,6 @@
       "sourceUrl": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel",
       "publishedAt": "2026-06-24T16:00:13.000Z",
       "summary": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 60,
-      "longTermImportance": 40,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "Hugging Face",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "bb6dca4045d63cf1125428b6",
-      "title": "Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World",
-      "source": "Hugging Face",
-      "sourceUrl": "https://huggingface.co/blog/ffasr-leaderboard",
-      "publishedAt": "2026-06-24T00:00:00.000Z",
-      "summary": "Introducing the FFASR Leaderboard: Benchmarking ASR in the Real World",
       "tags": [
         "AI 模型",
         "官方来源"
