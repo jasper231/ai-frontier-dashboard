@@ -1,9 +1,145 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-15T10:17:29.571Z",
+  "asOf": "2026-11-15T18:23:49.519Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 66,
+      "longTermImportance": 40,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "release",
+          "publisher": "AMD",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "updated",
+        "relatedNews": []
+      },
+      "category": "chips",
+      "id": "16906ad7663d43dee11ff913",
+      "title": "hip-version_10.3.63190",
+      "source": "AMD ROCm Systems",
+      "sourceUrl": "https://github.com/ROCm/rocm-systems/releases/tag/hip-version_10.3.63190",
+      "publishedAt": "2026-11-15T16:59:59.000Z",
+      "summary": "Tag for build hip-version_10.3.63190",
+      "tags": [
+        "算力基础设施",
+        "官方来源",
+        "来源更新时间"
+      ]
+    },
+    {
+      "importance": 53,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：物理任务的泛化、安全和可靠性需要在真实环境评估，演示不能直接代表部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：安全可靠的物理任务自动化可能改变生产与服务流程。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Vox Media",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "1153869638ee727cb025cf62",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "6b6709b612e5913e3ffca54a",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "6e07690c27eb09da199b1ed7",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "6fbb9cbc09ce7eb4c3adf9c4",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "robotics",
+      "id": "977e6d447dbae91015063120",
+      "title": "The Sony Aibo was a robot revolution dressed like a dog",
+      "source": "The Verge",
+      "sourceUrl": "https://www.theverge.com/podcast/1033948/sony-aibo-robot-dog-version-history",
+      "publishedAt": "2026-11-15T13:57:30.000Z",
+      "summary": "In the 1990s, Sony was absolutely convinced that we were on the precipice of a robot takeover. Pretty soon, the company decided, we'd all be living among countless humanoid robots. Some would be our coworkers; others would be our friends; and at least one would be our pet. And \"pet\" was exactly what Sony was […]",
+      "tags": [
+        "具身智能",
+        "新闻来源"
+      ]
+    },
     {
       "importance": 54,
       "longTermImportance": 54,
@@ -9299,51 +9435,6 @@
       "tags": [
         "智能体",
         "官方来源"
-      ]
-    },
-    {
-      "importance": 60,
-      "longTermImportance": 40,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "release",
-          "publisher": "AMD",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "updated",
-        "relatedNews": []
-      },
-      "category": "chips",
-      "id": "b0cb784867075ffe13faa094",
-      "title": "hip-version_10.3.63010",
-      "source": "AMD ROCm Systems",
-      "sourceUrl": "https://github.com/ROCm/rocm-systems/releases/tag/hip-version_10.3.63010",
-      "publishedAt": "2026-10-28T16:26:34.000Z",
-      "summary": "Tag for build hip-version_10.3.63010",
-      "tags": [
-        "算力基础设施",
-        "官方来源",
-        "来源更新时间"
       ]
     },
     {
