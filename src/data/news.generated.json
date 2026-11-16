@@ -1,9 +1,236 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-15T18:23:49.519Z",
+  "asOf": "2026-11-16T00:38:49.032Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
+    {
+      "importance": 57,
+      "longTermImportance": 62,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "excerpt"
+          },
+          {
+            "id": "physical-automation",
+            "label": "具身智能与物理自动化",
+            "evidence": "excerpt"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "NVIDIA",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "02e9abf47eaf3fa01f98fe0d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0ca05117dff37c920736c0c6",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "0e9fb0eb84f13acffdc59012",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "14e90e72d3401ddf817f6448",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "d16c86f834412880e1d6e0a8",
+      "title": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
+      "source": "NVIDIA",
+      "sourceUrl": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+      "publishedAt": "2026-11-16T00:00:28.000Z",
+      "summary": "Over two days at COEX, more than 2,000 attendees converged for AI Day Seoul, bringing together Korea’s industry leaders, startups and developer communities advancing physical AI and AI agents. At the plenary sessions, Deepu Talla, vice president of robotics and edge AI at NVIDIA, said Korea is “punching above its weigh",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 69,
+      "longTermImportance": 77,
+      "horizonYears": 7,
+      "whyItMatters": "规则分析：协议变更可能影响兼容性、安全和迁移成本；公告本身不能证明已广泛采用。",
+      "longTermImpact": "规则情景（3–10 年）：可信、可互操作的协议可能塑造长期基础设施。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "架构、开放生态或协议影响",
+            "points": 12
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "protocol-trust",
+            "label": "可信与互操作协议",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "3f93c71b9de8f22e7c865dba",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "5dd81c0834add665bafe09f4",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "77011d077be502fd6ca18a27",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "fa1f31dceba8531a0b016aae",
+            "relationship": "shared-topic",
+            "themes": [
+              "protocol-trust"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "ai",
+      "id": "2e8f421d2ee2a3dfd36bfcc5",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "publishedAt": "2026-11-15T22:00:01.000Z",
+      "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "33b95c2112c46efd09554302",
+      "title": "Our new blog for science",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/our-new-blog-for-science",
+      "publishedAt": "2026-11-15T22:00:00.000Z",
+      "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
     {
       "importance": 66,
       "longTermImportance": 40,
@@ -5751,7 +5978,7 @@
             "differentSource": true
           },
           {
-            "id": "3f93c71b9de8f22e7c865dba",
+            "id": "2e8f421d2ee2a3dfd36bfcc5",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -5759,7 +5986,7 @@
             "differentSource": true
           },
           {
-            "id": "4094d4340f9e66f9e2fcbdf5",
+            "id": "3f93c71b9de8f22e7c865dba",
             "relationship": "shared-topic",
             "themes": [
               "protocol-trust"
@@ -7617,93 +7844,6 @@
       "summary": "Discover how Heimstaden uses OpenAI’s ChatGPT Enterprise and Codex to transform property management, cut costs, and empower employees across Europe.",
       "tags": [
         "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 63,
-      "longTermImportance": 77,
-      "horizonYears": 7,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "架构、开放生态或协议影响",
-            "points": 12
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "NVIDIA",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0ca05117dff37c920736c0c6",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0e9fb0eb84f13acffdc59012",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "0f01adb2acab0a67ba71c0b0",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "2eec94a2d2923fe401839408",
-      "title": "Cities Worldwide Build and Scale AI Services With NVIDIA Physical and Agentic AI",
-      "source": "NVIDIA",
-      "sourceUrl": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
-      "publishedAt": "2026-11-03T07:00:12.000Z",
-      "summary": "Cities generate enormous amounts of data from cameras, sensors and operational systems, but turning it into useful action — for planning, maintenance and public services — remains a challenge. Physical and agentic AI offer new ways to close that gap, from digital twins for infrastructure planning to vision and service ",
-      "tags": [
-        "智能体",
         "官方来源"
       ]
     },
@@ -9789,7 +9929,7 @@
             "differentSource": true
           },
           {
-            "id": "2eec94a2d2923fe401839408",
+            "id": "3a45181f6d992343d41b7416",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9864,7 +10004,7 @@
             "differentSource": true
           },
           {
-            "id": "2eec94a2d2923fe401839408",
+            "id": "3a45181f6d992343d41b7416",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -9872,7 +10012,7 @@
             "differentSource": true
           },
           {
-            "id": "3a45181f6d992343d41b7416",
+            "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10039,7 +10179,7 @@
             "differentSource": true
           },
           {
-            "id": "2eec94a2d2923fe401839408",
+            "id": "3a45181f6d992343d41b7416",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10047,7 +10187,7 @@
             "differentSource": true
           },
           {
-            "id": "3a45181f6d992343d41b7416",
+            "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10210,7 +10350,7 @@
             "differentSource": true
           },
           {
-            "id": "2eec94a2d2923fe401839408",
+            "id": "3a45181f6d992343d41b7416",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -10218,7 +10358,7 @@
             "differentSource": true
           },
           {
-            "id": "3a45181f6d992343d41b7416",
+            "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -11945,14 +12085,6 @@
             "differentSource": true
           },
           {
-            "id": "2eec94a2d2923fe401839408",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
@@ -11962,6 +12094,14 @@
           },
           {
             "id": "49f8fdcf9435ba0feae43c93",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "51888f116f5b083740bce796",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -12068,14 +12208,6 @@
             "differentSource": true
           },
           {
-            "id": "2eec94a2d2923fe401839408",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
             "id": "3bb16877d8a781bb212bba26",
             "relationship": "shared-topic",
             "themes": [
@@ -12085,6 +12217,14 @@
           },
           {
             "id": "49f8fdcf9435ba0feae43c93",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "51888f116f5b083740bce796",
             "relationship": "shared-topic",
             "themes": [
               "agent-execution"
@@ -14118,46 +14258,6 @@
       ]
     },
     {
-      "importance": 43,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "8d45898e533e591d4241f4c1",
-      "title": "Higgsfield takes AI video from 1 minute to over 10",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/higgsfield-longer-videos-voice",
-      "publishedAt": "2026-10-13T12:00:00.000Z",
-      "summary": "Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
-      ]
-    },
-    {
       "importance": 63,
       "longTermImportance": 77,
       "horizonYears": 7,
@@ -14217,50 +14317,6 @@
       "summary": "Azure Maia 200 now in production; Azure Maia 300 coming in 2027 As we move into the era of Super Intelligence, Microsoft is entering a new phase of infrastructure. We will scale our Azure Maia family to multi-gigawatt deployments starting in 2027, making Maia the primary inference system for Microsoft products and serv",
       "tags": [
         "智能体",
-        "官方来源"
-      ]
-    },
-    {
-      "importance": 47,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "570fe3204556675e8dd927e7",
-      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/sophos",
-      "publishedAt": "2026-10-09T07:00:00.000Z",
-      "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
-      "tags": [
-        "AI 模型",
         "官方来源"
       ]
     },
