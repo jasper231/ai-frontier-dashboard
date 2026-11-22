@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "asOf": "2026-11-22T10:38:25.648Z",
+  "asOf": "2026-11-22T18:56:49.087Z",
   "timeZone": "UTC",
   "isDemo": false,
   "items": [
@@ -39,7 +39,7 @@
         ],
         "sourceQuality": {
           "kind": "news",
-          "publisher": "Vox Media",
+          "publisher": "TechCrunch",
           "score": 83,
           "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
         },
@@ -80,15 +80,64 @@
         ]
       },
       "category": "robotics",
-      "id": "ec8e761e0eb8542f51eeee0f",
-      "title": "The UN fails to agree on rules regulating ‘killer robots’",
-      "source": "The Verge",
-      "sourceUrl": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-      "publishedAt": "2026-11-21T20:03:37.000Z",
-      "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start discussing options\" after a largely fruitless week of negotiations. According to N",
+      "id": "28c48f816e4d2e4f04da66e1",
+      "title": "TechCrunch Mobility: A/B testing robots vs. humans",
+      "source": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/22/techcrunch-mobility-a-b-testing-robots-vs-humans/",
+      "publishedAt": "2026-11-22T17:06:00.000Z",
+      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and, now more than ever, the role AI is playing in it.",
       "tags": [
         "具身智能",
         "新闻来源"
+      ]
+    },
+    {
+      "importance": 66,
+      "longTermImportance": 40,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "具体发布或部署事件",
+            "points": 17
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "release",
+          "publisher": "AMD",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "updated",
+        "relatedNews": []
+      },
+      "category": "chips",
+      "id": "8cb296b5c3d5e9f611a742f3",
+      "title": "hip-version_10.3.63260",
+      "source": "AMD ROCm Systems",
+      "sourceUrl": "https://github.com/ROCm/rocm-systems/releases/tag/hip-version_10.3.63260",
+      "publishedAt": "2026-11-22T11:33:18.000Z",
+      "summary": "Tag for build hip-version_10.3.63260",
+      "tags": [
+        "算力基础设施",
+        "官方来源",
+        "来源更新时间"
       ]
     },
     {
@@ -115,6 +164,137 @@
           {
             "reason": "近一天的来源时间",
             "points": 6
+          }
+        ],
+        "themes": [
+          {
+            "id": "agent-execution",
+            "label": "可验证的智能体执行",
+            "evidence": "headline"
+          }
+        ],
+        "sourceQuality": {
+          "kind": "news",
+          "publisher": "Condé Nast",
+          "score": 83,
+          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": [
+          {
+            "id": "011b27afc6a841bff218ff10",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "02e9abf47eaf3fa01f98fe0d",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "19b4fcb1faac9c9bdbccd358",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          },
+          {
+            "id": "1d80e465e65b9589fb749478",
+            "relationship": "shared-topic",
+            "themes": [
+              "agent-execution"
+            ],
+            "differentSource": true
+          }
+        ]
+      },
+      "category": "agents",
+      "id": "6b55ef71c32ff32b2089b041",
+      "title": "Banks Have Had It Up to Here With Your AI Agent",
+      "source": "Wired",
+      "sourceUrl": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+      "publishedAt": "2026-11-22T11:00:00.000Z",
+      "summary": "Major US financial institutions are banning third-party bots from logging into your accounts—and warning that any costly bot mistakes are strictly your problem.",
+      "tags": [
+        "智能体",
+        "新闻来源"
+      ]
+    },
+    {
+      "importance": 49,
+      "longTermImportance": 40,
+      "horizonYears": 1,
+      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
+      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "直接公开的一手来源",
+            "points": 8
+          },
+          {
+            "reason": "近一天的来源时间",
+            "points": 6
+          }
+        ],
+        "themes": [],
+        "sourceQuality": {
+          "kind": "official",
+          "publisher": "OpenAI",
+          "score": 90,
+          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
+        },
+        "publishedAtBasis": "published",
+        "relatedNews": []
+      },
+      "category": "ai",
+      "id": "1a10f1676d46fc01a909d8ea",
+      "title": "Perplexity and Intelligence",
+      "source": "OpenAI",
+      "sourceUrl": "https://openai.com/index/perplexity-and-intelligence",
+      "publishedAt": "2026-11-22T00:00:00.000Z",
+      "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities.",
+      "tags": [
+        "AI 模型",
+        "官方来源"
+      ]
+    },
+    {
+      "importance": 50,
+      "longTermImportance": 54,
+      "horizonYears": 5,
+      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
+      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
+      "ruleAnalysis": {
+        "version": "public-quality-v1",
+        "scoring": [
+          {
+            "reason": "基础相关性",
+            "points": 35
+          },
+          {
+            "reason": "可识别的前沿主题",
+            "points": 8
+          },
+          {
+            "reason": "独立新闻报道（仍需核对原文）",
+            "points": 4
+          },
+          {
+            "reason": "近一周的来源时间",
+            "points": 3
           }
         ],
         "themes": [
@@ -841,6 +1021,14 @@
             "differentSource": true
           },
           {
+            "id": "28c48f816e4d2e4f04da66e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "396f1d2b419af045815449d1",
             "relationship": "shared-topic",
             "themes": [
@@ -850,14 +1038,6 @@
           },
           {
             "id": "6fbb9cbc09ce7eb4c3adf9c4",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "cdc8eef67bc55a0d0fa5ca86",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -1006,93 +1186,6 @@
       "summary": "Henrijs Dandzbergs dropped out of high school to join startup accelerator Y Combinator. With a new breed of missile, he wants to make killing as efficient as possible for the US and its military allies.",
       "tags": [
         "AI 模型",
-        "新闻来源"
-      ]
-    },
-    {
-      "importance": 50,
-      "longTermImportance": 54,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：工具执行的可靠性、权限边界和可审计性决定智能体能承担哪些任务。",
-      "longTermImpact": "规则情景（3–10 年）：可验证的任务执行可能改变软件和工作的组织方式。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "可识别的前沿主题",
-            "points": 8
-          },
-          {
-            "reason": "独立新闻报道（仍需核对原文）",
-            "points": 4
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
-          }
-        ],
-        "themes": [
-          {
-            "id": "agent-execution",
-            "label": "可验证的智能体执行",
-            "evidence": "headline"
-          }
-        ],
-        "sourceQuality": {
-          "kind": "news",
-          "publisher": "TechCrunch",
-          "score": 83,
-          "note": "新闻报道；与一手材料交叉核对，不能把转载或引用同一公告当作独立确认。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": [
-          {
-            "id": "011b27afc6a841bff218ff10",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "02e9abf47eaf3fa01f98fe0d",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "19b4fcb1faac9c9bdbccd358",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "1d80e465e65b9589fb749478",
-            "relationship": "shared-topic",
-            "themes": [
-              "agent-execution"
-            ],
-            "differentSource": true
-          }
-        ]
-      },
-      "category": "agents",
-      "id": "dbe111187a465a8a1fe0f336",
-      "title": "Apple may be developing its own AI agent that runs your Mac",
-      "source": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-      "publishedAt": "2026-11-20T00:56:01.000Z",
-      "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
-      "tags": [
-        "智能体",
         "新闻来源"
       ]
     },
@@ -2627,6 +2720,14 @@
             "differentSource": true
           },
           {
+            "id": "28c48f816e4d2e4f04da66e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "7ee996bb903b0280d89cdcd7",
             "relationship": "shared-topic",
             "themes": [
@@ -2636,14 +2737,6 @@
           },
           {
             "id": "cdc8eef67bc55a0d0fa5ca86",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "d16c86f834412880e1d6e0a8",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -3300,6 +3393,14 @@
             "differentSource": true
           },
           {
+            "id": "28c48f816e4d2e4f04da66e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "7ee996bb903b0280d89cdcd7",
             "relationship": "shared-topic",
             "themes": [
@@ -3309,14 +3410,6 @@
           },
           {
             "id": "cdc8eef67bc55a0d0fa5ca86",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "d16c86f834412880e1d6e0a8",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -5985,7 +6078,7 @@
       ]
     },
     {
-      "importance": 63,
+      "importance": 60,
       "longTermImportance": 40,
       "horizonYears": 5,
       "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
@@ -6004,10 +6097,6 @@
           {
             "reason": "直接公开的一手来源",
             "points": 8
-          },
-          {
-            "reason": "近一周的来源时间",
-            "points": 3
           }
         ],
         "themes": [],
@@ -6079,6 +6168,14 @@
             "differentSource": true
           },
           {
+            "id": "28c48f816e4d2e4f04da66e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "396f1d2b419af045815449d1",
             "relationship": "shared-topic",
             "themes": [
@@ -6088,14 +6185,6 @@
           },
           {
             "id": "6fbb9cbc09ce7eb4c3adf9c4",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "7ee996bb903b0280d89cdcd7",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -6452,6 +6541,14 @@
             "differentSource": true
           },
           {
+            "id": "28c48f816e4d2e4f04da66e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "7ee996bb903b0280d89cdcd7",
             "relationship": "shared-topic",
             "themes": [
@@ -6461,14 +6558,6 @@
           },
           {
             "id": "84abd1857de5dfd951d90dcf",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "cdc8eef67bc55a0d0fa5ca86",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -7312,6 +7401,14 @@
         "publishedAtBasis": "published",
         "relatedNews": [
           {
+            "id": "28c48f816e4d2e4f04da66e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "396f1d2b419af045815449d1",
             "relationship": "shared-topic",
             "themes": [
@@ -7329,14 +7426,6 @@
           },
           {
             "id": "7ee996bb903b0280d89cdcd7",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "84abd1857de5dfd951d90dcf",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -8452,6 +8541,14 @@
             "differentSource": true
           },
           {
+            "id": "28c48f816e4d2e4f04da66e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "7ee996bb903b0280d89cdcd7",
             "relationship": "shared-topic",
             "themes": [
@@ -8461,14 +8558,6 @@
           },
           {
             "id": "84abd1857de5dfd951d90dcf",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "cdc8eef67bc55a0d0fa5ca86",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -8535,6 +8624,14 @@
             "differentSource": true
           },
           {
+            "id": "28c48f816e4d2e4f04da66e1",
+            "relationship": "shared-topic",
+            "themes": [
+              "physical-automation"
+            ],
+            "differentSource": true
+          },
+          {
             "id": "7ee996bb903b0280d89cdcd7",
             "relationship": "shared-topic",
             "themes": [
@@ -8544,14 +8641,6 @@
           },
           {
             "id": "84abd1857de5dfd951d90dcf",
-            "relationship": "shared-topic",
-            "themes": [
-              "physical-automation"
-            ],
-            "differentSource": true
-          },
-          {
-            "id": "cdc8eef67bc55a0d0fa5ca86",
             "relationship": "shared-topic",
             "themes": [
               "physical-automation"
@@ -9149,51 +9238,6 @@
       "tags": [
         "智能体",
         "研究来源"
-      ]
-    },
-    {
-      "importance": 60,
-      "longTermImportance": 40,
-      "horizonYears": 5,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "具体发布或部署事件",
-            "points": 17
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "release",
-          "publisher": "AMD",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "updated",
-        "relatedNews": []
-      },
-      "category": "chips",
-      "id": "bc675d63708bd2d061296ff0",
-      "title": "hip-version_10.3.63090",
-      "source": "AMD ROCm Systems",
-      "sourceUrl": "https://github.com/ROCm/rocm-systems/releases/tag/hip-version_10.3.63090",
-      "publishedAt": "2026-11-05T15:43:01.000Z",
-      "summary": "Tag for build hip-version_10.3.63090",
-      "tags": [
-        "算力基础设施",
-        "官方来源",
-        "来源更新时间"
       ]
     },
     {
@@ -12909,50 +12953,6 @@
         "智能体",
         "官方来源",
         "来源更新时间"
-      ]
-    },
-    {
-      "importance": 47,
-      "longTermImportance": 40,
-      "horizonYears": 1,
-      "whyItMatters": "规则分析：评估具体变化及其可验证证据，避免把宣传或单次结果等同于可部署能力。",
-      "longTermImpact": "规则情景（3–10 年）：是否形成长期影响取决于可复现效果与持续采用。",
-      "ruleAnalysis": {
-        "version": "public-quality-v1",
-        "scoring": [
-          {
-            "reason": "基础相关性",
-            "points": 35
-          },
-          {
-            "reason": "存在可核验的量化主张（未验证）",
-            "points": 4
-          },
-          {
-            "reason": "直接公开的一手来源",
-            "points": 8
-          }
-        ],
-        "themes": [],
-        "sourceQuality": {
-          "kind": "official",
-          "publisher": "OpenAI",
-          "score": 90,
-          "note": "来源可确认公告或代码发布；产品效果、采用规模与因果结论仍需独立验证。"
-        },
-        "publishedAtBasis": "published",
-        "relatedNews": []
-      },
-      "category": "ai",
-      "id": "ee4c22366ef7e7abd786b0a4",
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "source": "OpenAI",
-      "sourceUrl": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-      "publishedAt": "2026-10-23T17:00:00.000Z",
-      "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
-      "tags": [
-        "AI 模型",
-        "官方来源"
       ]
     },
     {
